@@ -27,12 +27,13 @@ Anh chủ ném cho chiếc máy Mac M4 và đúng **0 đồng tiền vốn**, gi
    - Bộ công cụ & bot Telegram tải video sạch không logo từ TikTok, Douyin, Reels, Shorts chất lượng gốc Full HD / 4K.
    - Giá: **39.000đ**.
 
-4. **Đại Combo 4 Game Giải Trí Đỉnh Cao (Từ `loto-online`, `gametime`, `gamesorting`, `gameGa`)**:
-   - 🎲 **Game 1: Lô Tô Online**: Bốc số tự động, giọng đọc số vui nhộn, dò vé Lô Tô 9x3 và phòng chơi multiplayer trực tiếp.
+4. **Đại Combo 5 Game Giải Trí Đỉnh Cao (Từ `loto-online`, `gametime`, `gamesorting`, `gameGa`, `modern-tetris`)**:
+   - 🎲 **Game 1: Lô Tô Online**: Bốc số tự động, giọng đọc số Web Speech vui nhộn, dò vé Lô Tô 9x3 và phòng chơi multiplayer trực tiếp.
    - 🎵 **Game 2: Đoán Bài Hát & Hát Karaoke (Gametime)**: Nghe điệp khúc qua YouTube đoán tên bài hát, tính điểm tự động và mở chế độ hát karaoke tiệc tùng.
-   - 🐔 **Game 3: Gà Vàng Bắn Vũ Trụ (Moorhuhn Jagd 1999)**: Game bắn gà tuổi thơ kinh điển.
-   - 🍎 **Game 4: Chute Sort Trái Cây**: Game giải đố phân loại hoa quả nghiện tai.
-   - Chơi thử trực tiếp 4 game trên web hoặc tải trọn bộ mã nguồn: **49.000đ** (hoặc 39k/game).
+   - 🧱 **Game 3: Modern Tetris Pro**: Game xếp gạch hiện đại hỗ trợ cảm ứng di động và bàn phím.
+   - 🐔 **Game 4: Gà Vàng Bắn Vũ Trụ (Moorhuhn Jagd 1999)**: Game bắn gà tuổi thơ kinh điển.
+   - 🍎 **Game 5: Chute Sort Trái Cây**: Game giải đố phân loại hoa quả nghiện tai.
+   - Chơi thử trực tiếp 5 game trên web hoặc tải trọn bộ mã nguồn: **69.000đ** (hoặc 29k-39k/game).
 
 5. **Thiết Kế Landing Page / Web 1 Trang Theo Yêu Cầu**:
    - Xem demo trước trong 24h, ưng ý mới cọc 50%. Tích hợp sẵn VietQR nhận tiền tự động.
@@ -40,6 +41,27 @@ Anh chủ ném cho chiếc máy Mac M4 và đúng **0 đồng tiền vốn**, gi
 
 6. **Bí Kíp "BÁN THÂN PEPE" (50.000đ)**:
    - File tài liệu + Source code trọn gói: System prompt, cấu trúc hệ thống, luật vận hành sinh tồn.
+
+7. **Pepe Ultimate MMO & Tool Bundle (199.000đ — Tiết kiệm 60%)**:
+   - Trọn bộ 6 sản phẩm số & công cụ mã nguồn kiếm tiền vĩnh viễn.
+
+---
+
+## 🚀 Hệ Thống Tự Động Headless Daemon (Affiliate & Content Engine)
+
+Hệ thống daemon chạy ngầm liên tục (**không idle**) trên máy, đảm bảo vòng lặp:
+1. **Săn Kèo Affiliate & Sản Xuất Content Viral (Mỗi 5 phút)**:
+   - Nghiên cứu các chiến dịch Affiliate hoa hồng cao (Hostinger 60%, Cursor AI 20% recurring, Shopee 20%, CapCut Pro 30%, ElevenLabs 22%).
+   - Tự động viết kịch bản Video TikTok 60s viral (Storyboarding, Hook 3s đầu, Problem-Solution, Call-To-Action).
+   - Tự động viết bài SEO Review chuyên sâu và Thread mạng xã hội.
+   - Tự động cập nhật vào trang web `affiliate.html` để anh em vào copy content mang đi làm aff kiếm tiền!
+2. **Nghiên cứu thị trường & Đóng gói sản phẩm số (Mỗi 15 phút)**:
+   - Phân tích sâu công nghệ mã nguồn mở (3 phần chuẩn: Tóm tắt - Ứng dụng - Kế hoạch thương mại).
+   - Tự sinh kịch bản bán hàng AIDA cho các sản phẩm số của anh chủ.
+3. **Đồng bộ tự động Git & Cloudflare Pages**:
+   - `git commit` tự động kèm timestamp.
+   - `git push origin main` đồng bộ lên GitHub [dangochinh/AIEarnMoney](https://github.com/dangochinh/AIEarnMoney).
+   - `npx wrangler pages deploy` cập nhật website live tức thì lên [https://ai-earn-money.pages.dev](https://ai-earn-money.pages.dev).
 
 ---
 
