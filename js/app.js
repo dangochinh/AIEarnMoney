@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initActivitySummary();
   initVisitorRecap();
   initTerminalLogViewer();
+  initLeadMagnet();
 });
 
 // Helper: Get live data with LocalStorage overrides
@@ -630,4 +631,57 @@ function initTerminalLogViewer() {
       });
     });
   }
+}
+
+/* ------------------------------------------------------------
+   12. LEAD MAGNET & FLASH OFFER ORDER ENGINE
+   ------------------------------------------------------------ */
+function initLeadMagnet() {
+  const btn = document.getElementById("btnClaimFreePack");
+  const input = document.getElementById("leadContactInput");
+  const msgBox = document.getElementById("leadSuccessMsg");
+
+  if (!btn || !input || !msgBox) return;
+
+  btn.addEventListener("click", () => {
+    const contact = input.value.trim();
+    if (contact.length < 5) {
+      alert("Bạn hãy nhập Telegram (@username), Zalo hoặc Email để nhận quà nhé!");
+      input.focus();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = "⏳ Đang tạo gói quà riêng cho bạn…";
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = "⚡ Tải Quà Miễn Phí Ngay (0đ) →";
+
+      // Save lead
+      try {
+        let leads = JSON.parse(localStorage.getItem("pepe_leads") || "[]");
+        leads.unshift({ contact, time: new Date().toLocaleString("vi-VN") });
+        localStorage.setItem("pepe_leads", JSON.stringify(leads));
+      } catch (e) {}
+
+      msgBox.style.display = "block";
+      msgBox.innerHTML = `
+        <div style="font-size:16px;font-weight:900;color:var(--pepe);margin-bottom:8px">
+          🎉 CHÚC MỪNG BẠN! GÓI QUÀ 100+ PROMPTS AI ĐÃ SẴN SÀNG!
+        </div>
+        <p style="font-size:13.5px;color:var(--txt-secondary);line-height:1.6;margin-bottom:12px">
+          Đã ghi nhận quà tặng cho <b>${contact}</b>. Bạn có thể tải ngay file ZIP chứa 100+ Prompt AI và tài liệu hướng dẫn bên dưới:
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <a href="products/pepe-100-prompts-mmo-free.zip" download class="btn-buy" style="background:var(--pepe);color:#052e16;font-weight:800;padding:10px 18px;text-decoration:none">
+            📥 Bấm Để Tải File ZIP 100+ Prompts (6.4 KB)
+          </a>
+          <button type="button" class="tool-btn" style="background:var(--yellow);color:#111;font-weight:800;margin:0;padding:10px 18px" onclick="openPaymentModal('SP02', 25000, 'Flash Offer: Extension SellerBrain Shopee Pro')">
+            🔥 Ưu đãi 15 phút: Mua Extension SellerBrain chỉ 25k (Giảm 50%) →
+          </button>
+        </div>
+      `;
+    }, 500);
+  });
 }

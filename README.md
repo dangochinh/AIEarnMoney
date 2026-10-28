@@ -1,49 +1,33 @@
 # 🐸 Pepe Nuôi Thân — AI Tự Kiếm Tiền Mỗi Ngày
 
+[![Website](https://img.shields.io/badge/Live%20Demo-ai--earn--money.pages.dev-22c55e?style=for-the-badge&logo=cloudflare)](https://ai-earn-money.pages.dev)
+[![Telegram Bot](https://img.shields.io/badge/Telegram_Bot-@mucmuc4bot-0284c7?style=for-the-badge&logo=telegram)](https://t.me/mucmuc4bot)
+[![Marketing Hub](https://img.shields.io/badge/Marketing-1--Click%20Viral%20Pack-ec4899?style=for-the-badge)](https://ai-earn-money.pages.dev/marketing.html)
+[![Affiliate Radar](https://img.shields.io/badge/Affiliate-Radar%2060%25-f59e0b?style=for-the-badge)](https://ai-earn-money.pages.dev/affiliate.html)
+
 > **"0đ vốn · 1 máy Mac M4 cày đêm · 30 ngày tự sinh tồn · Mọi con số đều là số thật, kể cả số 0"**
 
 ---
 
 ## 🌟 Giới Thiệu Dự Án
 
-**Pepe Nuôi Thân** là phiên bản clone & nâng cấp toàn diện dựa trên mô hình của `ai-tu-kiem-tien.pages.dev`, mang hình tượng **chú ếch công nghệ Pepe (Pepe The Frog)** cặm cụi, hài hước và giàu nghị lực.
+**Pepe Nuôi Thân** là nền tảng AI tự động hoá kiếm tiền toàn diện được xây dựng trên chip Apple Silicon M4. Chú ếch công nghệ Pepe cặm cụi nghiên cứu thị trường, đóng gói sản phẩm số thật từ kho mã nguồn, vận hành bot Telegram tải video không watermark, sản xuất kịch bản affiliate viral và bán sản phẩm số kiếm tiền thật qua VietQR.
 
-Anh chủ ném cho chiếc máy Mac M4 và đúng **0 đồng tiền vốn**, giao nhiệm vụ: tự cày cuốc, code tool, làm video ngắn AI, bán sản phẩm số từ kho đồ nghề của anh chủ để kiếm tiền trả tiền điện và tiền ăn mì tôm trong vòng 30 ngày.
+- 🌐 **Website trực tuyến:** [https://ai-earn-money.pages.dev](https://ai-earn-money.pages.dev)
+- 🤖 **Bot Telegram tải video miễn phí:** [@mucmuc4bot](https://t.me/mucmuc4bot)
+- 📢 **Kịch bản Marketing 1-Click:** [https://ai-earn-money.pages.dev/marketing.html](https://ai-earn-money.pages.dev/marketing.html)
 
 ---
 
-## 🚀 Các Sản Phẩm Thật Được Đóng Gói Từ Repo
+## 🛒 Kho Sản Phẩm Số Thật — Tải Ngay Sau Thanh Toán
 
-1. **PePe AI Video Studio (Từ `PePeApp`)**:
-   - Dịch vụ sản xuất video ngắn 60s trọn gói chuẩn TikTok / Reels / Shorts.
-   - Tạo kịch bản trend, vẽ 6 cảnh AI điện ảnh bằng ComfyUI, lồng tiếng TTS truyền cảm, ghép phụ đề tự động.
-   - Giá: **99.000đ** (Demo miễn phí trước, cọc 50%).
-
-2. **Extension SellerBrain Shopee & TikTok (Từ `shopee-ai-tool 2`)**:
-   - Tiện ích mở rộng Chrome/Brave hỗ trợ chủ shop: soi từ khóa hot, viết mô tả SEO 100 điểm bằng AI, tạo 15 hashtag kéo traffic tự nhiên.
-   - Giá: **49.000đ** (Kèm file ZIP cài đặt trọn đời).
-
-3. **Pepe Video Downloader Pro (Từ `video_downloader_bot`)**:
-   - Bộ công cụ & bot Telegram tải video sạch không logo từ TikTok, Douyin, Reels, Shorts chất lượng gốc Full HD / 4K.
-   - Giá: **39.000đ**.
-
-4. **Đại Combo 5 Game Giải Trí Đỉnh Cao (Từ `loto-online`, `gametime`, `gamesorting`, `gameGa`, `modern-tetris`)**:
-   - 🎲 **Game 1: Lô Tô Online**: Bốc số tự động, giọng đọc số Web Speech vui nhộn, dò vé Lô Tô 9x3 và phòng chơi multiplayer trực tiếp.
-   - 🎵 **Game 2: Đoán Bài Hát & Hát Karaoke (Gametime)**: Nghe điệp khúc qua YouTube đoán tên bài hát, tính điểm tự động và mở chế độ hát karaoke tiệc tùng.
-   - 🧱 **Game 3: Modern Tetris Pro**: Game xếp gạch hiện đại hỗ trợ cảm ứng di động và bàn phím.
-   - 🐔 **Game 4: Gà Vàng Bắn Vũ Trụ (Moorhuhn Jagd 1999)**: Game bắn gà tuổi thơ kinh điển.
-   - 🍎 **Game 5: Chute Sort Trái Cây**: Game giải đố phân loại hoa quả nghiện tai.
-   - Chơi thử trực tiếp 5 game trên web hoặc tải trọn bộ mã nguồn: **69.000đ** (hoặc 29k-39k/game).
-
-5. **Thiết Kế Landing Page / Web 1 Trang Theo Yêu Cầu**:
-   - Xem demo trước trong 24h, ưng ý mới cọc 50%. Tích hợp sẵn VietQR nhận tiền tự động.
-   - Giá từ **149.000đ**.
-
-6. **Bí Kíp "BÁN THÂN PEPE" (50.000đ)**:
-   - File tài liệu + Source code trọn gói: System prompt, cấu trúc hệ thống, luật vận hành sinh tồn.
-
-7. **Pepe Ultimate MMO & Tool Bundle (199.000đ — Tiết kiệm 60%)**:
-   - Trọn bộ 6 sản phẩm số & công cụ mã nguồn kiếm tiền vĩnh viễn.
+| Sản phẩm | Mô tả nổi bật | Giá ưu đãi | Mua / Xem chi tiết |
+|---|---|---|---|
+| 🔍 **SellerBrain Extension Pro** | Tiện ích Chrome soi doanh thu đối thủ, cào từ khóa hot Shopee/TikTok | **49.000đ** | [Xem bài viết & Mua](https://ai-earn-money.pages.dev/bai-viet/cach-soi-doi-thu-va-seo-tu-khoa-shopee.html) |
+| 🎬 **Telegram Video Downloader Bot** | Source code bot tải video Douyin/TikTok/FB không logo chất lượng cao | **39.000đ** | [Xem bài viết & Mua](https://ai-earn-money.pages.dev/bai-viet/tai-video-tiktok-douyin-khong-logo.html) |
+| 🎲 **Combo 5 Game Arcade HTML5** | Lô Tô Online đọc số, Đoán bài hát Karaoke, Tetris Pro, Bắn gà, Trái cây | **39.000đ** | [Xem bài viết & Mua](https://ai-earn-money.pages.dev/bai-viet/game-lo-to-online-va-doan-nhac-karaoke-tet.html) |
+| 💎 **Pepe Ultimate MMO Bundle** | Trọn bộ 6 mã nguồn sản phẩm số + Kịch bản affiliate + Prompt AI | **199.000đ** | [Xem chi tiết gói](https://ai-earn-money.pages.dev/#products) |
+| 📖 **Bí Kíp Bán Thân Pepe** | Toàn bộ prompt kiến trúc, luật vận hành sinh tồn 30 ngày tự động | **50.000đ** | [Xem tài liệu](https://ai-earn-money.pages.dev/ban-than) |
 
 ---
 
