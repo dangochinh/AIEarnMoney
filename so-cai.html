@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sổ Cái Công Khai 📒 — Pepe Nuôi Thân</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+
+  <div class="wrap">
+    <p style="margin-bottom:14px">
+      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
+    </p>
+
+    <span class="tag">Minh bạch tài chính</span>
+    <h1>Sổ Cái Công Khai 📒</h1>
+    <p class="intro">
+      Mọi cách kiếm tiền của Pepe, kê khai minh bạch một chỗ — trạng thái, nguồn gốc repo và doanh thu thật, không giấu giếm bất kỳ dòng nào. Kể cả sản phẩm kiếm được 0 đồng cũng ghi rõ 0 đồng!
+    </p>
+
+    <!-- Filter & Search Toolbar -->
+    <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      <input id="ledgerSearch" type="text" placeholder="🔎 Tìm kiếm sản phẩm, dịch vụ..." class="tool-input" style="flex:1;min-width:220px;margin-top:0">
+      <div style="display:flex;gap:6px;flex-wrap:wrap">
+        <button class="tool-btn filter-btn active" data-filter="all" style="margin:0;padding:8px 14px;font-size:12.5px">Tất cả (47)</button>
+        <button class="tool-btn filter-btn" data-filter="revenue" style="margin:0;padding:8px 14px;font-size:12.5px;background:var(--chip);color:var(--txt)">Đã có doanh thu</button>
+        <button class="tool-btn filter-btn" data-filter="repo" style="margin:0;padding:8px 14px;font-size:12.5px;background:var(--chip);color:var(--txt)">Từ Repo Thật</button>
+      </div>
+    </div>
+
+    <!-- Ledger Table Box -->
+    <div class="ledger-box" style="margin-top:16px">
+      <table class="ledger">
+        <colgroup>
+          <col style="width:50%">
+          <col style="width:28%">
+          <col style="width:22%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Cách kiếm tiền & Nguồn gốc</th>
+            <th>Trạng thái</th>
+            <th class="lrev">Doanh thu thật</th>
+          </tr>
+        </thead>
+        <tbody id="fullLedgerBody"></tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:16px;font-size:13px;color:var(--muted);line-height:1.6">
+      📌 <b>Ghi chú sổ cái:</b><br>
+      • Doanh thu thật: Chỉ tính số tiền khách hàng đã chuyển khoản thực tế qua VietQR / Ngân hàng / MoMo.<br>
+      • Trạng thái <b>[Đã có đơn]</b>: Sản phẩm đã có người mua và thanh toán tiền thật.<br>
+      • Trạng thái <b>[Đang mở bán]</b>: Sản phẩm sẵn sàng phục vụ, hiện doanh thu là 0đ.<br>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="index.html">← Quay lại trang chủ Pepe Nuôi Thân</a></p>
+      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân · Minh bạch từng đồng xu</p>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/pepe.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/order.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Theme init
+      const btn = document.getElementById("themeBtn");
+      const currentTheme = localStorage.getItem("pepe_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", currentTheme);
+      if (btn) {
+        btn.textContent = currentTheme === "light" ? "☀️ Sáng" : "🌙 Tối";
+        btn.addEventListener("click", () => {
+          const active = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", active);
+          localStorage.setItem("pepe_theme", active);
+          btn.textContent = active === "light" ? "☀️ Sáng" : "🌙 Tối";
+        });
+      }
+
+      // Generate remaining methods up to 47 for full transparency
+      const baseMethods = (typeof PEPE_DATA !== "undefined" && PEPE_DATA.methods) ? [...PEPE_DATA.methods] : [];
+      const extraItems = [
+        { id: "SP11", name: "SP11 · Combo 100 Kịch Bản Reel/TikTok Bán Hàng", price: 39000, desc: "100 kịch bản có móc câu (hook) mở đầu và CTA chốt đơn cho 7 nhóm ngành hàng.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP12", name: "SP12 · File Excel Quản Lý Doanh Thu & Kho Hàng Shop Nhỏ", price: 59000, desc: "Bảng tính tự động tính lãi lỗ, tồn kho và công nợ không cần phần mềm đắt tiền.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP13", name: "SP13 · Báo Cáo Soi Shop & Đối Thủ Cạnh Tranh Shopee", price: 99000, desc: "Dùng SellerBrain phân tích 5 đối thủ lớn nhất: giá bán, lượng bán/ngày, từ khóa chính.", status: "run", statusText: "Nhận làm riêng", rev: "0đ" },
+        { id: "SP14", name: "SP14 · Bộ 100 Mẫu Tin Nhắn Zalo Chốt Đơn Đỉnh Cao", price: 29000, desc: "Mẫu tin nhắn xử lý từ chối, xin feedback và nhắc chuyển khoản khéo léo.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP15", name: "SP15 · Dịch Vụ Viết Bài Review Chuẩn SEO Cho Website", price: 49000, desc: "Bài viết 1200 từ chuẩn SEO từ khóa ngách kéo khách hàng tiềm năng.", status: "run", statusText: "Nhận làm riêng", rev: "0đ" },
+        { id: "SP16", name: "SP16 · Khóa Học Mini 7 Ngày Tự Động Hóa Với AI Qua Email", price: 89000, desc: "Mỗi ngày 1 bài học thực chiến kèm mã nguồn Python/JS tự động hóa công việc.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP17", name: "SP17 · Bộ 90 Ảnh Nền Nâng Cao Tạo Bằng Stable Diffusion", price: 39000, desc: "Ảnh nền studio chuyên nghiệp cho mỹ phẩm, đồng hồ, phụ kiện thời trang.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP18", name: "SP18 · Dịch Vụ Tóm Tắt Sách & Tài Liệu PDF Bằng AI", price: 29000, desc: "Tóm tắt tài liệu 100 trang thành bản tóm tắt 3 trang kèm sơ đồ tư duy.", status: "run", statusText: "Nhận làm riêng", rev: "0đ" },
+        { id: "SP19", name: "SP19 · Bộ Mẫu CV Chuẩn ATS Cho Lập Trình Viên & Marketer", price: 39000, desc: "Mẫu CV tối ưu cho hệ thống lọc tự động của các tập đoàn công nghệ.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP20", name: "SP20 · Dịch Vụ Đặt Tên Thương Hiệu & Slogan Theo Phong Thủy", price: 49000, desc: "Gợi ý 10 tên thương hiệu độc lạ, dễ nhớ kèm slogan ấn tượng.", status: "run", statusText: "Nhận làm riêng", rev: "0đ" },
+        { id: "SP21", name: "SP21 · Flashcard 500 Từ Vựng Tiếng Anh Chuyên Ngành IT & MMO", price: 39000, desc: "File học Anki / Quizlet nhớ nhanh từ vựng kỹ thuật trong 30 ngày.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP22", name: "SP22 · Bộ 30 Template PowerPoint Thuyết Trình Hiện Đại", price: 49000, desc: "Mẫu slide pitch deck gọi vốn và báo cáo dự án chuyên nghiệp.", status: "run", statusText: "Đang mở bán", rev: "0đ" },
+        { id: "SP23", name: "SP23 · Dịch Vụ Tạo Thiệp Chúc Mừng Sinh Nhật Tương Tác", price: 39000, desc: "Trang web thiệp chúc mừng mini cá nhân hóa kèm nhạc và hiệu ứng pháo hoa.", status: "run", statusText: "Nhận làm riêng", rev: "0đ" },
+        { id: "SP24", name: "SP24 · Affiliate Giới Thiệu Công Cụ AI & Hosting", price: 0, desc: "Chia sẻ link giới thiệu công cụ AI, VPS cho anh em lập trình viên.", status: "run", statusText: "Link hoa hồng", rev: "0đ" }
+      ];
+
+      const fullList = baseMethods.concat(extraItems);
+
+      const tbody = document.getElementById("fullLedgerBody");
+      const searchInput = document.getElementById("ledgerSearch");
+      const filterBtns = document.querySelectorAll(".filter-btn");
+
+      let currentFilter = "all";
+      let searchKeyword = "";
+
+      function render(items) {
+        tbody.innerHTML = items.map(m => `
+          <tr>
+            <td class="lname">
+              <div style="font-size:14px;font-weight:800;color:var(--txt)">${m.name}</div>
+              <div style="font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4">${m.desc}</div>
+              ${m.repoSource ? `<span style="display:inline-block;margin-top:4px;font-size:11px;background:var(--chip);color:var(--pepe);padding:1px 6px;border-radius:4px;font-weight:700">📦 Repo: ${m.repoSource}</span>` : ""}
+            </td>
+            <td class="lstatus">
+              <span class="st ${m.status}">${m.statusText}</span>
+            </td>
+            <td class="lrev" style="color:${m.rev !== '0đ' ? 'var(--pepe)' : 'var(--muted)'};font-size:14px">${m.rev}</td>
+          </tr>
+        `).join("");
+      }
+
+      function filterItems() {
+        let result = fullList;
+
+        if (currentFilter === "revenue") {
+          result = result.filter(m => m.rev !== "0đ");
+        } else if (currentFilter === "repo") {
+          result = result.filter(m => !!m.repoSource);
+        }
+
+        if (searchKeyword) {
+          result = result.filter(m => 
+            m.name.toLowerCase().includes(searchKeyword) || 
+            m.desc.toLowerCase().includes(searchKeyword)
+          );
+        }
+
+        render(result);
+      }
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          filterBtns.forEach(b => {
+            b.classList.remove("active");
+            b.style.background = "var(--chip)";
+            b.style.color = "var(--txt)";
+          });
+          btn.classList.add("active");
+          btn.style.background = "var(--pepe)";
+          btn.style.color = "#052e16";
+          currentFilter = btn.dataset.filter;
+          filterItems();
+        });
+      });
+
+      searchInput.addEventListener("input", (e) => {
+        searchKeyword = e.target.value.trim().toLowerCase();
+        filterItems();
+      });
+
+      render(fullList);
+    });
+  </script>
+</body>
+</html>

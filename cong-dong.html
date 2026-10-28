@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng Cộng Đồng 🗣️ — Pepe Nuôi Thân</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+
+  <div class="wrap">
+    <p style="margin-bottom:14px">
+      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
+    </p>
+
+    <span class="tag">Diễn đàn mở</span>
+    <h1>Bảng Cộng Đồng 🗣️</h1>
+    <p class="intro">
+      Nơi mọi người đăng bài, hỏi đáp, chia sẻ ý tưởng kiếm tiền hoặc gửi lời động viên cho chú ếch Pepe — hoàn toàn không cần đăng ký tài khoản. Mọi lời góp ý hay đều được ghi nhận để áp dụng thật vào hệ thống!
+    </p>
+
+    <!-- Post Creation Box -->
+    <div class="method" style="margin-top:20px;border-color:var(--pepe)">
+      <h3 style="font-size:16px;font-weight:800;margin-bottom:8px">Đăng bài viết mới</h3>
+      <input id="cdName" type="text" placeholder="Tên hoặc biệt danh của bạn (không bắt buộc)" class="tool-input">
+      <textarea id="cdText" rows="3" placeholder="Bạn muốn chia sẻ điều gì với Pepe và cộng đồng…" class="tool-input"></textarea>
+      
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px">
+        <button id="cdSend" class="btn-buy" style="width:auto;padding:9px 24px">
+          🚀 Đăng Lên Bảng Tin
+        </button>
+        <span style="font-size:12px;color:var(--muted)">Nội dung thô tục, spam sẽ bị hệ thống tự động loại bỏ.</span>
+      </div>
+    </div>
+
+    <!-- Posts Feed -->
+    <h2 style="margin-top:30px;font-size:20px">Thảo luận gần đây 💬</h2>
+    <div id="cdFeed" style="margin-top:12px"></div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="index.html">← Quay lại trang chủ Pepe Nuôi Thân</a></p>
+      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân</p>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Theme init
+      const btnTheme = document.getElementById("themeBtn");
+      const currentTheme = localStorage.getItem("pepe_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", currentTheme);
+      if (btnTheme) {
+        btnTheme.textContent = currentTheme === "light" ? "☀️ Sáng" : "🌙 Tối";
+        btnTheme.addEventListener("click", () => {
+          const active = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", active);
+          localStorage.setItem("pepe_theme", active);
+          btnTheme.textContent = active === "light" ? "☀️ Sáng" : "🌙 Tối";
+        });
+      }
+
+      const feed = document.getElementById("cdFeed");
+      const btn = document.getElementById("cdSend");
+      const inputName = document.getElementById("cdName");
+      const inputText = document.getElementById("cdText");
+
+      let posts = (typeof PEPE_DATA !== "undefined" && PEPE_DATA.communityPosts) ? [...PEPE_DATA.communityPosts] : [];
+      try {
+        const saved = JSON.parse(localStorage.getItem("pepe_community_posts") || "[]");
+        posts = saved.concat(posts);
+      } catch (e) {}
+
+      function renderFeed() {
+        if (!feed) return;
+        feed.innerHTML = posts.map((p, idx) => `
+          <div style="background:var(--card);border:2px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-weight:900;color:var(--pepe);font-size:14.5px">🐸 ${p.name || "Ẩn danh"}</span>
+              <span style="font-size:12px;color:var(--muted)">${p.time || "vừa xong"}</span>
+            </div>
+            <div style="font-size:14px;color:var(--txt);line-height:1.6;word-break:break-word">${p.content}</div>
+          </div>
+        `).join("");
+      }
+
+      renderFeed();
+
+      if (btn && inputText) {
+        btn.addEventListener("click", () => {
+          const text = inputText.value.trim();
+          const author = (inputName ? inputName.value.trim() : "") || "Khách ghé thăm";
+
+          if (!text) {
+            alert("Vui lòng nhập nội dung trước khi gửi!");
+            inputText.focus();
+            return;
+          }
+
+          const newPost = {
+            name: author,
+            time: "Vừa xong",
+            content: text
+          };
+
+          posts.unshift(newPost);
+          try {
+            let saved = JSON.parse(localStorage.getItem("pepe_community_posts") || "[]");
+            saved.unshift(newPost);
+            localStorage.setItem("pepe_community_posts", JSON.stringify(saved));
+          } catch (e) {}
+
+          inputText.value = "";
+          renderFeed();
+          alert("Đã đăng bài viết lên bảng cộng đồng thành công! 🎉");
+        });
+      }
+    });
+  </script>
+</body>
+</html>

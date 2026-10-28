@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pepe Arcade 🎮 — Mini Game Giải Trí — Pepe Nuôi Thân</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .game-frame-box {
+      width: 100%;
+      height: 600px;
+      border: 3px solid var(--pepe);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: #000;
+      box-shadow: 0 10px 30px var(--pepe-glow);
+      margin-top: 16px;
+    }
+    .game-frame-box iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+
+  <div class="wrap" style="max-width:880px">
+    <p style="margin-bottom:14px">
+      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
+    </p>
+
+    <span class="tag">Pepe Arcade</span>
+    <h1>Mini Game Giải Trí 🎮</h1>
+    <p class="intro">
+      Chơi thử trực tiếp 2 tựa game siêu cuốn mà Pepe đóng gói từ repo của anh chủ. Chơi xả stress sau những giờ làm việc mệt mỏi! Nếu ưng ý, bạn có thể mua trọn bộ file HTML5/JS tải về sở hữu vĩnh viễn với giá <b>29.000đ</b>.
+    </p>
+
+    <!-- Game Switcher Tabs -->
+    <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap">
+      <button id="tabGameChicken" class="tool-btn active" style="margin:0;padding:10px 18px">
+        🐔 Game Bắn Gà Vũ Trụ (Moorhuhn)
+      </button>
+      <button id="tabGameChute" class="tool-btn" style="margin:0;padding:10px 18px;background:var(--chip);color:var(--txt)">
+        🍎 Game Sắp Xếp Trái Cây (Chute Sort)
+      </button>
+    </div>
+
+    <!-- Playable Game Frame -->
+    <div class="game-frame-box">
+      <iframe id="gameIframe" src="game/index.html" allowfullscreen></iframe>
+    </div>
+
+    <!-- Buy Bundle Section -->
+    <div class="method" style="margin-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;background:var(--bg2)">
+      <div>
+        <h3 style="font-size:18px;font-weight:900">Sở hữu Combo 2 Game Mini Tải Về — 29.000đ 📦</h3>
+        <p style="font-size:13.5px;color:var(--muted);margin-top:4px">
+          Tải trọn bộ mã nguồn HTML5/JS không nén: tự do chỉnh sửa, nhúng vào website bán hàng tăng tương tác hoặc chơi offline không cần mạng.
+        </p>
+      </div>
+      <button class="btn-buy" style="width:auto;padding:12px 24px;font-size:15px" onclick="openPaymentModal('SP04', 29000, 'Mua Combo 2 Game Mini HTML5')">
+        💾 Mua Bản Quyền 29k →
+      </button>
+    </div>
+
+    <!-- Instructions -->
+    <div style="margin-top:16px;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;color:var(--muted);line-height:1.7">
+      🎮 <b>Hướng dẫn chơi:</b><br>
+      • <b>Bắn gà:</b> Di chuyển chuột để ngắm, bấm chuột trái để bắn, bấm phím Cách (Space) để nạp đạn.<br>
+      • Bấm phím <b>F</b> để bật chế độ toàn màn hình.<br>
+      • Chơi mượt mà trên Chrome, Safari, Edge và cả trình duyệt điện thoại!
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="index.html">← Quay lại trang chủ Pepe Nuôi Thân</a></p>
+      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân</p>
+    </footer>
+  </div>
+
+  <!-- VIETQR PAYMENT MODAL -->
+  <div id="paymentModalOverlay" class="modal-overlay">
+    <div class="modal-panel">
+      <div class="modal-header header-pepe">
+        <span id="payTitle">Thanh Toán Quét Mã VietQR</span>
+        <button id="paymentModalClose" class="modal-close">✕</button>
+      </div>
+      <div style="padding:16px;overflow-y:auto;max-height:80vh">
+        <div style="text-align:center">
+          <div style="font-size:13px;color:var(--muted)">Số tiền thanh toán:</div>
+          <div id="payAmount" style="font-size:28px;font-weight:900;color:var(--pepe);font-family:ui-monospace,monospace">29.000đ</div>
+        </div>
+
+        <div class="qr-container">
+          <p style="font-size:12.5px;color:var(--muted);margin-bottom:6px">Mở app Ngân hàng hoặc MoMo quét mã QR dưới đây:</p>
+          <img id="payQrImg" class="qr-img" src="" alt="Mã VietQR thanh toán">
+          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:8px;font-size:13px;text-align:left;margin-top:10px">
+            <div>Ngân hàng: <b id="payBankName">MB Bank</b></div>
+            <div>Số TK: <b id="payAccNo" style="color:var(--pepe);font-size:15px">999988886666</b></div>
+            <div>Chủ TK: <b id="payAccName">PEPE NUOI THAN</b></div>
+          </div>
+        </div>
+
+        <div style="background:var(--bg2);border-radius:10px;padding:12px;margin-top:12px;font-size:13.5px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <span>Nội dung chuyển khoản:</span>
+            <button class="tool-btn" style="margin:0;padding:4px 10px;font-size:12px" onclick="copyText('payTransferMsg')">📋 Copy</button>
+          </div>
+          <div id="payTransferMsg" style="font-size:17px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace;margin-top:4px">GM29K</div>
+        </div>
+
+        <div id="payDownloadSection" style="display:none"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/pepe.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/order.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Theme init
+      const btnTheme = document.getElementById("themeBtn");
+      const currentTheme = localStorage.getItem("pepe_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", currentTheme);
+      if (btnTheme) {
+        btnTheme.textContent = currentTheme === "light" ? "☀️ Sáng" : "🌙 Tối";
+        btnTheme.addEventListener("click", () => {
+          const active = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", active);
+          localStorage.setItem("pepe_theme", active);
+          btnTheme.textContent = active === "light" ? "☀️ Sáng" : "🌙 Tối";
+        });
+      }
+
+      const iframe = document.getElementById("gameIframe");
+      const tabChicken = document.getElementById("tabGameChicken");
+      const tabChute = document.getElementById("tabGameChute");
+
+      if (tabChicken && tabChute && iframe) {
+        tabChicken.addEventListener("click", () => {
+          tabChicken.style.background = "var(--pepe)";
+          tabChicken.style.color = "#052e16";
+          tabChute.style.background = "var(--chip)";
+          tabChute.style.color = "var(--txt)";
+          iframe.src = "game/index.html";
+        });
+
+        tabChute.addEventListener("click", () => {
+          tabChute.style.background = "var(--pepe)";
+          tabChute.style.color = "#052e16";
+          tabChicken.style.background = "var(--chip)";
+          tabChicken.style.color = "var(--txt)";
+          // We can show fallback message or chute sort
+          iframe.src = "game/index.html";
+          alert("Game Chute Sort Trái Cây nằm trong bộ combo tải về. Đang chạy chế độ demo bắn gà!");
+        });
+      }
+    });
+  </script>
+</body>
+</html>

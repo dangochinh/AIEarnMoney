@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Moorhuhn Jagd - Crazy Chicken (Die Original Moorhuhn Jagd 1999)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/images/sprites/chickie.png">
+</head>
+<body class="lang-vi">
+  <div id="game-wrapper">
+    <!-- Top Bar Controls -->
+    <div id="top-bar">
+      <!-- Language Switcher: EN / VI -->
+      <button id="btn-lang" class="control-btn" title="Chuyển đổi Ngôn ngữ / Switch Language">
+        <span>🌐</span> <span id="lang-text">Tiếng Việt</span>
+      </button>
+
+      <button id="btn-sound" class="control-btn" data-i18n-title="sound" title="Bật/Tắt Âm Thanh">
+        <span id="sound-icon">🔊</span> <span id="sound-text" data-i18n="sound">Âm thanh</span>
+      </button>
+
+      <button id="btn-quality" class="control-btn" title="Chuyển đổi chất lượng đồ họa HD / SD">
+        <span>✨</span> <span id="quality-text" data-i18n="qualityHd">HD: Sắc nét</span>
+      </button>
+
+      <button id="btn-aspect" class="control-btn" data-i18n-title="aspectStandard" title="Chuyển chế độ hiển thị 4:3 / Màn rộng">
+        <span>📺</span> <span id="aspect-text" data-i18n="aspectStandard">4:3 Chuẩn</span>
+      </button>
+
+      <button id="btn-crt" class="control-btn" title="Bật/Tắt hiệu ứng CRT">
+        <span>📼</span> <span id="crt-text" data-i18n="crtOff">CRT: Tắt</span>
+      </button>
+
+      <button id="btn-highscores" class="control-btn" title="Bảng xếp hạng điểm cao">
+        <span>🏆</span> <span data-i18n="highscores">Kỷ lục</span>
+      </button>
+
+      <button id="btn-help" class="control-btn" title="Hướng dẫn & Bí mật game">
+        <span>❓</span> <span data-i18n="help">Hướng dẫn</span>
+      </button>
+
+      <button id="btn-fullscreen" class="control-btn" title="Toàn màn hình (Phím F)">
+        <span>⛶</span> <span data-i18n="fullscreen">Toàn màn hình</span>
+      </button>
+    </div>
+
+    <!-- Canvas Container -->
+    <div id="canvas-container">
+      <canvas id="game-canvas" width="640" height="480"></canvas>
+      <div id="crt-overlay" class="crt-overlay disabled"></div>
+    </div>
+
+    <!-- Mobile Touch Controls (Pure Icons, only shown on touch screens) -->
+    <div id="touch-controls">
+      <button id="btn-touch-pan-l" class="touch-btn" aria-label="Pan Left" title="Quay Trái">
+        <svg viewBox="0 0 24 24"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+      </button>
+      <button id="btn-touch-reload" class="touch-btn" aria-label="Reload Shotgun" title="Nạp Đạn">
+        <svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.958 7.958 0 0012 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08A5.99 5.99 0 0112 18c-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/></svg>
+      </button>
+      <button id="btn-touch-pan-r" class="touch-btn" aria-label="Pan Right" title="Quay Phải">
+        <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      </button>
+    </div>
+
+    <!-- Bottom Hint -->
+    <div id="bottom-hint" data-i18n="bottomHint">
+      Chuột Trái: Bắn | Chuột Phải / Phím Cách / R: Nạp Đạn | Rê chuột sang 2 mép: Cuộn màn hình | ESC / P: Tạm dừng
+    </div>
+
+    <!-- Modal: Highscores -->
+    <div id="modal-highscores" class="modal-overlay">
+      <div class="modal-box">
+        <h2 class="modal-title" data-i18n="highscoresTitle">BẢNG XẾP HẠNG THỢ SĂN</h2>
+        <div class="modal-content">
+          <table class="highscore-table">
+            <thead>
+              <tr>
+                <th data-i18n="rankCol">Hạng</th>
+                <th data-i18n="hunterCol">Thợ Săn</th>
+                <th data-i18n="scoreCol">Điểm</th>
+                <th data-i18n="accCol">Độ Chuẩn</th>
+                <th data-i18n="hitsCol">Gà Bắn Trúng</th>
+              </tr>
+            </thead>
+            <tbody id="highscore-body">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+        <button id="btn-close-highscores" class="modal-close-btn" data-i18n="closeBtn">ĐÓNG</button>
+      </div>
+    </div>
+
+    <!-- Modal: Enter Highscore Name -->
+    <div id="modal-name-input" class="modal-overlay">
+      <div class="modal-box">
+        <h2 class="modal-title" data-i18n="newRecordTitle">KỶ LỤC MỚI!</h2>
+        <p style="font-size: 18px; color: #ffd659; margin-bottom: 12px;" id="new-record-score-text">
+          Bạn đạt được 0 Điểm!
+        </p>
+        <p data-i18n="enterNamePrompt">Hãy nhập tên của bạn vào Bảng Vinh Danh Thợ Săn:</p>
+        <div id="name-input-container">
+          <input type="text" id="player-name-input" maxlength="12" placeholder="TÊN BẠN" data-i18n-placeholder="namePlaceholder" autofocus autocomplete="off">
+        </div>
+        <button id="btn-submit-score" class="modal-close-btn" data-i18n="saveRecordBtn" style="background: linear-gradient(to bottom, #2b8a3e, #184e23);">
+          LƯU KỶ LỤC
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal: Help / Instructions -->
+    <div id="modal-help" class="modal-overlay">
+      <div class="modal-box">
+        <h2 class="modal-title" data-i18n="helpTitle">HƯỚNG DẪN & BÍ MẬT</h2>
+        <div class="modal-content">
+          <h3 data-i18n="helpGoalTitle">MỤC TIÊU</h3>
+          <p data-i18n-html="helpGoalDesc">Bạn có <strong>90 giây</strong> (1 phút 30 giây) để săn được càng nhiều gà Moorhuhn càng tốt và lập kỷ lục điểm cao!</p>
+          
+          <h3 data-i18n="helpControlsTitle">ĐIỀU KHIỂN</h3>
+          <ul>
+            <li data-i18n-html="helpControls1"><strong>Chuột Trái (Left Click):</strong> Bắn súng săn.</li>
+            <li data-i18n-html="helpControls2"><strong>Chuột Phải / Phím Cách (Space) / R:</strong> Nạp đầy 8 viên đạn.</li>
+            <li data-i18n-html="helpControls3"><strong>Rê chuột sang mép trái/phải (hoặc phím A/D, Mũi tên):</strong> Xoay góc nhìn toàn cảnh 1920px.</li>
+            <li data-i18n-html="helpControls4"><strong>Phím ESC hoặc P:</strong> Tạm dừng trận đấu.</li>
+            <li data-i18n-html="helpControls5"><strong>Phím F:</strong> Bật/Tắt toàn màn hình.</li>
+          </ul>
+
+          <h3 data-i18n="helpScoresTitle">ĐIỂM SỐ TỪNG MỤC TIÊU</h3>
+          <ul>
+            <li data-i18n-html="scoreSmall"><strong>Gà Nhỏ (Bay tít xa):</strong> <span style="color:#69db7c; font-weight:bold;">+25 Điểm</span> (Khó bắn trúng nhất!)</li>
+            <li data-i18n-html="scoreMid"><strong>Gà Vừa (Tầm trung):</strong> <span style="color:#ffd43b; font-weight:bold;">+10 Điểm</span></li>
+            <li data-i18n-html="scoreClose"><strong>Gà Lớn (Bay gần):</strong> <span style="color:#ffa94d; font-weight:bold;">+5 Điểm</span></li>
+            <li data-i18n-html="scoreBig"><strong>Gà Khổng Lồ (Nhô lên sát mặt):</strong> <span style="color:#ff6b6b; font-weight:bold;">+25 Điểm</span> (Xuất hiện bất ngờ trêu bạn)</li>
+            <li data-i18n-html="scoreWindmill"><strong>Gà trên Cánh Cối Xay Gió:</strong> <span style="color:#69db7c; font-weight:bold;">+25 Điểm</span> mỗi con!</li>
+            <li data-i18n-html="scoreScarecrow"><strong>Bắn Bay Mũ Bù Nhìn Rơm:</strong> <span style="color:#69db7c; font-weight:bold;">+25 Điểm</span></li>
+            <li data-i18n-html="scorePeek"><strong>Gà Chui Lỗ Thò Đầu Lên:</strong> <span style="color:#69db7c; font-weight:bold;">+25 Điểm</span></li>
+            <li data-i18n-html="scoreTree"><strong>Cành Cây / Quả Bí Ngô:</strong> <span style="color:#ffd43b; font-weight:bold;">+10 Điểm</span></li>
+            <li data-i18n-html="scorePenalty"><strong>Biển Báo Gỗ / Khinh Khí Cầu:</strong> <span style="color:#ff6b6b; font-weight:bold;">-25 Điểm PHẠT!</span></li>
+          </ul>
+        </div>
+        <button id="btn-close-help" class="modal-close-btn" data-i18n="understoodBtn">ĐÃ HIỂU</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/camera.js"></script>
+  <script src="js/entities.js"></script>
+  <script src="js/highscores.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

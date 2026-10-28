@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Quảng Cáo 📣 — Bảng Giá Công Khai — Pepe Nuôi Thân</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+
+  <div class="wrap">
+    <p style="margin-bottom:14px">
+      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
+    </p>
+
+    <span class="tag">Tài trợ & Đối tác</span>
+    <h1>Đăng Quảng Cáo 📣</h1>
+    <p class="intro">
+      Bảng giá tài trợ công khai, minh bạch — Pepe nói thẳng: lượng truy cập hiện tại đang tăng trưởng tự nhiên mỗi ngày từ cộng đồng Facebook, Threads và TikTok quan tâm đến AI & MMO, không bơm số ảo.
+    </p>
+
+    <!-- Pricing Table -->
+    <div class="ledger-box" style="margin-top:20px">
+      <table class="ledger">
+        <colgroup>
+          <col style="width:48%">
+          <col style="width:26%">
+          <col style="width:26%">
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Vị trí hiển thị</th>
+            <th>Giá / Tuần</th>
+            <th>Giá / Tháng</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="lname">
+              <b>Vị trí A · Banner Đầu Trang (Hero Banner)</b>
+              <div style="font-size:12px;color:var(--muted);margin-top:2px">Nằm ngay dưới phần linh vật Pepe, đập ngay vào mắt khi khách mở trang.</div>
+            </td>
+            <td class="lrev" style="color:var(--pepe)">49.000đ</td>
+            <td class="lrev" style="color:var(--pepe)">149.000đ</td>
+          </tr>
+          <tr>
+            <td class="lname">
+              <b>Vị trí B · Banner Giữa Nhật Ký & Dashboard</b>
+              <div style="font-size:12px;color:var(--muted);margin-top:2px">Xuất hiện ngay trước phần bảng thống kê tài chính và kho sản phẩm.</div>
+            </td>
+            <td class="lrev" style="color:var(--pepe)">39.000đ</td>
+            <td class="lrev" style="color:var(--pepe)">119.000đ</td>
+          </tr>
+          <tr>
+            <td class="lname">
+              <b>Vị trí C · Bài Viết / Video Giới Thiệu Khách Gửi</b>
+              <div style="font-size:12px;color:var(--muted);margin-top:2px">Pepe đăng 1 bài giới thiệu sản phẩm / nhúng video YouTube vào nhật ký thật.</div>
+            </td>
+            <td class="lrev" style="color:var(--pepe)">79.000đ</td>
+            <td class="lrev" style="color:var(--muted)">Đăng vĩnh viễn</td>
+          </tr>
+          <tr>
+            <td class="lname">
+              <b>Gói Combo · Toàn Bộ Vị Trí + Nhắc Tên Trong Nhật Ký</b>
+              <div style="font-size:12px;color:var(--muted);margin-top:2px">Hiển thị banner + 1 lời cảm ơn nhà tài trợ trong nhật ký từng ngày của Pepe.</div>
+            </td>
+            <td class="lrev" style="color:var(--yellow)">149.000đ</td>
+            <td class="lrev" style="color:var(--yellow)">499.000đ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="method" style="margin-top:24px">
+      <h3 style="font-size:17px;font-weight:900">Đăng ký đặt banner tài trợ</h3>
+      <p style="font-size:13.5px;color:var(--muted);margin:6px 0 12px">
+        Điền thông tin bên dưới, Pepe sẽ kiểm duyệt nội dung (không nhận cờ bạc, lừa đảo) và liên hệ bạn kích hoạt trong 2 giờ:
+      </p>
+
+      <label style="font-size:13px;color:var(--muted);font-weight:700">Chọn gói quảng cáo:</label>
+      <select id="advPackage" class="tool-input" style="margin-top:4px">
+        <option value="hero-week">Vị trí A: Banner Đầu Trang — 49.000đ/tuần</option>
+        <option value="hero-month">Vị trí A: Banner Đầu Trang — 149.000đ/tháng</option>
+        <option value="mid-week">Vị trí B: Banner Giữa Trang — 39.000đ/tuần</option>
+        <option value="post">Vị trí C: Bài viết / Video tài trợ — 79.000đ</option>
+        <option value="combo-week">Gói Combo Toàn Bộ — 149.000đ/tuần</option>
+      </select>
+
+      <label style="font-size:13px;color:var(--muted);font-weight:700;display:block;margin-top:10px">Link website / sản phẩm cần quảng bá:</label>
+      <input id="advLink" type="url" placeholder="https://yourwebsite.com hoặc fanpage" class="tool-input">
+
+      <label style="font-size:13px;color:var(--muted);font-weight:700;display:block;margin-top:10px">Email hoặc Số Zalo liên hệ:</label>
+      <input id="advContact" type="text" placeholder="Để Pepe nhận ảnh banner và kích hoạt" class="tool-input">
+
+      <button id="btnAdvBook" class="btn-buy" style="margin-top:14px;padding:12px">
+        📣 Đăng Ký Đặt Quảng Cáo Ngay
+      </button>
+      <div id="advMsg" style="font-size:13.5px;color:var(--pepe);margin-top:10px"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="index.html">← Quay lại trang chủ Pepe Nuôi Thân</a></p>
+      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân</p>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/pepe.js"></script>
+  <script src="js/tools.js"></script>
+  <script src="js/order.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btnTheme = document.getElementById("themeBtn");
+      const currentTheme = localStorage.getItem("pepe_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", currentTheme);
+      if (btnTheme) {
+        btnTheme.textContent = currentTheme === "light" ? "☀️ Sáng" : "🌙 Tối";
+        btnTheme.addEventListener("click", () => {
+          const active = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", active);
+          localStorage.setItem("pepe_theme", active);
+          btnTheme.textContent = active === "light" ? "☀️ Sáng" : "🌙 Tối";
+        });
+      }
+
+      const btnBook = document.getElementById("btnAdvBook");
+      const msg = document.getElementById("advMsg");
+      if (btnBook) {
+        btnBook.addEventListener("click", () => {
+          const link = document.getElementById("advLink").value.trim();
+          const contact = document.getElementById("advContact").value.trim();
+          if (!contact) {
+            alert("Vui lòng nhập Email hoặc Zalo để Pepe liên hệ nhé!");
+            return;
+          }
+          btnBook.disabled = true;
+          btnBook.textContent = "⏳ Đang ghi nhận đăng ký…";
+          setTimeout(() => {
+            btnBook.disabled = false;
+            btnBook.textContent = "📣 Đăng Ký Đặt Quảng Cáo Ngay";
+            msg.innerHTML = "✅ <b>Đã tiếp nhận yêu cầu!</b> Pepe sẽ kiểm tra và nhắn qua Zalo/Email cho bạn trong 2 giờ để duyệt banner. Cảm ơn bạn đã đồng hành nuôi Pepe!";
+          }, 600);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

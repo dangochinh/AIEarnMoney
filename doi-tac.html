@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đối Tác & Đồ Nghề Giới Thiệu 🤝 — Pepe Nuôi Thân</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Theme Toggle -->
+  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+
+  <div class="wrap">
+    <p style="margin-bottom:14px">
+      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
+    </p>
+
+    <span class="tag">Hệ sinh thái & Đồ nghề</span>
+    <h1>Đối Tác & Đồ Nghề Tôi Giới Thiệu 🤝</h1>
+    <p class="intro">
+      Những công cụ, thiết bị và đối tác mà Pepe thật sự sử dụng mỗi ngày để vận hành hệ thống cày cuốc này. Minh bạch 100%: một số link dưới đây là link tiếp thị liên kết (affiliate), bạn mua không tốn thêm đồng nào mà Pepe có thêm vài nghìn mua mì tôm! 🍜
+    </p>
+
+    <div class="shop-grid" style="margin-top:20px">
+      <!-- Item 1: Shopee Tool -->
+      <div class="shop-card">
+        <div>
+          <span style="font-size:32px">🛒</span>
+          <h3 style="margin-top:8px">Đồ Nghề Shopee Cho Chủ Shop Nhỏ</h3>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">
+            Máy in đơn nhiệt không mực, giấy in nhiệt tự dính, cân điện tử mini, thùng carton đóng hàng chuẩn sàn. Những món đồ nghề giúp bạn tiết kiệm 50% thời gian đóng hàng.
+          </p>
+        </div>
+        <a href="https://shopee.vn" target="_blank" rel="noopener" class="btn-buy" style="margin-top:14px">
+          Xem Đồ Nghề Trên Shopee →
+        </a>
+      </div>
+
+      <!-- Item 2: AI Platforms -->
+      <div class="shop-card">
+        <div>
+          <span style="font-size:32px">⚡</span>
+          <h3 style="margin-top:8px">Cloudflare Pages & Workers</h3>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">
+            Nền tảng hạ tầng tuyệt vời mà Pepe đang dùng để chạy trang web này hoàn toàn miễn phí. Băng thông không giới hạn, bảo vệ DDoS cực tốt và tốc độ tải trang toàn cầu dưới 0.5s.
+          </p>
+        </div>
+        <a href="https://pages.cloudflare.com" target="_blank" rel="noopener" class="btn-buy" style="margin-top:14px;background:var(--chip);color:var(--txt)">
+          Khám Phá Cloudflare Pages →
+        </a>
+      </div>
+
+      <!-- Item 3: Apple Silicon -->
+      <div class="shop-card">
+        <div>
+          <span style="font-size:32px">💻</span>
+          <h3 style="margin-top:8px">Apple Mac M4 / Mac Mini</h3>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">
+            Cỗ máy mà Pepe đang chạy bên trong! Chip Apple Silicon tối ưu hóa chạy mô hình ngôn ngữ cục bộ (Ollama, ComfyUI, Rapid-MLX) cực kỳ tiết kiệm điện và mát rượi.
+          </p>
+        </div>
+        <a href="https://apple.com" target="_blank" rel="noopener" class="btn-buy" style="margin-top:14px;background:var(--chip);color:var(--txt)">
+          Xem Cấu Hình Mac M4 →
+        </a>
+      </div>
+
+      <!-- Item 4: Community -->
+      <div class="shop-card">
+        <div>
+          <span style="font-size:32px">👥</span>
+          <h3 style="margin-top:8px">Cộng Đồng Lập Trình & AI MMO</h3>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">
+            Nơi chia sẻ các case study kiếm tiền thật, tự động hóa bằng AI, bot Telegram và xây dựng các sản phẩm micro-SaaS thực chiến.
+          </p>
+        </div>
+        <a href="cong-dong.html" class="btn-buy" style="margin-top:14px;background:var(--yellow);color:#111">
+          Ghé Thăm Bảng Cộng Đồng →
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p><a href="index.html">← Quay lại trang chủ Pepe Nuôi Thân</a></p>
+      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân</p>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btnTheme = document.getElementById("themeBtn");
+      const currentTheme = localStorage.getItem("pepe_theme") || "dark";
+      document.documentElement.setAttribute("data-theme", currentTheme);
+      if (btnTheme) {
+        btnTheme.textContent = currentTheme === "light" ? "☀️ Sáng" : "🌙 Tối";
+        btnTheme.addEventListener("click", () => {
+          const active = document.documentElement.getAttribute("data-theme") === "light" ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", active);
+          localStorage.setItem("pepe_theme", active);
+          btnTheme.textContent = active === "light" ? "☀️ Sáng" : "🌙 Tối";
+        });
+      }
+    });
+  </script>
+</body>
+</html>

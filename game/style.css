@@ -1,0 +1,416 @@
+/* ============================================================
+   MOORHUHN JAGD / CRAZY CHICKEN - AUTHENTIC WEB APP STYLES
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@600;700;800;900&family=Nunito:wght@700;800;900&display=swap');
+
+@font-face {
+  font-family: 'AA_Magnum';
+  src: url('assets/fonts/AA_Magnum.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roose_Sally';
+  src: url('assets/fonts/Roose_Sally.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-dark: #0f1418;
+  --panel-bg: rgba(20, 24, 28, 0.95);
+  --border-gold: #c9933b;
+  --border-wood: #5a3418;
+  --text-gold: #ffd659;
+  --text-cream: #fff4d2;
+  --accent-red: #c92a2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+  color: var(--text-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Language-specific Typography */
+body.lang-vi {
+  font-family: 'Nunito', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 700;
+}
+
+body.lang-en {
+  font-family: 'AA_Magnum', 'Nunito', -apple-system, sans-serif;
+}
+
+body.lang-vi .control-btn,
+body.lang-vi .modal-title,
+body.lang-vi .modal-close-btn,
+body.lang-vi .highscore-table,
+body.lang-vi #player-name-input {
+  font-family: 'Nunito', 'Be Vietnam Pro', sans-serif;
+  font-weight: 800;
+}
+
+body.lang-en .control-btn,
+body.lang-en .modal-title,
+body.lang-en .modal-close-btn,
+body.lang-en .highscore-table,
+body.lang-en #player-name-input {
+  font-family: 'AA_Magnum', sans-serif;
+}
+
+/* Outer Wrapper */
+#game-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1b2631 0%, #080c10 100%);
+}
+
+/* Canvas Container */
+#canvas-container {
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 0 4px var(--border-wood), 0 0 0 6px var(--border-gold);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #000;
+  cursor: none; /* Hide default cursor, game renders custom crosshair */
+}
+
+/* Main Canvas */
+#game-canvas {
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+  background: #000;
+}
+
+#game-canvas.pixelated {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+/* Scanline / CRT Retro Overlay (Toggleable) */
+.crt-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+              radial-gradient(circle at center, transparent 70%, rgba(0, 0, 0, 0.4) 100%);
+  background-size: 100% 4px, 100% 100%;
+  z-index: 10;
+  opacity: 0.35;
+  transition: opacity 0.3s ease;
+}
+
+.crt-overlay.disabled {
+  display: none;
+}
+
+/* Top Bar Controls */
+#top-bar {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  z-index: 20;
+  opacity: 0.95;
+  transition: opacity 0.2s;
+  padding: 0 12px;
+}
+
+#top-bar:hover {
+  opacity: 1;
+}
+
+.control-btn {
+  background: linear-gradient(to bottom, #4a2810, #2b1406);
+  color: var(--text-gold);
+  border: 2px solid var(--border-gold);
+  border-radius: 4px;
+  padding: 6px 14px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.control-btn:hover {
+  background: linear-gradient(to bottom, #6d3a17, #3f1e09);
+  color: #fff;
+  border-color: #ffe082;
+  transform: translateY(-1px);
+}
+
+.control-btn:active {
+  transform: translateY(1px);
+}
+
+/* Language Toggle Button highlight */
+#btn-lang {
+  background: linear-gradient(to bottom, #1d4023, #0d2412);
+  border-color: #51cf66;
+  color: #d3f9d8;
+  font-weight: 800;
+}
+
+#btn-lang:hover {
+  background: linear-gradient(to bottom, #2b6135, #14371b);
+  border-color: #b2f2bb;
+  color: #fff;
+}
+
+/* Quality Toggle Button highlight */
+#btn-quality {
+  background: linear-gradient(to bottom, #1d3557, #102136);
+  border-color: #4dabf7;
+  color: #d0ebff;
+  font-weight: 800;
+}
+
+#btn-quality:hover {
+  background: linear-gradient(to bottom, #2b4c7e, #182e4b);
+  border-color: #a5d8ff;
+  color: #fff;
+}
+
+/* UI Modal Overlays */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box {
+  background: linear-gradient(135deg, #2b180d 0%, #150a04 100%);
+  border: 4px solid var(--border-gold);
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(0, 0, 0, 0.6);
+  padding: 24px 32px;
+  max-width: 580px;
+  width: 90%;
+  color: var(--text-cream);
+  text-align: center;
+  position: relative;
+}
+
+.modal-title {
+  font-size: 26px;
+  color: var(--text-gold);
+  text-shadow: 2px 2px 0 #000, 0 0 10px rgba(255, 214, 89, 0.5);
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.modal-content {
+  font-family: 'Nunito', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  color: var(--text-gold);
+  font-size: 18px;
+  margin: 14px 0 6px 0;
+}
+
+.modal-content ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.modal-content li {
+  margin-bottom: 4px;
+}
+
+.modal-close-btn {
+  background: linear-gradient(to bottom, #c92a2a, #821515);
+  color: #fff;
+  border: 2px solid #ffd659;
+  border-radius: 4px;
+  padding: 8px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.modal-close-btn:hover {
+  background: linear-gradient(to bottom, #e03131, #9c1c1c);
+  border-color: #fff;
+}
+
+/* High Score Table */
+.highscore-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+.highscore-table th {
+  background: rgba(201, 147, 59, 0.2);
+  color: var(--text-gold);
+  padding: 8px;
+  border-bottom: 2px solid var(--border-gold);
+}
+
+.highscore-table td {
+  padding: 7px 8px;
+  border-bottom: 1px solid rgba(201, 147, 59, 0.3);
+  text-align: center;
+}
+
+.highscore-table tr.top-rank {
+  color: #fff;
+  font-weight: bold;
+}
+
+.highscore-table tr.current-player {
+  background: rgba(201, 42, 42, 0.35);
+  color: #ffff80;
+  animation: pulseRow 1s infinite alternate;
+}
+
+@keyframes pulseRow {
+  from { background: rgba(201, 42, 42, 0.25); }
+  to { background: rgba(201, 42, 42, 0.55); }
+}
+
+/* Name Input Box for High Scores */
+#name-input-container {
+  margin: 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#player-name-input {
+  background: #100803;
+  color: #ffff55;
+  border: 2px solid var(--border-gold);
+  border-radius: 4px;
+  padding: 8px 14px;
+  font-size: 20px;
+  text-align: center;
+  width: 240px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+#player-name-input:focus {
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 214, 89, 0.7);
+}
+
+/* Mobile Touch Controls - Sleek Minimalist Icons */
+#touch-controls {
+  display: none;
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 20px;
+  pointer-events: none;
+  z-index: 30;
+}
+
+/* Only display on genuine touch mobile/tablet devices */
+@media (hover: none) and (pointer: coarse) {
+  #touch-controls {
+    display: flex;
+  }
+}
+
+.touch-btn {
+  pointer-events: auto;
+  background: rgba(15, 8, 4, 0.45);
+  border: 1.5px solid rgba(255, 214, 89, 0.4);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: var(--text-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  opacity: 0.7;
+  transition: all 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  touch-action: manipulation;
+}
+
+.touch-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.touch-btn:active {
+  background: rgba(201, 42, 42, 0.7);
+  border-color: #ff6b6b;
+  transform: scale(0.92);
+  opacity: 1;
+}
+
+/* Instructions Bottom Pill */
+#bottom-hint {
+  position: absolute;
+  bottom: 8px;
+  font-size: 12px;
+  color: rgba(255, 244, 210, 0.7);
+  pointer-events: none;
+  text-align: center;
+  padding: 0 10px;
+}
