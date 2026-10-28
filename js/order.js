@@ -193,11 +193,23 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
     amount = 39000;
     code = "DL" + Math.floor(1000 + Math.random() * 9000);
   } else if (productId === "SP04") {
-    title = "Mua Combo 2 Game Mini HTML5 (Chute Sort & Bắn Gà)";
-    amount = 29000;
+    title = "Mua Đại Combo 4 Game (Lô Tô, Đoán Nhạc Karaoke, Bắn Gà, Trái Cây)";
+    amount = 49000;
     code = "GM" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
-    downloadUrl = "products/chute-sort-game-bundle.zip";
+    downloadUrl = "products/loto-online-bundle.zip";
+  } else if (productId === "SP_LOTO") {
+    title = "Mua Bản Quyền Game Lô Tô Online Multiplayer";
+    amount = 39000;
+    code = "LT" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/loto-online-bundle.zip";
+  } else if (productId === "SP_MUSIC") {
+    title = "Mua Bản Quyền Game Đoán Bài Hát & Hát Karaoke Gametime";
+    amount = 39000;
+    code = "MC" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/gametime-karaoke-quiz.zip";
   } else if (productId === "SP07" || productId === "ban-than") {
     title = "BÁN THÂN PEPE — Full Quy Trình & Source Code Tạo Ra Tôi";
     amount = 50000;

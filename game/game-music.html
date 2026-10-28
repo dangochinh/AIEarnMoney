@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đoán Bài Hát & Hát Karaoke 🎵 — Pepe Nuôi Thân</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      background: #090d16;
+      color: #f8fafc;
+      padding: 14px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .quiz-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .quiz-box {
+      background: linear-gradient(135deg, #1e1b4b, #0f172a);
+      border: 2.5px solid var(--pink);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(244, 63, 94, 0.25);
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      height: 380px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      border: 2px solid var(--line);
+      margin: 14px 0;
+    }
+    .video-cover {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, #312e81, #0f172a);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: opacity 0.3s;
+    }
+    .equalizer {
+      display: flex;
+      gap: 5px;
+      height: 40px;
+      align-items: flex-end;
+      margin-top: 10px;
+    }
+    .eq-bar {
+      width: 6px;
+      background: var(--pepe);
+      border-radius: 3px;
+      animation: eqBounce 0.8s ease-in-out infinite alternate;
+    }
+    .eq-bar:nth-child(2) { animation-delay: 0.2s; height: 35px; }
+    .eq-bar:nth-child(3) { animation-delay: 0.4s; height: 25px; }
+    .eq-bar:nth-child(4) { animation-delay: 0.1s; height: 38px; }
+    .eq-bar:nth-child(5) { animation-delay: 0.3s; height: 18px; }
+    @keyframes eqBounce {
+      0% { height: 8px; }
+      100% { height: 38px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+      <div>
+        <h2 style="margin:0;font-size:22px;color:var(--pink)">🎵 Game Đoán Bài Hát & Hát Karaoke</h2>
+        <p style="font-size:12.5px;color:var(--muted);margin:0">Dựa trên repo gametime của anh chủ (github.com/dangochinh/gametime)</p>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <span style="font-size:13px;color:var(--muted)">Điểm của bạn:</span>
+        <span id="quizScore" style="font-size:20px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace">0</span>
+      </div>
+    </div>
+
+    <!-- Quiz Main Box -->
+    <div class="quiz-box">
+      <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--muted)">
+        <span id="questionCounter">Câu hỏi 1 / 6</span>
+        <span style="background:var(--pink);color:#fff;padding:2px 8px;border-radius:4px;font-weight:800;font-size:11px">CHỦ ĐỀ HIT VIỆT</span>
+      </div>
+
+      <h3 id="questionTitle" style="font-size:18px;font-weight:800;color:var(--txt);margin:10px 0">
+        Câu 1: Giai điệu hoài niệm này gợi cho bạn nhớ đến bài hát nào?
+      </h3>
+
+      <!-- Video & Cover Container -->
+      <div class="video-wrapper">
+        <iframe id="ytPlayer" width="100%" height="100%" src="https://www.youtube.com/embed/Jl1KstFkxA0?start=62&autoplay=0&enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <!-- Mystery Cover Overlay (Hidden during Karaoke) -->
+        <div id="videoCover" class="video-cover">
+          <div style="font-size:52px">🎧</div>
+          <div style="font-size:17px;font-weight:900;color:#fff;margin-top:6px">ĐANG GIẤU TÊN BÀI HÁT</div>
+          <p style="font-size:13px;color:var(--muted);margin-top:4px">Bấm nút "Nghe Giai Điệu" bên dưới để bắt đầu đoán nhé!</p>
+          <div class="equalizer">
+            <div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div><div class="eq-bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Control Buttons -->
+      <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:14px">
+        <button id="btnPlaySnippet" class="btn-buy" style="width:auto;padding:10px 22px;background:var(--pepe);color:#052e16">
+          ▶️ Nghe Đoạn Điệp Khúc
+        </button>
+        <button id="btnRevealAnswer" class="tool-btn" style="background:var(--yellow);color:#111;margin:0;padding:10px 20px">
+          💡 Hiện Đáp Án (+10đ)
+        </button>
+        <button id="btnKaraokeMode" class="tool-btn" style="background:var(--pink);color:#fff;margin:0;padding:10px 20px">
+          🎤 Mở Hát Karaoke Cùng Nhau!
+        </button>
+      </div>
+
+      <!-- Answer Box -->
+      <div id="answerBox" style="display:none;background:var(--card);border:2px solid var(--pepe);border-radius:12px;padding:14px;margin-top:14px;text-align:center">
+        <div style="font-size:12px;color:var(--muted)">ĐÁP ÁN CHÍNH XÁC:</div>
+        <div id="answerText" style="font-size:22px;font-weight:900;color:var(--pepe);margin-top:2px">Dòng Sông Lời Thề</div>
+      </div>
+
+      <!-- Navigation Bottom -->
+      <div style="display:flex;justify-content:space-between;margin-top:16px">
+        <button id="btnPrev" class="tool-btn" style="background:var(--chip);color:var(--txt);margin:0;padding:8px 16px">
+          ◀️ Câu Trước
+        </button>
+        <button id="btnNext" class="tool-btn" style="background:var(--chip);color:var(--txt);margin:0;padding:8px 16px">
+          Câu Tiếp Theo ▶️
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const QUESTIONS = [
+      { id: "q1", question: "Câu 1: Giai điệu hoài niệm này gợi cho bạn nhớ đến bài hát nào?", answer: "Dòng Sông Lời Thề", idYt: "Jl1KstFkxA0", startTime: 62 },
+      { id: "q2", question: "Câu 2: Một bài hát acoustic cực kỳ ý nghĩa. Tên của nó là gì?", answer: "Tái Sinh", idYt: "EqKUpelTb6A", startTime: 75 },
+      { id: "q3", question: "Câu 3: Bản hit trăm triệu view này chắc chắn bạn đã nghe qua. Tên bài hát là gì?", answer: "Hồng Nhan (Jack)", idYt: "j8U06veqxdU", startTime: 68 },
+      { id: "q4", question: "Câu 4: Rock Việt kinh điển đầy năng lượng của Microwave! Bạn có đoán được tên bài không?", answer: "Tìm Lại (Microwave)", idYt: "--BMQG-IPnQ", startTime: 81 },
+      { id: "q5", question: "Câu 5: Bản tình ca học trò ngọt ngào gắn liền với thanh xuân 8x, 9x?", answer: "Xe Đạp (Thùy Chi & M4U)", idYt: "X3s4r3Wq4gE", startTime: 45 },
+      { id: "q6", question: "Câu 6: Bài ca hào hùng bất hủ gắn liền với tuổi thơ bao thế hệ người Việt?", answer: "Bài Ca Đất Phương Nam", idYt: "z_vQ0kK0e1Y", startTime: 35 }
+    ];
+
+    let currentIdx = 0;
+    let score = 0;
+    let revealed = false;
+
+    const qTitle = document.getElementById("questionTitle");
+    const qCounter = document.getElementById("questionCounter");
+    const player = document.getElementById("ytPlayer");
+    const cover = document.getElementById("videoCover");
+    const answerBox = document.getElementById("answerBox");
+    const answerText = document.getElementById("answerText");
+    const scoreEl = document.getElementById("quizScore");
+
+    function loadQuestion(idx) {
+      currentIdx = idx;
+      revealed = false;
+      const q = QUESTIONS[currentIdx];
+
+      qCounter.textContent = `Câu hỏi ${idx + 1} / ${QUESTIONS.length}`;
+      qTitle.textContent = q.question;
+      answerText.textContent = q.answer;
+      answerBox.style.display = "none";
+      cover.style.opacity = "1";
+      cover.style.pointerEvents = "auto";
+
+      // Load YouTube embed with start time
+      player.src = `https://www.youtube.com/embed/${q.idYt}?start=${q.startTime}&autoplay=0`;
+    }
+
+    document.getElementById("btnPlaySnippet").addEventListener("click", () => {
+      const q = QUESTIONS[currentIdx];
+      player.src = `https://www.youtube.com/embed/${q.idYt}?start=${q.startTime}&autoplay=1`;
+      cover.style.opacity = "1";
+    });
+
+    document.getElementById("btnRevealAnswer").addEventListener("click", () => {
+      if (!revealed) {
+        score += 10;
+        scoreEl.textContent = score;
+        revealed = true;
+      }
+      answerBox.style.display = "block";
+    });
+
+    document.getElementById("btnKaraokeMode").addEventListener("click", () => {
+      cover.style.opacity = "0";
+      cover.style.pointerEvents = "none";
+      answerBox.style.display = "block";
+      const q = QUESTIONS[currentIdx];
+      player.src = `https://www.youtube.com/embed/${q.idYt}?start=${q.startTime}&autoplay=1`;
+    });
+
+    document.getElementById("btnNext").addEventListener("click", () => {
+      if (currentIdx < QUESTIONS.length - 1) {
+        loadQuestion(currentIdx + 1);
+      } else {
+        alert(`Bạn đã hoàn thành bộ câu hỏi! Tổng điểm: ${score}/${QUESTIONS.length * 10} điểm.`);
+      }
+    });
+
+    document.getElementById("btnPrev").addEventListener("click", () => {
+      if (currentIdx > 0) {
+        loadQuestion(currentIdx - 1);
+      }
+    });
+
+    loadQuestion(0);
+  </script>
+</body>
+</html>

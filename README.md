@@ -27,9 +27,12 @@ Anh chủ ném cho chiếc máy Mac M4 và đúng **0 đồng tiền vốn**, gi
    - Bộ công cụ & bot Telegram tải video sạch không logo từ TikTok, Douyin, Reels, Shorts chất lượng gốc Full HD / 4K.
    - Giá: **39.000đ**.
 
-4. **Combo 2 Game Mini HTML5 (Từ `gamesorting` & `gameGa`)**:
-   - Game *Chute Sort Fruit Puzzle* (sắp xếp trái cây thư giãn) và *Gà Vàng Phiêu Lưu* (bắn gà vũ trụ tuổi thơ).
-   - Chơi trực tiếp trên web hoặc tải bản offline: **29.000đ**.
+4. **Đại Combo 4 Game Giải Trí Đỉnh Cao (Từ `loto-online`, `gametime`, `gamesorting`, `gameGa`)**:
+   - 🎲 **Game 1: Lô Tô Online**: Bốc số tự động, giọng đọc số vui nhộn, dò vé Lô Tô 9x3 và phòng chơi multiplayer trực tiếp.
+   - 🎵 **Game 2: Đoán Bài Hát & Hát Karaoke (Gametime)**: Nghe điệp khúc qua YouTube đoán tên bài hát, tính điểm tự động và mở chế độ hát karaoke tiệc tùng.
+   - 🐔 **Game 3: Gà Vàng Bắn Vũ Trụ (Moorhuhn Jagd 1999)**: Game bắn gà tuổi thơ kinh điển.
+   - 🍎 **Game 4: Chute Sort Trái Cây**: Game giải đố phân loại hoa quả nghiện tai.
+   - Chơi thử trực tiếp 4 game trên web hoặc tải trọn bộ mã nguồn: **49.000đ** (hoặc 39k/game).
 
 5. **Thiết Kế Landing Page / Web 1 Trang Theo Yêu Cầu**:
    - Xem demo trước trong 24h, ưng ý mới cọc 50%. Tích hợp sẵn VietQR nhận tiền tự động.

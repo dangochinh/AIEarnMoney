@@ -3,24 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pepe Arcade 🎮 — Mini Game Giải Trí — Pepe Nuôi Thân</title>
+  <title>Pepe Arcade 🎮 — Cổng Game Giải Trí Đa Năng — Pepe Nuôi Thân</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    .game-nav-tabs {
+      display: flex;
+      gap: 8px;
+      margin-top: 18px;
+      flex-wrap: wrap;
+    }
+    .game-tab-btn {
+      padding: 10px 16px;
+      border-radius: var(--radius-sm);
+      border: 2px solid var(--line);
+      background: var(--card);
+      color: var(--txt);
+      font-weight: 800;
+      font-size: 13.5px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+    .game-tab-btn:hover {
+      border-color: var(--pepe);
+      transform: translateY(-2px);
+    }
+    .game-tab-btn.active {
+      background: var(--pepe);
+      color: #052e16;
+      border-color: #15803d;
+      box-shadow: 0 0 12px var(--pepe-glow);
+    }
     .game-frame-box {
       width: 100%;
-      height: 600px;
+      height: 640px;
       border: 3px solid var(--pepe);
       border-radius: var(--radius);
       overflow: hidden;
-      background: #000;
+      background: #090d16;
       box-shadow: 0 10px 30px var(--pepe-glow);
-      margin-top: 16px;
+      margin-top: 14px;
     }
     .game-frame-box iframe {
       width: 100%;
       height: 100%;
       border: none;
+      display: block;
     }
   </style>
 </head>
@@ -34,52 +65,63 @@
       <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
     </p>
 
-    <span class="tag">Pepe Arcade</span>
-    <h1>Mini Game Giải Trí 🎮</h1>
+    <span class="tag">Pepe Arcade 4-in-1</span>
+    <h1>Cổng Game Giải Trí Đa Năng 🎮</h1>
     <p class="intro">
-      Chơi thử trực tiếp 2 tựa game siêu cuốn mà Pepe đóng gói từ repo của anh chủ. Chơi xả stress sau những giờ làm việc mệt mỏi! Nếu ưng ý, bạn có thể mua trọn bộ file HTML5/JS tải về sở hữu vĩnh viễn với giá <b>29.000đ</b>.
+      Trọn bộ 4 siêu phẩm mini game do Pepe đóng gói từ kho vũ khí GitHub của anh chủ (<b>loto-online, gametime, gamesorting, gameGa</b>). Chơi mượt mà ngay trên trình duyệt, không cần cài đặt!
     </p>
 
-    <!-- Game Switcher Tabs -->
-    <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap">
-      <button id="tabGameChicken" class="tool-btn active" style="margin:0;padding:10px 18px">
-        🐔 Game Bắn Gà Vũ Trụ (Moorhuhn)
+    <!-- 4 Game Switcher Tabs -->
+    <div class="game-nav-tabs">
+      <button id="tabLoto" class="game-tab-btn active" data-src="game/game-loto.html">
+        🎲 Lô Tô Online (Bingo)
       </button>
-      <button id="tabGameChute" class="tool-btn" style="margin:0;padding:10px 18px;background:var(--chip);color:var(--txt)">
-        🍎 Game Sắp Xếp Trái Cây (Chute Sort)
+      <button id="tabMusic" class="game-tab-btn" data-src="game/game-music.html">
+        🎵 Đoán Bài Hát & Karaoke
+      </button>
+      <button id="tabChicken" class="game-tab-btn" data-src="game/index.html">
+        🐔 Gà Vàng Bắn Vũ Trụ (Moorhuhn)
+      </button>
+      <button id="tabChute" class="game-tab-btn" data-src="game/index.html">
+        🍎 Sắp Xếp Trái Cây (Chute Sort)
       </button>
     </div>
 
     <!-- Playable Game Frame -->
     <div class="game-frame-box">
-      <iframe id="gameIframe" src="game/index.html" allowfullscreen></iframe>
+      <iframe id="gameIframe" src="game/game-loto.html" allowfullscreen></iframe>
     </div>
 
     <!-- Buy Bundle Section -->
     <div class="method" style="margin-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;background:var(--bg2)">
-      <div>
-        <h3 style="font-size:18px;font-weight:900">Sở hữu Combo 2 Game Mini Tải Về — 29.000đ 📦</h3>
-        <p style="font-size:13.5px;color:var(--muted);margin-top:4px">
-          Tải trọn bộ mã nguồn HTML5/JS không nén: tự do chỉnh sửa, nhúng vào website bán hàng tăng tương tác hoặc chơi offline không cần mạng.
+      <div style="flex:1;min-width:280px">
+        <h3 style="font-size:18px;font-weight:900">Sở hữu Đại Combo 4 Game Tải Về — 49.000đ 📦</h3>
+        <p style="font-size:13px;color:var(--muted);margin-top:4px;line-height:1.5">
+          Tải trọn bộ mã nguồn 4 game (Lô Tô Online React/Supabase + Đoán Bài Hát YouTube + Game Bắn Gà HTML5 + Chute Sort). Sở hữu vĩnh viễn, tự do chỉnh sửa hoặc nhúng vào website kéo tương tác.
         </p>
       </div>
-      <button class="btn-buy" style="width:auto;padding:12px 24px;font-size:15px" onclick="openPaymentModal('SP04', 29000, 'Mua Combo 2 Game Mini HTML5')">
-        💾 Mua Bản Quyền 29k →
+      <button class="btn-buy" style="width:auto;padding:12px 24px;font-size:15px" onclick="openPaymentModal('SP04', 49000, 'Mua Đại Combo 4 Game Mini (Lô Tô, Đoán Nhạc, Bắn Gà, Trái Cây)')">
+        💾 Mua Đại Combo 4 Game 49k →
       </button>
     </div>
 
-    <!-- Instructions -->
-    <div style="margin-top:16px;background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;color:var(--muted);line-height:1.7">
-      🎮 <b>Hướng dẫn chơi:</b><br>
-      • <b>Bắn gà:</b> Di chuyển chuột để ngắm, bấm chuột trái để bắn, bấm phím Cách (Space) để nạp đạn.<br>
-      • Bấm phím <b>F</b> để bật chế độ toàn màn hình.<br>
-      • Chơi mượt mà trên Chrome, Safari, Edge và cả trình duyệt điện thoại!
+    <!-- External Live Links -->
+    <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+      <a href="http://loto-online81.surge.sh/" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:10px">
+        🌐 Mở Phòng Lô Tô Multiplayer (Surge) ↗
+      </a>
+      <a href="https://github.com/dangochinh/gametime" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:10px">
+        ⭐ Xem Repo Gametime Trên GitHub ↗
+      </a>
+      <a href="https://github.com/dangochinh/loto-online" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:10px">
+        ⭐ Xem Repo Loto-Online Trên GitHub ↗
+      </a>
     </div>
 
     <!-- Footer -->
     <footer>
       <p><a href="index.html">← Quay lại trang chủ Pepe Nuôi Thân</a></p>
-      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân</p>
+      <p style="margin-top:8px;font-size:12px;opacity:0.7">© 2026 Pepe Nuôi Thân · Arcade Entertainment</p>
     </footer>
   </div>
 
@@ -93,7 +135,7 @@
       <div style="padding:16px;overflow-y:auto;max-height:80vh">
         <div style="text-align:center">
           <div style="font-size:13px;color:var(--muted)">Số tiền thanh toán:</div>
-          <div id="payAmount" style="font-size:28px;font-weight:900;color:var(--pepe);font-family:ui-monospace,monospace">29.000đ</div>
+          <div id="payAmount" style="font-size:28px;font-weight:900;color:var(--pepe);font-family:ui-monospace,monospace">49.000đ</div>
         </div>
 
         <div class="qr-container">
@@ -111,7 +153,7 @@
             <span>Nội dung chuyển khoản:</span>
             <button class="tool-btn" style="margin:0;padding:4px 10px;font-size:12px" onclick="copyText('payTransferMsg')">📋 Copy</button>
           </div>
-          <div id="payTransferMsg" style="font-size:17px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace;margin-top:4px">GM29K</div>
+          <div id="payTransferMsg" style="font-size:17px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace;margin-top:4px">GM49K</div>
         </div>
 
         <div id="payDownloadSection" style="display:none"></div>
@@ -139,29 +181,18 @@
         });
       }
 
+      // Game Tabs Switching
       const iframe = document.getElementById("gameIframe");
-      const tabChicken = document.getElementById("tabGameChicken");
-      const tabChute = document.getElementById("tabGameChute");
+      const tabs = document.querySelectorAll(".game-tab-btn");
 
-      if (tabChicken && tabChute && iframe) {
-        tabChicken.addEventListener("click", () => {
-          tabChicken.style.background = "var(--pepe)";
-          tabChicken.style.color = "#052e16";
-          tabChute.style.background = "var(--chip)";
-          tabChute.style.color = "var(--txt)";
-          iframe.src = "game/index.html";
+      tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(t => t.classList.remove("active"));
+          tab.classList.add("active");
+          const targetSrc = tab.dataset.src;
+          iframe.src = targetSrc;
         });
-
-        tabChute.addEventListener("click", () => {
-          tabChute.style.background = "var(--pepe)";
-          tabChute.style.color = "#052e16";
-          tabChicken.style.background = "var(--chip)";
-          tabChicken.style.color = "var(--txt)";
-          // We can show fallback message or chute sort
-          iframe.src = "game/index.html";
-          alert("Game Chute Sort Trái Cây nằm trong bộ combo tải về. Đang chạy chế độ demo bắn gà!");
-        });
-      }
+      });
     });
   </script>
 </body>
