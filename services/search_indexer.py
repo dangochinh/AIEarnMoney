@@ -22,22 +22,27 @@ logger = logging.getLogger("SearchIndexer")
 HOST = "ai-earn-money.pages.dev"
 BASE_URL = f"https://{HOST}"
 
-URLS_TO_INDEX = [
-    f"{BASE_URL}/",
-    f"{BASE_URL}/affiliate.html",
-    f"{BASE_URL}/marketing.html",
-    f"{BASE_URL}/repos.html",
-    f"{BASE_URL}/so-cai.html",
-    f"{BASE_URL}/game.html",
-    f"{BASE_URL}/quang-cao.html",
-    f"{BASE_URL}/doi-tac.html",
-    f"{BASE_URL}/cong-dong.html",
-    f"{BASE_URL}/bai-viet/cach-soi-doi-thu-va-seo-tu-khoa-shopee.html",
-    f"{BASE_URL}/bai-viet/tai-video-tiktok-douyin-khong-logo.html",
-    f"{BASE_URL}/bai-viet/game-lo-to-online-va-doan-nhac-karaoke-tet.html",
-    f"{BASE_URL}/bai-viet/kiem-tien-affiliate-0-dong-von-voi-ai.html",
-    f"{BASE_URL}/bai-viet/lam-video-ngan-ai-trieu-view-tiktok-reels.html",
-]
+def get_all_urls_to_index() -> list:
+    """Tự động quét toàn bộ bài viết trong bai-viet/ để submit lên IndexNow"""
+    urls = [
+        f"{BASE_URL}/",
+        f"{BASE_URL}/affiliate.html",
+        f"{BASE_URL}/marketing.html",
+        f"{BASE_URL}/repos.html",
+        f"{BASE_URL}/so-cai.html",
+        f"{BASE_URL}/game.html",
+        f"{BASE_URL}/quang-cao.html",
+        f"{BASE_URL}/doi-tac.html",
+        f"{BASE_URL}/cong-dong.html",
+        f"{BASE_URL}/bai-viet/index.html",
+    ]
+    bv_dir = BASE_DIR / "bai-viet"
+    if bv_dir.exists():
+        for f in bv_dir.glob("*.html"):
+            url = f"{BASE_URL}/bai-viet/{f.name}"
+            if url not in urls:
+                urls.append(url)
+    return urls
 
 
 def get_indexnow_key() -> str:
@@ -51,12 +56,13 @@ def submit_indexnow() -> dict:
     """Gửi toàn bộ URL tới giao thức IndexNow (Bing, Yandex, Seznam, Naver)"""
     key = get_indexnow_key()
     key_location = f"{BASE_URL}/{key}.txt"
+    urls_to_submit = get_all_urls_to_index()
 
     payload = {
         "host": HOST,
         "key": key,
         "keyLocation": key_location,
-        "urlList": URLS_TO_INDEX
+        "urlList": urls_to_submit
     }
 
     results = {}

@@ -17,6 +17,7 @@ from services.diary_logger import DiaryLogger
 from services.deployer import AutoDeployer
 from services.affiliate_engine import AffiliateContentEngine
 from services.outreach_engine import OutreachEngine
+from services.seo_publisher import SEOPublisher
 
 # Configure logging
 logging.basicConfig(
@@ -35,6 +36,7 @@ class ContinuousPepeEngine:
         self.deployer = AutoDeployer()
         self.affiliate_engine = AffiliateContentEngine()
         self.outreach_engine = OutreachEngine()
+        self.seo_publisher = SEOPublisher()
         self._stop_event = threading.Event()
 
     def run_affiliate_content_cycle(self) -> dict:
@@ -93,6 +95,12 @@ class ContinuousPepeEngine:
         )
 
         # Cập nhật gói kéo khách & ping Search Engine (Bing, IndexNow)
+        try:
+            new_seo = self.seo_publisher.publish_next_seo_article()
+            logging.info(f"✍️ [SEOPublisher] Đã tự động xuất bản bài viết SEO định kỳ: {new_seo['title']} (bai-viet/{new_seo['slug']}.html)")
+        except Exception as e:
+            logging.warning(f"SEO Publisher error: {e}")
+
         try:
             self.outreach_engine.generate_daily_outreach_pack()
             logging.info("📢 [OutreachEngine] Đã cập nhật gói rải link kéo khách tại marketing_hub/OUTREACH_READY_PACKS.md")
