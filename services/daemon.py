@@ -125,7 +125,7 @@ def cmd_status():
 
     print(f"📁 Thư mục gốc: {BASE_DIR}")
     print(f"📄 File nhật ký log: {LOG_FILE}")
-    print(f"⚡ Vòng lặp: Quét Freelance (mỗi 5p) · Tech Research (mỗi 15p)")
+    print(f"⚡ Vòng lặp: Săn kèo Affiliate & Content Viral (mỗi 5p) · Sản phẩm số & Research (mỗi 15p)")
 
     if LOG_FILE.exists():
         print("\n📜 10 DÒNG NHẬT KÝ HOẠT ĐỘNG GẦN NHẤT:")
