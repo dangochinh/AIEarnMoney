@@ -16,6 +16,7 @@ from services.product_engine import ProductEngine
 from services.diary_logger import DiaryLogger
 from services.deployer import AutoDeployer
 from services.affiliate_engine import AffiliateContentEngine
+from services.outreach_engine import OutreachEngine
 
 # Configure logging
 logging.basicConfig(
@@ -33,6 +34,7 @@ class ContinuousPepeEngine:
         self.diary_logger = DiaryLogger()
         self.deployer = AutoDeployer()
         self.affiliate_engine = AffiliateContentEngine()
+        self.outreach_engine = OutreachEngine()
         self._stop_event = threading.Event()
 
     def run_affiliate_content_cycle(self) -> dict:
@@ -89,6 +91,21 @@ class ContinuousPepeEngine:
         dep = self.deployer.commit_and_deploy(
             note=f"Pepe nghiên cứu {topic['name']} & đẩy mạnh sản phẩm số {rand_prod['name']}"
         )
+
+        # Cập nhật gói kéo khách & ping Search Engine (Bing, IndexNow)
+        try:
+            self.outreach_engine.generate_daily_outreach_pack()
+            logging.info("📢 [OutreachEngine] Đã cập nhật gói rải link kéo khách tại marketing_hub/OUTREACH_READY_PACKS.md")
+        except Exception as e:
+            logging.warning(f"Outreach generation error: {e}")
+
+        try:
+            from services.search_indexer import submit_indexnow
+            submit_indexnow()
+            logging.info("🌐 [SearchIndexer] Đã submit URL tới IndexNow (Bing/Yandex/Naver)")
+        except Exception as e:
+            logging.warning(f"IndexNow error: {e}")
+
         return {
             "topic": topic["name"],
             "seo_pack": seo_file.name,
