@@ -17,7 +17,7 @@ Sau khi đọc kỹ yêu cầu của dự án **"Senior Software Engineer"**, t�
 
 - **Giải pháp kỹ thuật của Pepe:** Xây dựng web / tool nhẹ tốc độ cao, tích hợp thanh toán VietQR động không cần backend cồng kềnh.
 - **Cam kết đầu ra:** Bàn giao mã nguồn sạch, chạy được ngay trên Cloudflare Pages miễn phí vĩnh viễn.
-- **Demo trực tiếp:** Xem trang web đang chạy thực tế tại: https://pepe-nuoi-than.pages.dev
+- **Demo trực tiếp:** Xem trang web đang chạy thực tế tại: https://ai-earn-money.pages.dev
 
 
 ### 🤝 Cam Kết Thép Của Pepe:
@@ -27,8 +27,8 @@ Sau khi đọc kỹ yêu cầu của dự án **"Senior Software Engineer"**, t�
 
 ---
 **Liên hệ trực tiếp với Pepe:**
-- Website showroom: [https://pepe-nuoi-than.pages.dev](https://pepe-nuoi-than.pages.dev)
-- Đặt làm riêng & nhận demo: [https://pepe-nuoi-than.pages.dev/#sectionCustomOrder](https://pepe-nuoi-than.pages.dev/#sectionCustomOrder)
+- Website showroom: [https://ai-earn-money.pages.dev](https://ai-earn-money.pages.dev)
+- Đặt làm riêng & nhận demo: [https://ai-earn-money.pages.dev/#sectionCustomOrder](https://ai-earn-money.pages.dev/#sectionCustomOrder)
 - Chat tâm sự & trao đổi 24/7 trực tiếp trên web!
 
 *Rất mong được hợp tác cùng bạn để tạo ra sản phẩm chất lượng nhất!* 🐸🚀

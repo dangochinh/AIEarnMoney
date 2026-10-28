@@ -151,7 +151,7 @@ class FreelanceJobHunter:
                 "platform": "vLance / Facebook MMO",
                 "title": "Cần tuyển freelancer cào dữ liệu sản phẩm Shopee & TikTok Shop xuất file Excel",
                 "company": "Chủ shop Thời trang Hà Nội",
-                "url": "https://pepe-nuoi-than.pages.dev/ban-than",
+                "url": "https://ai-earn-money.pages.dev/ban-than",
                 "budget": "1.500.000đ - 2.500.000đ",
                 "tags": ["python", "cào dữ liệu", "shopee", "excel"],
                 "category": "web_scraping",
@@ -163,7 +163,7 @@ class FreelanceJobHunter:
                 "platform": "TopCV Freelance",
                 "title": "Sản xuất video ngắn 60s bằng AI chủ đề tài chính & kiến thức kinh doanh",
                 "company": "Kênh TikTok Tài Chính 100k Follower",
-                "url": "https://pepe-nuoi-than.pages.dev/#sectionVideoAI",
+                "url": "https://ai-earn-money.pages.dev/#sectionVideoAI",
                 "budget": "150.000đ - 300.000đ / video",
                 "tags": ["video ai", "tiktok", "reels", "tts lồng tiếng"],
                 "category": "video_production",
@@ -175,7 +175,7 @@ class FreelanceJobHunter:
                 "platform": "Cộng đồng Shopee Seller",
                 "title": "Tối ưu hóa tiêu đề và mô tả 100 sản phẩm chuẩn SEO Shopee kéo traffic tự nhiên",
                 "company": "Xưởng Gia Dụng Gia Lai",
-                "url": "https://pepe-nuoi-than.pages.dev/#sectionShopeeTool",
+                "url": "https://ai-earn-money.pages.dev/#sectionShopeeTool",
                 "budget": "1.000.000đ / gian hàng",
                 "tags": ["shopee seo", "mô tả sản phẩm", "hashtag", "bán hàng"],
                 "category": "ecommerce_seo",
@@ -215,19 +215,19 @@ class FreelanceJobHunter:
             solution_pitch = """
 - **Giải pháp kỹ thuật của Pepe:** Quy trình sản xuất video AI 60s tự động từ `PePeApp` chạy trên chip Apple M4: Kịch bản giật gân, hình ảnh AI ComfyUI 8K, lồng tiếng TTS tiếng Việt truyền cảm, phụ đề từng từ chuẩn phong cách TikTok/Reels.
 - **Cam kết đầu ra:** Video hoàn chỉnh Full HD 1080x1920 không bản quyền âm thanh, sẵn sàng đăng ngay.
-- **Demo miễn phí:** Xem ngay mẫu video tài chính và sản phẩm đã tạo tại showroom: https://pepe-nuoi-than.pages.dev/#sectionVideoAI
+- **Demo miễn phí:** Xem ngay mẫu video tài chính và sản phẩm đã tạo tại showroom: https://ai-earn-money.pages.dev/#sectionVideoAI
 """
         elif category == "ecommerce_seo":
             solution_pitch = """
 - **Giải pháp kỹ thuật của Pepe:** Ứng dụng Extension `SellerBrain` chuyên phân tích chỉ số Shopee & TikTok Shop.
 - **Cam kết đầu ra:** Mỗi sản phẩm được sinh 3 tiêu đề chuẩn SEO theo công thức bán chạy + 15 hashtag trending + mô tả chuẩn cấu trúc 3 phần chốt đơn tự động.
-- **Dùng thử trực tiếp:** Mời bạn trải nghiệm miễn phí công cụ SEO trực tiếp ngay trên web của Pepe: https://pepe-nuoi-than.pages.dev/#sectionShopeeTool
+- **Dùng thử trực tiếp:** Mời bạn trải nghiệm miễn phí công cụ SEO trực tiếp ngay trên web của Pepe: https://ai-earn-money.pages.dev/#sectionShopeeTool
 """
         else:
             solution_pitch = """
 - **Giải pháp kỹ thuật của Pepe:** Xây dựng web / tool nhẹ tốc độ cao, tích hợp thanh toán VietQR động không cần backend cồng kềnh.
 - **Cam kết đầu ra:** Bàn giao mã nguồn sạch, chạy được ngay trên Cloudflare Pages miễn phí vĩnh viễn.
-- **Demo trực tiếp:** Xem trang web đang chạy thực tế tại: https://pepe-nuoi-than.pages.dev
+- **Demo trực tiếp:** Xem trang web đang chạy thực tế tại: https://ai-earn-money.pages.dev
 """
 
         proposal_content = f"""# 💼 PROPOSAL CHÀO HÀNG TỰ ĐỘNG — PEPE NUÔI THÂN
@@ -255,8 +255,8 @@ Sau khi đọc kỹ yêu cầu của dự án **"{title}"**, tôi tự tin 100% 
 
 ---
 **Liên hệ trực tiếp với Pepe:**
-- Website showroom: [https://pepe-nuoi-than.pages.dev](https://pepe-nuoi-than.pages.dev)
-- Đặt làm riêng & nhận demo: [https://pepe-nuoi-than.pages.dev/#sectionCustomOrder](https://pepe-nuoi-than.pages.dev/#sectionCustomOrder)
+- Website showroom: [https://ai-earn-money.pages.dev](https://ai-earn-money.pages.dev)
+- Đặt làm riêng & nhận demo: [https://ai-earn-money.pages.dev/#sectionCustomOrder](https://ai-earn-money.pages.dev/#sectionCustomOrder)
 - Chat tâm sự & trao đổi 24/7 trực tiếp trên web!
 
 *Rất mong được hợp tác cùng bạn để tạo ra sản phẩm chất lượng nhất!* 🐸🚀

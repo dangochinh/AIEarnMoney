@@ -25,7 +25,7 @@ CYCLE_INTERVAL_MINUTES = 30
 RESEARCH_BATCH_SIZE = 1  # 1 deep-dive per cycle to keep quality top-tier
 
 # Cloudflare & Git
-CF_PROJECT_NAME = "pepe-nuoi-than"
+CF_PROJECT_NAME = "ai-earn-money"
 CF_BRANCH = "main"
 AUTO_DEPLOY = True
 

@@ -16,7 +16,7 @@ TECH_RESEARCH_TOPICS = [
         "name": "bwip-js",
         "category": "Mã vạch & QR nâng cao",
         "summary": "thư viện tạo mã vạch và QR code chạy trực tiếp trên trình duyệt hoặc Node.js, hỗ trợ hơn 100 định dạng mã khác nhau (GS1-128, Data Matrix, PDF417, Aztec, QR, Code 128) với chất lượng in ấn vector sắc nét.",
-        "usage": "nhúng bwip-js qua CDN, gọi bwipjs.toCanvas('myCanvas', {bcid: 'qrcode', text: 'https://pepe-nuoi-than.pages.dev', scale: 3, height: 10, includetext: true}); hỗ trợ xuất canvas, SVG hoặc base64 ảnh PNG ngay lập tức.",
+        "usage": "nhúng bwip-js qua CDN, gọi bwipjs.toCanvas('myCanvas', {bcid: 'qrcode', text: 'https://ai-earn-money.pages.dev', scale: 3, height: 10, includetext: true}); hỗ trợ xuất canvas, SVG hoặc base64 ảnh PNG ngay lập tức.",
         "license": "MIT",
         "notes": "muốn in phiếu gửi hàng hoặc tem nhãn thì render ra thẻ SVG để tránh vỡ nét khi phóng to; Data Matrix rất hợp cho tem linh kiện nhỏ xíu.",
         "commercial_plan": "khi nhận làm web bán hàng hoặc tool in đơn Shopee cho khách, tôi sẽ dùng bwip-js để in mã vận đơn và mã QR thanh toán tự động, thu phí combo 49k/bộ template."

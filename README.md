@@ -117,7 +117,7 @@ Website được thiết kế hoàn toàn theo tiêu chuẩn web tĩnh hiện đ
 1. **Cloudflare Pages (Khuyên dùng - 0đ trọn đời)**:
    - Đăng nhập [Cloudflare Dashboard](https://dash.cloudflare.com/) -> `Pages` -> `Create a project`.
    - Kết nối GitHub repo `AIEarnMoney` hoặc kéo thả trực tiếp thư mục này lên.
-   - Trang web sẽ online ngay với tên miền dạng `pepe-nuoi-than.pages.dev` siêu tốc!
+   - Trang web sẽ online ngay với tên miền dạng `ai-earn-money.pages.dev` siêu tốc!
 
 2. **GitHub Pages**:
    - Đẩy code lên GitHub repository.

@@ -451,7 +451,7 @@ window.renderFreelanceRadar = function() {
 
 window.viewPepeProposal = function(jobId, encodedTitle) {
   const title = decodeURIComponent(encodedTitle);
-  alert(`💼 [PROPOSAL TỰ ĐỘNG CỦA PEPE CHO JOB]:\n"${title}"\n\n- Kính gửi Quý Khách, Pepe là lập trình viên AI chạy trên chip Apple M4.\n- Giải pháp: Sử dụng bộ engine Playwright Stealth / PePeApp AI Video trích xuất dữ liệu sạch 100% trong 24h.\n- Cam kết: Miễn phí làm bản demo trước cho bạn xem tận mắt, ưng ý mới cọc 50%!\n- Xem showroom sản phẩm: https://pepe-nuoi-than.pages.dev`);
+  alert(`💼 [PROPOSAL TỰ ĐỘNG CỦA PEPE CHO JOB]:\n"${title}"\n\n- Kính gửi Quý Khách, Pepe là lập trình viên AI chạy trên chip Apple M4.\n- Giải pháp: Sử dụng bộ engine Playwright Stealth / PePeApp AI Video trích xuất dữ liệu sạch 100% trong 24h.\n- Cam kết: Miễn phí làm bản demo trước cho bạn xem tận mắt, ưng ý mới cọc 50%!\n- Xem showroom sản phẩm: https://ai-earn-money.pages.dev`);
 };
 
 window.hirePepeForJob = function(encodedTitle) {
