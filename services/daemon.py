@@ -9,8 +9,8 @@ import time
 import signal
 import subprocess
 from pathlib import Path
-from services.config import BASE_DIR, PID_FILE, LOG_FILE, CYCLE_INTERVAL_MINUTES
-from services.scheduler import PepeAutonomousService
+from services.config import BASE_DIR, PID_FILE, LOG_FILE
+from services.scheduler import ContinuousPepeEngine
 
 LAUNCHAGENT_PLIST = Path.home() / "Library" / "LaunchAgents" / "com.pepe.nuoithan.plist"
 PYTHON_BIN = BASE_DIR / ".venv" / "bin" / "python3"
@@ -39,20 +39,22 @@ def get_running_pid():
 
 
 def cmd_run_once():
-    """Chạy ngay lập tức 1 chu trình nghiên cứu, sinh sản phẩm và cập nhật."""
-    print("🐸 [Pepe Daemon] Đang thực hiện 1 chu kỳ cày cuốc ngay lập tức...")
-    service = PepeAutonomousService()
-    res = service.run_single_cycle()
-    print("\n🎉 KẾT QUẢ CHU TRÌNH:")
-    print(f"• Công nghệ nghiên cứu : {res.get('tech_topic')}")
-    print(f"• Bộ Shopee SEO tạo ra : {res.get('seo_pack')}")
-    print(f"• Kịch bản Video 60s   : {res.get('video_script')}")
-    print(f"• Số dòng nhật ký thêm : {res.get('diary_lines_added')}")
-    dep = res.get("deploy_status", {})
-    print(f"• Git Commit           : {dep.get('git_commit')}")
-    print(f"• Cloudflare Pages     : {'ĐÃ CẬP NHẬT TRỰC TUYẾN 🚀' if dep.get('cf_deployed') else dep.get('error')}")
-    if dep.get("url"):
-        print(f"• Link Web Trực Tiếp   : {dep.get('url')}")
+    """Chạy ngay lập tức 1 chu trình quét freelance và nghiên cứu công nghệ."""
+    print("🐸 [Pepe Engine] Đang chạy chu trình quét việc freelance và nghiên cứu...")
+    engine = ContinuousPepeEngine()
+    print("\n1. Đang quét các sàn Freelance (RemoteOK, WeWorkRemotely, Vietnam Freelance)...")
+    jobs = engine.run_freelance_cycle()
+    print(f"   -> Đã quét và soạn {len(jobs)} Proposal mới cho các job phù hợp!")
+    for j in jobs:
+        print(f"      • {j['title']} | Ngân sách: {j['budget']} | Nền tảng: {j['platform']}")
+
+    print("\n2. Đang nghiên cứu công nghệ và đóng gói sản phẩm số...")
+    res = engine.run_tech_research_cycle()
+    print(f"   -> Đã nghiên cứu: {res.get('topic')}")
+    print(f"   -> Đã tạo SEO pack: {res.get('seo_pack')}")
+    print(f"   -> Đã tạo video script: {res.get('video_script')}")
+    dep = res.get("deploy", {})
+    print(f"   -> Cloudflare Pages: {'ĐÃ CẬP NHẬT TRỰC TUYẾN 🚀' if dep.get('cf_deployed') else dep.get('error')}")
 
 
 def cmd_start():
@@ -62,7 +64,7 @@ def cmd_start():
         print(f"⚠️ Pepe Daemon đang chạy rồi (PID: {existing_pid}).")
         return
 
-    print("🚀 Đang khởi động Pepe Autonomous Daemon trong background...")
+    print("🚀 Đang khởi động Pepe Continuous Daemon (Chạy liên tục không idle)...")
     log_out = open(LOG_FILE, "a")
     proc = subprocess.Popen(
         [str(PYTHON_BIN), "-m", "services.daemon", "_worker"],
@@ -79,7 +81,7 @@ def cmd_start():
     if is_running(proc.pid):
         print(f"✅ Pepe Daemon đã khởi động thành công với PID: {proc.pid}")
         print(f"📄 Theo dõi logs tại: {LOG_FILE}")
-        print(f"⏱️ Chu kỳ tự chạy: Mỗi {CYCLE_INTERVAL_MINUTES} phút một lần.")
+        print(f"⚡ Vòng lặp: Quét freelance mỗi 5 phút · Nghiên cứu & tạo sản phẩm mỗi 15 phút.")
     else:
         print("❌ Khởi động thất bại. Kiểm tra file log để biết thêm chi tiết.")
 
@@ -114,13 +116,13 @@ def cmd_status():
     print("🐸 PEPE NUÔI THÂN — TRẠNG THÁI TIẾN TRÌNH AUTONOMOUS")
     print("==================================================")
     if pid:
-        print(f"🟢 Trạng thái : ĐANG CHẠY NGẦM (PID: {pid})")
+        print(f"🟢 Trạng thái : ĐANG CHẠY LIÊN TỤC KHÔNG IDLE (PID: {pid})")
     else:
         print("🔴 Trạng thái : ĐANG TẮT")
 
     print(f"📁 Thư mục gốc: {BASE_DIR}")
     print(f"📄 File nhật ký log: {LOG_FILE}")
-    print(f"⏱️ Chu kỳ định kỳ: Mỗi {CYCLE_INTERVAL_MINUTES} phút")
+    print(f"⚡ Vòng lặp: Quét Freelance (mỗi 5p) · Tech Research (mỗi 15p)")
 
     if LOG_FILE.exists():
         print("\n📜 10 DÒNG NHẬT KÝ HOẠT ĐỘNG GẦN NHẤT:")
@@ -183,14 +185,14 @@ def cmd_uninstall_service():
 
 def main():
     if len(sys.argv) < 2:
-        print("Cách sử dụng: python3 -m services.daemon [command]")
+        print("Cách sử dụng: ./pepe.sh [command]")
         print("Lệnh khả dụng:")
-        print("  run-once          : Chạy ngay 1 chu kỳ research -> tạo sản phẩm -> ghi nhật ký -> deploy")
-        print("  start             : Khởi động tiến trình chạy ngầm (Daemon)")
-        print("  stop              : Dừng tiến trình chạy ngầm")
-        print("  status            : Xem trạng thái và nhật ký log gần nhất")
-        print("  install-service   : Cài đặt dịch vụ chạy tự động cùng macOS (LaunchAgent 24/7)")
-        print("  uninstall-service : Gỡ bỏ dịch vụ tự động khỏi macOS")
+        print("  run-once          : Chạy ngay 1 chu kỳ quét freelance + tạo sản phẩm + deploy")
+        print("  start             : Khởi động daemon chạy liên tục không idle")
+        print("  stop              : Dừng daemon đang chạy")
+        print("  status            : Xem trạng thái và logs")
+        print("  logs              : Theo dõi logs trực tiếp")
+        print("  install-service   : Tự động chạy cùng macOS 24/7 (LaunchAgent)")
         return
 
     cmd = sys.argv[1].lower()
@@ -208,8 +210,8 @@ def main():
     elif cmd == "uninstall-service":
         cmd_uninstall_service()
     elif cmd == "_worker":
-        service = PepeAutonomousService()
-        service.start_loop(CYCLE_INTERVAL_MINUTES)
+        engine = ContinuousPepeEngine()
+        engine.start_nonstop_engine()
     else:
         print(f"Lệnh không hợp lệ: {cmd}")
 

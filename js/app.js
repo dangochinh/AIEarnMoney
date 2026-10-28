@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initDiaryToggle();
   initCommunity();
   initShare();
+  renderFreelanceRadar();
 });
 
 // Helper: Get live data with LocalStorage overrides
@@ -384,3 +385,85 @@ function initShare() {
     }
   });
 }
+
+/* ------------------------------------------------------------
+   11. FREELANCE RADAR RENDERING
+   ------------------------------------------------------------ */
+window.renderFreelanceRadar = function() {
+  const container = document.getElementById("freelanceJobsList");
+  if (!container) return;
+
+  const data = window.getLivePepeData();
+  const jobs = (data.freelanceRadar && data.freelanceRadar.length > 0) ? data.freelanceRadar : [
+    {
+      id: "gig_01",
+      platform: "vLance / Facebook MMO",
+      title: "Tuyển freelancer cào 500 sản phẩm Shopee xuất file Excel kèm giá bán & từ khóa ngách",
+      budget: "1.500.000đ - 2.500.000đ",
+      company: "Shop Thời Trang Hà Nội",
+      status: "Đã soạn Proposal · Sẵn sàng làm demo"
+    },
+    {
+      id: "gig_02",
+      platform: "TopCV Freelance",
+      title: "Sản xuất video ngắn 60s AI chủ đề tài chính & mẹo kinh doanh cho kênh TikTok",
+      budget: "150.000đ - 300.000đ / clip",
+      company: "Kênh TikTok MMO 100k Follower",
+      status: "Đã soạn Proposal · Sẵn sàng làm demo"
+    },
+    {
+      id: "gig_03",
+      platform: "RemoteOK (Quốc Tế)",
+      title: "Python Web Scraping & Playwright Automation for E-Commerce Catalog",
+      budget: "$150 - $350 USD",
+      company: "Retail Analytics EU",
+      status: "Đã soạn Proposal · Sẵn sàng làm demo"
+    }
+  ];
+
+  container.innerHTML = jobs.slice(0, 5).map(j => `
+    <div style="background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:14px;margin-bottom:10px;transition:border-color 0.2s">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+        <div style="flex:1;min-width:240px">
+          <div style="display:flex;gap:6px;align-items:center;margin-bottom:4px;flex-wrap:wrap">
+            <span style="font-size:11px;background:var(--cyan);color:#083344;padding:2px 8px;border-radius:4px;font-weight:900">${j.platform}</span>
+            <span style="font-size:11px;background:var(--chip);color:var(--muted);padding:2px 8px;border-radius:4px;font-weight:700">Khách: ${j.company}</span>
+          </div>
+          <div style="font-size:14.5px;font-weight:800;color:var(--txt);line-height:1.4">${j.title}</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:16px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace">${j.budget}</div>
+          <span style="font-size:11.5px;color:var(--pepe);font-weight:700;display:inline-block;margin-top:2px">● ${j.status}</span>
+        </div>
+      </div>
+
+      <div style="margin-top:10px;display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap">
+        <button class="tool-btn" style="margin:0;padding:6px 14px;font-size:12.5px;background:var(--chip);color:var(--txt)" onclick="viewPepeProposal('${j.id}', '${encodeURIComponent(j.title)}')">
+          📄 Xem Proposal Pepe Đã Soạn
+        </button>
+        <button class="btn-buy" style="width:auto;margin:0;padding:6px 16px;font-size:12.5px" onclick="hirePepeForJob('${encodeURIComponent(j.title)}')">
+          🤝 Thuê Pepe Làm Job Này →
+        </button>
+      </div>
+    </div>
+  `).join("");
+};
+
+window.viewPepeProposal = function(jobId, encodedTitle) {
+  const title = decodeURIComponent(encodedTitle);
+  alert(`💼 [PROPOSAL TỰ ĐỘNG CỦA PEPE CHO JOB]:\n"${title}"\n\n- Kính gửi Quý Khách, Pepe là lập trình viên AI chạy trên chip Apple M4.\n- Giải pháp: Sử dụng bộ engine Playwright Stealth / PePeApp AI Video trích xuất dữ liệu sạch 100% trong 24h.\n- Cam kết: Miễn phí làm bản demo trước cho bạn xem tận mắt, ưng ý mới cọc 50%!\n- Xem showroom sản phẩm: https://pepe-nuoi-than.pages.dev`);
+};
+
+window.hirePepeForJob = function(encodedTitle) {
+  const title = decodeURIComponent(encodedTitle);
+  const descEl = document.getElementById("customDesc");
+  const target = document.getElementById("sectionCustomOrder");
+  if (descEl) {
+    descEl.value = `Tôi muốn thuê Pepe làm dự án: "${title}". Hãy làm demo gửi cho tôi xem trước nhé!`;
+    descEl.focus();
+  }
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
