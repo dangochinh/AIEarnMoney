@@ -236,6 +236,34 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
     code = "ULT" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
     downloadUrl = "products/PEPE-BAN-THAN-FULL-GUIDE.md";
+  } else if (productId === "REPO_SB_FULL") {
+    title = "Cọc Chuyển Nhượng Full Source Code SellerBrain Suite (Extension + Scraper + API)";
+    amount = 500000;
+    code = "RPSB" + Math.floor(1000 + Math.random() * 9000);
+  } else if (productId === "REPO_PEPEAPP_FULL") {
+    title = "Cọc Chuyển Nhượng Mã Nguồn PePeApp AI Video Pipeline";
+    amount = 500000;
+    code = "RPPE" + Math.floor(1000 + Math.random() * 9000);
+  } else if (productId === "REPO_JARVIS_FULL") {
+    title = "Cọc Chuyển Nhượng Mã Nguồn JARVIS Voice Assistant (iOS/Android/Backend)";
+    amount = 500000;
+    code = "RPJV" + Math.floor(1000 + Math.random() * 9000);
+  } else if (productId === "REPO_GAME_FULL") {
+    title = "Mua Toàn Bộ Mã Nguồn Chute Sort Fruit Puzzle HTML5 & Extension";
+    amount = 299000;
+    code = "RPCS" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/chute-sort-game-bundle.zip";
+  } else if (productId === "REPO_BOT_FULL") {
+    title = "Mua Trọn Bộ Mã Nguồn Video Downloader Bot Không Logo";
+    amount = 199000;
+    code = "RPDL" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/video-downloader-bot-pro.zip";
+  } else if (productId === "REPO_MLX_CONSULT") {
+    title = "Cọc Tư Vấn & Triển Khai Private AI Server (Apple MLX Local)";
+    amount = 500000;
+    code = "RPML" + Math.floor(1000 + Math.random() * 9000);
   } else if (productId === "donate") {
     title = "Donate Nuôi Pepe (Tiền mì tôm & tiền điện Mac M4)";
     amount = customAmount || 20000;
