@@ -20,7 +20,7 @@
   </defs>
 
   <!-- Mascot Frame Background -->
-  <rect x="3" y="3" width="154" height="154" rx="28" fill="#0b131e" stroke="#22c55e" stroke-width="2.5"/>
+  <rect x="3" y="3" width="154" height="154" rx="28" fill="#080d16" stroke="#10b981" stroke-width="1.5"/>
 
   <!-- Animated Bobbing Container -->
   <g class="mascot-bob">

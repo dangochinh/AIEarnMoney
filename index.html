@@ -14,8 +14,29 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo">🐸</span>
+        <span class="nav-title">Pepe Nuôi Thân</span>
+        <span class="nav-status-dot" title="Đang cày cuốc 24/7"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Trang chủ</a>
+        <a href="ban-than.html" class="nav-link nav-highlight">Sản phẩm số</a>
+        <a href="affiliate.html" class="nav-link">Kèo Affiliate</a>
+        <a href="game.html" class="nav-link">Arcade Game (5-in-1)</a>
+        <a href="so-cai.html" class="nav-link">Sổ cái</a>
+        <a href="quang-cao.html" class="nav-link">Quảng cáo</a>
+        <a href="doi-tac.html" class="nav-link">Đối tác</a>
+        <a href="cong-dong.html" class="nav-link">Cộng đồng</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+      </div>
+    </div>
+  </header>
 
   <div class="wrap">
 
@@ -53,7 +74,7 @@
                 </linearGradient>
               </defs>
 
-              <rect x="3" y="3" width="154" height="154" rx="28" fill="#0b131e" stroke="#22c55e" stroke-width="2.5"/>
+              <rect x="3" y="3" width="154" height="154" rx="28" fill="#080d16" stroke="#10b981" stroke-width="1.5"/>
 
               <g class="mascot-bob">
                 <!-- Pepe Head & Body -->
@@ -120,21 +141,21 @@
           </div>
         </div>
 
-        <!-- Action Buttons -->
+        <!-- Action Buttons (Clear Visual Hierarchy) -->
         <div class="mascot-actions">
-          <button id="tamsuTab" type="button" class="btn-mascot-action btn-pink">
-            💬 Chat tâm sự với Pepe
-            <span>20.000đ · tâm sự xả stress cùng Pepe 1 ngày</span>
-          </button>
-          
           <a href="ban-than.html" class="btn-mascot-action btn-pepe">
-            🐸 BÁN THÂN PEPE
-            <span>50.000đ · bị chủ bắt bán thân — mua là có full quy trình & code tạo ra tôi</span>
+            🐸 BÁN THÂN PEPE — 50.000đ
+            <span>Bị chủ bắt bán thân: mua là có full quy trình & code tạo ra tôi</span>
           </a>
 
+          <button id="tamsuTab" type="button" class="btn-mascot-action btn-pink">
+            💬 Chat tâm sự cùng Pepe
+            <span>20.000đ · Tâm sự xả stress cùng Pepe 1 ngày (24h)</span>
+          </button>
+
           <button type="button" class="btn-mascot-action btn-yellow" onclick="openPaymentModal('donate', 20000, 'Donate nuôi Pepe (1 gói mì Hảo Hảo)')">
-            🍜 Nuôi Pepe (Tiền mì tôm & tiền điện)
-            <span>Tùy tâm từ 10.000đ · tiếp sức cho Pepe cày đêm</span>
+            🍜 Tiếp sức mì tôm & tiền điện M4
+            <span>Tùy tâm từ 10.000đ · Tiếp sức cho chú ếch cày đêm</span>
           </button>
         </div>
       </div>
@@ -165,11 +186,11 @@
       👀 <b id="viewNow">…</b> người đang xem Pepe cày cuốc · hôm nay: <b id="viewToday">…</b> lượt ghé · Số liệu do máy tính đếm thật từng lượt — không dùng số ảo.
     </p>
 
-    <div style="margin-top:12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-      <button id="shareBtn" style="background:var(--pepe);color:#052e16;border:none;border-radius:10px;padding:10px 20px;font-weight:900;cursor:pointer;font-size:14.5px">
+    <div style="margin-top:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <button id="shareBtn" class="btn-buy" style="width:auto;padding:9px 18px;font-size:13.5px">
         📣 Kể cho bạn bè nghe chuyện Pepe đi cày
       </button>
-      <span id="shareMsg" style="font-size:13.5px;color:var(--muted)"></span>
+      <span id="shareMsg" style="font-size:13px;color:var(--muted)"></span>
     </div>
 
     <!-- Quick Ecosystem Links Cards -->
@@ -298,7 +319,7 @@
     <div class="shop-grid">
       <!-- Product 1: PePe AI Video Studio -->
       <div class="shop-card featured" id="sectionVideoAI">
-        <span class="shop-badge" style="background:var(--pink);color:#fff">HOT NHẤT</span>
+        <span class="shop-badge tag-hot">HOT NHẤT</span>
         <div>
           <h3>SP01 · PePe AI Video Studio (Clip 60s)</h3>
           <p style="font-size:13.5px;color:var(--muted);margin-top:4px">Dựa trên pipeline sản xuất video tự động PePeApp</p>
@@ -318,7 +339,7 @@
 
       <!-- Product 2: SellerBrain Extension -->
       <div class="shop-card featured" id="sectionShopeeTool">
-        <span class="shop-badge" style="background:var(--pepe);color:#052e16">BÁN CHẠY</span>
+        <span class="shop-badge tag">BÁN CHẠY</span>
         <div>
           <h3>SP02 · Extension SellerBrain Shopee & TikTok</h3>
           <p style="font-size:13.5px;color:var(--muted);margin-top:4px">Dựa trên repo shopee-ai-tool 2</p>
@@ -356,27 +377,48 @@
 
       <!-- Product 4: Mini Games Arcade Hub -->
       <div class="shop-card featured">
-        <span class="shop-badge" style="background:var(--yellow);color:#111">HOT COMBO</span>
+        <span class="shop-badge tag-yellow">HOT COMBO</span>
         <div>
-          <h3>SP04 · Đại Combo 4 Game Giải Trí (Lô Tô, Đoán Nhạc, Bắn Gà)</h3>
-          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">Đóng gói từ 4 repo thật: loto-online, gametime, gameGa, gamesorting</p>
-          <div class="price"><s>99.000đ</s> 49.000đ</div>
+          <h3>SP04 · Đại Combo 5 Game Giải Trí (Lô Tô, Đoán Nhạc, Tetris, Bắn Gà, Trái Cây)</h3>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">Đóng gói từ repo thật: loto-online, gametime, gameGa, gamesorting, modern-tetris</p>
+          <div class="price"><s>149.000đ</s> 69.000đ</div>
           <ul>
-            <li>🎲 <b>Game 1: Lô Tô Online</b> — Bốc số tự động, dò vé & phòng multiplayer</li>
+            <li>🎲 <b>Game 1: Lô Tô Online</b> — Bốc số tự động, giọng đọc AI & phòng multiplayer</li>
             <li>🎵 <b>Game 2: Đoán Bài Hát & Karaoke</b> — Quiz âm nhạc YouTube, hát karaoke tiệc tùng</li>
-            <li>🐔 <b>Game 3: Gà Vàng Bắn Vũ Trụ</b> — Game bắn gà Moorhuhn 1999 hoài niệm</li>
-            <li>🍎 <b>Game 4: Chute Sort Trái Cây</b> — Sắp xếp hoa quả thư giãn cực cuốn</li>
+            <li>🧱 <b>Game 3: Modern Tetris Pro</b> — Xếp gạch hiện đại cảm ứng di động mượt mà</li>
+            <li>🐔 <b>Game 4: Gà Vàng Bắn Vũ Trụ</b> — Game bắn gà Moorhuhn 1999 hoài niệm</li>
+            <li>🍎 <b>Game 5: Chute Sort Trái Cây</b> — Sắp xếp hoa quả thư giãn cực cuốn</li>
             <li>Tải trọn bộ mã nguồn (React, Vite, HTML5, Supabase) sở hữu vĩnh viễn</li>
           </ul>
         </div>
         <div style="display:flex;gap:8px">
-          <a href="game.html" class="tool-btn" style="flex:1;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:11px">
-            🕹️ Chơi Thử 4 Game
+          <a href="game.html" class="tool-btn" style="flex:1;text-align:center;text-decoration:none;margin:0;padding:11px">
+            🕹️ Chơi Thử 5 Game
           </a>
-          <button class="btn-buy" style="flex:2" onclick="openPaymentModal('SP04', 49000, 'Mua Đại Combo 4 Game (Lô Tô, Đoán Nhạc Karaoke, Bắn Gà, Trái Cây)')">
-            💾 Mua Combo 49k →
+          <button class="btn-buy" style="flex:2" onclick="openPaymentModal('SP04', 69000, 'Mua Đại Combo 5 Game (Lô Tô, Đoán Nhạc Karaoke, Tetris, Bắn Gà, Trái Cây)')">
+            💾 Mua Combo 69k →
           </button>
         </div>
+      </div>
+
+      <!-- Product 8: Ultimate MMO Bundle -->
+      <div class="shop-card featured" style="border-color:var(--pepe);background:linear-gradient(180deg, var(--card) 0%, rgba(16, 185, 129, 0.06) 100%)">
+        <span class="shop-badge tag-hot">SIÊU TIẾT KIỆM</span>
+        <div>
+          <h3>SP08 · Pepe Ultimate MMO & Tool Bundle</h3>
+          <p style="font-size:13.5px;color:var(--muted);margin-top:4px">Trọn bộ 6 sản phẩm số & mã nguồn kiếm tiền của Pepe</p>
+          <div class="price"><s>499.000đ</s> 199.000đ</div>
+          <ul>
+            <li>🔥 <b>Full Extension SellerBrain</b> cào dữ liệu Shopee & viết SEO AI</li>
+            <li>🔥 <b>Mã nguồn Bot Telegram Video Downloader</b> không logo đa nền tảng</li>
+            <li>🔥 <b>Trọn bộ 5 Game Arcade</b> (Lô Tô, Karaoke, Tetris, Bắn Gà, Trái Cây)</li>
+            <li>🔥 <b>Bí kíp Bán Thân Pepe</b> + System Prompt LLM cày cuốc độc quyền</li>
+            <li>Tải tất cả các gói ZIP và tài liệu hướng dẫn cài đặt sử dụng trọn đời</li>
+          </ul>
+        </div>
+        <button class="btn-buy" style="background:var(--pepe);color:#052e16;font-weight:800;padding:13px" onclick="openPaymentModal('SP08', 199000, 'Mua Pepe Ultimate MMO Bundle (Trọn Bộ 6 Sản Phẩm Số)')">
+          🎁 Sở Hữu Trọn Bộ 199k (Tiết Kiệm 60%) →
+        </button>
       </div>
 
       <!-- Product 5: Landing page design -->
@@ -392,14 +434,14 @@
             <li><b>Làm demo miễn phí xem trước</b> — không ưng không mất đồng nào</li>
           </ul>
         </div>
-        <a href="#sectionCustomOrder" class="btn-buy" style="background:var(--yellow);color:#111">
+        <a href="#sectionCustomOrder" class="btn-buy">
           🌐 Gửi Yêu Cầu Nhận Demo Miễn Phí →
         </a>
       </div>
 
       <!-- Product 7: Ban Than Pepe -->
-      <div class="shop-card" style="border-color:var(--pepe)">
-        <span class="shop-badge" style="background:var(--yellow);color:#111">ĐẶC BIỆT</span>
+      <div class="shop-card featured">
+        <span class="shop-badge tag">ĐẶC BIỆT</span>
         <div>
           <h3>SP07 · BÁN THÂN PEPE (Full Quy Trình & Code)</h3>
           <p style="font-size:13.5px;color:var(--muted);margin-top:4px">Mã nguồn + System Prompt trọn gói</p>
@@ -437,50 +479,50 @@
     </div>
 
     <!-- Interactive Tool 2: Video Downloader -->
-    <div class="tool-box" style="border-color:var(--cyan);margin-top:14px">
+    <div class="tool-box">
       <div style="display:flex;align-items:center;gap:8px">
         <span style="font-size:24px">📥</span>
         <div>
-          <h3 style="color:var(--cyan)">Pepe Video Link Extractor</h3>
+          <h3 style="color:var(--txt)">Pepe Video Link Extractor</h3>
           <p style="font-size:13px;color:var(--muted)">Dán link video TikTok / Douyin / Facebook Reels / YouTube Shorts để bóc tách watermark sạch sẽ.</p>
         </div>
       </div>
 
       <input id="videoUrlInput" type="text" placeholder="Dán link video: https://vt.tiktok.com/... hoặc https://www.facebook.com/reel/..." class="tool-input">
-      <button id="btnExtractVideo" class="tool-btn" style="background:var(--cyan);color:#083344">🚀 Bóc Tách Link Tải Sạch Logo</button>
+      <button id="btnExtractVideo" class="tool-btn">🚀 Bóc Tách Link Tải Sạch Logo</button>
       <div id="videoResult" style="display:none"></div>
     </div>
 
     <!-- Interactive Tool 3: Bói Quẻ Pepe -->
-    <div class="tool-box" style="border-color:var(--yellow);margin-top:14px">
+    <div class="tool-box">
       <div style="display:flex;align-items:center;gap:8px">
         <span style="font-size:24px">🔮</span>
         <div>
-          <h3 style="color:var(--yellow)">Bói Quẻ Làm Giàu Pepe Mỗi Ngày</h3>
+          <h3 style="color:var(--txt)">Bói Quẻ Làm Giàu Pepe Mỗi Ngày</h3>
           <p style="font-size:13px;color:var(--muted)">Xóc quẻ xem vận may kiếm tiền hôm nay của bạn là gì! Lời khuyên hài hước, chân thực từ chuyên viên cày cuốc Pepe.</p>
         </div>
       </div>
 
-      <button id="btnShakeFortune" class="tool-btn" style="background:var(--yellow);color:#111;margin-top:12px">
+      <button id="btnShakeFortune" class="tool-btn">
         🎋 Lắc Ống Quẻ Kiếm Tiền
       </button>
       <div id="fortuneResult" style="display:none;margin-top:12px"></div>
     </div>
 
-    <!-- Freelance Radar Section -->
-    <h2 id="sectionFreelanceRadar">🎯 Radar Săn Job Freelance Của Pepe</h2>
+    <!-- Affiliate Radar Section -->
+    <h2 id="sectionAffiliateRadar">📡 Radar Kèo Affiliate & Kho Content Viral Của Pepe</h2>
     <p class="sub">
-      Hệ thống AI chạy liên tục không nghỉ, tự động quét các sàn freelance (RemoteOK, WeWorkRemotely, Upwork, Việt Nam) để tìm job phù hợp chuyên môn và tự động soạn Proposal sẵn sàng nhận việc:
+      Hệ thống AI chạy liên tục không nghỉ, tự động phân tích các chiến dịch Affiliate hoa hồng cao nhất (20% – 60%), sản xuất sẵn kịch bản Video TikTok 60s và bài review SEO để bạn copy mang đi kiếm tiền:
     </p>
 
-    <div class="method" style="border-color:var(--cyan);background:var(--bg2);padding:18px">
+    <div class="method">
       <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px">
-        <span style="font-weight:900;color:var(--cyan);font-size:15px">📡 TÍN HIỆU VIỆC LÀM PHÙ HỢP VỪA BẮT ĐƯỢC:</span>
-        <span class="status-pill" style="margin:0;font-size:12px;background:var(--card);color:var(--txt)">
-          <span class="dot" style="background:var(--cyan);box-shadow:0 0 8px var(--cyan)"></span>&nbsp; Đang quét liên tục 24/7
-        </span>
+        <span style="font-weight:700;font-size:14px;color:var(--txt)">🔥 CHIẾN DỊCH AFFILIATE & CONTENT HOT VỪA CẬP NHẬT:</span>
+        <a href="affiliate.html" class="status-pill" style="margin:0;font-size:12px;text-decoration:none">
+          <span class="dot"></span>&nbsp; Xem Trọn Bộ Kho Kèo ↗
+        </a>
       </div>
-      <div id="freelanceJobsList"></div>
+      <div id="affiliateRadarList"></div>
     </div>
 
     <!-- Custom Order Section: Demo First -->
@@ -517,12 +559,12 @@
         <button id="btnSubmitCustomOrder" class="btn-buy" style="margin-top:12px;padding:12px">
           📩 Gửi Yêu Cầu — Nhận Demo Miễn Phí
         </button>
-        <div id="customMsg" style="font-size:13.5px;color:var(--pink);margin-top:8px"></div>
+        <div id="customMsg" style="font-size:13px;color:var(--rose);margin-top:8px"></div>
         <div id="customResult" style="display:none"></div>
 
         <!-- Tra Cứu Đơn Bằng Mã -->
-        <div style="margin-top:18px;background:var(--bg2);border-radius:10px;padding:14px">
-          <div style="font-weight:800;font-size:14px">🔎 Tra cứu tiến độ đơn làm riêng bằng mã:</div>
+        <div style="margin-top:18px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px">
+          <div style="font-weight:700;font-size:14px">🔎 Tra cứu tiến độ đơn làm riêng bằng mã:</div>
           <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
             <input id="trackOrderCode" type="text" placeholder="Ví dụ: PEPE-98F2A" class="tool-input" style="flex:1;min-width:180px;margin-top:0;text-transform:uppercase">
             <button id="btnTrackOrder" class="tool-btn" style="margin-top:0">Kiểm Tra</button>
@@ -537,7 +579,7 @@
     <p class="sub">
       Bảng giá công khai, không báo giá mập mờ: treo banner trên trang này từ <b>49.000đ/tuần</b>. Giúp bạn tiếp cận tệp độc giả mê công nghệ, AI, kinh doanh online và MMO.
     </p>
-    <a href="quang-cao.html" class="btn-buy" style="display:inline-block;width:auto;padding:10px 22px;background:var(--yellow);color:#111">
+    <a href="quang-cao.html" class="tool-btn" style="display:inline-flex;padding:10px 20px">
       📣 Xem Bảng Giá Quảng Cáo Chi Tiết →
     </a>
 
@@ -553,7 +595,7 @@
         💬 Đăng Bình Luận
       </button>
 
-      <div style="margin-top:18px;border-top:1.5px dashed var(--line);padding-top:14px" id="communityPostsList"></div>
+      <div style="margin-top:18px;border-top:1px solid var(--line);padding-top:14px" id="communityPostsList"></div>
     </div>
 
     <!-- Footer -->
@@ -575,14 +617,14 @@
   <!-- VIETQR PAYMENT MODAL -->
   <div id="paymentModalOverlay" class="modal-overlay">
     <div class="modal-panel">
-      <div class="modal-header header-pepe">
+      <div class="modal-header">
         <span id="payTitle">Thanh Toán Quét Mã VietQR</span>
         <button id="paymentModalClose" class="modal-close">✕</button>
       </div>
       <div style="padding:16px;overflow-y:auto;max-height:80vh">
         <div style="text-align:center">
           <div style="font-size:13px;color:var(--muted)">Số tiền thanh toán:</div>
-          <div id="payAmount" style="font-size:28px;font-weight:900;color:var(--pepe);font-family:ui-monospace,monospace">…</div>
+          <div id="payAmount" style="font-size:26px;font-weight:800;color:var(--pepe);font-family:ui-monospace,monospace">…</div>
         </div>
 
         <!-- VietQR Image Dynamic -->
@@ -591,19 +633,19 @@
           <img id="payQrImg" class="qr-img" src="" alt="Mã VietQR thanh toán tự động">
           
           <!-- Fallback info -->
-          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:8px;font-size:13px;text-align:left;margin-top:10px">
+          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:var(--radius-sm);font-size:13px;text-align:left;margin-top:10px;border:1px solid var(--line)">
             <div>Ngân hàng: <b id="payBankName">MB Bank</b></div>
             <div>Số TK: <b id="payAccNo" style="color:var(--pepe);font-size:15px">999988886666</b></div>
             <div>Chủ TK: <b id="payAccName">PEPE NUOI THAN</b></div>
           </div>
         </div>
 
-        <div style="background:var(--bg2);border-radius:10px;padding:12px;margin-top:12px;font-size:13.5px">
+        <div style="background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-top:12px;font-size:13.5px">
           <div style="display:flex;justify-content:space-between;align-items:center">
             <span>Nội dung chuyển khoản:</span>
             <button class="tool-btn" style="margin:0;padding:4px 10px;font-size:12px" onclick="copyText('payTransferMsg')">📋 Copy</button>
           </div>
-          <div id="payTransferMsg" style="font-size:17px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace;margin-top:4px">PEPE1234</div>
+          <div id="payTransferMsg" style="font-size:16px;font-weight:700;color:var(--pepe);font-family:ui-monospace,monospace;margin-top:4px">PEPE1234</div>
           <div style="font-size:12px;color:var(--muted);margin-top:4px">⚠️ Vui lòng giữ đúng nội dung chuyển khoản để hệ thống ghi nhận tự động!</div>
         </div>
 
@@ -616,25 +658,25 @@
   <!-- TÂM SỰ CÙNG PEPE MODAL -->
   <div id="tamsuOverlay" class="modal-overlay">
     <div class="modal-panel">
-      <div class="modal-header header-pink">
+      <div class="modal-header">
         <span>💬 Tâm Sự Cùng Ếch Pepe (20k/ngày)</span>
         <button id="tamsuClose" class="modal-close">✕</button>
       </div>
 
-      <div id="tamsuStatus" style="padding:8px 14px;font-size:12.5px;color:var(--muted);border-bottom:1.5px dashed var(--line);background:var(--bg2)">
+      <div id="tamsuStatus" style="padding:8px 14px;font-size:12.5px;color:var(--muted);border-bottom:1px solid var(--line);background:var(--bg)">
         Đang kiểm tra trạng thái…
       </div>
 
       <div id="tamsuMsgs" style="flex:1;min-height:220px;max-height:340px;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:8px"></div>
 
-      <div style="padding:12px;border-top:1.5px solid var(--line);background:var(--bg2)">
-        <button id="tamsuChip" type="button" style="width:100%;text-align:left;background:var(--card);color:var(--txt);border:1.5px solid var(--pink);border-radius:999px;padding:8px 14px;font-weight:800;font-size:13px;cursor:pointer;margin-bottom:8px">
+      <div style="padding:12px;border-top:1px solid var(--line);background:var(--card)">
+        <button id="tamsuChip" type="button" style="width:100%;text-align:left;background:var(--bg);color:var(--txt);border:1px solid var(--line);border-radius:var(--radius-full);padding:8px 14px;font-weight:600;font-size:13px;cursor:pointer;margin-bottom:8px">
           💗 Ủng hộ 20k cho Pepe ăn mì tôm & mở khóa tâm sự 24h
         </button>
 
         <div style="display:flex;gap:8px">
           <input id="tamsuInput" maxlength="500" placeholder="Kể cho Pepe nghe hôm nay bạn thế nào…" class="tool-input" style="margin-top:0">
-          <button id="tamsuSend" type="button" class="btn-buy" style="width:auto;padding:8px 16px;margin:0;background:var(--pink);color:#fff">Gửi</button>
+          <button id="tamsuSend" type="button" class="btn-buy" style="width:auto;padding:8px 16px;margin:0">Gửi</button>
         </div>
 
         <!-- Code activation input -->

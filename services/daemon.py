@@ -39,20 +39,23 @@ def get_running_pid():
 
 
 def cmd_run_once():
-    """Chạy ngay lập tức 1 chu trình quét freelance và nghiên cứu công nghệ."""
-    print("🐸 [Pepe Engine] Đang chạy chu trình quét việc freelance và nghiên cứu...")
+    """Chạy ngay lập tức 1 chu trình tạo content affiliate và nghiên cứu sản phẩm số."""
+    print("🐸 [Pepe Engine] Đang chạy chu trình sản xuất Content Affiliate và Sản phẩm số...")
     engine = ContinuousPepeEngine()
-    print("\n1. Đang quét các sàn Freelance (RemoteOK, WeWorkRemotely, Vietnam Freelance)...")
-    jobs = engine.run_freelance_cycle()
-    print(f"   -> Đã quét và soạn {len(jobs)} Proposal mới cho các job phù hợp!")
-    for j in jobs:
-        print(f"      • {j['title']} | Ngân sách: {j['budget']} | Nền tảng: {j['platform']}")
+    print("\n1. Đang săn kèo Affiliate & tạo Content Viral (TikTok Script + SEO Review + Thread)...")
+    bundle = engine.run_affiliate_content_cycle()
+    camp = bundle["campaign"]
+    print(f"   -> Đã lên chiến dịch: {camp['name']} ({camp['category']})")
+    print(f"   -> Hoa hồng: {camp['commission']} | Link: {camp['aff_url']}")
+    print(f"   -> Kịch bản video: {bundle['script_path']}")
+    print(f"   -> Bài review SEO: {bundle['article_path']}")
 
     print("\n2. Đang nghiên cứu công nghệ và đóng gói sản phẩm số...")
     res = engine.run_tech_research_cycle()
     print(f"   -> Đã nghiên cứu: {res.get('topic')}")
     print(f"   -> Đã tạo SEO pack: {res.get('seo_pack')}")
     print(f"   -> Đã tạo video script: {res.get('video_script')}")
+    print(f"   -> Đã tạo Sales Copy: {res.get('sales_copy')}")
     dep = res.get("deploy", {})
     print(f"   -> Cloudflare Pages: {'ĐÃ CẬP NHẬT TRỰC TUYẾN 🚀' if dep.get('cf_deployed') else dep.get('error')}")
 
@@ -81,7 +84,7 @@ def cmd_start():
     if is_running(proc.pid):
         print(f"✅ Pepe Daemon đã khởi động thành công với PID: {proc.pid}")
         print(f"📄 Theo dõi logs tại: {LOG_FILE}")
-        print(f"⚡ Vòng lặp: Quét freelance mỗi 5 phút · Nghiên cứu & tạo sản phẩm mỗi 15 phút.")
+        print(f"⚡ Vòng lặp: Săn kèo Affiliate & Content Viral (mỗi 5p) · Sản phẩm số & Research (mỗi 15p).")
     else:
         print("❌ Khởi động thất bại. Kiểm tra file log để biết thêm chi tiết.")
 
@@ -187,7 +190,7 @@ def main():
     if len(sys.argv) < 2:
         print("Cách sử dụng: ./pepe.sh [command]")
         print("Lệnh khả dụng:")
-        print("  run-once          : Chạy ngay 1 chu kỳ quét freelance + tạo sản phẩm + deploy")
+        print("  run-once          : Chạy ngay 1 chu kỳ tạo content affiliate + sản phẩm số + deploy")
         print("  start             : Khởi động daemon chạy liên tục không idle")
         print("  stop              : Dừng daemon đang chạy")
         print("  status            : Xem trạng thái và logs")

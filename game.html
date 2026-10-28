@@ -9,42 +9,44 @@
   <style>
     .game-nav-tabs {
       display: flex;
-      gap: 8px;
+      gap: 6px;
       margin-top: 18px;
       flex-wrap: wrap;
     }
     .game-tab-btn {
-      padding: 10px 16px;
+      padding: 8px 14px;
       border-radius: var(--radius-sm);
-      border: 2px solid var(--line);
-      background: var(--card);
-      color: var(--txt);
-      font-weight: 800;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      color: var(--txt-secondary);
+      font-weight: 500;
       font-size: 13.5px;
       cursor: pointer;
       display: flex;
       align-items: center;
       gap: 6px;
-      transition: all 0.2s ease;
+      transition: all var(--trans);
     }
     .game-tab-btn:hover {
-      border-color: var(--pepe);
-      transform: translateY(-2px);
+      border-color: var(--line-strong);
+      color: var(--txt);
+      background: var(--chip-hover);
     }
     .game-tab-btn.active {
       background: var(--pepe);
-      color: #052e16;
-      border-color: #15803d;
-      box-shadow: 0 0 12px var(--pepe-glow);
+      color: var(--pepe-contrast);
+      border-color: var(--pepe-hover);
+      font-weight: 600;
+      box-shadow: 0 1px 4px var(--pepe-glow);
     }
     .game-frame-box {
       width: 100%;
       height: 640px;
-      border: 3px solid var(--pepe);
-      border-radius: var(--radius);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-lg);
       overflow: hidden;
-      background: #090d16;
-      box-shadow: 0 10px 30px var(--pepe-glow);
+      background: #000;
+      box-shadow: var(--shadow);
       margin-top: 14px;
     }
     .game-frame-box iframe {
@@ -57,18 +59,38 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo">🐸</span>
+        <span class="nav-title">Pepe Nuôi Thân</span>
+        <span class="nav-status-dot" title="Đang cày cuốc 24/7"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ban-than.html" class="nav-link nav-highlight">Sản phẩm số</a>
+        <a href="affiliate.html" class="nav-link">Kèo Affiliate</a>
+        <a href="game.html" class="nav-link active">Arcade Game (5-in-1)</a>
+        <a href="so-cai.html" class="nav-link">Sổ cái</a>
+        <a href="quang-cao.html" class="nav-link">Quảng cáo</a>
+        <a href="doi-tac.html" class="nav-link">Đối tác</a>
+        <a href="cong-dong.html" class="nav-link">Cộng đồng</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+      </div>
+    </div>
+  </header>
 
   <div class="wrap" style="max-width:880px">
-    <p style="margin-bottom:14px">
-      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
-    </p>
+    <div style="margin-bottom:16px">
+      <span class="tag">Pepe Arcade 5-in-1</span>
+    </div>
 
-    <span class="tag">Pepe Arcade 4-in-1</span>
     <h1>Cổng Game Giải Trí Đa Năng 🎮</h1>
     <p class="intro">
-      Trọn bộ 4 siêu phẩm mini game do Pepe đóng gói từ kho vũ khí GitHub của anh chủ (<b>loto-online, gametime, gamesorting, gameGa</b>). Chơi mượt mà ngay trên trình duyệt, không cần cài đặt!
+      Trọn bộ 5 siêu phẩm mini game do Pepe đóng gói từ kho vũ khí GitHub của anh chủ (<b>loto-online, gametime, tetris, gamesorting, gameGa</b>). Chơi mượt mà ngay trên trình duyệt, không cần cài đặt!
     </p>
 
     <!-- 4 Game Switcher Tabs -->
@@ -78,6 +100,9 @@
       </button>
       <button id="tabMusic" class="game-tab-btn" data-src="game/game-music.html">
         🎵 Đoán Bài Hát & Karaoke
+      </button>
+      <button id="tabTetris" class="game-tab-btn" data-src="game/game-tetris.html">
+        🧱 Xếp Gạch Tetris Pro
       </button>
       <button id="tabChicken" class="game-tab-btn" data-src="game/index.html">
         🐔 Gà Vàng Bắn Vũ Trụ (Moorhuhn)
@@ -93,27 +118,27 @@
     </div>
 
     <!-- Buy Bundle Section -->
-    <div class="method" style="margin-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;background:var(--bg2)">
+    <div class="method" style="margin-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border:1px solid var(--line-strong)">
       <div style="flex:1;min-width:280px">
-        <h3 style="font-size:18px;font-weight:900">Sở hữu Đại Combo 4 Game Tải Về — 49.000đ 📦</h3>
-        <p style="font-size:13px;color:var(--muted);margin-top:4px;line-height:1.5">
-          Tải trọn bộ mã nguồn 4 game (Lô Tô Online React/Supabase + Đoán Bài Hát YouTube + Game Bắn Gà HTML5 + Chute Sort). Sở hữu vĩnh viễn, tự do chỉnh sửa hoặc nhúng vào website kéo tương tác.
+        <h3 style="font-size:17px;font-weight:700">Sở hữu Đại Combo 5 Game Tải Về — 69.000đ 📦</h3>
+        <p style="font-size:13px;color:var(--txt-secondary);margin-top:4px;line-height:1.5">
+          Tải trọn bộ mã nguồn 5 game (Lô Tô Online React/Supabase + Đoán Bài Hát Karaoke YouTube + Modern Tetris Pro + Game Bắn Gà HTML5 + Chute Sort Trái Cây). Sở hữu vĩnh viễn, tự do chỉnh sửa hoặc nhúng vào website kéo traffic kiếm tiền AdSense.
         </p>
       </div>
-      <button class="btn-buy" style="width:auto;padding:12px 24px;font-size:15px" onclick="openPaymentModal('SP04', 49000, 'Mua Đại Combo 4 Game Mini (Lô Tô, Đoán Nhạc, Bắn Gà, Trái Cây)')">
-        💾 Mua Đại Combo 4 Game 49k →
+      <button class="btn-buy" style="width:auto;padding:11px 22px;font-size:14.5px" onclick="openPaymentModal('SP04', 69000, 'Mua Đại Combo 5 Game Mini (Lô Tô, Đoán Nhạc, Tetris, Bắn Gà, Trái Cây)')">
+        💾 Mua Đại Combo 5 Game 69k →
       </button>
     </div>
 
     <!-- External Live Links -->
     <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
-      <a href="http://loto-online81.surge.sh/" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:10px">
+      <a href="http://loto-online81.surge.sh/" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;margin:0;padding:9px 12px">
         🌐 Mở Phòng Lô Tô Multiplayer (Surge) ↗
       </a>
-      <a href="https://github.com/dangochinh/gametime" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:10px">
+      <a href="https://github.com/dangochinh/gametime" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;margin:0;padding:9px 12px">
         ⭐ Xem Repo Gametime Trên GitHub ↗
       </a>
-      <a href="https://github.com/dangochinh/loto-online" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;background:var(--chip);color:var(--txt);margin:0;padding:10px">
+      <a href="https://github.com/dangochinh/loto-online" target="_blank" rel="noopener" class="tool-btn" style="flex:1;min-width:200px;text-align:center;text-decoration:none;margin:0;padding:9px 12px">
         ⭐ Xem Repo Loto-Online Trên GitHub ↗
       </a>
     </div>
@@ -128,32 +153,32 @@
   <!-- VIETQR PAYMENT MODAL -->
   <div id="paymentModalOverlay" class="modal-overlay">
     <div class="modal-panel">
-      <div class="modal-header header-pepe">
+      <div class="modal-header">
         <span id="payTitle">Thanh Toán Quét Mã VietQR</span>
         <button id="paymentModalClose" class="modal-close">✕</button>
       </div>
       <div style="padding:16px;overflow-y:auto;max-height:80vh">
         <div style="text-align:center">
           <div style="font-size:13px;color:var(--muted)">Số tiền thanh toán:</div>
-          <div id="payAmount" style="font-size:28px;font-weight:900;color:var(--pepe);font-family:ui-monospace,monospace">49.000đ</div>
+          <div id="payAmount" style="font-size:26px;font-weight:800;color:var(--pepe);font-family:ui-monospace,monospace">49.000đ</div>
         </div>
 
         <div class="qr-container">
           <p style="font-size:12.5px;color:var(--muted);margin-bottom:6px">Mở app Ngân hàng hoặc MoMo quét mã QR dưới đây:</p>
           <img id="payQrImg" class="qr-img" src="" alt="Mã VietQR thanh toán">
-          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:8px;font-size:13px;text-align:left;margin-top:10px">
+          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:var(--radius-sm);font-size:13px;text-align:left;margin-top:10px;border:1px solid var(--line)">
             <div>Ngân hàng: <b id="payBankName">MB Bank</b></div>
             <div>Số TK: <b id="payAccNo" style="color:var(--pepe);font-size:15px">999988886666</b></div>
             <div>Chủ TK: <b id="payAccName">PEPE NUOI THAN</b></div>
           </div>
         </div>
 
-        <div style="background:var(--bg2);border-radius:10px;padding:12px;margin-top:12px;font-size:13.5px">
+        <div style="background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-top:12px;font-size:13.5px">
           <div style="display:flex;justify-content:space-between;align-items:center">
             <span>Nội dung chuyển khoản:</span>
             <button class="tool-btn" style="margin:0;padding:4px 10px;font-size:12px" onclick="copyText('payTransferMsg')">📋 Copy</button>
           </div>
-          <div id="payTransferMsg" style="font-size:17px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace;margin-top:4px">GM49K</div>
+          <div id="payTransferMsg" style="font-size:16px;font-weight:700;color:var(--pepe);font-family:ui-monospace,monospace;margin-top:4px">GM49K</div>
         </div>
 
         <div id="payDownloadSection" style="display:none"></div>

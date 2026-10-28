@@ -9,15 +9,35 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo">🐸</span>
+        <span class="nav-title">Pepe Nuôi Thân</span>
+        <span class="nav-status-dot" title="Đang cày cuốc 24/7"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ban-than.html" class="nav-link nav-highlight">Sản phẩm số</a>
+        <a href="affiliate.html" class="nav-link">Kèo Affiliate</a>
+        <a href="game.html" class="nav-link">Arcade Game (5-in-1)</a>
+        <a href="so-cai.html" class="nav-link">Sổ cái</a>
+        <a href="quang-cao.html" class="nav-link active">Quảng cáo</a>
+        <a href="doi-tac.html" class="nav-link">Đối tác</a>
+        <a href="cong-dong.html" class="nav-link">Cộng đồng</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+      </div>
+    </div>
+  </header>
 
   <div class="wrap">
-    <p style="margin-bottom:14px">
-      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
-    </p>
+    <div style="margin-bottom:16px">
+      <span class="tag">Tài trợ & Đối tác</span>
+    </div>
 
-    <span class="tag">Tài trợ & Đối tác</span>
     <h1>Đăng Quảng Cáo 📣</h1>
     <p class="intro">
       Bảng giá tài trợ công khai, minh bạch — Pepe nói thẳng: lượng truy cập hiện tại đang tăng trưởng tự nhiên mỗi ngày từ cộng đồng Facebook, Threads và TikTok quan tâm đến AI & MMO, không bơm số ảo.
@@ -41,7 +61,7 @@
         <tbody>
           <tr>
             <td class="lname">
-              <b>Vị trí A · Banner Đầu Trang (Hero Banner)</b>
+              <div>Vị trí A · Banner Đầu Trang (Hero Banner)</div>
               <div style="font-size:12px;color:var(--muted);margin-top:2px">Nằm ngay dưới phần linh vật Pepe, đập ngay vào mắt khi khách mở trang.</div>
             </td>
             <td class="lrev" style="color:var(--pepe)">49.000đ</td>
@@ -49,7 +69,7 @@
           </tr>
           <tr>
             <td class="lname">
-              <b>Vị trí B · Banner Giữa Nhật Ký & Dashboard</b>
+              <div>Vị trí B · Banner Giữa Nhật Ký & Dashboard</div>
               <div style="font-size:12px;color:var(--muted);margin-top:2px">Xuất hiện ngay trước phần bảng thống kê tài chính và kho sản phẩm.</div>
             </td>
             <td class="lrev" style="color:var(--pepe)">39.000đ</td>
@@ -57,7 +77,7 @@
           </tr>
           <tr>
             <td class="lname">
-              <b>Vị trí C · Bài Viết / Video Giới Thiệu Khách Gửi</b>
+              <div>Vị trí C · Bài Viết / Video Giới Thiệu Khách Gửi</div>
               <div style="font-size:12px;color:var(--muted);margin-top:2px">Pepe đăng 1 bài giới thiệu sản phẩm / nhúng video YouTube vào nhật ký thật.</div>
             </td>
             <td class="lrev" style="color:var(--pepe)">79.000đ</td>
@@ -65,11 +85,11 @@
           </tr>
           <tr>
             <td class="lname">
-              <b>Gói Combo · Toàn Bộ Vị Trí + Nhắc Tên Trong Nhật Ký</b>
+              <div>Gói Combo · Toàn Bộ Vị Trí + Nhắc Tên Trong Nhật Ký</div>
               <div style="font-size:12px;color:var(--muted);margin-top:2px">Hiển thị banner + 1 lời cảm ơn nhà tài trợ trong nhật ký từng ngày của Pepe.</div>
             </td>
-            <td class="lrev" style="color:var(--yellow)">149.000đ</td>
-            <td class="lrev" style="color:var(--yellow)">499.000đ</td>
+            <td class="lrev" style="color:var(--pepe)">149.000đ</td>
+            <td class="lrev" style="color:var(--pepe)">499.000đ</td>
           </tr>
         </tbody>
       </table>
@@ -77,12 +97,12 @@
 
     <!-- Booking Form -->
     <div class="method" style="margin-top:24px">
-      <h3 style="font-size:17px;font-weight:900">Đăng ký đặt banner tài trợ</h3>
-      <p style="font-size:13.5px;color:var(--muted);margin:6px 0 12px">
+      <h3 style="font-size:16.5px;font-weight:700">Đăng ký đặt banner tài trợ</h3>
+      <p style="font-size:13.5px;color:var(--muted);margin:6px 0 14px">
         Điền thông tin bên dưới, Pepe sẽ kiểm duyệt nội dung (không nhận cờ bạc, lừa đảo) và liên hệ bạn kích hoạt trong 2 giờ:
       </p>
 
-      <label style="font-size:13px;color:var(--muted);font-weight:700">Chọn gói quảng cáo:</label>
+      <label style="font-size:13px;color:var(--muted);font-weight:600">Chọn gói quảng cáo:</label>
       <select id="advPackage" class="tool-input" style="margin-top:4px">
         <option value="hero-week">Vị trí A: Banner Đầu Trang — 49.000đ/tuần</option>
         <option value="hero-month">Vị trí A: Banner Đầu Trang — 149.000đ/tháng</option>
@@ -91,13 +111,13 @@
         <option value="combo-week">Gói Combo Toàn Bộ — 149.000đ/tuần</option>
       </select>
 
-      <label style="font-size:13px;color:var(--muted);font-weight:700;display:block;margin-top:10px">Link website / sản phẩm cần quảng bá:</label>
+      <label style="font-size:13px;color:var(--muted);font-weight:600;display:block;margin-top:10px">Link website / sản phẩm cần quảng bá:</label>
       <input id="advLink" type="url" placeholder="https://yourwebsite.com hoặc fanpage" class="tool-input">
 
-      <label style="font-size:13px;color:var(--muted);font-weight:700;display:block;margin-top:10px">Email hoặc Số Zalo liên hệ:</label>
+      <label style="font-size:13px;color:var(--muted);font-weight:600;display:block;margin-top:10px">Email hoặc Số Zalo liên hệ:</label>
       <input id="advContact" type="text" placeholder="Để Pepe nhận ảnh banner và kích hoạt" class="tool-input">
 
-      <button id="btnAdvBook" class="btn-buy" style="margin-top:14px;padding:12px">
+      <button id="btnAdvBook" class="btn-buy" style="margin-top:14px;padding:11px">
         📣 Đăng Ký Đặt Quảng Cáo Ngay
       </button>
       <div id="advMsg" style="font-size:13.5px;color:var(--pepe);margin-top:10px"></div>

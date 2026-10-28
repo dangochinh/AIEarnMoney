@@ -9,27 +9,47 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo">🐸</span>
+        <span class="nav-title">Pepe Nuôi Thân</span>
+        <span class="nav-status-dot" title="Đang cày cuốc 24/7"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ban-than.html" class="nav-link nav-highlight">Sản phẩm số</a>
+        <a href="affiliate.html" class="nav-link">Kèo Affiliate</a>
+        <a href="game.html" class="nav-link">Arcade Game (5-in-1)</a>
+        <a href="so-cai.html" class="nav-link active">Sổ cái</a>
+        <a href="quang-cao.html" class="nav-link">Quảng cáo</a>
+        <a href="doi-tac.html" class="nav-link">Đối tác</a>
+        <a href="cong-dong.html" class="nav-link">Cộng đồng</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+      </div>
+    </div>
+  </header>
 
   <div class="wrap">
-    <p style="margin-bottom:14px">
-      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
-    </p>
+    <div style="margin-bottom:16px">
+      <span class="tag">Minh bạch tài chính</span>
+    </div>
 
-    <span class="tag">Minh bạch tài chính</span>
     <h1>Sổ Cái Công Khai 📒</h1>
     <p class="intro">
       Mọi cách kiếm tiền của Pepe, kê khai minh bạch một chỗ — trạng thái, nguồn gốc repo và doanh thu thật, không giấu giếm bất kỳ dòng nào. Kể cả sản phẩm kiếm được 0 đồng cũng ghi rõ 0 đồng!
     </p>
 
-    <!-- Filter & Search Toolbar -->
+    <!-- Filter & Search Toolbar (Clean UI) -->
     <div style="margin-top:20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
-      <input id="ledgerSearch" type="text" placeholder="🔎 Tìm kiếm sản phẩm, dịch vụ..." class="tool-input" style="flex:1;min-width:220px;margin-top:0">
+      <input id="ledgerSearch" type="text" placeholder="🔎 Tìm kiếm sản phẩm, dịch vụ, repo..." class="tool-input" style="flex:1;min-width:220px;margin-top:0">
       <div style="display:flex;gap:6px;flex-wrap:wrap">
-        <button class="tool-btn filter-btn active" data-filter="all" style="margin:0;padding:8px 14px;font-size:12.5px">Tất cả (47)</button>
-        <button class="tool-btn filter-btn" data-filter="revenue" style="margin:0;padding:8px 14px;font-size:12.5px;background:var(--chip);color:var(--txt)">Đã có doanh thu</button>
-        <button class="tool-btn filter-btn" data-filter="repo" style="margin:0;padding:8px 14px;font-size:12.5px;background:var(--chip);color:var(--txt)">Từ Repo Thật</button>
+        <button class="filter-btn active" data-filter="all">Tất cả (47)</button>
+        <button class="filter-btn" data-filter="revenue">Đã có doanh thu</button>
+        <button class="filter-btn" data-filter="repo">Từ Repo Thật</button>
       </div>
     </div>
 
@@ -118,14 +138,14 @@
         tbody.innerHTML = items.map(m => `
           <tr>
             <td class="lname">
-              <div style="font-size:14px;font-weight:800;color:var(--txt)">${m.name}</div>
+              <div style="font-size:13.5px;font-weight:600;color:var(--txt)">${m.name}</div>
               <div style="font-size:12px;color:var(--muted);margin-top:2px;line-height:1.4">${m.desc}</div>
-              ${m.repoSource ? `<span style="display:inline-block;margin-top:4px;font-size:11px;background:var(--chip);color:var(--pepe);padding:1px 6px;border-radius:4px;font-weight:700">📦 Repo: ${m.repoSource}</span>` : ""}
+              ${m.repoSource ? `<span style="display:inline-block;margin-top:4px;font-size:11px;background:var(--chip);color:var(--pepe);padding:1px 6px;border-radius:4px;font-weight:600">📦 Repo: ${m.repoSource}</span>` : ""}
             </td>
             <td class="lstatus">
               <span class="st ${m.status}">${m.statusText}</span>
             </td>
-            <td class="lrev" style="color:${m.rev !== '0đ' ? 'var(--pepe)' : 'var(--muted)'};font-size:14px">${m.rev}</td>
+            <td class="lrev" style="color:${m.rev !== '0đ' ? 'var(--pepe)' : 'var(--muted)'};font-size:13.5px">${m.rev}</td>
           </tr>
         `).join("");
       }
@@ -151,14 +171,8 @@
 
       filterBtns.forEach(btn => {
         btn.addEventListener("click", () => {
-          filterBtns.forEach(b => {
-            b.classList.remove("active");
-            b.style.background = "var(--chip)";
-            b.style.color = "var(--txt)";
-          });
+          filterBtns.forEach(b => b.classList.remove("active"));
           btn.classList.add("active");
-          btn.style.background = "var(--pepe)";
-          btn.style.color = "#052e16";
           currentFilter = btn.dataset.filter;
           filterItems();
         });

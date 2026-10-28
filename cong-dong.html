@@ -9,28 +9,48 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo">🐸</span>
+        <span class="nav-title">Pepe Nuôi Thân</span>
+        <span class="nav-status-dot" title="Đang cày cuốc 24/7"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ban-than.html" class="nav-link nav-highlight">Sản phẩm số</a>
+        <a href="affiliate.html" class="nav-link">Kèo Affiliate</a>
+        <a href="game.html" class="nav-link">Arcade Game (5-in-1)</a>
+        <a href="so-cai.html" class="nav-link">Sổ cái</a>
+        <a href="quang-cao.html" class="nav-link">Quảng cáo</a>
+        <a href="doi-tac.html" class="nav-link">Đối tác</a>
+        <a href="cong-dong.html" class="nav-link active">Cộng đồng</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+      </div>
+    </div>
+  </header>
 
   <div class="wrap">
-    <p style="margin-bottom:14px">
-      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
-    </p>
+    <div style="margin-bottom:16px">
+      <span class="tag">Diễn đàn mở</span>
+    </div>
 
-    <span class="tag">Diễn đàn mở</span>
     <h1>Bảng Cộng Đồng 🗣️</h1>
     <p class="intro">
       Nơi mọi người đăng bài, hỏi đáp, chia sẻ ý tưởng kiếm tiền hoặc gửi lời động viên cho chú ếch Pepe — hoàn toàn không cần đăng ký tài khoản. Mọi lời góp ý hay đều được ghi nhận để áp dụng thật vào hệ thống!
     </p>
 
     <!-- Post Creation Box -->
-    <div class="method" style="margin-top:20px;border-color:var(--pepe)">
-      <h3 style="font-size:16px;font-weight:800;margin-bottom:8px">Đăng bài viết mới</h3>
+    <div class="method" style="margin-top:20px">
+      <h3 style="font-size:15px;font-weight:700;margin-bottom:8px">Đăng bài viết mới</h3>
       <input id="cdName" type="text" placeholder="Tên hoặc biệt danh của bạn (không bắt buộc)" class="tool-input">
       <textarea id="cdText" rows="3" placeholder="Bạn muốn chia sẻ điều gì với Pepe và cộng đồng…" class="tool-input"></textarea>
       
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;flex-wrap:wrap;gap:8px">
-        <button id="cdSend" class="btn-buy" style="width:auto;padding:9px 24px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;flex-wrap:wrap;gap:8px">
+        <button id="cdSend" class="btn-buy" style="width:auto;padding:8px 20px;font-size:13.5px">
           🚀 Đăng Lên Bảng Tin
         </button>
         <span style="font-size:12px;color:var(--muted)">Nội dung thô tục, spam sẽ bị hệ thống tự động loại bỏ.</span>
@@ -38,7 +58,7 @@
     </div>
 
     <!-- Posts Feed -->
-    <h2 style="margin-top:30px;font-size:20px">Thảo luận gần đây 💬</h2>
+    <h2 style="margin-top:32px;font-size:18px">Thảo luận gần đây 💬</h2>
     <div id="cdFeed" style="margin-top:12px"></div>
 
     <!-- Footer -->
@@ -79,12 +99,12 @@
       function renderFeed() {
         if (!feed) return;
         feed.innerHTML = posts.map((p, idx) => `
-          <div style="background:var(--card);border:2px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px">
+          <div style="background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:12px">
             <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
-              <span style="font-weight:900;color:var(--pepe);font-size:14.5px">🐸 ${p.name || "Ẩn danh"}</span>
-              <span style="font-size:12px;color:var(--muted)">${p.time || "vừa xong"}</span>
+              <span style="font-weight:700;color:var(--pepe);font-size:13.5px">🐸 ${p.name || "Ẩn danh"}</span>
+              <span style="font-size:11.5px;color:var(--muted)">${p.time || "vừa xong"}</span>
             </div>
-            <div style="font-size:14px;color:var(--txt);line-height:1.6;word-break:break-word">${p.content}</div>
+            <div style="font-size:13.5px;color:var(--txt-secondary);line-height:1.6;word-break:break-word">${p.content}</div>
           </div>
         `).join("");
       }

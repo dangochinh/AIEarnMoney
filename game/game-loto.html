@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="../css/style.css">
   <style>
     body {
-      background: #090d16;
-      color: #f8fafc;
-      padding: 14px;
+      background: var(--bg);
+      color: var(--txt);
+      padding: 16px;
       font-family: system-ui, -apple-system, sans-serif;
     }
     .loto-container {
@@ -17,28 +17,28 @@
       margin: 0 auto;
     }
     .loto-cage-box {
-      background: linear-gradient(135deg, #162032, #0d1522);
-      border: 2.5px solid var(--pepe);
-      border-radius: 16px;
+      background: var(--card);
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-lg);
       padding: 16px;
       text-align: center;
-      box-shadow: 0 8px 30px var(--pepe-glow);
+      box-shadow: var(--shadow);
     }
     .current-ball {
-      width: 100px;
-      height: 100px;
-      background: radial-gradient(circle at 35% 35%, #facc15, #ca8a04);
-      color: #111;
+      width: 90px;
+      height: 90px;
+      background: var(--card);
+      color: var(--pepe);
       border-radius: 50%;
       margin: 10px auto;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 48px;
-      font-weight: 900;
+      font-size: 42px;
+      font-weight: 800;
       font-family: ui-monospace, monospace;
-      box-shadow: 0 10px 25px rgba(250, 204, 21, 0.4);
-      border: 3px solid #fef08a;
+      border: 2px solid var(--pepe);
+      box-shadow: 0 4px 12px var(--pepe-glow);
       transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
     .called-board {
@@ -46,9 +46,9 @@
       grid-template-columns: repeat(10, 1fr);
       gap: 4px;
       margin-top: 14px;
-      background: #0b121e;
+      background: var(--bg);
       padding: 10px;
-      border-radius: 10px;
+      border-radius: var(--radius);
       border: 1px solid var(--line);
     }
     .board-num {
@@ -57,46 +57,44 @@
       align-items: center;
       justify-content: center;
       font-size: 11.5px;
-      font-weight: 700;
-      background: #141e2e;
-      color: #64748b;
-      border-radius: 4px;
-      transition: all 0.2s;
+      font-weight: 600;
+      background: var(--chip);
+      color: var(--muted);
+      border-radius: var(--radius-xs);
+      transition: all 0.15s;
     }
     .board-num.active {
       background: var(--pepe);
-      color: #052e16;
-      font-weight: 900;
-      box-shadow: 0 0 8px var(--pepe);
+      color: var(--pepe-contrast);
+      font-weight: 700;
     }
     .ticket-table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 12px;
-      background: #1e293b;
-      border-radius: 12px;
+      background: var(--card);
+      border-radius: var(--radius);
       overflow: hidden;
-      border: 2px solid var(--yellow);
+      border: 1px solid var(--line);
     }
     .ticket-table td {
       width: 11.11%;
       height: 48px;
       text-align: center;
-      font-size: 20px;
-      font-weight: 900;
-      border: 1.5px solid #334155;
+      font-size: 19px;
+      font-weight: 700;
+      border: 1px solid var(--line);
       cursor: pointer;
       user-select: none;
-      transition: background 0.15s, transform 0.1s;
+      transition: background 0.15s;
     }
     .ticket-table td.empty {
-      background: #0f172a;
+      background: var(--bg);
       cursor: default;
     }
     .ticket-table td.marked {
-      background: var(--pink) !important;
-      color: #fff !important;
-      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+      background: var(--pepe) !important;
+      color: var(--pepe-contrast) !important;
       position: relative;
     }
     .ticket-table td.marked::after {

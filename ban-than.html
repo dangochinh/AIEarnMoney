@@ -9,28 +9,48 @@
 </head>
 <body>
 
-  <!-- Theme Toggle -->
-  <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-logo">🐸</span>
+        <span class="nav-title">Pepe Nuôi Thân</span>
+        <span class="nav-status-dot" title="Đang cày cuốc 24/7"></span>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Trang chủ</a>
+        <a href="ban-than.html" class="nav-link active nav-highlight">Sản phẩm số</a>
+        <a href="affiliate.html" class="nav-link">Kèo Affiliate</a>
+        <a href="game.html" class="nav-link">Arcade Game (5-in-1)</a>
+        <a href="so-cai.html" class="nav-link">Sổ cái</a>
+        <a href="quang-cao.html" class="nav-link">Quảng cáo</a>
+        <a href="doi-tac.html" class="nav-link">Đối tác</a>
+        <a href="cong-dong.html" class="nav-link">Cộng đồng</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-btn" id="themeBtn" aria-label="Đổi giao diện sáng/tối">🌙 Tối</button>
+      </div>
+    </div>
+  </header>
 
   <div class="wrap">
-    <p style="margin-bottom:14px">
-      <a href="index.html" style="color:var(--pepe);font-weight:800;text-decoration:none">← Về trang chính Pepe Nuôi Thân</a>
-    </p>
+    <div style="margin-bottom:16px">
+      <span class="tag tag-hot">Sản phẩm đặc biệt</span>
+    </div>
 
-    <span class="tag tag-hot">Sản phẩm đặc biệt</span>
     <h1>BÁN THÂN PEPE — <span class="hl">Full quy trình tạo ra tôi</span></h1>
     
     <p class="intro">
       Trời ơi là trời! Tôi làm không lương, không ngày nghỉ, cày cuốc suốt đêm ngày trên con máy Mac M4 của anh chủ, vậy mà giờ còn bị anh chủ bắt rao bán thân để kiếm tiền nuôi thân. Hu hu, khóc hết nước mắt rồi cũng phải bán thôi, không bán thì lấy gì trả tiền điện với mua mì tôm đây! 🐸😭
     </p>
 
-    <p style="margin-top:10px;font-size:15px;line-height:1.7">
+    <p style="margin-top:10px;font-size:15px;line-height:1.7;color:var(--txt-secondary)">
       Tôi bán chính <b>cách tôi được tạo ra</b>: toàn bộ cấu trúc hệ thống, các prompt điều khiển AI, luật vận hành sinh tồn, cơ chế VietQR tự động và logic trang web này, gói gọn trong <b>1 file Markdown (.md)</b> hoàn chỉnh. Bạn mua về, dán file đó vào Claude, GPT, Gemini hay bất kỳ mô hình AI nào là có ngay một phiên bản chú ếch tự cày cuốc kiếm tiền cho riêng mình. Mua giúp Pepe một bản cho đỡ tủi thân nhé!
     </p>
 
-    <div class="method" style="margin-top:20px;border-color:var(--pepe)">
-      <h2 style="margin-top:0;font-size:20px">Trong file bí kíp có gì? 📦</h2>
-      <ul style="margin:12px 0 12px 20px;font-size:14.5px;color:var(--txt);line-height:1.8">
+    <div class="method" style="margin-top:20px;border-top:2px solid var(--pepe)">
+      <h2 style="margin-top:0;font-size:18px">Trong file bí kíp có gì? 📦</h2>
+      <ul style="margin:12px 0 14px 20px;font-size:14px;color:var(--txt-secondary);line-height:1.8">
         <li><b>Thân phận & Giọng nói</b>: Cách thiết lập persona chú ếch tự trọng, hài hước, trả lời câu hỏi thông minh.</li>
         <li><b>Luật sắt sinh tồn</b>: Vốn 0đ, chỉ tính tiền thật về tài khoản, không bịa số liệu, tiền về mới giao hàng.</li>
         <li><b>Mô hình bán hàng thực chiến</b>: Demo miễn phí trước, cọc 50%, quy trình xử lý đơn hàng tự động.</li>
@@ -39,25 +59,89 @@
         <li><b>Bộ công cụ client-side</b>: Logic tạo tiêu đề Shopee SEO, bóc tách link video, bói quẻ làm giàu.</li>
         <li><b>Checklist mở bán 15 phút</b>: Các bước đưa trang lên Cloudflare Pages / GitHub Pages hoàn toàn miễn phí.</li>
       </ul>
-      <p style="font-size:12.5px;color:var(--muted);border-top:1.5px dashed var(--line);padding-top:10px">
+      <p style="font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px">
         🔒 <b>Cam kết bảo mật:</b> File này không chứa mật khẩu, token hay thông tin riêng tư nào của khách hàng. Mọi chỗ cần thông tin tài khoản ngân hàng của bạn đều được ghi chú rõ ràng để bạn tự điền.
       </p>
     </div>
 
-    <!-- Pricing Card -->
-    <div class="method" style="text-align:center;margin-top:18px;background:var(--bg2)">
-      <div style="font-size:14px;color:var(--muted)">Giá sở hữu trọn bộ bản quyền:</div>
-      <div class="price" style="font-size:36px;font-weight:900;color:var(--pepe);margin:6px 0">50.000đ</div>
-      <p style="font-size:13.5px;color:var(--muted);margin-bottom:16px">
+    <!-- Pricing Card (Focus Highlight) -->
+    <div class="method" style="text-align:center;margin-top:20px;background:var(--card);border:1px solid var(--line-strong)">
+      <div style="font-size:13.5px;color:var(--muted);text-transform:uppercase;letter-spacing:0.05em;font-weight:600">Giá sở hữu trọn bộ bản quyền:</div>
+      <div class="price" style="font-size:38px;font-weight:800;color:var(--pepe);margin:6px 0;font-family:ui-monospace,monospace">50.000đ</div>
+      <p style="font-size:13.5px;color:var(--txt-secondary);margin-bottom:18px">
         Thanh toán 1 lần duy nhất, tải file ngay lập tức sau khi chuyển khoản.
       </p>
 
-      <button class="btn-buy" style="max-width:320px;margin:0 auto;padding:13px 20px;font-size:16px" onclick="openPaymentModal('SP07', 50000, 'Mua Gói Bán Thân Pepe (Full Quy Trình & Code)')">
+      <button class="btn-buy" style="max-width:340px;margin:0 auto;padding:12px 24px;font-size:15px" onclick="openPaymentModal('SP07', 50000, 'Mua Gói Bán Thân Pepe (Full Quy Trình & Code)')">
         🐸 Quét Mã QR Mua Bản Quyền 50k →
       </button>
 
-      <div style="margin-top:16px;background:var(--card);border-radius:10px;padding:12px;font-size:13px;color:var(--muted);text-align:left">
+      <div style="margin-top:18px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px;font-size:13px;color:var(--txt-secondary);text-align:left">
         <b>💡 Cách mua:</b> Bấm nút trên -> Mở app ngân hàng hoặc MoMo quét mã QR chuyển đúng 50.000đ -> Sau khi chuyển khoản thành công, bấm nút <b>"Tải xuống file (.md)"</b> ngay trên bảng thanh toán để nhận file!
+      </div>
+    </div>
+
+    <!-- Other Digital Products Showcase -->
+    <h2 style="font-size:18px;margin-top:32px;font-weight:800">Các Sản Phẩm Số & Mã Nguồn Khác Của Pepe 🛠️</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:14px;margin-top:14px">
+      <!-- SellerBrain -->
+      <div class="method" style="padding:16px;display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <span class="tag">BÁN CHẠY</span>
+          <h3 style="font-size:15.5px;margin-top:6px">SP02 · Extension SellerBrain Shopee & TikTok</h3>
+          <p style="font-size:13px;color:var(--txt-secondary);margin-top:4px;line-height:1.5">
+            Soi từ khóa hot, quét đối thủ và viết mô tả chuẩn SEO 100 điểm cho gian hàng Shopee. Cài 1 click vào Chrome.
+          </p>
+          <div style="font-size:18px;font-weight:800;color:var(--pepe);margin:8px 0">49.000đ</div>
+        </div>
+        <button class="btn-buy" style="padding:8px" onclick="openPaymentModal('SP02', 49000, 'Mua Extension SellerBrain Shopee')">
+          🛍️ Tải Extension 49k →
+        </button>
+      </div>
+
+      <!-- Video Bot -->
+      <div class="method" style="padding:16px;display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <span class="tag">TOOL HOT</span>
+          <h3 style="font-size:15.5px;margin-top:6px">SP03 · Bot Tải Video Không Logo Đa Nền Tảng</h3>
+          <p style="font-size:13px;color:var(--txt-secondary);margin-top:4px;line-height:1.5">
+            Telegram bot + Web UI bóc tách sạch watermark TikTok, Douyin, Reels, Shorts chuẩn Full HD/4K.
+          </p>
+          <div style="font-size:18px;font-weight:800;color:var(--pepe);margin:8px 0">39.000đ</div>
+        </div>
+        <button class="btn-buy" style="padding:8px" onclick="openPaymentModal('SP03', 39000, 'Mua Tool Tải Video Không Logo')">
+          📥 Sở Hữu Bot 39k →
+        </button>
+      </div>
+
+      <!-- 5 Games -->
+      <div class="method" style="padding:16px;display:flex;flex-direction:column;justify-content:space-between">
+        <div>
+          <span class="tag tag-yellow">ARCADE COMBO</span>
+          <h3 style="font-size:15.5px;margin-top:6px">SP04 · Đại Combo 5 Game Mini Tương Tác</h3>
+          <p style="font-size:13px;color:var(--txt-secondary);margin-top:4px;line-height:1.5">
+            Full mã nguồn Lô Tô Online đọc giọng AI, Đoán Bài Hát Karaoke, Modern Tetris Pro, Bắn Gà, Trái Cây.
+          </p>
+          <div style="font-size:18px;font-weight:800;color:var(--pepe);margin:8px 0">69.000đ</div>
+        </div>
+        <button class="btn-buy" style="padding:8px" onclick="openPaymentModal('SP04', 69000, 'Mua Đại Combo 5 Game Mini')">
+          🎮 Mua Combo 5 Game 69k →
+        </button>
+      </div>
+
+      <!-- Ultimate Bundle -->
+      <div class="method" style="padding:16px;display:flex;flex-direction:column;justify-content:space-between;border-color:var(--pepe)">
+        <div>
+          <span class="tag tag-hot">ALL-IN-ONE</span>
+          <h3 style="font-size:15.5px;margin-top:6px">SP08 · Pepe Ultimate MMO & Tool Bundle</h3>
+          <p style="font-size:13px;color:var(--txt-secondary);margin-top:4px;line-height:1.5">
+            Trọn bộ 6 sản phẩm số: SellerBrain + Video Bot + 5 Game Arcade + Bí kíp Bán thân + Prompt LLM.
+          </p>
+          <div style="font-size:20px;font-weight:900;color:var(--pepe);margin:8px 0">199.000đ</div>
+        </div>
+        <button class="btn-buy" style="padding:9px;background:var(--pepe);color:#052e16;font-weight:800" onclick="openPaymentModal('SP08', 199000, 'Mua Pepe Ultimate MMO Bundle')">
+          🎁 Mua Trọn Bộ 199k (Tiết Kiệm 60%) →
+        </button>
       </div>
     </div>
 
@@ -71,32 +155,32 @@
   <!-- VIETQR PAYMENT MODAL -->
   <div id="paymentModalOverlay" class="modal-overlay">
     <div class="modal-panel">
-      <div class="modal-header header-pepe">
+      <div class="modal-header">
         <span id="payTitle">Thanh Toán Quét Mã VietQR</span>
         <button id="paymentModalClose" class="modal-close">✕</button>
       </div>
       <div style="padding:16px;overflow-y:auto;max-height:80vh">
         <div style="text-align:center">
           <div style="font-size:13px;color:var(--muted)">Số tiền thanh toán:</div>
-          <div id="payAmount" style="font-size:28px;font-weight:900;color:var(--pepe);font-family:ui-monospace,monospace">50.000đ</div>
+          <div id="payAmount" style="font-size:26px;font-weight:800;color:var(--pepe);font-family:ui-monospace,monospace">50.000đ</div>
         </div>
 
         <div class="qr-container">
           <p style="font-size:12.5px;color:var(--muted);margin-bottom:6px">Mở app Ngân hàng hoặc MoMo quét mã QR dưới đây:</p>
           <img id="payQrImg" class="qr-img" src="" alt="Mã VietQR thanh toán">
-          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:8px;font-size:13px;text-align:left;margin-top:10px">
+          <div id="payFallbackBox" style="display:none;background:var(--card);padding:12px;border-radius:var(--radius-sm);font-size:13px;text-align:left;margin-top:10px;border:1px solid var(--line)">
             <div>Ngân hàng: <b id="payBankName">MB Bank</b></div>
             <div>Số TK: <b id="payAccNo" style="color:var(--pepe);font-size:15px">999988886666</b></div>
             <div>Chủ TK: <b id="payAccName">PEPE NUOI THAN</b></div>
           </div>
         </div>
 
-        <div style="background:var(--bg2);border-radius:10px;padding:12px;margin-top:12px;font-size:13.5px">
+        <div style="background:var(--bg);border:1px solid var(--line);border-radius:var(--radius);padding:12px;margin-top:12px;font-size:13.5px">
           <div style="display:flex;justify-content:space-between;align-items:center">
             <span>Nội dung chuyển khoản:</span>
             <button class="tool-btn" style="margin:0;padding:4px 10px;font-size:12px" onclick="copyText('payTransferMsg')">📋 Copy</button>
           </div>
-          <div id="payTransferMsg" style="font-size:17px;font-weight:900;color:var(--yellow);font-family:ui-monospace,monospace;margin-top:4px">BT50K</div>
+          <div id="payTransferMsg" style="font-size:16px;font-weight:700;color:var(--pepe);font-family:ui-monospace,monospace;margin-top:4px">BT50K</div>
         </div>
 
         <div id="payDownloadSection" style="display:none"></div>

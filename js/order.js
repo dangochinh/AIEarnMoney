@@ -183,18 +183,20 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
     amount = 49000;
     code = "VID" + Math.floor(1000 + Math.random() * 9000);
   } else if (productId === "SP02") {
-    title = "Mua Bản Quyền Extension SellerBrain Shopee";
+    title = "Mua Bản Quyền Extension SellerBrain Shopee & TikTok";
     amount = 49000;
     code = "SB" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
     downloadUrl = "products/sellerbrain-extension-pro.zip";
   } else if (productId === "SP03") {
-    title = "Mua Tool / Bot Tải Video Không Logo";
+    title = "Mua Telegram Video Downloader Bot Không Logo";
     amount = 39000;
     code = "DL" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/video-downloader-bot-pro.zip";
   } else if (productId === "SP04") {
-    title = "Mua Đại Combo 4 Game (Lô Tô, Đoán Nhạc Karaoke, Bắn Gà, Trái Cây)";
-    amount = 49000;
+    title = "Mua Đại Combo 5 Game Mini (Lô Tô, Đoán Nhạc, Tetris, Bắn Gà, Trái Cây)";
+    amount = 69000;
     code = "GM" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
     downloadUrl = "products/loto-online-bundle.zip";
@@ -210,10 +212,28 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
     code = "MC" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
     downloadUrl = "products/gametime-karaoke-quiz.zip";
+  } else if (productId === "SP_TETRIS") {
+    title = "Mua Mã Nguồn Game Modern Tetris Pro HTML5";
+    amount = 29000;
+    code = "TT" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/tetris-modern-pro.zip";
+  } else if (productId === "SP_CHUTE") {
+    title = "Mua Mã Nguồn Game Chute Sort Fruit Puzzle";
+    amount = 29000;
+    code = "CS" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/chute-sort-game-bundle.zip";
   } else if (productId === "SP07" || productId === "ban-than") {
     title = "BÁN THÂN PEPE — Full Quy Trình & Source Code Tạo Ra Tôi";
     amount = 50000;
     code = "BT" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/PEPE-BAN-THAN-FULL-GUIDE.md";
+  } else if (productId === "SP08" || productId === "combo-ultimate") {
+    title = "Pepe Ultimate MMO Bundle — Trọn Bộ 6 Sản Phẩm & Mã Nguồn";
+    amount = 199000;
+    code = "ULT" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
     downloadUrl = "products/PEPE-BAN-THAN-FULL-GUIDE.md";
   } else if (productId === "donate") {
