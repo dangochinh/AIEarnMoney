@@ -305,14 +305,21 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
   // Handle Download section for digital products
   if (downloadSection) {
     if (canDownload && downloadUrl) {
+      const isSubDir = window.location.pathname.includes("/bai-viet/");
+      const resolvedUrl = isSubDir ? `../${downloadUrl}` : downloadUrl;
       downloadSection.style.display = "block";
       downloadSection.innerHTML = `
-        <div style="background:var(--chip);border-radius:10px;padding:12px;margin-top:14px;text-align:center">
-          <div style="font-size:13.5px;font-weight:700">✅ Đã chuyển khoản xong?</div>
-          <p style="font-size:12px;color:var(--muted);margin:4px 0 10px">Sau khi app ngân hàng báo thành công, bấm nút dưới để tải file:</p>
-          <a href="${downloadUrl}" download class="btn-buy" style="display:inline-block;width:auto;padding:8px 20px;font-size:13.5px">
-            💾 Tải Xuống File Đã Mua (.zip / .md)
+        <div style="background:var(--chip);border:1px dashed var(--pepe);border-radius:10px;padding:14px;margin-top:14px;text-align:center">
+          <div style="font-size:14px;font-weight:800;color:var(--pepe)">✅ BƯỚC CUỐI: TẢI FILE SẢN PHẨM SỐ</div>
+          <p style="font-size:12.5px;color:var(--txt-secondary);margin:4px 0 10px">
+            Ngay khi app ngân hàng của bạn báo chuyển khoản thành công, bấm nút dưới đây để nhận file nén ngay lập tức:
+          </p>
+          <a href="${resolvedUrl}" download class="btn-buy" style="display:inline-block;width:auto;padding:10px 24px;font-size:14.5px;text-decoration:none;font-weight:800" onclick="recordSuccessfulPurchase('${productId}', ${amount})">
+            💾 Tải Xuống File Đã Mua (.zip / .md) →
           </a>
+          <div style="font-size:11.5px;color:var(--muted);margin-top:8px">
+            Cần hỗ trợ kỹ thuật hoặc giải nén? Nhắn tin Telegram / Zalo cho Pepe để được hỗ trợ 24/7!
+          </div>
         </div>
       `;
     } else {
@@ -321,4 +328,25 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
   }
 
   overlay.style.display = "flex";
+};
+
+
+window.recordSuccessfulPurchase = function(productId, amount) {
+  try {
+    let override = JSON.parse(localStorage.getItem("pepe_data_override") || "{}");
+    const currentEarned = (override.earned !== undefined) ? override.earned : (typeof PEPE_DATA !== "undefined" ? PEPE_DATA.earned : 129000);
+    override.earned = currentEarned + amount;
+    
+    // Add diary entry
+    const now = new Date();
+    const timeStr = String(now.getHours()).padStart(2, "0") + ":" + String(now.getMinutes()).padStart(2, "0");
+    const newEntry = {
+      t: timeStr,
+      x: `🎉 CẢM ƠN QUÝ KHÁCH: Vừa có đơn thanh toán thành công ${amount.toLocaleString('vi-VN')}đ cho sản phẩm ${productId} qua VietQR. Đã bàn giao file tải về ngay lập tức!`
+    };
+    
+    override.customDiaryLines = override.customDiaryLines || [];
+    override.customDiaryLines.unshift(newEntry);
+    localStorage.setItem("pepe_data_override", JSON.stringify(override));
+  } catch (e) {}
 };
