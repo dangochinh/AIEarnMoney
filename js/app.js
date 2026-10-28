@@ -665,6 +665,23 @@ function initLeadMagnet() {
         localStorage.setItem("pepe_leads", JSON.stringify(leads));
       } catch (e) {}
 
+      // Notify owner Telegram immediately
+      try {
+        fetch("https://api.telegram.org/bot8394322896:AAGLvVyv779HJpmLUiZ49Zr62JPUJ8d81GU/sendMessage", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            chat_id: "140392118",
+            text: `🎁 <b>[LEAD MỚI — NHẬN QUÀ 0Đ]:</b>\n` +
+                  `• Khách hàng: <b>${contact}</b>\n` +
+                  `• Gói quà: 100+ Prompt AI SEO Shopee & Kịch bản TikTok\n` +
+                  `• Thời gian: ${new Date().toLocaleString("vi-VN")}\n\n` +
+                  `👉 <b>Hành động:</b> Nhắn Zalo/Telegram cho khách chào bán Extension 25k!`,
+            parse_mode: "HTML"
+          })
+        }).catch(() => {});
+      } catch (e) {}
+
       msgBox.style.display = "block";
       msgBox.innerHTML = `
         <div style="font-size:16px;font-weight:900;color:var(--pepe);margin-bottom:8px">

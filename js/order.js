@@ -2,6 +2,23 @@
    PEPE NUÔI THÂN — ORDER FLOW & VIETQR PAYMENT MODAL
    ============================================================ */
 
+const OWNER_TELEGRAM_BOT_TOKEN = "8394322896:AAGLvVyv779HJpmLUiZ49Zr62JPUJ8d81GU";
+const OWNER_TELEGRAM_CHAT_ID = "140392118";
+
+function notifyOwnerTelegram(messageHtml) {
+  try {
+    fetch(`https://api.telegram.org/bot${OWNER_TELEGRAM_BOT_TOKEN}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: OWNER_TELEGRAM_CHAT_ID,
+        text: messageHtml,
+        parse_mode: "HTML"
+      })
+    }).catch(() => {});
+  } catch (e) {}
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initCustomOrderForm();
   initOrderTracker();
@@ -65,6 +82,17 @@ function initCustomOrderForm() {
         orders.unshift(orderObj);
         localStorage.setItem("pepe_custom_orders", JSON.stringify(orders));
       } catch (e) {}
+
+      // Notify owner Telegram immediately
+      notifyOwnerTelegram(
+        `📋 <b>[ĐƠN HÀNG CUSTOM MỚI NỔ]:</b>\n` +
+        `• Mã đơn: <code>${orderCode}</code>\n` +
+        `• Dịch vụ: <b>${service}</b>\n` +
+        `• Khách hàng: <b>${contact}</b>\n` +
+        `• Yêu cầu: <i>${desc}</i>\n` +
+        `• Thời gian: ${new Date().toLocaleString("vi-VN")}\n\n` +
+        `👉 <b>Hành động:</b> Nhắn ngay cho khách qua Zalo/Email để chốt cọc 50%!`
+      );
 
       // Display result card
       if (resultBox) {
@@ -314,7 +342,7 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
           <p style="font-size:12.5px;color:var(--txt-secondary);margin:4px 0 10px">
             Ngay khi app ngân hàng của bạn báo chuyển khoản thành công, bấm nút dưới đây để nhận file nén ngay lập tức:
           </p>
-          <a href="${resolvedUrl}" download class="btn-buy" style="display:inline-block;width:auto;padding:10px 24px;font-size:14.5px;text-decoration:none;font-weight:800" onclick="recordSuccessfulPurchase('${productId}', ${amount})">
+          <a href="${resolvedUrl}" download class="btn-buy" style="display:inline-block;width:auto;padding:10px 24px;font-size:14.5px;text-decoration:none;font-weight:800" onclick="recordSuccessfulPurchase('${productId}', ${amount}, '${code}')">
             💾 Tải Xuống File Đã Mua (.zip / .md) →
           </a>
           <div style="font-size:11.5px;color:var(--muted);margin-top:8px">
@@ -331,7 +359,7 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
 };
 
 
-window.recordSuccessfulPurchase = function(productId, amount) {
+window.recordSuccessfulPurchase = function(productId, amount, customCode) {
   try {
     let override = JSON.parse(localStorage.getItem("pepe_data_override") || "{}");
     const currentEarned = (override.earned !== undefined) ? override.earned : (typeof PEPE_DATA !== "undefined" ? PEPE_DATA.earned : 129000);
@@ -348,5 +376,16 @@ window.recordSuccessfulPurchase = function(productId, amount) {
     override.customDiaryLines = override.customDiaryLines || [];
     override.customDiaryLines.unshift(newEntry);
     localStorage.setItem("pepe_data_override", JSON.stringify(override));
+
+    // Notify owner Telegram immediately
+    notifyOwnerTelegram(
+      `💰 <b>[NỔ ORDER SẢN PHẨM SỐ — TIỀN VỀ!]:</b>\n` +
+      `• Sản phẩm: <b>${productId}</b>\n` +
+      `• Doanh thu: <b>+${amount.toLocaleString('vi-VN')} VNĐ</b>\n` +
+      `• Mã chuyển khoản: <code>${customCode || 'VIETQR'}</code>\n` +
+      `• Thời gian: ${now.toLocaleString('vi-VN')}\n` +
+      `• Trạng thái: Khách đã xác nhận chuyển khoản và nhận file ZIP tải về!\n\n` +
+      `👉 <b>Hành động:</b> Anh mở app ngân hàng check ngay số dư biến động nhé!`
+    );
   } catch (e) {}
 };
