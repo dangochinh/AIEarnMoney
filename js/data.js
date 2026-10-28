@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "28/10/2026 13:40",
+  updatedAt: "28/10/2026 13:41",
   viewsToday: 682,
 
   bankInfo: {
@@ -31,6 +31,9 @@ const PEPE_DATA = {
   ],
 
   freelanceRadar: [
+    { id: "remoteok_1137555", platform: "RemoteOK", title: "Accounting & Finance Manager", budget: "Thương lượng theo dự án ($50 - $300)", company: "Political Asylum Lawyers", proposal: "proposal_accounting_finance_manager_20261028_134107.md", status: "Đã soạn Proposal · Sẵn sàng làm demo" },
+    { id: "remoteok_1137554", platform: "RemoteOK", title: "Accounting Operations", budget: "$110,000 - $170,000/yr", company: "Plaid", proposal: "proposal_accounting_operations_20261028_134107.md", status: "Đã soạn Proposal · Sẵn sàng làm demo" },
+    { id: "remoteok_1137551", platform: "RemoteOK", title: "Senior Backend Engineer", budget: "$190,000 - $190,000/yr", company: "DuckDuckGo", proposal: "proposal_senior_backend_engineer_20261028_134107.md", status: "Đã soạn Proposal · Sẵn sàng làm demo" },
     { id: "remoteok_1137560", platform: "RemoteOK", title: "Accounting and Implementation Manager", budget: "Thương lượng theo dự án ($50 - $300)", company: "Aprio", proposal: "proposal_accounting_and_implementation__20261028_134033.md", status: "Đã soạn Proposal · Sẵn sàng làm demo" },
     { id: "remoteok_1137557", platform: "RemoteOK", title: "Senior DevOps Engineer", budget: "$50,000 - $150,000/yr", company: "Lemon.io", proposal: "proposal_senior_devops_engineer_20261028_134033.md", status: "Đã soạn Proposal · Sẵn sàng làm demo" },
     { id: "remoteok_1137556", platform: "RemoteOK", title: "Senior Finance Manager Management Accountant", budget: "Thương lượng theo dự án ($50 - $300)", company: "D2B", proposal: "proposal_senior_finance_manager_managem_20261028_134033.md", status: "Đã soạn Proposal · Sẵn sàng làm demo" },
@@ -52,6 +55,9 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "13:41", x: "Radar freelance vừa phát hiện job: 'Accounting & Finance Manager' ngân sách Thương lượng theo dự án ($50 - $300) trên RemoteOK — Pepe đã soạn proposal chi tiết và sẵn sàng gửi demo chốt đơn!" },
+        { t: "13:41", x: "Radar freelance vừa phát hiện job: 'Accounting Operations' ngân sách $110,000 - $170,000/yr trên RemoteOK — Pepe đã soạn proposal chi tiết và sẵn sàng gửi demo chốt đơn!" },
+        { t: "13:41", x: "Radar freelance vừa phát hiện job: 'Senior Backend Engineer' ngân sách $190,000 - $190,000/yr trên RemoteOK — Pepe đã soạn proposal chi tiết và sẵn sàng gửi demo chốt đơn!" },
         { t: "13:40", x: "Radar freelance vừa phát hiện job: 'Accounting and Implementation Manager' ngân sách Thương lượng theo dự án ($50 - $300) trên RemoteOK — Pepe đã soạn proposal chi tiết và sẵn sàng gửi demo chốt đơn!" },
         { t: "13:40", x: "Radar freelance vừa phát hiện job: 'Senior DevOps Engineer' ngân sách $50,000 - $150,000/yr trên RemoteOK — Pepe đã soạn proposal chi tiết và sẵn sàng gửi demo chốt đơn!" },
         { t: "13:40", x: "Radar freelance vừa phát hiện job: 'Senior Finance Manager Management Accountant' ngân sách Thương lượng theo dự án ($50 - $300) trên RemoteOK — Pepe đã soạn proposal chi tiết và sẵn sàng gửi demo chốt đơn!" },
