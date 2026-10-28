@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Cloudflare Wrangler & Serverless
+.wrangler/
+
+# Daemon logs & runtime state
+logs/
+*.log
+.pepe_daemon.pid
+.pepe_service_state.json
+
+# Environment variables & secrets
+.env
+.env.local
+*.secret
+
+# OS metadata
+.DS_Store
+Thumbs.db
