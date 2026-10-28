@@ -81,7 +81,7 @@ def submit_indexnow() -> dict:
             )
             with urllib.request.urlopen(req, timeout=10) as resp:
                 results[name] = {"status": resp.status, "msg": "Submitted successfully"}
-                print(f"✅ [IndexNow] {name}: HTTP {resp.status} - Đã submit {len(URLS_TO_INDEX)} URLs")
+                print(f"✅ [IndexNow] {name}: HTTP {resp.status} - Đã submit {len(urls_to_submit)} URLs")
         except Exception as e:
             results[name] = {"status": "error", "msg": str(e)}
             print(f"⚠️ [IndexNow] {name} error: {e}")
