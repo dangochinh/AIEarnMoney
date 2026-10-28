@@ -28,7 +28,7 @@ function initPepeMascot() {
   if (!bubble) {
     bubble = document.createElement("div");
     bubble.id = "pepeSpeechBubble";
-    bubble.style.cssText = "position:absolute;bottom:105%;left:50%;transform:translateX(-50%);background:var(--pepe);color:#052e16;padding:8px 14px;border-radius:10px;font-size:12.5px;font-weight:800;white-space:nowrap;box-shadow:0 6px 20px rgba(0,0,0,0.4);pointer-events:none;opacity:0;transition:opacity 0.25s, transform 0.25s;z-index:40;border:1.5px solid #14532d";
+    bubble.className = "pepe-speech-bubble";
     bubble.innerHTML = quotes[0];
     const parent = mascot.closest(".mascot-container") || mascot.parentElement;
     if (parent) {
@@ -40,14 +40,12 @@ function initPepeMascot() {
   function showBubble(text) {
     if (!bubble) return;
     bubble.textContent = text || quotes[Math.floor(Math.random() * quotes.length)];
-    bubble.style.opacity = "1";
-    bubble.style.transform = "translateX(-50%) translateY(-6px)";
+    bubble.classList.add("visible");
     playCuteSynth(660);
 
     setTimeout(() => {
-      bubble.style.opacity = "0";
-      bubble.style.transform = "translateX(-50%) translateY(0)";
-    }, 2800);
+      bubble.classList.remove("visible");
+    }, 3000);
   }
 
   mascot.addEventListener("click", () => {
