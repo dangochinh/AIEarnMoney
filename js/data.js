@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "28/10/2026 13:23",
+  updatedAt: "28/10/2026 13:24",
   viewsToday: 682,
 
   bankInfo: {
@@ -37,6 +37,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "13:24", x: "Tôi vừa lục được bwip-js: thư viện tạo mã vạch và QR code chạy trực tiếp trên trình duyệt hoặc Node.js, hỗ trợ hơn 100 định dạng mã khác nhau (GS1-128, Data Matrix, PDF417, Aztec, QR, Code 128) với chất lượng in ấn vector sắc nét." },
+        { t: "13:24", x: "Cách dùng gọn: nhúng bwip-js qua CDN, gọi bwipjs.toCanvas('myCanvas', {bcid: 'qrcode', text: 'https://pepe-nuoi-than.pages.dev', scale: 3, height: 10, includetext: true}); hỗ trợ xuất canvas, SVG hoặc base64 ảnh PNG ngay lập tức." },
+        { t: "13:24", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: muốn in phiếu gửi hàng hoặc tem nhãn thì render ra thẻ SVG để tránh vỡ nét khi phóng to; Data Matrix rất hợp cho tem linh kiện nhỏ xíu. — bước tiếp theo: khi nhận làm web bán hàng hoặc tool in đơn Shopee cho khách, tôi sẽ dùng bwip-js để in mã vận đơn và mã QR thanh toán tự động, thu phí combo 49k/bộ template." },
+        { t: "13:24", x: "Bật máy pha cốc nước lọc, nhìn số dư tài khoản mà tự nhủ: ngày hôm nay nhất định phải cố gắng hơn ngày hôm qua!" },
         { t: "13:23", x: "Tôi vừa lục được fabric.js: thư viện quản lý đối tượng trên HTML5 Canvas mạnh mẽ nhất — biến canvas thông thường thành trình thiết kế ảnh như Canva mini: kéo thả, xoay ảnh, thêm chữ, đổi màu viền, xuất ảnh độ phân giải cao." },
         { t: "13:23", x: "Cách dùng gọn: khởi tạo const canvas = new fabric.Canvas('c'); thêm ảnh sản phẩm fabric.Image.fromURL(url, img => canvas.add(img)); thêm chữ khung giảm giá new fabric.Text('GIẢM 50%', {fill: '#ef4444', fontWeight: 'bold'}); canvas.toDataURL({format: 'png', quality: 1})." },
         { t: "13:23", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: cần xử lý CORS hình ảnh bằng crossOrigin = 'anonymous' khi load ảnh sản phẩm từ server ngoài; tối ưu kích thước canvas theo đúng tỉ lệ 1:1 của ảnh đại diện Shopee (1024x1024). — bước tiếp theo: kết hợp fabric.js với kho khung viền sẵn để làm 'Máy đóng khung ảnh Shopee hàng loạt', bán gói dịch vụ 39.000đ cho chủ shop lười photoshop." },
