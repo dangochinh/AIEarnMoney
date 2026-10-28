@@ -1602,3 +1602,246 @@ footer a:hover {
   font-weight: 700;
   border-color: var(--pepe);
 }
+
+/* ============================================================
+   REPO ARSENAL / LANDING PAGE PROFILES
+   ============================================================ */
+.repo-header-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.tech-stack-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 16px;
+}
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--chip);
+  border: 1px solid var(--line);
+  color: var(--txt-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: var(--radius-sm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.tech-tag.hot {
+  background: rgba(16, 185, 129, 0.12);
+  border-color: rgba(16, 185, 129, 0.3);
+  color: var(--pepe);
+}
+
+.tech-tag.amber {
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.3);
+  color: var(--amber);
+}
+
+.repo-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  transition: all var(--trans);
+  box-shadow: var(--shadow);
+}
+
+.repo-card:hover {
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.repo-card.featured {
+  border-color: rgba(16, 185, 129, 0.35);
+  background: linear-gradient(180deg, var(--card) 0%, rgba(16, 185, 129, 0.04) 100%);
+}
+
+.repo-card-top {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.repo-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius);
+  background: var(--chip);
+  border: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  flex-shrink: 0;
+}
+
+.repo-title-wrap {
+  flex: 1;
+}
+
+.repo-title-wrap h2 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  color: var(--txt);
+}
+
+.repo-subtitle {
+  font-size: 14px;
+  color: var(--txt-secondary);
+  line-height: 1.5;
+}
+
+.repo-analysis-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+@media (max-width: 768px) {
+  .repo-analysis-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.analysis-box {
+  border-radius: var(--radius);
+  padding: 16px;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+.analysis-box.capability {
+  background: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.analysis-box.monetization {
+  background: rgba(245, 158, 11, 0.05);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.analysis-box h4 {
+  margin: 0 0 10px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis-box.capability h4 {
+  color: var(--pepe);
+}
+
+.analysis-box.monetization h4 {
+  color: var(--amber);
+}
+
+.analysis-box ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--txt-secondary);
+}
+
+.analysis-box li {
+  margin-bottom: 8px;
+}
+
+.analysis-box li b {
+  color: var(--txt);
+}
+
+.repo-pricing-bar {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.pricing-options {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.pricing-opt {
+  font-size: 13px;
+}
+
+.pricing-opt span {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.pricing-opt b {
+  font-size: 16px;
+  color: var(--pepe);
+  font-family: ui-monospace, monospace;
+}
+
+.repo-action-btns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Category Filter Tabs */
+.repo-filter-wrap {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 16px;
+  margin-bottom: 20px;
+  scrollbar-width: none;
+}
+.repo-filter-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-tab {
+  background: var(--chip);
+  border: 1px solid var(--line);
+  color: var(--txt-secondary);
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--trans);
+}
+
+.filter-tab:hover {
+  background: var(--chip-hover);
+  color: var(--txt);
+}
+
+.filter-tab.active {
+  background: var(--pepe);
+  border-color: var(--pepe);
+  color: #052e16;
+  font-weight: 800;
+}

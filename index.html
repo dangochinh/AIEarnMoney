@@ -193,6 +193,83 @@
       <span id="shareMsg" style="font-size:13px;color:var(--muted)"></span>
     </div>
 
+    <!-- Visitor Recap Strip (Lịch sử hoạt động khi vắng mặt) -->
+    <div id="recapStrip" class="recap-strip" style="display:none"></div>
+
+    <!-- Activity Summary Dashboard (Sum Lịch Sử Hoạt Động Của Pepe) -->
+    <div class="summary-grid" id="summaryGrid">
+      <div class="summary-card">
+        <div class="s-icon">🖥️</div>
+        <div class="s-val" id="sumHardware" style="font-size:14px">Apple M4 24/7</div>
+        <div class="s-lbl">Hạ Tầng Tự Cày</div>
+      </div>
+      <div class="summary-card">
+        <div class="s-icon">🔄</div>
+        <div class="s-val" id="sumCycles">--</div>
+        <div class="s-lbl">Chu Kỳ Tự Động</div>
+      </div>
+      <div class="summary-card">
+        <div class="s-icon">🎬</div>
+        <div class="s-val" id="sumAffiliate">--</div>
+        <div class="s-lbl">Content Affiliate</div>
+      </div>
+      <div class="summary-card">
+        <div class="s-icon">📦</div>
+        <div class="s-val" id="sumProducts">7</div>
+        <div class="s-lbl">Sản Phẩm Mở Bán</div>
+      </div>
+      <div class="summary-card">
+        <div class="s-icon">🌐</div>
+        <div class="s-val" id="sumDeploys">--</div>
+        <div class="s-lbl">Deploy Cloudflare</div>
+      </div>
+      <div class="summary-card">
+        <div class="s-icon">⚡</div>
+        <div class="s-val" id="sumNextRun">--:--</div>
+        <div class="s-lbl">Chạy Tiếp Theo</div>
+      </div>
+    </div>
+
+    <!-- Live Terminal Daemon Log Viewer -->
+    <div style="margin:20px 0" id="pepeTerminalSection">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:20px">💻</span>
+          <div>
+            <h3 style="font-size:16px;font-weight:800;color:var(--txt);margin:0">Nhật Ký Terminal Trực Tiếp (Live Daemon Logs)</h3>
+            <p style="font-size:12.5px;color:var(--muted);margin:2px 0 0 0">Ghi nhận từng thao tác tự động trên máy Apple Silicon M4 của Pepe:</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:6px">
+          <button id="btnRefreshLog" class="tool-btn" style="width:auto;margin:0;padding:5px 12px;font-size:12px;background:var(--chip);color:var(--txt)">🔄 Làm mới</button>
+          <button id="btnCopyLog" class="tool-btn" style="width:auto;margin:0;padding:5px 12px;font-size:12px;background:var(--pepe);color:#052e16">📋 Sao Chép Log</button>
+        </div>
+      </div>
+
+      <!-- Terminal Window Box -->
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div class="terminal-dots">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+            </div>
+            <span style="font-size:11.5px;color:var(--txt-secondary);font-family:ui-monospace,monospace">pepe@mac-m4: ~/AIEarnMoney — tail -f logs/pepe_daemon.log (LIVE)</span>
+          </div>
+          <div style="display:flex;gap:4px">
+            <button class="term-filter active" data-term="all">Tất cả</button>
+            <button class="term-filter" data-term="Affiliate">Affiliate</button>
+            <button class="term-filter" data-term="Deployer">Deploy & Git</button>
+            <button class="term-filter" data-term="Tech">Tech & SP</button>
+          </div>
+        </div>
+        <div class="terminal-body" id="terminalLogBody">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+
     <!-- Quick Ecosystem Links Cards -->
     <div class="quick-nav-grid">
       <a href="#sectionVideoAI" class="quick-nav-card">
