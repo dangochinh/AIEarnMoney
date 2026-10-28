@@ -9,9 +9,16 @@
   <style>
     .game-nav-tabs {
       display: flex;
-      gap: 6px;
+      gap: 8px;
       margin-top: 18px;
-      flex-wrap: wrap;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 4px;
+    }
+    .game-nav-tabs::-webkit-scrollbar {
+      display: none;
     }
     .game-tab-btn {
       padding: 8px 14px;
@@ -25,6 +32,8 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      white-space: nowrap;
+      flex-shrink: 0;
       transition: all var(--trans);
     }
     .game-tab-btn:hover {
@@ -54,6 +63,11 @@
       height: 100%;
       border: none;
       display: block;
+    }
+    @media (max-width: 600px) {
+      .game-frame-box {
+        height: 520px;
+      }
     }
   </style>
 </head>

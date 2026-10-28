@@ -17,9 +17,14 @@
     }
     .aff-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
       gap: 16px;
       margin-top: 18px;
+    }
+    @media (max-width: 640px) {
+      .aff-grid {
+        grid-template-columns: 1fr;
+      }
     }
     .aff-card {
       background: var(--card);

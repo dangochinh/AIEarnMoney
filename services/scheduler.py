@@ -77,6 +77,14 @@ class ContinuousPepeEngine:
 
         lines_added = self.diary_logger.append_diary_entries(tech_topic=topic)
 
+        # Cập nhật logs và activity summary vào data.js
+        if JS_DATA_FILE.exists():
+            with open(JS_DATA_FILE, "r", encoding="utf-8") as f:
+                content = f.read()
+            content = self._sync_logs_and_summary(content)
+            with open(JS_DATA_FILE, "w", encoding="utf-8") as f:
+                f.write(content)
+
         # Deploy
         dep = self.deployer.commit_and_deploy(
             note=f"Pepe nghiên cứu {topic['name']} & đẩy mạnh sản phẩm số {rand_prod['name']}"
@@ -88,6 +96,65 @@ class ContinuousPepeEngine:
             "sales_copy": sales_copy_file.name,
             "deploy": dep
         }
+
+    def _sync_logs_and_summary(self, content: str) -> str:
+        """Đọc file log thật của daemon và chèn mảng daemonLogs cùng activitySummary vào data.js."""
+        lines = []
+        if LOG_FILE.exists():
+            with open(LOG_FILE, "r", encoding="utf-8", errors="ignore") as f:
+                lines = [l.strip() for l in f.readlines() if l.strip()]
+
+        deploy_count = sum(1 for l in lines if "Cloudflare Pages deployed" in l)
+        aff_count = sum(1 for l in lines if "[AffiliateEngine]" in l or "[Worker: AffiliateContentEngine]" in l)
+        tech_count = sum(1 for l in lines if "[Worker: TechResearcher]" in l)
+        total_cycles = max(1, (aff_count // 3) + tech_count)
+        now_str = datetime.now().strftime("%H:%M:%S")
+
+        parsed_logs = []
+        for l in lines[-30:]:
+            m = re.match(r"^(\d{4}-\d{2}-\d{2}\s+(\d{2}:\d{2}:\d{2}))\s+\[([A-Z]+)\]\s+(.*)$", l)
+            if m:
+                _, tm, lvl, rest = m.groups()
+                tag_m = re.search(r"\[([a-zA-Z0-9_: ]+)\]", rest)
+                tag = tag_m.group(1).replace("Worker: ", "") if tag_m else "System"
+                clean_msg = re.sub(r"\[[a-zA-Z0-9_: ]+\]\s*", "", rest).replace('"', '\\"').replace("\n", " ")
+                parsed_logs.append(
+                    f'    {{ time: "{tm}", level: "{lvl}", tag: "{tag}", msg: "{clean_msg}" }}'
+                )
+
+        logs_code = "  daemonLogs: [\n" + ",\n".join(parsed_logs) + "\n  ],\n\n"
+        summary_code = (
+            "  activitySummary: {\n"
+            f'    daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",\n'
+            f'    uptimeDesc: "Chạy liên tục không nghỉ",\n'
+            f'    totalCycles: {total_cycles},\n'
+            f'    affiliateGenerated: {aff_count},\n'
+            f'    productsLive: 7,\n'
+            f'    deployCount: {deploy_count},\n'
+            f'    lastDeploy: "{now_str}",\n'
+            f'    nextCycleMinutes: 5\n'
+            "  },\n\n"
+        )
+
+        # Replace or inject daemonLogs
+        if "daemonLogs:" in content:
+            content = re.sub(r'  daemonLogs:\s*\[[\s\S]*?\],\n\n', logs_code, content)
+        else:
+            m_days = re.search(r'  days:\s*\[', content)
+            if m_days:
+                pos = m_days.start()
+                content = content[:pos] + logs_code + content[pos:]
+
+        # Replace or inject activitySummary
+        if "activitySummary:" in content:
+            content = re.sub(r'  activitySummary:\s*\{[\s\S]*?\},\n\n', summary_code, content)
+        else:
+            m_days = re.search(r'  days:\s*\[', content)
+            if m_days:
+                pos = m_days.start()
+                content = content[:pos] + summary_code + content[pos:]
+
+        return content
 
     def _update_data_with_affiliate(self, camp: dict, bundle: dict, diary_lines: list):
         """Cập nhật mảng affiliateRadar và nhật ký vào js/data.js."""
@@ -148,6 +215,8 @@ class ContinuousPepeEngine:
             if m_days:
                 pos = m_days.start()
                 content = content[:pos] + aff_block + content[pos:]
+
+        content = self._sync_logs_and_summary(content)
 
         with open(JS_DATA_FILE, "w", encoding="utf-8") as f:
             f.write(content)
