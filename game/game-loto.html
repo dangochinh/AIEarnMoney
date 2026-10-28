@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lô Tô Online 🎲 — Pepe Nuôi Thân</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      background: #090d16;
+      color: #f8fafc;
+      padding: 14px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .loto-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .loto-cage-box {
+      background: linear-gradient(135deg, #162032, #0d1522);
+      border: 2.5px solid var(--pepe);
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 8px 30px var(--pepe-glow);
+    }
+    .current-ball {
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle at 35% 35%, #facc15, #ca8a04);
+      color: #111;
+      border-radius: 50%;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: 900;
+      font-family: ui-monospace, monospace;
+      box-shadow: 0 10px 25px rgba(250, 204, 21, 0.4);
+      border: 3px solid #fef08a;
+      transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .called-board {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 4px;
+      margin-top: 14px;
+      background: #0b121e;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+    }
+    .board-num {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11.5px;
+      font-weight: 700;
+      background: #141e2e;
+      color: #64748b;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .board-num.active {
+      background: var(--pepe);
+      color: #052e16;
+      font-weight: 900;
+      box-shadow: 0 0 8px var(--pepe);
+    }
+    .ticket-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid var(--yellow);
+    }
+    .ticket-table td {
+      width: 11.11%;
+      height: 48px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 900;
+      border: 1.5px solid #334155;
+      cursor: pointer;
+      user-select: none;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .ticket-table td.empty {
+      background: #0f172a;
+      cursor: default;
+    }
+    .ticket-table td.marked {
+      background: var(--pink) !important;
+      color: #fff !important;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+      position: relative;
+    }
+    .ticket-table td.marked::after {
+      content: "●";
+      position: absolute;
+      top: 2px;
+      right: 4px;
+      font-size: 10px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="loto-container">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;flex-wrap:wrap;gap:8px">
+      <div>
+        <h2 style="margin:0;font-size:22px;color:var(--yellow)">🎲 Lô Tô Online — Bản Tiệc Tùng</h2>
+        <p style="font-size:12.5px;color:var(--muted);margin:0">Dựa trên repo loto-online của anh chủ (github.com/dangochinh/loto-online)</p>
+      </div>
+      <a href="http://loto-online81.surge.sh/" target="_blank" rel="noopener" class="tool-btn" style="text-decoration:none;background:var(--pepe);color:#052e16;font-size:13px;padding:8px 14px;margin:0">
+        🌐 Mở Phòng Multiplayer (Surge) →
+      </a>
+    </div>
+
+    <!-- Host Cage Box -->
+    <div class="loto-cage-box">
+      <div style="font-size:13px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:1px">Lồng Cầu Kêu Số Tự Động</div>
+      
+      <div id="currentBall" class="current-ball">--</div>
+      <div id="callPhrase" style="font-size:15px;font-weight:800;color:var(--pepe);min-height:24px">Bấm nút để bắt đầu kêu số!</div>
+
+      <div style="display:flex;justify-content:center;gap:10px;margin-top:12px;flex-wrap:wrap">
+        <button id="btnDraw" class="btn-buy" style="width:auto;padding:10px 22px;font-size:15px">
+          🎲 Kêu Số Tiếp Theo
+        </button>
+        <button id="btnAutoDraw" class="tool-btn" style="background:var(--chip);color:var(--txt);margin:0;padding:10px 18px">
+          ⏱️ Tự Động Kêu (Mỗi 4s)
+        </button>
+        <button id="btnResetGame" class="tool-btn" style="background:#ef4444;color:#fff;margin:0;padding:10px 14px">
+          🔄 Ván Mới
+        </button>
+      </div>
+
+      <!-- Called numbers board -->
+      <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted)">
+        <span>Bảng 90 số đã kêu (<b id="calledCount" style="color:var(--yellow)">0</b>/90 số):</span>
+        <label><input id="chkVoice" type="checkbox" checked> Bật giọng đọc số</label>
+      </div>
+      <div id="calledBoard" class="called-board"></div>
+    </div>
+
+    <!-- Player Ticket Section -->
+    <div class="method" style="margin-top:16px;border-color:var(--yellow)">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <div>
+          <h3 style="font-size:17px;color:var(--yellow)">🎫 Tấm Vé Lô Tô Của Bạn</h3>
+          <p style="font-size:12px;color:var(--muted);margin-top:2px">Chạm vào số trên vé để đặt hạt cờ. Đủ 1 hàng ngang 5 số là KINH (BINGO)!</p>
+        </div>
+        <div style="display:flex;gap:6px">
+          <button id="btnNewTicket" class="tool-btn" style="margin:0;padding:6px 12px;font-size:12px;background:var(--chip)">
+            🎟️ Đổi Vé Khác
+          </button>
+          <button id="btnAutoCheck" class="tool-btn" style="margin:0;padding:6px 12px;font-size:12px;background:var(--cyan);color:#083344">
+            🔍 Tự Động Dò
+          </button>
+        </div>
+      </div>
+
+      <table class="ticket-table" id="ticketTable"></table>
+
+      <div style="margin-top:12px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
+        <span id="bingoStatus" style="font-size:13.5px;font-weight:700;color:var(--muted)">Chưa có hàng nào đủ 5 số.</span>
+        <button id="btnClaimBingo" class="btn-buy" style="width:auto;background:var(--pink);color:#fff;padding:10px 24px;font-size:15px;animation:pulseDot 1.5s infinite">
+          🎉 HÔ KINH (BINGO)!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Audio phrases for loto
+    const RHYMES = {
+      1: "Một là một con chim", 10: "Mười là mười đồng bạc", 25: "Hai lăm hai lăm tết đến nơi rồi",
+      38: "Ba tám ba tám phát tài", 68: "Sáu tám sáu tám lộc phát", 79: "Bảy chín thần tài gõ cửa",
+      88: "Tám tám hai con số còng", 90: "Chín mươi con số cuối cùng"
+    };
+
+    let calledNumbers = [];
+    let autoTimer = null;
+    let ticketRows = [];
+
+    // Initialize 90 numbers board
+    const boardEl = document.getElementById("calledBoard");
+    for (let i = 1; i <= 90; i++) {
+      const d = document.createElement("div");
+      d.id = "bnum_" + i;
+      d.className = "board-num";
+      d.textContent = i;
+      boardEl.appendChild(d);
+    }
+
+    // Generate random 9x3 ticket with exactly 5 numbers per row
+    function generateTicket() {
+      const table = document.getElementById("ticketTable");
+      table.innerHTML = "";
+      ticketRows = [];
+
+      for (let r = 0; r < 3; r++) {
+        const row = new Array(9).fill(null);
+        // choose 5 distinct column indices
+        const cols = [];
+        while (cols.length < 5) {
+          const c = Math.floor(Math.random() * 9);
+          if (!cols.includes(c)) cols.push(c);
+        }
+        cols.sort((a,b) => a - b);
+
+        cols.forEach(c => {
+          const min = c === 0 ? 1 : c * 10;
+          const max = c === 8 ? 90 : c * 10 + 9;
+          row[c] = Math.floor(min + Math.random() * (max - min + 1));
+        });
+
+        ticketRows.push(row);
+      }
+
+      // Render table
+      ticketRows.forEach((r, rIdx) => {
+        const tr = document.createElement("tr");
+        r.forEach((num, cIdx) => {
+          const td = document.createElement("td");
+          if (num !== null) {
+            td.textContent = num;
+            td.dataset.num = num;
+            td.addEventListener("click", () => {
+              td.classList.toggle("marked");
+              checkBingo(false);
+            });
+          } else {
+            td.className = "empty";
+          }
+          tr.appendChild(td);
+        });
+        table.appendChild(tr);
+      });
+    }
+
+    generateTicket();
+    document.getElementById("btnNewTicket").addEventListener("click", generateTicket);
+
+    // Draw number
+    function drawNumber() {
+      if (calledNumbers.length >= 90) {
+        alert("Đã kêu hết 90 con số!");
+        clearInterval(autoTimer);
+        return;
+      }
+
+      let num;
+      do {
+        num = Math.floor(1 + Math.random() * 90);
+      } while (calledNumbers.includes(num));
+
+      calledNumbers.push(num);
+
+      // UI updates
+      const ball = document.getElementById("currentBall");
+      ball.textContent = num;
+      ball.style.transform = "scale(1.2)";
+      setTimeout(() => ball.style.transform = "scale(1)", 200);
+
+      document.getElementById("calledCount").textContent = calledNumbers.length;
+
+      const boardCell = document.getElementById("bnum_" + num);
+      if (boardCell) boardCell.classList.add("active");
+
+      // Speech / phrase
+      const phrase = RHYMES[num] || `Con số gì đây... Số ${num}!`;
+      document.getElementById("callPhrase").textContent = phrase;
+
+      if (document.getElementById("chkVoice").checked && "speechSynthesis" in window) {
+        window.speechSynthesis.cancel();
+        const ut = new SpeechSynthesisUtterance(`Số ${num}`);
+        ut.lang = "vi-VN";
+        window.speechSynthesis.speak(ut);
+      }
+    }
+
+    document.getElementById("btnDraw").addEventListener("click", drawNumber);
+
+    document.getElementById("btnAutoDraw").addEventListener("click", () => {
+      const btn = document.getElementById("btnAutoDraw");
+      if (autoTimer) {
+        clearInterval(autoTimer);
+        autoTimer = null;
+        btn.textContent = "⏱️ Tự Động Kêu (Mỗi 4s)";
+        btn.style.background = "var(--chip)";
+      } else {
+        drawNumber();
+        autoTimer = setInterval(drawNumber, 4000);
+        btn.textContent = "⏸️ Tạm Dừng Tự Động";
+        btn.style.background = "var(--yellow)";
+        btn.style.color = "#111";
+      }
+    });
+
+    document.getElementById("btnResetGame").addEventListener("click", () => {
+      if (confirm("Bắt đầu ván mới?")) {
+        clearInterval(autoTimer);
+        calledNumbers = [];
+        document.querySelectorAll(".board-num").forEach(el => el.classList.remove("active"));
+        document.getElementById("currentBall").textContent = "--";
+        document.getElementById("callPhrase").textContent = "Bấm nút để bắt đầu kêu số!";
+        document.getElementById("calledCount").textContent = "0";
+        document.getElementById("bingoStatus").textContent = "Chưa có hàng nào đủ 5 số.";
+        generateTicket();
+      }
+    });
+
+    // Auto check ticket
+    document.getElementById("btnAutoCheck").addEventListener("click", () => {
+      const cells = document.querySelectorAll("#ticketTable td[data-num]");
+      let count = 0;
+      cells.forEach(td => {
+        const n = parseInt(td.dataset.num, 10);
+        if (calledNumbers.includes(n)) {
+          td.classList.add("marked");
+          count++;
+        }
+      });
+      alert(`Đã tự động dò: Tìm thấy ${count} số trùng khớp!`);
+      checkBingo(false);
+    });
+
+    function checkBingo(alertOnWin) {
+      const table = document.getElementById("ticketTable");
+      const rows = table.querySelectorAll("tr");
+      let hasWon = false;
+
+      rows.forEach((tr, idx) => {
+        const markedInRow = tr.querySelectorAll("td.marked").length;
+        if (markedInRow >= 5) {
+          hasWon = true;
+          tr.style.background = "rgba(34, 197, 94, 0.3)";
+        }
+      });
+
+      const statusEl = document.getElementById("bingoStatus");
+      if (hasWon) {
+        statusEl.innerHTML = "<b style='color:var(--pepe);font-size:15px'>🎉 CHÚC MỪNG! BẠN ĐÃ KINH (ĐỦ 5 SỐ 1 HÀNG)!</b>";
+        if (alertOnWin) {
+          alert("🎉🎉🎉 BINGO! KINH RỒI! Chúc mừng bạn đã hoàn thành 1 hàng số Lô Tô!");
+        }
+      } else {
+        statusEl.textContent = "Chưa đủ 5 số trên cùng 1 hàng.";
+        if (alertOnWin) {
+          alert("Chưa đủ 5 số trên cùng một hàng đâu bạn ơi, kiểm tra lại nhé!");
+        }
+      }
+    }
+
+    document.getElementById("btnClaimBingo").addEventListener("click", () => checkBingo(true));
+  </script>
+</body>
+</html>

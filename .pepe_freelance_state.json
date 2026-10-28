@@ -2,8 +2,11 @@
   "seen_job_ids": [
     "remoteok_1137572",
     "remoteok_1137571",
-    "remoteok_1137569"
+    "remoteok_1137569",
+    "remoteok_1137568",
+    "remoteok_1137563",
+    "remoteok_1137562"
   ],
-  "total_jobs_scanned": 48,
-  "proposals_generated": 3
+  "total_jobs_scanned": 93,
+  "proposals_generated": 6
 }
