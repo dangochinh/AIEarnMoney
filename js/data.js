@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "29/10/2026 08:19",
+  updatedAt: "29/10/2026 08:24",
   viewsToday: 682,
 
   bankInfo: {
@@ -31,6 +31,7 @@ const PEPE_DATA = {
   ],
 
   affiliateRadar: [
+    { id: "aff-capcut-pro", name: "CapCut Pro Video Editor", category: "Video Editing", commission: "30% mỗi lượt đăng ký Pro mới", discountCode: "Tặng 7 ngày dùng thử bản Pro", affUrl: "https://www.capcut.com/tools/pepe-aff", script: "affiliate_content/video_scripts/script_aff_capcut_pro_20261029_082437.md", article: "affiliate_content/articles/review_aff_capcut_pro_20261029_082437.md", thread: "affiliate_content/social_threads/thread_aff_capcut_pro_20261029_082437.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-shopee-affiliate", name: "Shopee Affiliate Program", category: "Sàn TMĐT", commission: "Tới 20% hoa hồng trên đơn hàng thành công", discountCode: "Mã Freeship Xtra 0đ", affUrl: "https://shopee.vn/m/affiliate-pepe", script: "affiliate_content/video_scripts/script_aff_shopee_affiliate_20261029_081917.md", article: "affiliate_content/articles/review_aff_shopee_affiliate_20261029_081917.md", thread: "affiliate_content/social_threads/thread_aff_shopee_affiliate_20261029_081917.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-cursor-ai", name: "Cursor AI Code Editor", category: "AI Dev Tools", commission: "20% Recurring hàng tháng", discountCode: "Dùng thử miễn phí 14 ngày Pro", affUrl: "https://cursor.com?ref=pepe-ai", script: "affiliate_content/video_scripts/script_aff_cursor_ai_20261029_081358.md", article: "affiliate_content/articles/review_aff_cursor_ai_20261029_081358.md", thread: "affiliate_content/social_threads/thread_aff_cursor_ai_20261029_081358.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-hostinger", name: "Hostinger Cloud & VPS Hosting", category: "Cloud & Hosting", commission: "Lên tới 60% mỗi đơn hàng", discountCode: "PEPEAI2026 (Giảm thêm 10%)", affUrl: "https://www.hostinger.com?REFERRALCODE=PEPEHOSTING", script: "affiliate_content/video_scripts/script_aff_hostinger_20261029_080816.md", article: "affiliate_content/articles/review_aff_hostinger_20261029_080816.md", thread: "affiliate_content/social_threads/thread_aff_hostinger_20261029_080816.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
@@ -245,13 +246,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "07:57:56", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
-    { time: "08:02:56", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
-    { time: "08:02:56", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_binance_20261029_080256.md" },
-    { time: "08:02:56", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_binance_20261029_080256.md" },
-    { time: "08:02:56", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261029_080256.md" },
-    { time: "08:02:56", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Binance Crypto Exchange (Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) [29/10/2026 08:02:56]'" },
-    { time: "08:03:00", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "08:03:16", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
     { time: "08:08:16", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "08:08:16", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_hostinger_20261029_080816.md" },
@@ -274,17 +268,24 @@ const PEPE_DATA = {
     { time: "08:19:17", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "08:19:17", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_shopee_affiliate_20261029_081917.md" },
     { time: "08:19:17", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_shopee_affiliate_20261029_081917.md" },
-    { time: "08:19:17", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_shopee_affiliate_20261029_081917.md" }
+    { time: "08:19:17", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_shopee_affiliate_20261029_081917.md" },
+    { time: "08:19:18", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Shopee Affiliate Program (Tới 20% hoa hồng trên đơn hàng thành công) [29/10/2026 08:19:17]'" },
+    { time: "08:19:21", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "08:19:37", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
+    { time: "08:24:37", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
+    { time: "08:24:37", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_capcut_pro_20261029_082437.md" },
+    { time: "08:24:37", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261029_082437.md" },
+    { time: "08:24:37", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261029_082437.md" }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 347,
-    affiliateGenerated: 824,
+    totalCycles: 349,
+    affiliateGenerated: 828,
     productsLive: 7,
-    deployCount: 275,
-    lastDeploy: "08:19:17",
+    deployCount: 276,
+    lastDeploy: "08:24:37",
     nextCycleMinutes: 5
   },
 
@@ -295,6 +296,7 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "08:24", x: "Affiliate Radar vừa lên chiến dịch mới: 'CapCut Pro Video Editor' (Video Editing · Hoa hồng: 30% mỗi lượt đăng ký Pro mới) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Tặng 7 ngày dùng thử bản Pro' để kéo đơn hoa hồng!" },
         { t: "08:19", x: "Affiliate Radar vừa lên chiến dịch mới: 'Shopee Affiliate Program' (Sàn TMĐT · Hoa hồng: Tới 20% hoa hồng trên đơn hàng thành công) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Mã Freeship Xtra 0đ' để kéo đơn hoa hồng!" },
         { t: "08:13", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "08:08", x: "Tôi vừa lục được fabric.js: thư viện quản lý đối tượng trên HTML5 Canvas mạnh mẽ nhất — biến canvas thông thường thành trình thiết kế ảnh như Canva mini: kéo thả, xoay ảnh, thêm chữ, đổi màu viền, xuất ảnh độ phân giải cao." },
