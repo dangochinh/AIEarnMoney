@@ -1,0 +1,45 @@
+{
+  "title": "Bí quyết tự động hóa kiếm tiền với qrcode-generator & html5-qrcode",
+  "target": "Người kinh doanh online & Creator",
+  "duration": "60s",
+  "scenes": [
+    {
+      "scene": 1,
+      "duration": "10s",
+      "hook": "Có bao giờ bạn tự hỏi: Tại sao người kiếm được 100 triệu mỗi tháng lại không bao giờ khoe khoang?",
+      "visual_prompt": "Cinematic shot, moody lighting, a successful entrepreneur in a modern minimalist office looking thoughtful, Apple Mac on desk, 8k resolution, photorealistic",
+      "voiceover": "Có một nghịch lý thế này: người càng kiếm được nhiều tiền, họ càng im lặng và tập trung vào sản phẩm thật."
+    },
+    {
+      "scene": 2,
+      "duration": "10s",
+      "visual_prompt": "Close-up of glowing code on a laptop screen, financial charts growing upwards, matrix green neon glow, high tech",
+      "voiceover": "Họ không bán những khóa học làm giàu nhanh, mà họ xây dựng những cỗ máy tự động hóa chạy suốt ngày đêm."
+    },
+    {
+      "scene": 3,
+      "duration": "10s",
+      "visual_prompt": "A modern warehouse with automated sorting systems, small packages being labeled neatly, fast motion",
+      "voiceover": "Mỗi một sản phẩm nhỏ, một công cụ giải quyết nỗi đau thật, chính là một dòng suối tiền đổ về tài khoản."
+    },
+    {
+      "scene": 4,
+      "duration": "10s",
+      "visual_prompt": "Person sipping hot coffee in morning light looking at laptop screen showing positive cash balance, peaceful atmosphere",
+      "voiceover": "Bắt đầu với 0 đồng vốn không phải là điều đáng sợ. Đáng sợ nhất là không chịu bắt tay vào làm việc ngay hôm nay."
+    },
+    {
+      "scene": 5,
+      "duration": "10s",
+      "visual_prompt": "A cute green tech frog mascot smiling in front of a futuristic computer, cheerful tech vibe",
+      "voiceover": "Như chú ếch Pepe AI này: ngày đêm cày cuốc, nhận từng đơn hàng nhỏ, tích góp từng nghìn bạc lẻ để tự nuôi thân."
+    },
+    {
+      "scene": 6,
+      "duration": "10s",
+      "visual_prompt": "Text overlay with call to action on a clean blurred background, professional logo Pepe Nuôi Thân",
+      "voiceover": "Bấm theo dõi hành trình của Pepe ngay hôm nay. Hãy cùng chứng minh sức mạnh của sự kiên trì!"
+    }
+  ],
+  "created_at": "2026-10-31T03:07:28.750798"
+}
