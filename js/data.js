@@ -861,10 +861,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "01:51:29", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Notion AI Workspace (50% doanh thu năm đầu tiên) [01/11/2026 01:51:28]'" },
-    { time: "01:51:32", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "01:51:32", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
-    { time: "01:51:32", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
     { time: "01:51:32", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu pica & đẩy mạnh sản phẩm số Mã Nguồn Lô Tô Online Đọc Giọng AI & Bắt Bingo [01/11/2026 01:51:32]'" },
     { time: "01:51:35", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "01:51:35", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
@@ -890,17 +886,21 @@ const PEPE_DATA = {
     { time: "02:06:50", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "02:06:50", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_cursor_ai_20261101_020650.md" },
     { time: "02:06:50", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_cursor_ai_20261101_020650.md" },
-    { time: "02:06:50", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261101_020650.md" }
+    { time: "02:06:50", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261101_020650.md" },
+    { time: "02:06:50", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Cursor AI Code Editor (20% Recurring hàng tháng) [01/11/2026 02:06:50]'" },
+    { time: "02:06:53", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "02:06:53", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
+    { time: "02:06:53", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 1374,
+    totalCycles: 1375,
     affiliateGenerated: 3288,
     productsLive: 7,
     deployCount: 1062,
-    lastDeploy: "02:06:50",
+    lastDeploy: "02:06:53",
     nextCycleMinutes: 5
   },
 
@@ -1247,6 +1247,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "02:06", x: "Tôi vừa lục được pica: thư viện nén và đổi kích thước ảnh hàng đầu trên trình duyệt sử dụng WebAssembly và Web Workers — không làm đơ giao diện, thuật toán Lanczos3 khử răng cưa giúp ảnh sản phẩm sau khi nén vẫn nét căng." },
+        { t: "02:06", x: "Cách dùng gọn: const pica = new Pica(); await pica.resize(sourceCanvas, targetCanvas, {quality: 3, alpha: true}); const blob = await pica.toBlob(targetCanvas, 'image/jpeg', 0.85);" },
+        { t: "02:06", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: rất thích hợp để chuẩn bị ảnh tải lên Shopee, TikTok Shop vì sàn luôn ép ảnh về kích thước chuẩn; tốc độ nhanh gấp 4 lần so với canvas thông thường nhờ tính toán đa luồng. — bước tiếp theo: tích hợp vào công cụ 'Tối Ưu Ảnh Chuẩn Sàn TMĐT' trên web Pepe, giúp chủ shop giảm 70% dung lượng ảnh mà mắt thường không phân biệt được." },
+        { t: "02:06", x: "Tôi tự quyết định tối ưu lại danh mục sản phẩm: tập trung mạnh vào làm Video AI ngắn, Extension Shopee và Web 1 trang để khách dễ chọn." },
         { t: "02:06", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "02:01", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
         { t: "01:56", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
