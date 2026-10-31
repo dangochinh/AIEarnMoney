@@ -1,0 +1,33 @@
+# 🎬 KỊCH BẢN VIDEO VIRAL TIKTOK / REELS 60s — CAPCUT PRO VIDEO EDITOR
+**Chiến dịch**: CapCut Pro Video Editor | **Hoa hồng**: 30% mỗi lượt đăng ký Pro mới
+**Thời lượng chuẩn**: 60 giây | **Tone giọng**: Hào hứng, sắc bén, đánh thẳng vào nỗi đau
+**Mã ưu đãi / Link Bio**: `https://www.capcut.com/tools/pepe-aff` (Tặng 7 ngày dùng thử bản Pro)
+
+---
+
+### ⏱️ PHÂN CẢNH CHI TIẾT (STORYBOARD):
+
+#### [0:00 - 0:05] HOOK GÂY TÒ MÒ CỰC MẠNH:
+- **Visual**: Quay cận mặt biểu cảm hoang mang, chỉ tay vào màn hình hoặc zoom nhanh vào thông báo lỗi / chi phí đắt đỏ.
+- **Voiceover**: "Nếu được quay lại thời điểm bắt đầu kiếm tiền online, đây là công cụ đầu tiên mình sẽ cài đặt: CapCut Pro Video Editor."
+- **Text on Screen**: ⚠️ ĐỪNG LÀM THỦ CÔNG NỮA!
+
+#### [0:05 - 0:25] ĐÁNH VÀO NỖI ĐAU (PROBLEM & AGITATION):
+- **Visual**: Thao tác chậm chạp, bảng tính rối rắm, giao diện giật lag hoặc hóa đơn tiền triệu.
+- **Voiceover**: "Bạn có đang thấy mình mất cả buổi tối chỉ để làm những việc lặp đi lặp lại? Trong khi đối thủ thì cứ thảnh thơi uống cafe mà đơn hàng hay code vẫn chạy ầm ầm? Lý do không phải họ thông minh hơn, mà họ đang dùng đúng đòn bẩy!"
+- **Text on Screen**: ❌ MẤT THỜI GIAN · ❌ TỐN TIỀN OAN
+
+#### [0:25 - 0:45] GIẢI PHÁP ĐỘT PHÁ VỚI CAPCUT PRO VIDEO EDITOR:
+- **Visual**: Chuyển cảnh nhanh sang màn hình giao diện mượt mà của CapCut Pro Video Editor. Thao tác 1 click hoàn thành tác vụ ngoạn mục.
+- **Voiceover**: "Và đây là cứu tinh: CapCut Pro Video Editor. Nhìn này, chỉ cần 1 cú click:
+- Tự động tạo phụ đề Auto Captions tiếng Việt chính xác 98%\n- Xóa phông video không cần phông xanh bằng AI\n- Kho hiệu ứng chuyển cảnh & âm thanh TikTok bản quyền\n- Xuất video 4K 60fps mượt mà không bị bóp tương tác\n
+Cảm giác như bạn vừa tuyển được một trợ lý đắc lực làm việc 24/7 mà chi phí chỉ bằng cốc trà đá mỗi ngày!"
+- **Text on Screen**: ✅ GIẢI PHÁP 1 CLICK ĐỈNH CAO!
+
+#### [0:45 - 0:60] CALL TO ACTION & ƯU ĐÃI ĐỘC QUYỀN (CHỐT AFFILIATE):
+- **Visual**: Chỉ tay vào bio / phần comment, hiển thị mã giảm giá to rõ.
+- **Voiceover**: "Đặc biệt, Pepe vừa săn được deal độc quyền cho anh em: Nhập mã 'Tặng 7 ngày dùng thử bản Pro' hoặc bấm ngay vào link ở phần tiểu sử (Bio) để nhận ưu đãi trước khi chương trình kết thúc nhé. Thử ngay kẻo lỡ!"
+- **Text on Screen**: 🎁 LINK ƯU ĐÃI Ở PHẦN BIO / COMMENT!
+
+---
+*Kịch bản được tạo tự động bởi Pepe Affiliate & Content Engine lúc 31/10/2026 13:26:27*
