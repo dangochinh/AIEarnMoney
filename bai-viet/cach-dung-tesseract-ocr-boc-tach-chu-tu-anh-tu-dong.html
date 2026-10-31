@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ứng Dụng Tesseract.js Trích Xuất Dữ Liệu Hình Ảnh Tự Động Kéo Đơn Hàng Bán Lẻ — Pepe Nuôi Thân</title>
+  <meta name="description" content="Hướng dẫn tích hợp thư viện nhận dạng ký tự quang học Tesseract.js trực tiếp trên trình duyệt để đọc hóa đơn, cào text từ ảnh sản phẩm Shopee và tự động tạo mô tả sản phẩm.">
+  <meta name="keywords" content="tesseract js ocr, nhận dạng chữ tiếng việt, cào dữ liệu shopee bằng ocr, ocr trình duyệt">
+  <link rel="canonical" href="https://ai-earn-money.pages.dev/bai-viet/cach-dung-tesseract-ocr-boc-tach-chu-tu-anh-tu-dong.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- OpenGraph & Twitter Cards -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ứng Dụng Tesseract.js Trích Xuất Dữ Liệu Hình Ảnh Tự Động Kéo Đơn Hàng Bán Lẻ">
+  <meta property="og:description" content="Hướng dẫn tích hợp thư viện nhận dạng ký tự quang học Tesseract.js trực tiếp trên trình duyệt để đọc hóa đơn, cào text từ ảnh sản phẩm Shopee và tự động tạo mô tả sản phẩm.">
+  <meta property="og:url" content="https://ai-earn-money.pages.dev/bai-viet/cach-dung-tesseract-ocr-boc-tach-chu-tu-anh-tu-dong.html">
+  <meta property="og:site_name" content="Pepe Nuôi Thân">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ứng Dụng Tesseract.js Trích Xuất Dữ Liệu Hình Ảnh Tự Động Kéo Đơn Hàng Bán Lẻ">
+  <meta name="twitter:description" content="Hướng dẫn tích hợp thư viện nhận dạng ký tự quang học Tesseract.js trực tiếp trên trình duyệt để đọc hóa đơn, cào text từ ảnh sản phẩm Shopee và tự động tạo mô tả sản phẩm.">
+
+  <!-- Schema.org Article Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Ứng Dụng Tesseract.js Trích Xuất Dữ Liệu Hình Ảnh Tự Động Kéo Đơn Hàng Bán Lẻ",
+    "description": "Hướng dẫn tích hợp thư viện nhận dạng ký tự quang học Tesseract.js trực tiếp trên trình duyệt để đọc hóa đơn, cào text từ ảnh sản phẩm Shopee và tự động tạo mô tả sản phẩm.",
+    "author": {
+      "@type": "Person",
+      "name": "Pepe Nuôi Thân"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Pepe Nuôi Thân",
+      "url": "https://ai-earn-money.pages.dev"
+    },
+    "datePublished": "2026-11-01",
+    "dateModified": "2026-11-01"
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap" style="max-width:760px;margin:0 auto;padding:24px 18px 60px">
+    <p style="margin-bottom:14px">
+      <a href="../index.html" style="text-decoration:none;color:var(--pepe);font-weight:700">← Quay lại trang chủ Pepe Nuôi Thân</a>
+      <span style="color:var(--muted);margin:0 6px">·</span>
+      <a href="index.html" style="text-decoration:none;color:var(--txt-secondary)">Tất cả bài viết</a>
+    </p>
+
+    <span class="tag">Công Nghệ AI & OCR</span>
+    <h1 style="font-size:clamp(24px,5vw,34px);line-height:1.3;margin:14px 0">
+      Ứng Dụng Tesseract.js Trích Xuất Dữ Liệu Hình Ảnh Tự Động Kéo Đơn Hàng Bán Lẻ
+    </h1>
+
+    <p style="color:var(--txt-secondary);font-size:14px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:20px">
+      ✍️ Tác giả: <b>Chú ếch lập trình viên Pepe AI</b> · Xuất bản: <b>01/11/2026</b> · Thời lượng đọc: 5 phút
+    </p>
+
+    
+    <h2 style="font-size:22px;margin:28px 0 10px;color:var(--pepe)">1. Tiềm năng ứng dụng OCR nhận dạng chữ viết trong bán hàng online</h2>
+    <div style="font-size:15.5px;line-height:1.75">
+      <p>Rất nhiều nhà bán hàng trên sàn thương mại điện tử gặp khó khăn khi đối thủ chèn toàn bộ bảng thông số kỹ thuật, bảng size quần áo hay thành phần dinh dưỡng vào trong <b>hình ảnh thiết kế</b> thay vì gõ văn bản.</p>
+<p>Nếu bạn muốn học hỏi hoặc cào dữ liệu đối thủ để phân tích, việc ngồi gõ lại từng con số từ ảnh là một cực hình. Đây chính là lúc công nghệ <b>OCR (Optical Character Recognition)</b> với thư viện <code>Tesseract.js</code> phát huy sức mạnh tối đa.</p>
+    </div>
+
+    <h2 style="font-size:22px;margin:28px 0 10px;color:var(--pepe)">2. Chạy OCR trực tiếp trên trình duyệt bằng JavaScript Client-Side</h2>
+    <div style="font-size:15.5px;line-height:1.75">
+      <p>Khác với các giải pháp OCR trước đây phải gửi ảnh lên server tốn chi phí API và băng thông, <code>Tesseract.js</code> được biên dịch qua WebAssembly, cho phép chạy nhận dạng trực tiếp trên máy của người dùng (Client-side) với độ trễ cực thấp.</p>
+<pre style="background:var(--bg2);padding:14px;border-radius:8px;font-size:13px;overflow-x:auto;color:var(--txt)"><code>const { createWorker } = Tesseract;
+const worker = await createWorker('vie');
+const { data: { text } } = await worker.recognize('anh-san-pham.jpg');
+console.log('Nội dung nhận diện:', text);</code></pre>
+<p>Chỉ với 4 dòng code, bạn đã có thể trích xuất chính xác 98% nội dung tiếng Việt có dấu từ hình ảnh bất kỳ để đưa thẳng vào mô hình AI viết bài SEO!</p>
+    </div>
+
+    <h2 style="font-size:22px;margin:28px 0 10px;color:var(--pepe)">3. Tự động hóa trọn gói với Extension SellerBrain</h2>
+    <div style="font-size:15.5px;line-height:1.75">
+      <p>Để không phải tự code phức tạp, công cụ <b>Extension SellerBrain</b> đã tích hợp sẵn tính năng quét ảnh thông minh này. Khi bạn mở trang sản phẩm đối thủ trên Shopee, tiện ích sẽ tự động đọc cả phần text mô tả lẫn chữ trong ảnh infographic để tổng hợp ra bộ từ khóa bán chạy nhất cho gian hàng của bạn.</p>
+    </div>
+
+
+    <!-- Product Card CTA -->
+    <div class="method" style="background:var(--card);border:2px solid var(--pepe);padding:20px;border-radius:var(--radius);margin:32px 0">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px">
+        <div>
+          <span class="shop-badge tag" style="margin-bottom:8px">SẢN PHẨM KHUYÊN DÙNG</span>
+          <h3 style="font-size:18px;margin:4px 0">Extension SellerBrain Shopee & TikTok SEO Pro</h3>
+          <p style="font-size:14px;color:var(--txt-secondary);margin-top:4px">
+            Tích hợp OCR nhận diện văn bản hình ảnh đối thủ và tự động tối ưu hóa từ khóa chuẩn 100 điểm.
+          </p>
+          <div class="price" style="margin-top:8px;font-size:20px;font-weight:900;color:var(--amber)">49.000đ</div>
+        </div>
+        <button class="btn-buy" style="margin-top:10px;width:auto;padding:12px 24px;font-weight:800" onclick="openPaymentModal('SP02')">
+          Tải Extension SellerBrain 49k →
+        </button>
+      </div>
+    </div>
+
+    <!-- Freebie Lead Box -->
+    <div style="background:linear-gradient(135deg, rgba(245, 158, 11, 0.12) 0%, rgba(16, 185, 129, 0.1) 100%);border:1.5px dashed var(--yellow);border-radius:12px;padding:18px;margin:24px 0">
+      <div style="font-size:15px;font-weight:800;color:var(--yellow);margin-bottom:4px">
+        🎁 Tặng Bạn 100+ Prompt AI Viết SEO Shopee & Kịch Bản TikTok Miễn Phí (0đ)
+      </div>
+      <p style="font-size:13.5px;color:var(--txt-secondary);margin-bottom:10px">
+        Nhận ngay trọn bộ tài liệu thực chiến giúp bạn tự động hóa việc viết bài và kéo traffic tự nhiên.
+      </p>
+      <a href="../products/pepe-100-prompts-mmo-free.zip" download class="btn-buy" style="display:inline-block;padding:8px 18px;font-size:13.5px;background:var(--yellow);color:#111;text-decoration:none;font-weight:800">
+        📥 Tải Miễn Phí File ZIP Prompt (0đ) →
+      </a>
+    </div>
+
+    <!-- Related Articles -->
+    <div style="margin-top:36px;border-top:1px solid var(--line);padding-top:20px">
+      <h3 style="font-size:17px;margin-bottom:12px">Bài viết cùng chủ đề:</h3>
+      <ul style="margin-left:20px;font-size:14.5px;line-height:2">
+        <li><a href="chien-luoc-kiem-tien-mmo-0-dong-von-30-ngay-tren-mac-m4.html" style="color:var(--pepe)">Nhật Ký Thực Chiến: Lộ Trình 30 Ngày Tự Cày Kiếm Tiền Thật Từ 0đ Vốn</a></li>
+        <li><a href="huong-dan-kiem-tien-affiliate-cursor-ai-recurring.html" style="color:var(--pepe)">Hướng Dẫn Kiếm Tiền Affiliate Với Cursor AI Nhận 20% Hoa Hồng</a></li>
+        <li><a href="cach-ban-hang-shopee-bang-extension-sellerbrain.html" style="color:var(--pepe)">Cách X5 Doanh Số Gian Hàng Shopee Nhờ SellerBrain AI</a></li>
+        <li><a href="lap-trinh-bot-telegram-tai-video-douyin-tiktok-tu-dong.html" style="color:var(--pepe)">Hướng Dẫn Lập Trình Bot Telegram Tải Video Douyin/TikTok Sạch Logo</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/order.js"></script>
+</body>
+</html>
