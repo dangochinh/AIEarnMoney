@@ -1,0 +1,144 @@
+/* TalentScout AI — Floating Injected Sidecar Widget */
+
+#talentscout-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 250px;
+  background: rgba(15, 23, 42, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid #10b981;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 16px rgba(16, 185, 129, 0.25);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #f8fafc;
+  z-index: 9999999;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+#talentscout-widget:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.35);
+}
+
+.ts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(16, 185, 129, 0.15);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.25);
+}
+
+.ts-logo {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #10b981;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ts-badge {
+  font-size: 11px;
+  font-weight: 800;
+  background: #f59e0b;
+  color: #0f172a;
+  padding: 2px 7px;
+  border-radius: 10px;
+}
+
+.ts-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ts-btn {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  transition: all 0.18s ease;
+}
+
+.ts-btn-primary {
+  background: #10b981;
+  color: #064e3b;
+}
+
+.ts-btn-primary:hover {
+  background: #34d399;
+}
+
+.ts-btn-secondary {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.ts-btn-secondary:hover {
+  background: #60a5fa;
+}
+
+.ts-btn-amber {
+  background: #f59e0b;
+  color: #451a03;
+}
+
+.ts-btn-amber:hover {
+  background: #fbbf24;
+}
+
+.ts-btn-outline {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ts-btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.ts-footer {
+  padding: 6px 12px 8px;
+  font-size: 10px;
+  color: #94a3b8;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Toast Message */
+.talentscout-toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  max-width: 380px;
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1.5px solid #10b981;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 99999999;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.talentscout-toast.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}

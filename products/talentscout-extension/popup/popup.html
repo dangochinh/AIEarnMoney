@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>TalentScout AI Dashboard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-wrap">
+    <!-- Top Bar -->
+    <header class="header">
+      <div class="brand">
+        <span class="icon">🐸</span>
+        <div>
+          <div class="title">TalentScout AI</div>
+          <div class="sub">LinkedIn Candidate DB Manager</div>
+        </div>
+      </div>
+      <div class="count-pill" id="totalCandidatesCount">0 Ứng viên</div>
+    </header>
+
+    <!-- Search & Filter -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Tìm theo tên, kỹ năng (React, Python, AI...), công ty...">
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="actions-row">
+      <button id="btnExportCsv" class="btn btn-primary">
+        📥 Xuất File Excel (CSV)
+      </button>
+      <button id="btnClearDb" class="btn btn-danger">
+        🗑️ Xóa DB
+      </button>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="filter-pills" id="filterPills">
+      <span class="pill active" data-filter="all">Tất cả</span>
+      <span class="pill" data-filter="Senior">Senior</span>
+      <span class="pill" data-filter="Lead">Tech Lead</span>
+      <span class="pill" data-filter="AI">AI / ML</span>
+      <span class="pill" data-filter="React">React</span>
+      <span class="pill" data-filter="Python">Python</span>
+    </div>
+
+    <!-- Candidate List Container -->
+    <div class="candidate-list" id="candidateList">
+      <div class="empty-state">
+        Đang tải cơ sở dữ liệu ứng viên...
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>TalentScout Pro v1.0.0</span>
+      <a href="https://ai-earn-money.pages.dev" target="_blank">Pepe Nuôi Thân ↗</a>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

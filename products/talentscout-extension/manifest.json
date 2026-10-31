@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "TalentScout AI — LinkedIn Headhunter & Candidate Collector",
+  "version": "1.0.0",
+  "description": "Tự động cào dữ liệu ứng viên trên LinkedIn, xây dựng cơ sở dữ liệu nhân tài và xuất file Excel/CSV cho Headhunter & HR.",
+  "author": "Pepe Nuôi Thân Tech Labs",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.linkedin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "TalentScout AI Dashboard",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.linkedin.com/*"
+      ],
+      "js": [
+        "content/talentscout-content.js"
+      ],
+      "css": [
+        "content/talentscout-content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
