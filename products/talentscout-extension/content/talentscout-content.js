@@ -62,14 +62,38 @@
       // About summary
       let about = "";
       const aboutEl = document.querySelector("#about ~ .display-flex .inline-show-more-text") ||
-                      document.querySelector(".pv-about-section .pv-about__summary-text");
+                      document.querySelector(".pv-about-section .pv-about__summary-text") ||
+                      document.querySelector("section[data-view-name='profile-card'] div.inline-show-more-text--is-collapsed > span[aria-hidden='true']");
       if (aboutEl) {
         about = aboutEl.innerText.trim();
       }
 
+      // Check #OpenToWork Badge (from joeyism/linkedin_scraper pattern)
+      let isOpenToWork = false;
+      const profilePic = document.querySelector(".pv-top-card-profile-picture img, .pv-top-card__photo img, img.presence-entity__image, div.pv-top-card__non-self-photo-wrapper img");
+      if (profilePic) {
+        const titleAttr = (profilePic.getAttribute("title") || "").toUpperCase();
+        const altAttr = (profilePic.getAttribute("alt") || "").toUpperCase();
+        if (titleAttr.includes("OPEN_TO_WORK") || titleAttr.includes("OPEN TO WORK") || altAttr.includes("OPEN_TO_WORK") || altAttr.includes("OPEN TO WORK")) {
+          isOpenToWork = true;
+        }
+      }
+      if (!isOpenToWork && document.querySelector("[data-view-name='profile-card'] [aria-label*='Open to work'], .pv-open-to-work-card, [href*='open-to-work']")) {
+        isOpenToWork = true;
+      }
+
+      // Check Recent Experience Title (from Yale3 selector patterns)
+      const expRoleEl = document.querySelector("section[data-view-name='profile-card'] div.t-bold span[aria-hidden='true']") ||
+                        document.querySelector(".experience-item .t-bold span[aria-hidden='true']");
+      const recentRole = expRoleEl ? expRoleEl.innerText.trim() : "";
+
       const profileUrl = window.location.origin + window.location.pathname;
-      const combinedText = `${headline} ${about}`;
+      const combinedText = `${headline} ${about} ${recentRole}`;
       const skills = extractTechTags(combinedText);
+
+      // Extract Email if candidate wrote it in bio
+      const emailMatch = combinedText.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/);
+      const email = emailMatch ? emailMatch[0] : "";
 
       // Estimated Seniority Level
       let level = "Mid-Level";
@@ -87,10 +111,13 @@
         company: company || "Tự do / Chưa cập nhật",
         location: location,
         level: level,
+        isOpenToWork: isOpenToWork,
+        email: email,
+        recentRole: recentRole || headline,
         skills: skills.length > 0 ? skills : ["Chung"],
         profileUrl: profileUrl,
         scoutedAt: new Date().toLocaleDateString("vi-VN"),
-        status: "Mới cào",
+        status: isOpenToWork ? "🔥 Đang Tìm Việc (OpenToWork)" : "Mới cào",
         notes: ""
       };
     } catch (e) {
@@ -210,12 +237,14 @@
         return;
       }
 
-      const headers = ["ID", "Họ Tên", "Chức Danh (Headline)", "Cấp Bậc (Level)", "Công Ty", "Khu Vực", "Kỹ Năng", "Link Profile", "Ngày Cào", "Trạng Thái"];
+      const headers = ["ID", "Họ Tên", "Chức Danh (Headline)", "Cấp Bậc (Level)", "OpenToWork (Tìm Việc)", "Email / Liên Hệ", "Công Ty", "Khu Vực", "Kỹ Năng", "Link Profile", "Ngày Cào", "Trạng Thái"];
       const rows = candidates.map(c => [
         `"${c.id}"`,
         `"${(c.name || '').replace(/"/g, '""')}"`,
         `"${(c.headline || '').replace(/"/g, '""')}"`,
         `"${c.level || ''}"`,
+        `"${c.isOpenToWork ? 'CÓ (OPEN TO WORK)' : 'Chưa bật'}"`,
+        `"${c.email || ''}"`,
         `"${(c.company || '').replace(/"/g, '""')}"`,
         `"${(c.location || '').replace(/"/g, '""')}"`,
         `"${(c.skills || []).join(', ')}"`,

@@ -174,12 +174,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const headers = ["ID", "Họ Tên", "Chức Danh (Headline)", "Cấp Bậc (Level)", "Công Ty", "Khu Vực", "Kỹ Năng", "Link Profile", "Ngày Cào", "Trạng Thái"];
+    const headers = ["ID", "Họ Tên", "Chức Danh (Headline)", "Cấp Bậc (Level)", "OpenToWork (Tìm Việc)", "Email / Liên Hệ", "Công Ty", "Khu Vực", "Kỹ Năng", "Link Profile", "Ngày Cào", "Trạng Thái"];
     const rows = allCandidates.map(c => [
       `"${c.id}"`,
       `"${(c.name || '').replace(/"/g, '""')}"`,
       `"${(c.headline || '').replace(/"/g, '""')}"`,
       `"${c.level || ''}"`,
+      `"${c.isOpenToWork ? 'CÓ (OPEN TO WORK)' : 'Chưa bật'}"`,
+      `"${c.email || ''}"`,
       `"${(c.company || '').replace(/"/g, '""')}"`,
       `"${(c.location || '').replace(/"/g, '""')}"`,
       `"${(c.skills || []).join(', ')}"`,
