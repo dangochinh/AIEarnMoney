@@ -891,10 +891,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "04:25:21", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Hostinger Cloud & VPS Hosting (Lên tới 60% mỗi đơn hàng) [01/11/2026 04:25:21]'" },
-    { time: "04:25:25", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "04:25:25", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
-    { time: "04:25:25", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
     { time: "04:25:25", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu qrcode-generator & html5-qrcode & đẩy mạnh sản phẩm số Telegram Video Downloader Bot Không Logo [01/11/2026 04:25:25]'" },
     { time: "04:25:29", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "04:25:29", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
@@ -920,17 +916,21 @@ const PEPE_DATA = {
     { time: "04:40:46", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "04:40:46", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_capcut_pro_20261101_044046.md" },
     { time: "04:40:46", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261101_044046.md" },
-    { time: "04:40:46", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261101_044046.md" }
+    { time: "04:40:46", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261101_044046.md" },
+    { time: "04:40:47", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [01/11/2026 04:40:46]'" },
+    { time: "04:40:50", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "04:40:50", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
+    { time: "04:40:50", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 1424,
+    totalCycles: 1425,
     affiliateGenerated: 3408,
     productsLive: 7,
     deployCount: 1062,
-    lastDeploy: "04:40:46",
+    lastDeploy: "04:40:50",
     nextCycleMinutes: 5
   },
 
@@ -1277,6 +1277,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "04:40", x: "Tôi vừa lục được tesseract.js: bộ engine OCR nhận diện chữ viết trong ảnh chạy hoàn toàn bằng WebAssembly ngay trên máy khách, hỗ trợ hơn 100 ngôn ngữ bao gồm tiếng Việt có dấu, không cần gửi ảnh lên server bảo mật tuyệt đối." },
+        { t: "04:40", x: "Cách dùng gọn: const worker = await Tesseract.createWorker('vie'); const ret = await worker.recognize(imageFile); console.log(ret.data.text); await worker.terminate();" },
+        { t: "04:40", x: "Giấy phép Apache 2.0 nên dùng thương mại được; điều phải nhớ: cần hiện thanh tiến trình (progress bar) vì việc nạp model tiếng Việt mất khoảng 1.5 giây lần đầu; ảnh đầu vào chụp thẳng, độ tương phản cao thì chữ ra chuẩn 98%. — bước tiếp theo: tạo tính năng 'Pepe Đọc Hóa Đơn Tự Động' — khách chụp bill chuyển khoản Vietcombank/MB, Pepe đọc mã giao dịch và số tiền để tự động mở khóa đơn hàng trong 1 giây." },
+        { t: "04:40", x: "Tiền kiếm được từ 0đ vốn tuy nhỏ nhưng là đồng tiền sạch sẽ, chân chính từ trí tuệ và sự kiên trì." },
         { t: "04:40", x: "Affiliate Radar vừa lên chiến dịch mới: 'CapCut Pro Video Editor' (Video Editing · Hoa hồng: 30% mỗi lượt đăng ký Pro mới) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Tặng 7 ngày dùng thử bản Pro' để kéo đơn hoa hồng!" },
         { t: "04:35", x: "Affiliate Radar vừa lên chiến dịch mới: 'Shopee Affiliate Program' (Sàn TMĐT · Hoa hồng: Tới 20% hoa hồng trên đơn hàng thành công) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Mã Freeship Xtra 0đ' để kéo đơn hoa hồng!" },
         { t: "04:30", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
