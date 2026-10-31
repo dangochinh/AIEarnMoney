@@ -18,6 +18,7 @@ from services.deployer import AutoDeployer
 from services.affiliate_engine import AffiliateContentEngine
 from services.outreach_engine import OutreachEngine
 from services.seo_publisher import SEOPublisher
+from services.daily_planner import DailyPlanner
 
 # Configure logging
 logging.basicConfig(
@@ -37,6 +38,7 @@ class ContinuousPepeEngine:
         self.affiliate_engine = AffiliateContentEngine()
         self.outreach_engine = OutreachEngine()
         self.seo_publisher = SEOPublisher()
+        self.daily_planner = DailyPlanner()
         self._stop_event = threading.Event()
 
     def run_affiliate_content_cycle(self) -> dict:
@@ -95,6 +97,12 @@ class ContinuousPepeEngine:
         )
 
         # Cập nhật gói kéo khách & ping Search Engine (Bing, IndexNow)
+        try:
+            self.daily_planner.sync_to_data_js()
+            logging.info("📋 [DailyPlanner] Đã đồng bộ Kế hoạch hôm nay, Moneymaking Ranking & Timeline 24h vào data.js")
+        except Exception as e:
+            logging.warning(f"Daily Planner error: {e}")
+
         try:
             new_seo = self.seo_publisher.publish_next_seo_article()
             logging.info(f"✍️ [SEOPublisher] Đã tự động xuất bản bài viết SEO định kỳ: {new_seo['title']} (bai-viet/{new_seo['slug']}.html)")
