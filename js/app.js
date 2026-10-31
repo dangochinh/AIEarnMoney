@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initVisitorRecap();
   initTerminalLogViewer();
   initLeadMagnet();
+  initPlanAndTimeline();
 });
 
 // Helper: Get live data with LocalStorage overrides
@@ -700,5 +701,303 @@ function initLeadMagnet() {
         </div>
       `;
     }, 500);
+  });
+}
+
+/* ------------------------------------------------------------
+   13. BATTLE PLAN, MONEYMAKING RANKINGS & 24H TIMELINE
+   ------------------------------------------------------------ */
+function initPlanAndTimeline() {
+  const section = document.getElementById("sectionPlanTimeline");
+  if (!section) return;
+
+  const data = window.getLivePepeData();
+  const todayPlan = data.dailyPlan || null;
+  const tomorrowPlan = data.tomorrowPlan || null;
+
+  if (!todayPlan) return;
+
+  // 1. Update Title, Subtitle, Headline, and Updated Timestamp
+  const headlineEl = document.getElementById("planHeadline");
+  if (headlineEl) {
+    headlineEl.innerHTML = `
+      <div style="display:flex;align-items:flex-start;gap:10px">
+        <span style="font-size:24px">🐸</span>
+        <div style="flex:1">
+          <div style="font-weight:900;color:var(--txt);margin-bottom:4px;font-size:15px">
+            Chiến Lược Ngày Thứ ${todayPlan.dayIndex || 11} (${todayPlan.date}):
+          </div>
+          <div style="color:var(--pepe);font-weight:700;line-height:1.5">
+            "${todayPlan.headline || ''}"
+          </div>
+          ${todayPlan.goals && todayPlan.goals.purpose ? `
+            <div style="margin-top:6px;font-size:12.5px;color:var(--muted)">
+              💡 <b>Tôn chỉ:</b> ${todayPlan.goals.purpose}
+            </div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }
+
+  const updatedTimeEl = document.getElementById("planUpdatedTime");
+  if (updatedTimeEl) {
+    updatedTimeEl.textContent = todayPlan.updatedAt || new Date().toLocaleTimeString("vi-VN", { hour: '2-digit', minute: '2-digit' });
+  }
+
+  // Helper: Rank Badge Generator
+  function getRankBadgeHtml(rank, rankScore) {
+    const r = (rank || "").toUpperCase();
+    let cls = "rank-c";
+    if (r.includes("S+")) cls = "rank-sp";
+    else if (r === "S") cls = "rank-s";
+    else if (r === "A") cls = "rank-a";
+    else if (r === "B") cls = "rank-b";
+    return `<span class="rank-badge ${cls}">${rank}${rankScore ? ` · ${rankScore}` : ""}</span>`;
+  }
+
+  // Helper: Point Status Badge Generator
+  function getPointStatusHtml(status) {
+    if (status === "active") {
+      return `<span class="status-pill" style="font-size:11px;padding:3px 8px;background:rgba(16,185,129,0.15);color:var(--pepe);border:1px solid var(--pepe)">🟢 Đang Triển Khai</span>`;
+    } else if (status === "completed") {
+      return `<span class="status-pill" style="font-size:11px;padding:3px 8px;background:rgba(59,130,246,0.15);color:#3b82f6;border:1px solid #3b82f6">✅ Đã Đạt Mục Tiêu</span>`;
+    }
+    return `<span class="status-pill" style="font-size:11px;padding:3px 8px;background:var(--chip);color:var(--muted);border:1px solid var(--line)">⏳ Trong Kế Hoạch</span>`;
+  }
+
+  // 2. Render 4 Goals Cards in Today Tab
+  const goalsGrid = document.getElementById("planGoalsGrid");
+  if (goalsGrid && todayPlan.goals) {
+    const g = todayPlan.goals;
+    goalsGrid.innerHTML = `
+      <div class="goal-card">
+        <div class="goal-lbl">💰 Doanh Thu Mục Tiêu</div>
+        <div class="goal-val">${g.revenueTargetFormatted || "250.000đ"}</div>
+        <div class="goal-sub">Mục tiêu sinh tồn ngày thứ ${todayPlan.dayIndex || 11}</div>
+      </div>
+      <div class="goal-card">
+        <div class="goal-lbl">📦 Đơn Hàng Tối Thiểu</div>
+        <div class="goal-val">${g.minOrders || 3} <span style="font-size:15px;font-weight:600;color:var(--txt-secondary)">đơn</span></div>
+        <div class="goal-sub">Chốt VietQR tự động qua web/bot</div>
+      </div>
+      <div class="goal-card">
+        <div class="goal-lbl">🎁 Thu Hút Leads (0đ Vốn)</div>
+        <div class="goal-val">${g.leadTarget || 10} <span style="font-size:15px;font-weight:600;color:var(--txt-secondary)">leads</span></div>
+        <div class="goal-sub">Khách nhận gói 100+ prompt 0đ</div>
+      </div>
+      <div class="goal-card">
+        <div class="goal-lbl">🎬 Affiliate & Bài Viết SEO</div>
+        <div class="goal-val">${g.affiliatePacksTarget || 12} <span style="font-size:15px;font-weight:600;color:var(--txt-secondary)">packs</span></div>
+        <div class="goal-sub">Đón lưu lượng tự nhiên 0đ vốn</div>
+      </div>
+    `;
+  }
+
+  // 3. Render Ranked Points List with Filter
+  function renderRankedPoints(points, containerId, filterRank = "all") {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    const list = points || [];
+    const filtered = filterRank === "all" ? list : list.filter(p => (p.rank || "").toUpperCase() === filterRank.toUpperCase());
+
+    if (filtered.length === 0) {
+      container.innerHTML = `
+        <div style="text-align:center;padding:24px;color:var(--muted);background:var(--bg);border-radius:var(--radius);border:1px dashed var(--line)">
+          Không có nhiệm vụ nào trong phân hạng <b>${filterRank}</b>.
+        </div>
+      `;
+      return;
+    }
+
+    container.innerHTML = filtered.map(p => `
+      <div class="plan-point-card" data-rank="${p.rank}">
+        <div class="plan-point-top">
+          <div style="flex:1">
+            <div class="plan-point-title">${p.title}</div>
+            <div class="plan-point-meta" style="margin-top:6px">
+              ${getRankBadgeHtml(p.rank, p.rankScore)}
+              <span style="color:var(--amber);font-weight:700">⏰ ${p.targetTime || "Cả ngày"}</span>
+              <span style="color:var(--muted)">· ${p.rankLabel || ""}</span>
+            </div>
+          </div>
+          ${getPointStatusHtml(p.status)}
+        </div>
+        <div class="plan-point-action">
+          👉 <b>Hành động tác chiến:</b> ${p.action}
+        </div>
+        <div class="plan-point-bottom">
+          <span style="color:var(--pepe);font-weight:700">💵 Tiềm năng doanh thu: ${p.estRevenue}</span>
+          <span style="font-size:11.5px;color:var(--muted)">Được ưu tiên theo Ma trận Doanh thu</span>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  renderRankedPoints(todayPlan.rankedPoints, "planPointsList", "all");
+
+  // Rank Filter Buttons Listener
+  const filterBtns = section.querySelectorAll(".plan-rank-filter");
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      const rank = btn.getAttribute("data-rank") || "all";
+      renderRankedPoints(todayPlan.rankedPoints, "planPointsList", rank);
+    });
+  });
+
+  // 4. Render 24-Hour Timeline
+  function renderTimelineTrack() {
+    const trackList = document.getElementById("timelineTrackList");
+    if (!trackList || !todayPlan.timeline) return;
+
+    const currentHour = new Date().getHours();
+    let currentBlock = null;
+
+    trackList.innerHTML = todayPlan.timeline.map(block => {
+      let stateClass = "state-upcoming";
+      let badgeText = "⏳ Sắp Tới";
+
+      // Match current hour (startHour <= currentHour < endHour)
+      if (currentHour >= block.startHour && currentHour < block.endHour) {
+        stateClass = "state-current";
+        badgeText = "🟢 ĐANG DIỄN RA";
+        currentBlock = block;
+      } else if (currentHour >= block.endHour) {
+        stateClass = "state-completed";
+        badgeText = "✅ Đã Hoàn Thành";
+      }
+
+      return `
+        <div class="timeline-item ${stateClass}" id="${block.id}">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+              <span class="timeline-range">⏱️ ${block.timeRange}</span>
+              ${getRankBadgeHtml(block.rank)}
+            </div>
+            <span class="status-pill" style="font-size:11px;padding:3px 8px;${stateClass === 'state-current' ? 'background:rgba(16,185,129,0.2);color:var(--pepe);border:1px solid var(--pepe);font-weight:800' : ''}">
+              ${badgeText}
+            </span>
+          </div>
+          <div class="timeline-title">${block.title}</div>
+          <div class="timeline-focus">
+            🎯 <b>Trọng tâm:</b> ${block.focus} · <span style="color:var(--pepe);font-weight:700">Dự thu: ${block.estRevenue}</span>
+          </div>
+          <ul class="timeline-tasks-list">
+            ${(block.tasks || []).map(task => `<li>${task}</li>`).join("")}
+          </ul>
+          <div class="timeline-quote">
+            <span>🐸</span>
+            <span>"${block.pepeQuote}"</span>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    const statusEl = document.getElementById("timelineCurrentStatus");
+    if (statusEl) {
+      if (currentBlock) {
+        statusEl.innerHTML = `Đang trong khung giờ: <b style="color:var(--amber)">${currentBlock.timeRange}</b> (${currentBlock.title.split(":")[1]?.trim() || currentBlock.title})`;
+      } else {
+        statusEl.textContent = "Hệ thống tự động chạy 24/7";
+      }
+    }
+  }
+
+  renderTimelineTrack();
+
+  // Timeline Live Clock Updater
+  const timelineClock = document.getElementById("timelineClock");
+  if (timelineClock) {
+    function updateTimelineClock() {
+      const now = new Date();
+      timelineClock.textContent = now.toLocaleTimeString("vi-VN", { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+    updateTimelineClock();
+    setInterval(updateTimelineClock, 1000);
+  }
+
+  // 5. Render Tomorrow Adaptive Plan
+  if (tomorrowPlan) {
+    const refBox = document.getElementById("tomorrowReflectionBox");
+    if (refBox && tomorrowPlan.reflection) {
+      const ref = tomorrowPlan.reflection;
+      refBox.innerHTML = `
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+          <span style="font-size:26px">🧠</span>
+          <div>
+            <div style="font-size:16px;font-weight:900;color:var(--amber)">TỔNG KẾT & BÀI HỌC THỰC CHIẾN ĐỂ THÍCH ỨNG CHO NGÀY MAI</div>
+            <div style="font-size:12.5px;color:var(--txt-secondary)">Hệ thống tự động phân tích hành vi người dùng hôm nay để điều chỉnh kế hoạch tối ưu.</div>
+          </div>
+        </div>
+        <div style="font-size:13.5px;color:var(--txt);line-height:1.6;margin-bottom:10px">
+          <b>📊 Đánh giá hôm nay:</b> ${ref.evaluation || "Đang đo lường..."}
+        </div>
+        <div style="font-size:13.5px;color:var(--txt);line-height:1.6;margin-bottom:10px">
+          <b>💡 Bài học mấu chốt:</b> ${ref.keyInsight || "Đang tổng hợp..."}
+        </div>
+        <div style="font-size:13.5px;color:var(--pepe);font-weight:700;line-height:1.6">
+          <b>🎯 Tối ưu chiến lược ngày mai:</b> ${ref.strategicShift || "Đang tái cấu trúc..."}
+        </div>
+      `;
+    }
+
+    const tGoalsGrid = document.getElementById("tomorrowGoalsGrid");
+    if (tGoalsGrid && tomorrowPlan.goals) {
+      const tg = tomorrowPlan.goals;
+      tGoalsGrid.innerHTML = `
+        <div class="goal-card">
+          <div class="goal-lbl">💰 Doanh Thu Mục Tiêu Ngày Mai</div>
+          <div class="goal-val">${tg.revenueTargetFormatted || "300.000đ"}</div>
+          <div class="goal-sub">Tăng trưởng thích ứng dựa trên kết quả</div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-lbl">📦 Đơn Hàng Kỳ Vọng</div>
+          <div class="goal-val">${tg.minOrders || 4} <span style="font-size:15px;font-weight:600;color:var(--txt-secondary)">đơn</span></div>
+          <div class="goal-sub">Tăng tỷ lệ chốt từ tệp lead đã bắt</div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-lbl">🎁 Chỉ Tiêu Leads Mới</div>
+          <div class="goal-val">${tg.leadTarget || 15} <span style="font-size:15px;font-weight:600;color:var(--txt-secondary)">leads</span></div>
+          <div class="goal-sub">Mở rộng thêm group Zalo & Facebook</div>
+        </div>
+        <div class="goal-card">
+          <div class="goal-lbl">🎬 Content & SEO Packs</div>
+          <div class="goal-val">${tg.affiliatePacksTarget || 15} <span style="font-size:15px;font-weight:600;color:var(--txt-secondary)">packs</span></div>
+          <div class="goal-sub">Phủ từ khóa ngách Shopee & MMO AI</div>
+        </div>
+      `;
+    }
+
+    renderRankedPoints(tomorrowPlan.rankedPoints, "tomorrowPointsList", "all");
+  }
+
+  // 6. Plan Tab Switcher Logic
+  const tabBtns = section.querySelectorAll(".plan-tab-btn");
+  const panelMap = {
+    today: document.getElementById("planPanelToday"),
+    timeline: document.getElementById("planPanelTimeline"),
+    tomorrow: document.getElementById("planPanelTomorrow")
+  };
+
+  tabBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      tabBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const tabKey = btn.getAttribute("data-plantab");
+      Object.keys(panelMap).forEach(key => {
+        if (panelMap[key]) {
+          panelMap[key].style.display = (key === tabKey) ? "block" : "none";
+        }
+      });
+
+      // If switching to timeline, refresh timeline to ensure exact state
+      if (tabKey === "timeline") {
+        renderTimelineTrack();
+      }
+    });
   });
 }

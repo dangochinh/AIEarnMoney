@@ -438,6 +438,99 @@
       <div id="leadSuccessMsg" style="display:none;margin-top:14px;background:var(--card);border:1.5px solid var(--pepe);border-radius:10px;padding:14px"></div>
     </div>
 
+    <!-- ============================================================
+         PLAN HÔM NAY, XẾP HẠNG POINT KIẾM TIỀN & 24H TIMELINE
+         ============================================================ -->
+    <section id="sectionPlanTimeline" class="plan-timeline-section">
+      <div class="plan-header-strip">
+        <div>
+          <span class="tag" style="background:rgba(245, 158, 11, 0.15);color:var(--amber);border:1px solid var(--amber)">🎯 BATTLE PLAN & TIMELINE KIẾM TIỀN 24H</span>
+          <h2 style="font-size:24px;margin:8px 0 4px" id="planSectionTitle">Kế Hoạch Tác Chiến Hôm Nay & Mục Tiêu Kiếm Tiền</h2>
+          <p style="color:var(--txt-secondary);font-size:13.5px;margin:0" id="planSectionSub">
+            Định lượng mục tiêu, xếp hạng từng point theo khả năng ra tiền thật (Rank S+ đến C) và tự động sinh Kế hoạch Thích ứng cho ngày mai.
+          </p>
+        </div>
+        <div style="font-size:12px;color:var(--muted);text-align:right">
+          Cập nhật: <b id="planUpdatedTime" style="color:var(--pepe)">--:--</b>
+        </div>
+      </div>
+
+      <div class="plan-headline-box" id="planHeadline">
+        Đang tải kế hoạch tác chiến hôm nay của chú ếch Pepe...
+      </div>
+
+      <!-- Tab Navigation -->
+      <div class="plan-tab-nav">
+        <button class="plan-tab-btn active" data-plantab="today">
+          🎯 Kế Hoạch Hôm Nay & Xếp Hạng Kiếm Tiền
+        </button>
+        <button class="plan-tab-btn" data-plantab="timeline">
+          ⏱️ Timeline 24 Giờ Chiến Lược (Trực Quan)
+        </button>
+        <button class="plan-tab-btn" data-plantab="tomorrow">
+          🔮 Kế Hoạch Thích Ứng Ngày Mai (Dựa Theo Kết Quả)
+        </button>
+      </div>
+
+      <!-- TAB PANEL 1: KẾ HOẠCH HÔM NAY & XẾP HẠNG KIẾM TIỀN -->
+      <div id="planPanelToday" class="plan-panel-content">
+        <!-- 4 Goals Cards -->
+        <div class="plan-goals-grid" id="planGoalsGrid">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+          <div style="font-weight:800;font-size:15px;color:var(--txt)">
+            🔥 BẢNG XẾP HẠNG KHẢ NĂNG KIẾM TIỀN (MONEYMAKING TIER LIST)
+          </div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap">
+            <button class="filter-btn active plan-rank-filter" data-rank="all">Tất cả</button>
+            <button class="filter-btn plan-rank-filter" data-rank="S+">Rank S+ (Tiền tươi)</button>
+            <button class="filter-btn plan-rank-filter" data-rank="S">Rank S (Affiliate)</button>
+            <button class="filter-btn plan-rank-filter" data-rank="A">Rank A (Phễu Lead)</button>
+            <button class="filter-btn plan-rank-filter" data-rank="B">Rank B (SEO dài hạn)</button>
+            <button class="filter-btn plan-rank-filter" data-rank="C">Rank C (Minigame)</button>
+          </div>
+        </div>
+
+        <div class="plan-points-list" id="planPointsList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- TAB PANEL 2: 24-HOUR STRATEGIC TIMELINE -->
+      <div id="planPanelTimeline" class="plan-panel-content" style="display:none">
+        <div style="background:var(--chip);border-radius:var(--radius-sm);padding:12px 16px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+          <div style="font-size:13.5px;color:var(--txt)">
+            ⏱️ <b>Thời gian thực:</b> <span id="timelineClock" style="font-family:monospace;font-weight:800;color:var(--amber)">--:--:--</span> · <span id="timelineCurrentStatus" style="color:var(--pepe);font-weight:700">Đang quét tiến trình...</span>
+          </div>
+          <span style="font-size:12px;color:var(--muted)">8 khối giờ chiến lược trong ngày</span>
+        </div>
+
+        <div class="timeline-track" id="timelineTrackList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+
+      <!-- TAB PANEL 3: KẾ HOẠCH THÍCH ỨNG CHO NGÀY MAI -->
+      <div id="planPanelTomorrow" class="plan-panel-content" style="display:none">
+        <div class="reflection-card" id="tomorrowReflectionBox">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div class="plan-goals-grid" id="tomorrowGoalsGrid">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div style="font-weight:800;font-size:15px;color:var(--txt);margin-bottom:14px">
+          🚀 CÁC NHIỆM VỤ NGÀY MAI ĐÃ ĐƯỢC TỐI ƯU HÓA TRỌNG SỐ:
+        </div>
+        <div class="plan-points-list" id="tomorrowPointsList">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </section>
+
     <!-- Products & Services Grid -->
     <h2>Kho Đồ Nghề & Dịch Vụ AI Của Pepe 🛠️</h2>
     <p class="sub">
