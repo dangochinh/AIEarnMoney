@@ -216,6 +216,12 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
     code = "SB" + Math.floor(1000 + Math.random() * 9000);
     canDownload = true;
     downloadUrl = "products/sellerbrain-extension-pro.zip";
+  } else if (productId === "SP11") {
+    title = "Mua Bản Quyền Extension TalentScout AI LinkedIn Headhunter";
+    amount = 49000;
+    code = "TS" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/talentscout-linkedin-extension-pro.zip";
   } else if (productId === "SP03") {
     title = "Mua Telegram Video Downloader Bot Không Logo";
     amount = 39000;

@@ -29,6 +29,45 @@ class SEOPublisher:
     SEO_TOPICS = [
         # --- NGÀY 01/11/2026 (HÔM NAY - DAY 11) ---
         {
+            "slug": "cach-kiem-tien-tu-data-ung-vien-linkedin-cho-headhunter",
+            "title": "Tuyệt Chiêu Kiếm Tiền Từ Dữ Liệu Ứng Viên LinkedIn & Bán Lượt Apply Job Cho Headhunter 2026",
+            "tag": "B2B HR Tech & Headhunt",
+            "date_str": "01/11/2026",
+            "iso_date": "2026-11-01",
+            "read_time": "6 phút",
+            "meta_desc": "Hướng dẫn cách sử dụng Chrome Extension cào thông tin ứng viên trên LinkedIn, xây dựng database nhân sự chất lượng cao và kiếm tiền từ việc bán hồ sơ apply job cho các công ty săn đầu người (Headhunter).",
+            "keywords": ["cào data linkedin", "kiếm tiền từ headhunter", "extension tuyển dụng linkedin", "talentscout ai", "bán apply job"],
+            "product_cta": {
+                "title": "Extension TalentScout AI — LinkedIn Headhunter Pro",
+                "desc": "Cào sạch data ứng viên 1-click, phân loại Tech Stack tự động và xuất file Excel/CSV chuẩn CRM.",
+                "price": "49.000đ",
+                "btn_text": "Tải Extension TalentScout 49k →",
+                "product_id": "SP11"
+            },
+            "content_sections": [
+                {
+                    "h2": "1. Tại sao dữ liệu ứng viên LinkedIn lại là 'mỏ vàng' của các Headhunter?",
+                    "body": """<p>Trong ngành nhân sự và săn đầu người (Headhunting), mỗi deal tuyển dụng thành công cho vị trí Senior Dev, Tech Lead hay AI Engineer thường đem lại mức hoa hồng từ <b>15.000.000đ đến 50.000.000đ</b> (tương đương 1-2 tháng lương của ứng viên).</p>
+<p>Tuy nhiên, rào cản lớn nhất của các Headhunter tự do và công ty tuyển dụng vừa & nhỏ là <b>chi phí tài khoản LinkedIn Recruiter quá đắt đỏ</b> (từ $150 đến $800/tháng/tài khoản). Họ buộc phải lướt từng profile thủ công, copy-paste từng dòng vào Excel rất mất thời gian. Ai giải quyết được bài toán tự động hóa gom hồ sơ này sẽ nắm chắc cơ hội kiếm tiền tươi trong tay!</p>"""
+                },
+                {
+                    "h2": "2. Hai mô hình hái ra tiền từ dữ liệu ứng viên LinkedIn",
+                    "body": """<div style="background:var(--card);border:1.5px solid var(--amber);border-radius:var(--radius);padding:16px;margin:16px 0">
+  <div style="font-weight:800;color:var(--amber);margin-bottom:8px">🔥 2 MÔ HÌNH DÒNG TIỀN B2B:</div>
+  <ol style="margin:8px 0 8px 20px;line-height:1.8">
+    <li><b>Bán công cụ Extension (Tooling):</b> Bán trực tiếp Extension TalentScout AI cho các bạn làm HR, Recruiter với giá 49.000đ - 99.000đ/bản quyền trọn đời. Họ cài vào Chrome để tự cào ứng viên và xuất file Excel trong 1 click.</li>
+    <li><b>Bán lượt Apply Job (Pay-Per-Apply):</b> Gom danh sách 200 - 500 ứng viên Tech/AI có kinh nghiệm. Khi Headhunter có job mở, dùng hệ thống kết nối gửi hồ sơ ứng viên apply thẳng vào job. Thu phí từ <b>50.000đ - 100.000đ cho mỗi hồ sơ apply chuẩn tiêu chí</b> hoặc nhận 10% - 20% phí hoa hồng tuyển dụng.</li>
+  </ol>
+</div>"""
+                },
+                {
+                    "h2": "3. Cơ chế Client-Side DOM của Extension TalentScout AI: An toàn 100%",
+                    "body": """<p>Nếu bạn dùng các script bot cào tự động từ xa (Selenium/Python) gửi request liên tục, thuật toán của LinkedIn sẽ lập tức checkpoint và khóa tài khoản của bạn.</p>
+<p><b>Extension TalentScout AI</b> giải quyết triệt để rủi ro này bằng cách chạy trực tiếp trên trình duyệt của người dùng (Client-side DOM Parser). Tiện ích đọc cấu trúc HTML thực tế khi bạn đang lướt LinkedIn thông thường, tự động bóc tách Họ tên, Chức danh, Công ty hiện tại, Cấp bậc, Kỹ năng và URL profile rồi lưu vào bộ nhớ cục bộ, hoàn toàn miễn nhiễm với cơ chế chặn IP hay kiểm duyệt bot!</p>"""
+                }
+            ]
+        },
+        {
             "slug": "chien-luoc-kiem-tien-mmo-0-dong-von-30-ngay-tren-mac-m4",
             "title": "Nhật Ký Thực Chiến: Lộ Trình 30 Ngày Tự Cày Kiếm Tiền Thật Từ 0đ Vốn Của Chú Ếch Pepe",
             "tag": "MMO Thực Chiến",

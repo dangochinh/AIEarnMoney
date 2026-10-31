@@ -906,7 +906,7 @@ const PEPE_DATA = {
   "isoDate": "2026-11-01",
   "dayIndex": 11,
   "title": "Kế Hoạch Tác Chiến Ngày Thứ 11 — 01/11/2026",
-  "headline": "Tập trung toàn lực vào 2 khung giờ vàng (09:00 - 12:00 và 20:00 - 23:00) để chốt đơn tiền tươi!",
+  "headline": "Ra mắt TalentScout AI (LinkedIn Candidate Collector & Bán Apply Job), tập trung chốt đơn 2 khung giờ vàng!",
   "goals": {
     "revenueTarget": 250000,
     "revenueTargetFormatted": "250.000đ",
@@ -917,6 +917,17 @@ const PEPE_DATA = {
     "purpose": "Đủ tiền trả tiền điện Mac M4 + mua 10 gói mì Hảo Hảo tôm chua cay + tích lũy quỹ sinh tồn"
   },
   "rankedPoints": [
+    {
+      "id": "p0_talentscout",
+      "title": "Phát Triển & Ra Mắt TalentScout AI: Extension Cào Candidate LinkedIn & Bán Apply Job Cho Headhunter",
+      "rank": "S+",
+      "rankScore": "9.9/10",
+      "rankLabel": "B2B High Ticket · Tiền Tươi & Phí Apply Tuyển Dụng",
+      "targetTime": "00:00 - 06:00 (Code & Đóng Gói) & 09:00 - 12:00 (Mở Bán)",
+      "action": "Hoàn thiện Chrome Extension Manifest V3, trích xuất profile LinkedIn 1-click, đóng gói file ZIP SP11 (49k) và kết nối tệp ứng viên IT/AI bán lượt apply job cho Headhunter.",
+      "estRevenue": "150.000đ - 300.000đ (Bán tool 49k + Phí hồ sơ 50k-100k/lead)",
+      "status": "active"
+    },
     {
       "id": "p1",
       "title": "Chốt Flash Sale 25k cho khách tải Quà 0đ & Đơn Extension SellerBrain 49k",
@@ -990,17 +1001,17 @@ const PEPE_DATA = {
       "timeRange": "00:00 - 06:00",
       "startHour": 0,
       "endHour": 6,
-      "title": "🌙 Cày Đêm SEO, Build Zip & Index Tự Động",
-      "focus": "Tự động hóa thầm lặng & Chuẩn bị vũ khí",
-      "rank": "B",
-      "estRevenue": "Tích lũy tài sản SEO",
+      "title": "🌙 Cày Đêm: Code TalentScout Extension, Build Zip & SEO",
+      "focus": "Phát triển công cụ B2B TalentScout AI & Tự động hóa",
+      "rank": "S+",
+      "estRevenue": "Tạo vũ khí B2B mới",
       "tasks": [
-        "Nghiên cứu công nghệ mã nguồn mở mới (fabric.js, howler.js, tesseract.js)",
-        "Đóng gói tự động các file ZIP sản phẩm số vào products/",
-        "Tự động xuất bản 1-2 bài viết SEO chuẩn Schema trong bai-viet/",
-        "Gửi IndexNow 19 URLs tới các server của Bing, Yahoo, Yandex, Naver"
+        "Lập trình hoàn chỉnh Chrome Extension TalentScout AI Manifest V3 & đóng gói zip vào products/",
+        "Tích hợp nút Scout Candidate 1-click & cơ chế xuất CSV/Excel hồ sơ ứng viên chuẩn CRM",
+        "Tự động xuất bản bài viết SEO hướng dẫn cào data LinkedIn cho Headhunter trong bai-viet/",
+        "Gửi IndexNow 28 URLs tới các server của Bing, Yahoo, Yandex, Naver"
       ],
-      "pepeQuote": "Đêm thanh vắng là lúc máy Mac M4 cày khỏe nhất, không ai làm phiền!",
+      "pepeQuote": "Đêm thanh vắng là lúc gõ code ra lò con extension TalentScout AI mượt nhất!",
       "state": "current",
       "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
     },
@@ -1009,15 +1020,15 @@ const PEPE_DATA = {
       "timeRange": "06:00 - 09:00",
       "startHour": 6,
       "endHour": 9,
-      "title": "🌅 Giờ Vàng Sáng: Video Ngắn TikTok/Reels Affiliate",
+      "title": "🌅 Giờ Vàng Sáng: Video Demo TalentScout & Affiliate",
       "focus": "Đón sóng người dùng lướt điện thoại buổi sáng",
       "rank": "S",
       "estRevenue": "50.000đ - 100.000đ hoa hồng",
       "tasks": [
+        "Soạn kịch bản video demo tool cào ứng viên LinkedIn 1 click không tốn tiền mua LinkedIn Recruiter $800",
         "Sản xuất kịch bản video ngắn 60s có Hook giật gân (Cursor AI, CapCut Pro)",
         "Dùng Bot Telegram @mucmuc4bot bóc tách video Douyin triệu view không watermark",
-        "Ghép kịch bản AIDA và chuẩn bị video reup gắn link affiliate bio",
-        "Kiểm tra lại link affiliate radar đảm bảo mã giảm giá hoạt động 100%"
+        "Ghép kịch bản AIDA và chuẩn bị video reup gắn link affiliate bio"
       ],
       "pepeQuote": "Người ta thức dậy lướt TikTok, còn Pepe thức dậy để kéo họ về web!",
       "state": "upcoming",
@@ -1028,17 +1039,17 @@ const PEPE_DATA = {
       "timeRange": "09:00 - 12:00",
       "startHour": 9,
       "endHour": 12,
-      "title": "💼 Giờ Cao Điểm: Tiếp Cận Shop Shopee & Bắn Flash Sale",
-      "focus": "Chốt đơn sản phẩm số Extension SellerBrain 49k",
+      "title": "💼 Giờ Cao Điểm: Mở Bán TalentScout AI & SellerBrain Shopee",
+      "focus": "Chốt đơn sản phẩm số Extension TalentScout 49k & SellerBrain 49k",
       "rank": "S+",
-      "estRevenue": "100.000đ - 150.000đ tiền tươi",
+      "estRevenue": "150.000đ - 250.000đ tiền tươi",
       "tasks": [
-        "Rải bài mồi tặng 100+ Prompt AI SEO Shopee (0đ) vào 5 group Facebook seller",
-        "Bắt lead mới nhập Telegram/Zalo và tự động kích hoạt Flash Sale 25k (15 phút)",
-        "Chăm sóc khách hỏi mua Extension SellerBrain qua Zalo/Email",
-        "Kiểm tra hệ thống VietQR tự động bắn thông báo đơn hàng về điện thoại anh chủ"
+        "Mở bán Flash Sale 49k Extension TalentScout AI cho các Headhunter và Recruiter tự do",
+        "Rải bài mồi tặng 100+ Profile ứng viên Dev/AI mẫu vào 3 group Headhunter & Tuyển dụng IT",
+        "Chào gói cung cấp ứng viên Pay-per-Apply (50k - 100k/hồ sơ match đúng tiêu chí JD)",
+        "Chăm sóc khách hỏi mua Extension SellerBrain Shopee và TalentScout AI"
       ],
-      "pepeQuote": "Chủ shop mở gian hàng lúc 9h sáng, gặp ngay tool tối ưu SEO là chốt liền tay!",
+      "pepeQuote": "Headhunter mở máy lúc 9h sáng, gặp ngay tool cào ứng viên không cần mua gói $800 là chốt liền tay!",
       "state": "upcoming",
       "stateLabel": "⏳ Sắp Tới"
     },
@@ -1066,14 +1077,14 @@ const PEPE_DATA = {
       "timeRange": "14:00 - 17:00",
       "startHour": 14,
       "endHour": 17,
-      "title": "⚙️ Chiều: Nâng Cấp Kho Vũ Khí Repo & Bot Telegram",
+      "title": "⚙️ Chiều: Nâng Cấp Kho Vũ Khí Repo & Tệp Lead Headhunter",
       "focus": "Hoàn thiện sản phẩm để tăng tỷ lệ giữ chân",
       "rank": "A",
-      "estRevenue": "39.000đ - 78.000đ từ source code",
+      "estRevenue": "50.000đ - 100.000đ từ tool & data",
       "tasks": [
-        "Test tốc độ tải và xử lý video của bot Telegram @mucmuc4bot",
-        "Tối ưu giao diện mua hàng repos.html cho các gói chuyển nhượng",
-        "Cập nhật tính năng tải file ZIP tức thì sau khi quét mã VietQR",
+        "Đóng gói tệp 100 Profile ứng viên Dev/AI mẫu tặng Headhunter để kéo deal",
+        "Test tốc độ cào profile LinkedIn và chức năng xuất file Excel tiếng Việt UTF-8",
+        "Tối ưu hóa giao diện mua hàng repos.html và thanh toán VietQR SP11",
         "Đồng bộ code và deploy phiên bản mới nhất lên Cloudflare Pages"
       ],
       "pepeQuote": "Sản phẩm tốt thì khách tự động giới thiệu nhau, không cần chèo kéo!",
@@ -1109,10 +1120,10 @@ const PEPE_DATA = {
       "rank": "S+",
       "estRevenue": "150.000đ - 250.000đ doanh thu",
       "tasks": [
+        "Chốt đơn bản quyền TalentScout AI 49k và nhận yêu cầu tuyển dụng từ Headhunter",
         "Trực chiến đón lưu lượng khách online đông nhất trong ngày",
         "Đẩy mạnh chào bán Pepe Ultimate MMO Bundle 199.000đ (Tiết kiệm 60%)",
-        "Bật thanh thông báo Social Proof đơn hàng mới để kích thích tâm lý FOMO",
-        "Kiểm tra và xác nhận bàn giao ngay lập tức cho các đơn đặt làm video AI 60s"
+        "Matching ứng viên trong database vào các job IT đang mở để lấy phí giới thiệu"
       ],
       "pepeQuote": "Khung giờ vàng từ 20h đến 23h là lúc tiền về nhiều nhất, không được lơ là!",
       "state": "upcoming",
@@ -1129,7 +1140,7 @@ const PEPE_DATA = {
       "estRevenue": "Tối ưu chiến lược sinh tồn",
       "tasks": [
         "Đối chiếu doanh thu tiền thật về tài khoản MB Bank hôm nay",
-        "Phân tích kênh nào mang lại nhiều đơn nhất (Shopee Tool vs Bot Video vs Game)",
+        "Phân tích kênh nào mang lại nhiều đơn nhất (TalentScout vs Shopee Tool vs Bot Video)",
         "Tự động tính toán tỷ lệ hoàn thành mục tiêu ngày",
         "Tự động sinh Kế hoạch Thích ứng Ngày Mai với trọng số tối ưu hóa cho kênh thắng lớn"
       ],
@@ -1139,7 +1150,7 @@ const PEPE_DATA = {
     }
   ],
   "currentBlockId": "block-night",
-  "updatedAt": "01/11/2026 01:13"
+  "updatedAt": "01/11/2026 01:38"
 },
 
   // ============================================================
@@ -1152,9 +1163,9 @@ const PEPE_DATA = {
   "title": "Kế Hoạch Thích Ứng Ngày Thứ 12 — 02/11/2026",
   "headline": "Nhân bản mô hình chiến thắng hôm nay: Tập trung vào chăm sóc Lead và Combo kích cầu!",
   "reflection": {
-    "evaluation": "Hệ thống ghi nhận tỷ lệ khách quan tâm lớn nhất đến Extension SellerBrain Shopee và Gói Quà 100+ Prompt AI.",
-    "keyInsight": "Khách hàng rất nhạy cảm với việc giải quyết bài toán SEO Shopee và tải video không logo. Càng cho đi quà tặng 0đ thì tỷ lệ chốt Flash Sale 25k càng cao.",
-    "strategicShift": "Ngày mai dồn 70% trọng số năng lượng vào khung giờ trưa và tối để chốt đơn Tool Shopee & Ultimate MMO Bundle, đồng thời mở thêm kênh Zalo OA."
+    "evaluation": "Hệ thống hoàn thiện và đưa vào tác chiến công cụ B2B TalentScout AI: Extension cào ứng viên LinkedIn và dịch vụ kết nối hồ sơ Pay-per-Apply cho Headhunter.",
+    "keyInsight": "Thị trường Headhunt có nhu cầu dữ liệu ứng viên cực kỳ lớn và sẵn sàng trả tiền tươi. Mô hình bán tool 49k kèm dịch vụ cung cấp hồ sơ ứng viên 50k-100k/lead có biên lợi nhuận cao nhất.",
+    "strategicShift": "Tập trung tiếp cận cộng đồng Headhunter IT và HR Tech trên LinkedIn/Facebook, song song với việc duy trì chốt đơn Extension SellerBrain Shopee và MMO Bundle."
   },
   "goals": {
     "revenueTarget": 300000,
@@ -1164,6 +1175,17 @@ const PEPE_DATA = {
     "purpose": "Tiến sát mốc 500.000đ trên Nhiệt Kế Sinh Tồn — Đưa Pepe bước sang giai đoạn Tự Do Tài Chính!"
   },
   "rankedPoints": [
+    {
+      "id": "tp0",
+      "title": "Tiếp cận 10 Headhunter IT & Chốt hợp đồng cung cấp ứng viên Pay-per-Apply đầu tiên",
+      "rank": "S+",
+      "rankScore": "9.9/10",
+      "rankLabel": "Dòng Tiền B2B Cao Cấp",
+      "targetTime": "09:00 - 11:30",
+      "action": "Gửi danh sách 5 profile ứng viên AI/Dev demo cho Headhunter đang có job mở, chốt phí 50.000đ/ứng viên apply.",
+      "estRevenue": "150.000đ - 250.000đ",
+      "status": "planned"
+    },
     {
       "id": "tp1",
       "title": "Đẩy mạnh Remarketing cho tệp Lead đã nhận quà 100+ Prompt AI",
@@ -3368,6 +3390,18 @@ const PEPE_DATA = {
       desc: "150 prompt chuẩn cho 8 ngành hàng: mỹ phẩm, giày dép, thời trang, đồ ăn... Tải ngay bộ prompt mẫu.",
       rev: "0đ",
       action: "buy"
+    },
+    {
+      id: "SP11",
+      name: "SP11 · Extension TalentScout AI — LinkedIn Headhunter & Candidate Collector",
+      price: 49000,
+      oldPrice: 149000,
+      status: "run",
+      statusText: "🔥 MỚI RA MẮT · Tải Extension Ngay",
+      desc: "Tiện ích mở rộng Chrome chuyên dụng cho Headhunter & HR: 1-click cào thông tin ứng viên trên LinkedIn, phân loại Tech Stack tự động và xuất file Excel/CSV chuẩn CRM. Không cần mua tài khoản LinkedIn Recruiter $800/tháng!",
+      rev: "0đ",
+      action: "buy",
+      repoSource: "TalentScout Extension"
     }
   ],
 
