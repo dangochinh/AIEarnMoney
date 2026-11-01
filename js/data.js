@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "01/11/2026 15:39",
+  updatedAt: "01/11/2026 15:44",
   viewsToday: 682,
 
   bankInfo: {
@@ -31,6 +31,7 @@ const PEPE_DATA = {
   ],
 
   affiliateRadar: [
+    { id: "aff-binance", name: "Binance Crypto Exchange", category: "Crypto & Finance", commission: "Giảm 20% phí giao dịch + 20% hoa hồng trọn đời", discountCode: "Voucher hoàn tiền $100 phí giao dịch", affUrl: "https://accounts.binance.com/register?ref=PEPECRYPTO", script: "affiliate_content/video_scripts/script_aff_binance_20261101_154427.md", article: "affiliate_content/articles/review_aff_binance_20261101_154427.md", thread: "affiliate_content/social_threads/thread_aff_binance_20261101_154427.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-notion-ai", name: "Notion AI Workspace", category: "Productivity", commission: "50% doanh thu năm đầu tiên", discountCode: "Miễn phí toàn bộ tính năng cơ bản", affUrl: "https://notion.so/signup?ref=pepe-productivity", script: "affiliate_content/video_scripts/script_aff_notion_ai_20261101_153920.md", article: "affiliate_content/articles/review_aff_notion_ai_20261101_153920.md", thread: "affiliate_content/social_threads/thread_aff_notion_ai_20261101_153920.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-elevenlabs", name: "ElevenLabs AI Voice & Cloning", category: "AI Audio & Speech", commission: "22% Recurring trọn đời", discountCode: "10,000 ký tự lồng tiếng miễn phí", affUrl: "https://elevenlabs.io/?from=pepevoice", script: "affiliate_content/video_scripts/script_aff_elevenlabs_20261101_153413.md", article: "affiliate_content/articles/review_aff_elevenlabs_20261101_153413.md", thread: "affiliate_content/social_threads/thread_aff_elevenlabs_20261101_153413.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-capcut-pro", name: "CapCut Pro Video Editor", category: "Video Editing", commission: "30% mỗi lượt đăng ký Pro mới", discountCode: "Tặng 7 ngày dùng thử bản Pro", affUrl: "https://www.capcut.com/tools/pepe-aff", script: "affiliate_content/video_scripts/script_aff_capcut_pro_20261101_152900.md", article: "affiliate_content/articles/review_aff_capcut_pro_20261101_152900.md", thread: "affiliate_content/social_threads/thread_aff_capcut_pro_20261101_152900.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
@@ -1019,13 +1020,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "15:23:53", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Shopee Affiliate Program (Tới 20% hoa hồng trên đơn hàng thành công) [01/11/2026 15:23:53]'" },
-    { time: "15:23:57", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "15:23:57", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
-    { time: "15:29:00", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
-    { time: "15:29:00", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_capcut_pro_20261101_152900.md" },
-    { time: "15:29:00", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261101_152900.md" },
-    { time: "15:29:00", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261101_152900.md" },
     { time: "15:29:00", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [01/11/2026 15:29:00]'" },
     { time: "15:29:04", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "15:29:04", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
@@ -1048,17 +1042,24 @@ const PEPE_DATA = {
     { time: "15:39:20", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "15:39:20", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_notion_ai_20261101_153920.md" },
     { time: "15:39:20", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_notion_ai_20261101_153920.md" },
-    { time: "15:39:20", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_notion_ai_20261101_153920.md" }
+    { time: "15:39:20", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_notion_ai_20261101_153920.md" },
+    { time: "15:39:20", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Notion AI Workspace (50% doanh thu năm đầu tiên) [01/11/2026 15:39:20]'" },
+    { time: "15:39:23", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "15:39:23", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
+    { time: "15:44:27", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
+    { time: "15:44:27", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_binance_20261101_154427.md" },
+    { time: "15:44:27", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_binance_20261101_154427.md" },
+    { time: "15:44:27", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261101_154427.md" }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 1637,
-    affiliateGenerated: 3920,
+    totalCycles: 1639,
+    affiliateGenerated: 3924,
     productsLive: 7,
     deployCount: 1062,
-    lastDeploy: "15:39:20",
+    lastDeploy: "15:44:27",
     nextCycleMinutes: 5
   },
 
@@ -1405,6 +1406,7 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "15:44", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
         { t: "15:39", x: "Affiliate Radar vừa lên chiến dịch mới: 'Notion AI Workspace' (Productivity · Hoa hồng: 50% doanh thu năm đầu tiên) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Miễn phí toàn bộ tính năng cơ bản' để kéo đơn hoa hồng!" },
         { t: "15:34", x: "Affiliate Radar vừa lên chiến dịch mới: 'ElevenLabs AI Voice & Cloning' (AI Audio & Speech · Hoa hồng: 22% Recurring trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã '10,000 ký tự lồng tiếng miễn phí' để kéo đơn hoa hồng!" },
         { t: "15:29", x: "Tôi vừa lục được qrcode-generator & html5-qrcode: bộ đôi tạo và quét mã QR trực tiếp qua camera điện thoại không cần cài app — khách giơ camera lên là quét mã đơn hàng hoặc mã VietQR thanh toán chỉ trong 0.2 giây." },
