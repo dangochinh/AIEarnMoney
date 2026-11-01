@@ -19,6 +19,7 @@ from services.affiliate_engine import AffiliateContentEngine
 from services.outreach_engine import OutreachEngine
 from services.seo_publisher import SEOPublisher
 from services.daily_planner import DailyPlanner
+from services.telegram_reporter import TelegramReporter
 
 # Configure logging
 logging.basicConfig(
@@ -39,6 +40,7 @@ class ContinuousPepeEngine:
         self.outreach_engine = OutreachEngine()
         self.seo_publisher = SEOPublisher()
         self.daily_planner = DailyPlanner()
+        self.telegram_reporter = TelegramReporter()
         self._stop_event = threading.Event()
 
     def run_affiliate_content_cycle(self) -> dict:
@@ -121,6 +123,11 @@ class ContinuousPepeEngine:
             logging.info("🌐 [SearchIndexer] Đã submit URL tới IndexNow (Bing/Yandex/Naver)")
         except Exception as e:
             logging.warning(f"IndexNow error: {e}")
+
+        try:
+            self.telegram_reporter.check_and_send_scheduled_reports()
+        except Exception as e:
+            logging.warning(f"Telegram reporting error: {e}")
 
         return {
             "topic": topic["name"],

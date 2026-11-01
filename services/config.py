@@ -31,3 +31,7 @@ AUTO_DEPLOY = True
 
 # Logging
 LOG_FILE = LOGS_DIR / "pepe_daemon.log"
+
+# Telegram Notifications
+TELEGRAM_BOT_TOKEN = os.getenv("PEPE_TELEGRAM_BOT_TOKEN", "8394322896:AAGLvVyv779HJpmLUiZ49Zr62JPUJ8d81GU")
+TELEGRAM_CHAT_ID = os.getenv("PEPE_TELEGRAM_CHAT_ID", "140392118")
