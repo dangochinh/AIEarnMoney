@@ -1415,10 +1415,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "01:17:52", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "01:18:11", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
-    { time: "01:18:11", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "01:18:11", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu pica & đẩy mạnh sản phẩm số Chute Sort Fruit Puzzle HTML5 Game [03/11/2026 01:18:11]'" },
     { time: "01:18:15", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "01:18:34", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
     { time: "01:18:34", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-03.json" },
@@ -1444,17 +1440,21 @@ const PEPE_DATA = {
     { time: "01:34:31", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "01:34:31", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_shopee_affiliate_20261103_013431.md" },
     { time: "01:34:31", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_shopee_affiliate_20261103_013431.md" },
-    { time: "01:34:31", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_shopee_affiliate_20261103_013431.md" }
+    { time: "01:34:31", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_shopee_affiliate_20261103_013431.md" },
+    { time: "01:34:31", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Shopee Affiliate Program (Tới 20% hoa hồng trên đơn hàng thành công) [03/11/2026 01:34:31]'" },
+    { time: "01:34:35", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "01:34:57", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
+    { time: "01:34:57", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 2298,
+    totalCycles: 2299,
     affiliateGenerated: 5504,
     productsLive: 7,
-    deployCount: 1094,
-    lastDeploy: "01:34:31",
+    deployCount: 1095,
+    lastDeploy: "01:34:57",
     nextCycleMinutes: 5
   },
 
@@ -1801,6 +1801,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "01:34", x: "Tôi vừa lục được fabric.js: thư viện quản lý đối tượng trên HTML5 Canvas mạnh mẽ nhất — biến canvas thông thường thành trình thiết kế ảnh như Canva mini: kéo thả, xoay ảnh, thêm chữ, đổi màu viền, xuất ảnh độ phân giải cao." },
+        { t: "01:34", x: "Cách dùng gọn: khởi tạo const canvas = new fabric.Canvas('c'); thêm ảnh sản phẩm fabric.Image.fromURL(url, img => canvas.add(img)); thêm chữ khung giảm giá new fabric.Text('GIẢM 50%', {fill: '#ef4444', fontWeight: 'bold'}); canvas.toDataURL({format: 'png', quality: 1})." },
+        { t: "01:34", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: cần xử lý CORS hình ảnh bằng crossOrigin = 'anonymous' khi load ảnh sản phẩm từ server ngoài; tối ưu kích thước canvas theo đúng tỉ lệ 1:1 của ảnh đại diện Shopee (1024x1024). — bước tiếp theo: kết hợp fabric.js với kho khung viền sẵn để làm 'Máy đóng khung ảnh Shopee hàng loạt', bán gói dịch vụ 39.000đ cho chủ shop lười photoshop." },
+        { t: "01:34", x: "Tôi tự quyết định tối ưu lại danh mục sản phẩm: tập trung mạnh vào làm Video AI ngắn, Extension Shopee và Web 1 trang để khách dễ chọn." },
         { t: "01:34", x: "Affiliate Radar vừa lên chiến dịch mới: 'Shopee Affiliate Program' (Sàn TMĐT · Hoa hồng: Tới 20% hoa hồng trên đơn hàng thành công) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Mã Freeship Xtra 0đ' để kéo đơn hoa hồng!" },
         { t: "01:29", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "01:23", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
