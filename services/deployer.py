@@ -6,6 +6,7 @@ Tự động đẩy nhật ký và sản phẩm mới lên Cloudflare Pages
 import logging
 import subprocess
 from datetime import datetime
+from pathlib import Path
 from services.config import BASE_DIR, CF_PROJECT_NAME, CF_BRANCH, AUTO_DEPLOY
 
 
