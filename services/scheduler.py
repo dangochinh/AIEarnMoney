@@ -285,11 +285,21 @@ class ContinuousPepeEngine:
         # Vòng lặp chính điều phối thời gian thực
         affiliate_timer = 0
         tech_timer = 0
+        telegram_timer = 0
 
         while not self._stop_event.is_set():
             time.sleep(10)  # Ticks mỗi 10 giây
             affiliate_timer += 10
             tech_timer += 10
+            telegram_timer += 10
+
+            # Mỗi 1 phút (60s): Kiểm tra lịch gửi báo cáo Telegram tối (sau 21h)
+            if telegram_timer >= 60:
+                telegram_timer = 0
+                try:
+                    self.telegram_reporter.check_and_send_scheduled_reports()
+                except Exception as e:
+                    logging.warning(f"Lỗi kiểm tra lịch gửi Telegram: {e}")
 
             # Mỗi 5 phút (300s): Sản xuất content Affiliate
             if affiliate_timer >= 300:
