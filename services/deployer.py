@@ -58,11 +58,16 @@ class AutoDeployer:
         # 2. Wrangler Pages Deploy
         if AUTO_DEPLOY:
             try:
+                import os
                 import shutil
-                npx_bin = shutil.which("npx")
+                node_dir = str(Path.home() / ".nvm/versions/node/v20.20.2/bin")
+                custom_env = os.environ.copy()
+                custom_env["PATH"] = f"{node_dir}:/opt/homebrew/bin:/usr/local/bin:{custom_env.get('PATH', '')}"
+
+                npx_bin = shutil.which("npx", path=custom_env["PATH"])
                 if not npx_bin:
                     candidates = [
-                        Path.home() / ".nvm/versions/node/v20.20.2/bin/npx",
+                        Path(node_dir) / "npx",
                         Path("/opt/homebrew/bin/npx"),
                         Path("/usr/local/bin/npx")
                     ]
@@ -84,7 +89,8 @@ class AutoDeployer:
                     cwd=self.base_dir,
                     capture_output=True,
                     text=True,
-                    timeout=90
+                    timeout=90,
+                    env=custom_env
                 )
                 if d_proc.returncode == 0:
                     res["cf_deployed"] = True
