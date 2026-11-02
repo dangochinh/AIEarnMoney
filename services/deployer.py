@@ -57,8 +57,23 @@ class AutoDeployer:
         # 2. Wrangler Pages Deploy
         if AUTO_DEPLOY:
             try:
+                import shutil
+                npx_bin = shutil.which("npx")
+                if not npx_bin:
+                    candidates = [
+                        Path.home() / ".nvm/versions/node/v20.20.2/bin/npx",
+                        Path("/opt/homebrew/bin/npx"),
+                        Path("/usr/local/bin/npx")
+                    ]
+                    for c in candidates:
+                        if c.exists():
+                            npx_bin = str(c)
+                            break
+                if not npx_bin:
+                    npx_bin = "npx"
+
                 cmd = [
-                    "npx", "wrangler", "pages", "deploy", ".",
+                    npx_bin, "wrangler", "pages", "deploy", ".",
                     f"--project-name={CF_PROJECT_NAME}",
                     f"--branch={CF_BRANCH}",
                     "--commit-dirty=true"

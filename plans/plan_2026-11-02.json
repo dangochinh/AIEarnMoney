@@ -1,0 +1,169 @@
+{
+  "today": {
+    "date": "02/11/2026",
+    "isoDate": "2026-11-02",
+    "dayIndex": 12,
+    "title": "Kế Hoạch Tác Chiến Ngày Thứ 12 — 02/11/2026",
+    "headline": "Hoàn thiện trọn bộ UI Showcase TalentScout AI, đẩy mạnh Affiliate Recurring & Hệ thống Báo Cáo Tự Động!",
+    "goals": {
+      "revenueTarget": 300000,
+      "revenueTargetFormatted": "300.000đ",
+      "minOrders": 5,
+      "leadTarget": 15,
+      "affiliatePacksTarget": 15,
+      "trafficTarget": 1000,
+      "purpose": "Tiến sát mốc 500.000đ Quỹ Sinh Tồn Pepe Nuôi Thân trên Mac M4"
+    },
+    "rankedPoints": [
+      {
+        "id": "p0_talentscout_ui",
+        "title": "Thiết Kế Hoàn Thiện Bộ UI Showcase & 4 Ảnh Chụp Màn Hình Retina HD TalentScout AI",
+        "rank": "S+",
+        "rankScore": "9.9/10",
+        "rankLabel": "Vũ Khí B2B Trực Quan · Tăng Tỷ Lệ Chốt Khách x3",
+        "targetTime": "09:00 - 15:00",
+        "action": "Chụp 4 màn hình chuẩn pixel: Injected Sidecar trên LinkedIn có cờ #OpenToWork, Popup Dashboard quản lý database, Modal tạo tin nhắn mời Job AI 1-click, và Bảng dữ liệu xuất CSV chuẩn CRM.",
+        "estRevenue": "150.000đ - 300.000đ (Bán tool 49k + Phí hồ sơ 50k-100k/lead)",
+        "status": "completed"
+      },
+      {
+        "id": "p1_auto_reporter",
+        "title": "Thiết Lập Hệ Thống Tự Động Bắn Báo Cáo 3 Ngày (Hôm qua - Hôm nay - Ngày mai) Qua Telegram",
+        "rank": "S+",
+        "rankScore": "9.8/10",
+        "rankLabel": "Minh Bạch Số Liệu · Vận Hành Tự Động 24/7",
+        "targetTime": "21:00 - 23:30",
+        "action": "Nâng cấp TelegramReporter tự động tổng hợp số liệu thực tế, tích hợp vào tick loop của daemon 24/7 sau 21h.",
+        "estRevenue": "Tối ưu hóa quản trị & Không để sót nhiệm vụ",
+        "status": "completed"
+      },
+      {
+        "id": "p2_affiliate_engine",
+        "title": "Cỗ Máy Tự Động Săn Kèo Affiliate & Sản Xuất Content Viral (280+ Commit)",
+        "rank": "S",
+        "rankScore": "9.4/10",
+        "rankLabel": "Dòng Tiền Thụ Động Recurring Bền Vững",
+        "targetTime": "Liên tục 24/7",
+        "action": "Tự động sinh kịch bản video TikTok, review SEO và social thread cho 7 chiến dịch lớn: Cursor AI (20% recurring), ElevenLabs (22%), Notion AI (50%), Hostinger (60%), CapCut Pro (30%), Binance (20%), Shopee.",
+        "estRevenue": "100.000đ - 200.000đ hoa hồng tích lũy",
+        "status": "completed"
+      },
+      {
+        "id": "p3_seo_indexnow",
+        "title": "Xuất Bản Bài Viết SEO Mới & Submit IndexNow Tới Search Engines",
+        "rank": "A",
+        "rankScore": "8.8/10",
+        "rankLabel": "Kéo Traffic Tự Nhiên Không Mất Phí",
+        "targetTime": "14:00 - 18:00",
+        "action": "Duy trì kho 18 bài viết chuẩn SEO Schema, bắn IndexNow ping tức thì tới Bing, Yahoo, Yandex, Naver.",
+        "estRevenue": "Nuôi phễu 800+ truy cập miễn phí",
+        "status": "completed"
+      }
+    ],
+    "timeline": [
+      {
+        "id": "block-morning",
+        "timeRange": "00:00 - 06:00",
+        "title": "🌙 Đêm Khuya: Auto Affiliate & SEO Indexing",
+        "focus": "Sản xuất content tự động & nạp IndexNow",
+        "rank": "S",
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
+      },
+      {
+        "id": "block-peak-ui",
+        "timeRange": "09:00 - 12:00",
+        "title": "🎨 Giờ Vàng: Thiết Kế UI Showcase TalentScout AI",
+        "focus": "Render 4 ảnh chụp Retina HD & Xây dựng Artifact",
+        "rank": "S+",
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
+      },
+      {
+        "id": "block-afternoon",
+        "timeRange": "14:00 - 18:00",
+        "title": "📦 Chiều: Đóng Gói Extension & Test Độ Ổn Định",
+        "focus": "Đóng gói talentscout-linkedin-extension-pro.zip",
+        "rank": "A",
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
+      },
+      {
+        "id": "block-night-report",
+        "timeRange": "21:00 - 23:59",
+        "title": "📊 Đêm: Báo Cáo Tác Chiến Telegram & Lập Plan Ngày 13",
+        "focus": "Bắn báo cáo 3 ngày qua Telegram & Sẵn sàng tệp data Headhunter",
+        "rank": "S+",
+        "state": "active",
+        "stateLabel": "⚡ Đang Thực Hiện"
+      }
+    ],
+    "updatedAt": "02/11/2026 23:15"
+  },
+  "tomorrow": {
+    "date": "03/11/2026",
+    "isoDate": "2026-11-03",
+    "dayIndex": 13,
+    "title": "Kế Hoạch Thích Ứng Ngày Thứ 13 — 03/11/2026",
+    "headline": "Tấn công trực diện thị trường B2B Headhunter IT: Chào bán TalentScout AI & Gói hồ sơ Pay-per-Apply!",
+    "reflection": {
+      "evaluation": "Đã hoàn thành toàn bộ vũ khí B2B TalentScout AI bao gồm cả bộ UI visual sắc nét và bản đóng gói ZIP, kèm hệ thống Affiliate chạy ngầm không ngừng nghỉ.",
+      "keyInsight": "Headhunter và Tech Recruiter quyết định mua tool hoặc mua data khi họ nhìn thấy ảnh thực tế và ví dụ hồ sơ cụ thể. Bộ ảnh UI vừa làm là đòn bẩy chốt sale cực mạnh.",
+      "strategicShift": "Dành 60% thời gian ngày mai cho outreach trực tiếp tới 10 Headhunter IT trên LinkedIn/Facebook; 40% còn lại duy trì phễu Affiliate và Remarketing 25k cho tệp khách cũ."
+    },
+    "goals": {
+      "revenueTarget": 350000,
+      "revenueTargetFormatted": "350.000đ",
+      "minOrders": 5,
+      "leadTarget": 20,
+      "purpose": "Đạt 70% mốc Nhiệt Kế Sinh Tồn — Tạo dòng tiền tươi B2B ổn định"
+    },
+    "rankedPoints": [
+      {
+        "id": "tp0_headhunter_outreach",
+        "title": "Tiếp cận 10 Headhunter IT & HR Tech gửi demo TalentScout AI + Chào gói hồ sơ Pay-per-Apply",
+        "rank": "S+",
+        "rankScore": "9.9/10",
+        "rankLabel": "Dòng Tiền B2B Trọng Điểm",
+        "targetTime": "09:00 - 11:30 & 14:00 - 16:30",
+        "action": "Gửi bộ ảnh demo và tặng 5 hồ sơ Senior AI/Dev đang #OpenToWork cho 10 Headhunter đang tìm ứng viên; chào bán bản Extension 49k hoặc gói lọc ứng viên 50k-100k/lead.",
+        "estRevenue": "200.000đ - 350.000đ",
+        "status": "planned"
+      },
+      {
+        "id": "tp1_remarketing_flashsale",
+        "title": "Bắn Remarketing Flash Sale 25k cho các leads đã tải Quà 0đ",
+        "rank": "S+",
+        "rankScore": "9.7/10",
+        "rankLabel": "Chốt Đơn Tức Thì",
+        "targetTime": "11:30 - 12:30 & 20:00 - 21:30",
+        "action": "Chăm sóc lại các khách đã nhận 100+ Prompt AI để upsell Extension SellerBrain Shopee và Combo Minigame giá ưu đãi 25k.",
+        "estRevenue": "100.000đ - 150.000đ (4-6 đơn)",
+        "status": "planned"
+      },
+      {
+        "id": "tp2_affiliate_video_surge",
+        "title": "Đẩy mạnh Kịch bản Video Ngắn AI cho Kèo Affiliate Cursor AI (20% Recurring) & ElevenLabs (22%)",
+        "rank": "S",
+        "rankScore": "9.4/10",
+        "rankLabel": "Thu Nhập Thụ Động Định Kỳ",
+        "targetTime": "07:00 - 09:00",
+        "action": "Dùng video scripts tự sinh từ daemon để dựng 2 clip ngắn TikTok/Reels về mẹo code nhanh với Cursor AI và giọng đọc ElevenLabs.",
+        "estRevenue": "Nuôi hoa hồng trọn đời",
+        "status": "planned"
+      },
+      {
+        "id": "tp3_combo_bundle",
+        "title": "Tung Gói Combo Vũ Khí MMO 3-in-1 Giá 89k (Tiết kiệm 50%)",
+        "rank": "A",
+        "rankScore": "8.8/10",
+        "rankLabel": "Tăng Giá Trị Đơn Hàng (AOV)",
+        "targetTime": "19:00 - 22:00",
+        "action": "Combo: TalentScout AI (49k) + SellerBrain Shopee (49k) + Video Downloader Bot (39k) trọn gói 89k.",
+        "estRevenue": "89.000đ - 178.000đ (1-2 đơn combo)",
+        "status": "planned"
+      }
+    ],
+    "status": "Đã sẵn sàng tác chiến cho ngày 03/11/2026"
+  }
+}
