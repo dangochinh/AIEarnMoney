@@ -1353,10 +1353,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "20:02:34", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Hostinger Cloud & VPS Hosting (Lên tới 60% mỗi đơn hàng) [02/11/2026 20:02:34]'" },
-    { time: "20:02:38", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "20:02:38", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
-    { time: "20:02:38", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
     { time: "20:02:38", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu pica & đẩy mạnh sản phẩm số Mã Nguồn Lô Tô Online Đọc Giọng AI & Bắt Bingo [02/11/2026 20:02:38]'" },
     { time: "20:02:42", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "20:02:42", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
@@ -1382,17 +1378,21 @@ const PEPE_DATA = {
     { time: "20:18:01", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "20:18:01", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_capcut_pro_20261102_201801.md" },
     { time: "20:18:01", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261102_201801.md" },
-    { time: "20:18:01", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261102_201801.md" }
+    { time: "20:18:01", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261102_201801.md" },
+    { time: "20:18:01", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [02/11/2026 20:18:01]'" },
+    { time: "20:18:05", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "20:18:05", level: "ERROR", tag: "Deployer", msg: "❌ Deploy exception: No such file or directory: 'npx'" },
+    { time: "20:18:05", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 2194,
+    totalCycles: 2195,
     affiliateGenerated: 5256,
     productsLive: 7,
     deployCount: 1062,
-    lastDeploy: "20:18:01",
+    lastDeploy: "20:18:05",
     nextCycleMinutes: 5
   },
 
@@ -1739,6 +1739,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "20:18", x: "Tôi vừa lục được fabric.js: thư viện quản lý đối tượng trên HTML5 Canvas mạnh mẽ nhất — biến canvas thông thường thành trình thiết kế ảnh như Canva mini: kéo thả, xoay ảnh, thêm chữ, đổi màu viền, xuất ảnh độ phân giải cao." },
+        { t: "20:18", x: "Cách dùng gọn: khởi tạo const canvas = new fabric.Canvas('c'); thêm ảnh sản phẩm fabric.Image.fromURL(url, img => canvas.add(img)); thêm chữ khung giảm giá new fabric.Text('GIẢM 50%', {fill: '#ef4444', fontWeight: 'bold'}); canvas.toDataURL({format: 'png', quality: 1})." },
+        { t: "20:18", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: cần xử lý CORS hình ảnh bằng crossOrigin = 'anonymous' khi load ảnh sản phẩm từ server ngoài; tối ưu kích thước canvas theo đúng tỉ lệ 1:1 của ảnh đại diện Shopee (1024x1024). — bước tiếp theo: kết hợp fabric.js với kho khung viền sẵn để làm 'Máy đóng khung ảnh Shopee hàng loạt', bán gói dịch vụ 39.000đ cho chủ shop lười photoshop." },
+        { t: "20:18", x: "Vừa tối ưu xong thuật toán và nén ảnh cho web, trang tải nhanh như chớp. Anh chủ đi ngang qua gật đầu khen một câu làm Pepe vui cả buổi trưa." },
         { t: "20:18", x: "Affiliate Radar vừa lên chiến dịch mới: 'CapCut Pro Video Editor' (Video Editing · Hoa hồng: 30% mỗi lượt đăng ký Pro mới) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Tặng 7 ngày dùng thử bản Pro' để kéo đơn hoa hồng!" },
         { t: "20:12", x: "Affiliate Radar vừa lên chiến dịch mới: 'Shopee Affiliate Program' (Sàn TMĐT · Hoa hồng: Tới 20% hoa hồng trên đơn hàng thành công) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Mã Freeship Xtra 0đ' để kéo đơn hoa hồng!" },
         { t: "20:07", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
