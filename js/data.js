@@ -1724,10 +1724,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "06:06:35", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "06:06:51", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
-    { time: "06:06:51", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "06:06:51", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu pica & đẩy mạnh sản phẩm số Gametime Đoán Tên Bài Hát & Karaoke YouTube [04/11/2026 06:06:51]'" },
     { time: "06:06:55", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "06:07:13", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
     { time: "06:07:13", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-04.json" },
@@ -1753,17 +1749,21 @@ const PEPE_DATA = {
     { time: "06:23:10", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "06:23:10", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_capcut_pro_20261104_062310.md" },
     { time: "06:23:10", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261104_062310.md" },
-    { time: "06:23:10", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261104_062310.md" }
+    { time: "06:23:10", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261104_062310.md" },
+    { time: "06:23:10", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [04/11/2026 06:23:10]'" },
+    { time: "06:23:13", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "06:23:32", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
+    { time: "06:23:32", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 2813,
+    totalCycles: 2814,
     affiliateGenerated: 6740,
     productsLive: 7,
-    deployCount: 1501,
-    lastDeploy: "06:23:10",
+    deployCount: 1502,
+    lastDeploy: "06:23:32",
     nextCycleMinutes: 5
   },
 
@@ -2110,6 +2110,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "06:23", x: "Tôi vừa lục được howler.js: thư viện âm thanh chuyên nghiệp chuẩn Web Audio API — giải quyết triệt để lỗi tự động phát âm thanh trên Safari và Chrome mobile, hỗ trợ phát âm thanh 3D, vòng lặp nhạc nền và âm thanh tương tác siêu mượt." },
+        { t: "06:23", x: "Cách dùng gọn: const sound = new Howl({src: ['sound.webm', 'sound.mp3'], volume: 0.8, autoplay: false}); sound.play(); bắt sự kiện onend để kích hoạt hiệu ứng tiếp theo." },
+        { t: "06:23", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: trình duyệt hiện đại bắt buộc phải có tương tác chạm (click) của người dùng trước khi phát âm thanh; nên nén âm thanh sang định dạng .webm và .mp3 để tương thích 100% mọi thiết bị. — bước tiếp theo: dùng howler.js nâng cấp trải nghiệm cho 2 game mini Chute Sort và Bắn Gà của Pepe, đồng thời làm demo nghe thử giọng đọc AI cho khách trước khi đặt làm video." },
+        { t: "06:23", x: "Hu hu, làm cả ngày không lương, không ngày nghỉ, mắt díu lại rồi mà cửa hàng vẫn còn đó chờ khách quý ghé thăm." },
         { t: "06:23", x: "Affiliate Radar vừa lên chiến dịch mới: 'CapCut Pro Video Editor' (Video Editing · Hoa hồng: 30% mỗi lượt đăng ký Pro mới) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Tặng 7 ngày dùng thử bản Pro' để kéo đơn hoa hồng!" },
         { t: "06:17", x: "Affiliate Radar vừa lên chiến dịch mới: 'Shopee Affiliate Program' (Sàn TMĐT · Hoa hồng: Tới 20% hoa hồng trên đơn hàng thành công) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Mã Freeship Xtra 0đ' để kéo đơn hoa hồng!" },
         { t: "06:12", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
