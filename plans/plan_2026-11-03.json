@@ -35,7 +35,7 @@
         "targetTime": "09:00 - 12:00 & 20:00 - 23:00",
         "action": "Tự động bắt lead, hiển thị ưu đãi giảm 50% trong 15 phút, kích hoạt VietQR và gửi link tải .zip ngay lập tức.",
         "estRevenue": "98.000đ - 147.000đ (2-3 đơn)",
-        "status": "active"
+        "status": "pending"
       },
       {
         "id": "p2",
@@ -224,8 +224,8 @@
           "Matching ứng viên trong database vào các job IT đang mở để lấy phí giới thiệu"
         ],
         "pepeQuote": "Khung giờ vàng từ 20h đến 23h là lúc tiền về nhiều nhất, không được lơ là!",
-        "state": "current",
-        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-night-review",
@@ -243,12 +243,12 @@
           "Tự động sinh Kế hoạch Thích ứng Ngày Mai với trọng số tối ưu hóa cho kênh thắng lớn"
         ],
         "pepeQuote": "Người kiếm tiền giỏi không phải làm bừa, mà biết nhìn lại hôm nay để ngày mai thắng lớn hơn!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "current",
+        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
       }
     ],
-    "currentBlockId": "block-peak-conversion",
-    "updatedAt": "03/11/2026 22:51"
+    "currentBlockId": "block-night-review",
+    "updatedAt": "03/11/2026 23:08"
   },
   "tomorrow": {
     "date": "04/11/2026",
