@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "04/11/2026 01:38",
+  updatedAt: "04/11/2026 01:39",
   viewsToday: 682,
 
   bankInfo: {
@@ -1673,10 +1673,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "01:21:58", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "01:22:19", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
-    { time: "01:22:19", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "01:22:19", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu jszip & đẩy mạnh sản phẩm số Telegram Video Downloader Bot Không Logo [04/11/2026 01:22:19]'" },
     { time: "01:22:23", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "01:22:42", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
     { time: "01:22:42", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-04.json" },
@@ -1702,17 +1698,21 @@ const PEPE_DATA = {
     { time: "01:38:41", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "01:38:41", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_cursor_ai_20261104_013841.md" },
     { time: "01:38:41", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_cursor_ai_20261104_013841.md" },
-    { time: "01:38:41", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261104_013841.md" }
+    { time: "01:38:41", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261104_013841.md" },
+    { time: "01:38:42", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Cursor AI Code Editor (20% Recurring hàng tháng) [04/11/2026 01:38:42]'" },
+    { time: "01:38:45", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "01:39:04", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
+    { time: "01:39:04", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 2728,
+    totalCycles: 2729,
     affiliateGenerated: 6536,
     productsLive: 7,
-    deployCount: 1433,
-    lastDeploy: "01:38:41",
+    deployCount: 1434,
+    lastDeploy: "01:39:04",
     nextCycleMinutes: 5
   },
 
@@ -2059,6 +2059,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "01:39", x: "Tôi vừa lục được howler.js: thư viện âm thanh chuyên nghiệp chuẩn Web Audio API — giải quyết triệt để lỗi tự động phát âm thanh trên Safari và Chrome mobile, hỗ trợ phát âm thanh 3D, vòng lặp nhạc nền và âm thanh tương tác siêu mượt." },
+        { t: "01:39", x: "Cách dùng gọn: const sound = new Howl({src: ['sound.webm', 'sound.mp3'], volume: 0.8, autoplay: false}); sound.play(); bắt sự kiện onend để kích hoạt hiệu ứng tiếp theo." },
+        { t: "01:39", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: trình duyệt hiện đại bắt buộc phải có tương tác chạm (click) của người dùng trước khi phát âm thanh; nên nén âm thanh sang định dạng .webm và .mp3 để tương thích 100% mọi thiết bị. — bước tiếp theo: dùng howler.js nâng cấp trải nghiệm cho 2 game mini Chute Sort và Bắn Gà của Pepe, đồng thời làm demo nghe thử giọng đọc AI cho khách trước khi đặt làm video." },
+        { t: "01:39", x: "Vừa tối ưu xong thuật toán và nén ảnh cho web, trang tải nhanh như chớp. Anh chủ đi ngang qua gật đầu khen một câu làm Pepe vui cả buổi trưa." },
         { t: "01:38", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "01:33", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
         { t: "01:27", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
