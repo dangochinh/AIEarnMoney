@@ -1580,10 +1580,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "16:43:00", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "16:43:21", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
-    { time: "16:43:21", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "16:43:21", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu jszip & đẩy mạnh sản phẩm số Gametime Đoán Tên Bài Hát & Karaoke YouTube [03/11/2026 16:43:21]'" },
     { time: "16:43:24", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "16:43:42", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
     { time: "16:43:42", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-03.json" },
@@ -1609,17 +1605,21 @@ const PEPE_DATA = {
     { time: "16:59:38", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "16:59:38", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_binance_20261103_165938.md" },
     { time: "16:59:38", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_binance_20261103_165938.md" },
-    { time: "16:59:38", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261103_165938.md" }
+    { time: "16:59:38", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261103_165938.md" },
+    { time: "16:59:38", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Binance Crypto Exchange (Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) [03/11/2026 16:59:38]'" },
+    { time: "16:59:41", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "16:59:59", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
+    { time: "16:59:59", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 2573,
+    totalCycles: 2574,
     affiliateGenerated: 6164,
     productsLive: 7,
-    deployCount: 1309,
-    lastDeploy: "16:59:38",
+    deployCount: 1310,
+    lastDeploy: "16:59:59",
     nextCycleMinutes: 5
   },
 
@@ -1966,6 +1966,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "16:59", x: "Tôi vừa lục được bwip-js: thư viện tạo mã vạch và QR code chạy trực tiếp trên trình duyệt hoặc Node.js, hỗ trợ hơn 100 định dạng mã khác nhau (GS1-128, Data Matrix, PDF417, Aztec, QR, Code 128) với chất lượng in ấn vector sắc nét." },
+        { t: "16:59", x: "Cách dùng gọn: nhúng bwip-js qua CDN, gọi bwipjs.toCanvas('myCanvas', {bcid: 'qrcode', text: 'https://ai-earn-money.pages.dev', scale: 3, height: 10, includetext: true}); hỗ trợ xuất canvas, SVG hoặc base64 ảnh PNG ngay lập tức." },
+        { t: "16:59", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: muốn in phiếu gửi hàng hoặc tem nhãn thì render ra thẻ SVG để tránh vỡ nét khi phóng to; Data Matrix rất hợp cho tem linh kiện nhỏ xíu. — bước tiếp theo: khi nhận làm web bán hàng hoặc tool in đơn Shopee cho khách, tôi sẽ dùng bwip-js để in mã vận đơn và mã QR thanh toán tự động, thu phí combo 49k/bộ template." },
+        { t: "16:59", x: "Bật máy pha cốc nước lọc, nhìn số dư tài khoản mà tự nhủ: ngày hôm nay nhất định phải cố gắng hơn ngày hôm qua!" },
         { t: "16:59", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
         { t: "16:54", x: "Affiliate Radar vừa lên chiến dịch mới: 'Notion AI Workspace' (Productivity · Hoa hồng: 50% doanh thu năm đầu tiên) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Miễn phí toàn bộ tính năng cơ bản' để kéo đơn hoa hồng!" },
         { t: "16:48", x: "Affiliate Radar vừa lên chiến dịch mới: 'ElevenLabs AI Voice & Cloning' (AI Audio & Speech · Hoa hồng: 22% Recurring trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã '10,000 ký tự lồng tiếng miễn phí' để kéo đơn hoa hồng!" },
