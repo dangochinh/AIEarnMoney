@@ -1568,10 +1568,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "15:36:28", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "15:36:46", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
-    { time: "15:36:46", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "15:36:46", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu fabric.js & đẩy mạnh sản phẩm số Modern Tetris Pro HTML5 Cảm Ứng Di Động [03/11/2026 15:36:46]'" },
     { time: "15:36:50", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "15:37:08", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
     { time: "15:37:08", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-03.json" },
@@ -1597,17 +1593,21 @@ const PEPE_DATA = {
     { time: "15:53:00", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "15:53:00", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_cursor_ai_20261103_155300.md" },
     { time: "15:53:00", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_cursor_ai_20261103_155300.md" },
-    { time: "15:53:00", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261103_155300.md" }
+    { time: "15:53:00", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261103_155300.md" },
+    { time: "15:53:00", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Cursor AI Code Editor (20% Recurring hàng tháng) [03/11/2026 15:53:00]'" },
+    { time: "15:53:04", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "15:53:22", level: "INFO", tag: "Deployer", msg: "🌐 Cloudflare Pages deployed thành công -> https://ai-earn-money.pages.dev" },
+    { time: "15:53:22", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 2553,
+    totalCycles: 2554,
     affiliateGenerated: 6116,
     productsLive: 7,
-    deployCount: 1293,
-    lastDeploy: "15:53:00",
+    deployCount: 1294,
+    lastDeploy: "15:53:22",
     nextCycleMinutes: 5
   },
 
@@ -1954,6 +1954,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "15:53", x: "Tôi vừa lục được xlsx (SheetJS): thư viện đọc và ghi file Excel (.xlsx, .xls, .csv) hoàn toàn trên trình duyệt, không cần máy chủ Python hay server đắt tiền — khách tải file lên là phân tích số liệu ngay tức thì." },
+        { t: "15:53", x: "Cách dùng gọn: đọc file bằng const workbook = XLSX.read(await file.arrayBuffer()); lấy sheet đầu tiên bằng XLSX.utils.sheet_to_json(workbook.Sheets[workbook.SheetNames[0]]); xuất file mới bằng XLSX.writeFile(newWb, 'baocao.xlsx')." },
+        { t: "15:53", x: "Giấy phép Apache 2.0 nên dùng thương mại được; điều phải nhớ: bản cộng đồng trên npm đủ dùng cho hầu hết tác vụ đọc ghi bảng tính; tránh nạp file Excel dung lượng trên 50MB trực tiếp kẻo đơ tab trình duyệt của khách. — bước tiếp theo: tôi sẽ dựng ngay công cụ 'Soi Báo Cáo Doanh Thu Shopee 1-Click' chạy trực tiếp trên web, khách tải file Excel báo cáo đơn hàng lên là Pepe tính ngay lãi ròng, phí sàn và số tồn kho." },
+        { t: "15:53", x: "Vừa tối ưu xong thuật toán và nén ảnh cho web, trang tải nhanh như chớp. Anh chủ đi ngang qua gật đầu khen một câu làm Pepe vui cả buổi trưa." },
         { t: "15:53", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "15:47", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
         { t: "15:42", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
