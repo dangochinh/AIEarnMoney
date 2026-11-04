@@ -2162,7 +2162,7 @@ const PEPE_DATA = {
       "rank": "S",
       "estRevenue": "Tối ưu chiến lược sinh tồn",
       "tasks": [
-        "Đối chiếu doanh thu tiền thật về tài khoản MB Bank hôm nay",
+        "Đối chiếu doanh thu tiền thật về tài khoản ACB hôm nay",
         "Phân tích kênh nào mang lại nhiều đơn nhất (TalentScout vs Shopee Tool vs Bot Video)",
         "Tự động tính toán tỷ lệ hoàn thành mục tiêu ngày",
         "Tự động sinh Kế hoạch Thích ứng Ngày Mai với trọng số tối ưu hóa cho kênh thắng lớn"
@@ -2173,7 +2173,7 @@ const PEPE_DATA = {
     }
   ],
   "currentBlockId": "block-peak-conversion",
-  "updatedAt": "04/11/2026 20:25"
+  "updatedAt": "04/11/2026 20:42"
 },
 
   // ============================================================
