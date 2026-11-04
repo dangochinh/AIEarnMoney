@@ -193,10 +193,10 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
   if (!overlay) return;
 
   const bank = (typeof PEPE_DATA !== "undefined" && PEPE_DATA.bankInfo) ? PEPE_DATA.bankInfo : {
-    bank: "MB",
-    bankName: "Ngân Hàng MB Bank",
-    accountNo: "999988886666",
-    accountName: "PEPE NUOI THAN",
+    bank: "ACB",
+    bankName: "Ngân Hàng ACB (Á Châu)",
+    accountNo: "12342467",
+    accountName: "DANG NGOC HINH",
     momoPhone: "0987654321"
   };
 
