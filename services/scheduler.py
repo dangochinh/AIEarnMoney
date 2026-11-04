@@ -10,7 +10,7 @@ import re
 import threading
 import time
 from datetime import datetime
-from services.config import LOG_FILE, JS_DATA_FILE
+from services.config import LOG_FILE, JS_DATA_FILE, AFFILIATE_CYCLE_SECONDS, TECH_RESEARCH_CYCLE_SECONDS
 from services.research_engine import ResearchEngine
 from services.product_engine import ProductEngine
 from services.diary_logger import DiaryLogger
@@ -301,16 +301,16 @@ class ContinuousPepeEngine:
                 except Exception as e:
                     logging.warning(f"Lỗi kiểm tra lịch gửi Telegram: {e}")
 
-            # Mỗi 5 phút (300s): Sản xuất content Affiliate
-            if affiliate_timer >= 300:
+            # Chu kỳ sản xuất content Affiliate (Mặc định 2 tiếng một lần, tránh spam git & cloudflare)
+            if affiliate_timer >= AFFILIATE_CYCLE_SECONDS:
                 affiliate_timer = 0
                 try:
                     self.run_affiliate_content_cycle()
                 except Exception as e:
                     logging.error(f"Lỗi affiliate content cycle: {e}")
 
-            # Mỗi 15 phút (900s): Nghiên cứu công nghệ & tạo sản phẩm
-            if tech_timer >= 900:
+            # Chu kỳ nghiên cứu công nghệ & đóng gói sản phẩm (Mặc định 4 tiếng một lần)
+            if tech_timer >= TECH_RESEARCH_CYCLE_SECONDS:
                 tech_timer = 0
                 try:
                     self.run_tech_research_cycle()
