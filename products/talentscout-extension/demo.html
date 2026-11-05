@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn: Nguyễn Văn Hùng | Demo Test TalentScout AI</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #f3f2ef;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: rgba(0,0,0,0.9);
+      min-height: 100vh;
+      padding-bottom: 80px;
+    }
+    .li-header {
+      background: #ffffff;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .li-logo {
+      background: #0a66c2;
+      color: #fff;
+      font-weight: 900;
+      font-size: 20px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      margin-right: 12px;
+    }
+    .li-search-box {
+      background: #edf3f8;
+      border-radius: 4px;
+      padding: 6px 14px;
+      font-size: 13px;
+      color: #475569;
+      width: 280px;
+    }
+    .main-wrap {
+      max-width: 860px;
+      margin: 24px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .profile-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.08);
+      overflow: hidden;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.06);
+    }
+    .cover {
+      height: 160px;
+      background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+    }
+    .content-area {
+      padding: 0 24px 24px;
+      position: relative;
+    }
+    .avatar-wrap {
+      width: 140px;
+      height: 140px;
+      margin-top: -70px;
+      position: relative;
+      margin-bottom: 12px;
+    }
+    .avatar-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+      background: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 64px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .opentowork-frame {
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 5px solid #057642;
+      box-shadow: 0 0 12px rgba(5, 118, 66, 0.5);
+      pointer-events: none;
+    }
+    .opentowork-pill {
+      position: absolute;
+      bottom: -4px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #057642;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      padding: 2px 10px;
+      border-radius: 10px;
+      white-space: nowrap;
+    }
+    h1.text-heading-xlarge {
+      font-size: 24px;
+      font-weight: 700;
+      color: #191919;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .text-body-medium.break-words {
+      font-size: 15px;
+      color: #191919;
+      margin: 4px 0 10px;
+      line-height: 1.4;
+    }
+    .meta-row {
+      font-size: 13px;
+      color: #666;
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .btn-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .btn-li {
+      padding: 7px 18px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-primary { background: #0a66c2; color: #fff; border: none; }
+    .btn-outline { background: transparent; color: #0a66c2; border: 1px solid #0a66c2; }
+    .btn-gray { background: transparent; color: #666; border: 1px solid #666; }
+    
+    .opentowork-box {
+      background: #d8f3dc;
+      border-left: 4px solid #057642;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    .about-card {
+      background: #ffffff;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.08);
+      padding: 24px;
+    }
+    .banner-guide {
+      background: #0f172a;
+      color: #10b981;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <header class="li-header">
+    <div style="display:flex;align-items:center">
+      <div class="li-logo">in</div>
+      <div class="li-search-box">🔍 Tìm kiếm ứng viên...</div>
+    </div>
+    <div style="font-size:12px;color:#64748b">
+      TalentScout AI Extension Demo Environment
+    </div>
+  </header>
+
+  <main class="main-wrap">
+    <div class="banner-guide">
+      <span>🐸 <b>MÔI TRƯỜNG TEST EXTENSION TALENTSCOUT AI:</b> Widget màu xanh ngọc sẽ tự động nổi lên ở góc phải màn hình bên dưới!</span>
+      <span style="font-size:12px;color:#cbd5e1">Bấm nút "Scout Ứng Viên Này" để lưu hồ sơ ngay lập tức ↘</span>
+    </div>
+
+    <section class="profile-card">
+      <div class="cover"></div>
+      <div class="content-area">
+        <div class="avatar-wrap pv-top-card-profile-picture">
+          <div class="avatar-img">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=HungAI" alt="OPEN_TO_WORK" title="OPEN_TO_WORK" style="width:100%;height:100%;border-radius:50%">
+          </div>
+          <div class="opentowork-frame"></div>
+          <div class="opentowork-pill">#OPENTOWORK</div>
+        </div>
+
+        <h1 class="text-heading-xlarge">
+          Nguyễn Văn Hùng <span style="color:#0a66c2;font-size:16px">✓</span>
+        </h1>
+
+        <div class="text-body-medium break-words">
+          Senior Python & AI Engineer | LLM Finetuning & Multi-Agent Architecture | Ex-VinAI
+        </div>
+
+        <div class="meta-row">
+          <span class="text-body-small inline t-black--light break-words">📍 Hà Nội, Việt Nam</span>
+          <button aria-label="Current company: TechNova Solutions" style="background:none;border:none;color:#0a66c2;font-size:13px;font-weight:600;cursor:pointer">
+            🏢 TechNova Solutions
+          </button>
+          <span>🌐 500+ người kết nối</span>
+        </div>
+
+        <div class="btn-row">
+          <button class="btn-li btn-primary">Mời kết nối</button>
+          <button class="btn-li btn-outline">Gửi InMail</button>
+          <button class="btn-li btn-gray">Khác</button>
+        </div>
+
+        <div class="opentowork-box pv-open-to-work-card">
+          <div style="font-weight:700;color:#057642;font-size:13px">Đang tìm kiếm việc làm mới (#OpenToWork)</div>
+          <div style="font-size:12px;color:#1b4332;margin-top:2px">
+            Vị trí quan tâm: Senior AI Engineer, Lead Python, Tech Lead · Chế độ Hybrid / Remote · Toàn thời gian
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-card" id="about">
+      <h2 style="font-size:18px;font-weight:700;margin-bottom:12px">Thông tin giới thiệu (About)</h2>
+      <div class="display-flex">
+        <div class="inline-show-more-text" style="font-size:14px;line-height:1.6;color:#333">
+          Hơn 5 năm kinh nghiệm chuyên sâu về lập trình Python, FastAPI, Docker và hệ thống Generative AI / Large Language Models (LLM). 
+          Đã từng làm việc tại VinAI và phát triển các giải pháp RAG, Fine-tuning mô hình mã nguồn mở (Llama, Qwen).
+          <br><br>
+          Tech stack thành thạo: <b>Python, FastAPI, PyTorch, Docker, Kubernetes, LangChain, PostgreSQL, Redis</b>.
+          <br><br>
+          Email liên hệ công việc: <b>hung.nguyen.ai@gmail.com</b>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
