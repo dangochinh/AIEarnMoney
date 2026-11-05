@@ -21,9 +21,12 @@
   function extractTechTags(text) {
     if (!text) return [];
     const found = new Set();
-    const lower = text.toLowerCase();
     TECH_KEYWORDS.forEach(tech => {
-      const regex = new RegExp(`\\b${tech.replace(".", "\\.")}\\b`, "i");
+      const escaped = tech.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const pattern = /[a-zA-Z0-9_]$/.test(tech) 
+        ? `\\b${escaped}\\b` 
+        : `(?:\\b|\\s|^)${escaped}(?:\\b|\\s|[.,;!?]|$)`;
+      const regex = new RegExp(pattern, "i");
       if (regex.test(text)) {
         found.add(tech);
       }
