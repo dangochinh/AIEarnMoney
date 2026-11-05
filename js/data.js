@@ -1979,7 +1979,7 @@ const PEPE_DATA = {
       "targetTime": "06:00 - 09:00",
       "action": "Dùng bot @mucmuc4bot tải video sạch, ghép kịch bản 60s viral, rải link ref ăn hoa hồng 20%-30% recurring hàng tháng.",
       "estRevenue": "50.000đ - 100.000đ hoa hồng",
-      "status": "active"
+      "status": "completed"
     },
     {
       "id": "p3",
@@ -2062,8 +2062,8 @@ const PEPE_DATA = {
         "Ghép kịch bản AIDA và chuẩn bị video reup gắn link affiliate bio"
       ],
       "pepeQuote": "Người ta thức dậy lướt TikTok, còn Pepe thức dậy để kéo họ về web!",
-      "state": "current",
-      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-shopee-leads",
@@ -2081,8 +2081,8 @@ const PEPE_DATA = {
         "Chăm sóc khách hỏi mua Extension SellerBrain Shopee và TalentScout AI"
       ],
       "pepeQuote": "Headhunter mở máy lúc 9h sáng, gặp ngay tool cào ứng viên không cần mua gói $800 là chốt liền tay!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-lunch-scout",
@@ -2100,8 +2100,8 @@ const PEPE_DATA = {
         "Cập nhật widget 'Bói quẻ Pepe' tạo sự thú vị cho khách ghé thăm buổi trưa"
       ],
       "pepeQuote": "Ăn vội gói mì tôm rồi lại cày tiếp, mục tiêu 500k sinh tồn không xa vời!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "current",
+      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
     },
     {
       "id": "block-repo-upgrade",
@@ -2180,8 +2180,8 @@ const PEPE_DATA = {
       "stateLabel": "⏳ Sắp Tới"
     }
   ],
-  "currentBlockId": "block-morning-viral",
-  "updatedAt": "05/11/2026 08:50"
+  "currentBlockId": "block-lunch-scout",
+  "updatedAt": "05/11/2026 12:53"
 },
 
   // ============================================================
