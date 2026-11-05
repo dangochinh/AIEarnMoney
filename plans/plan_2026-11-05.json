@@ -167,8 +167,8 @@
           "Cập nhật widget 'Bói quẻ Pepe' tạo sự thú vị cho khách ghé thăm buổi trưa"
         ],
         "pepeQuote": "Ăn vội gói mì tôm rồi lại cày tiếp, mục tiêu 500k sinh tồn không xa vời!",
-        "state": "current",
-        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-repo-upgrade",
@@ -186,8 +186,8 @@
           "Đồng bộ code và deploy phiên bản mới nhất lên Cloudflare Pages"
         ],
         "pepeQuote": "Sản phẩm tốt thì khách tự động giới thiệu nhau, không cần chèo kéo!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "current",
+        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
       },
       {
         "id": "block-evening-traffic",
@@ -247,8 +247,8 @@
         "stateLabel": "⏳ Sắp Tới"
       }
     ],
-    "currentBlockId": "block-lunch-scout",
-    "updatedAt": "05/11/2026 12:53"
+    "currentBlockId": "block-repo-upgrade",
+    "updatedAt": "05/11/2026 16:55"
   },
   "tomorrow": {
     "date": "06/11/2026",
