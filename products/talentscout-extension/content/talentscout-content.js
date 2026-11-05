@@ -331,9 +331,12 @@
       if (badge) badge.textContent = `${count} DB`;
     });
 
-    // Check if on search page
+    // Check if on search page or profile page
     const isSearchPage = window.location.pathname.includes("/search/");
-    const isProfilePage = window.location.pathname.includes("/in/");
+    const isProfilePage = window.location.pathname.includes("/in/") || 
+                          window.location.pathname.includes("demo") || 
+                          !!document.querySelector("h1.text-heading-xlarge") ||
+                          !!document.querySelector(".profile-card");
 
     const batchBtn = document.getElementById("ts-btn-batch");
     const scoutBtn = document.getElementById("ts-btn-scout");

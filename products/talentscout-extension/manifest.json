@@ -9,7 +9,9 @@
     "activeTab"
   ],
   "host_permissions": [
-    "https://*.linkedin.com/*"
+    "https://*.linkedin.com/*",
+    "http://localhost:*/*",
+    "file://*/*"
   ],
   "action": {
     "default_popup": "popup/popup.html",
@@ -26,7 +28,9 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.linkedin.com/*"
+        "https://*.linkedin.com/*",
+        "http://localhost:*/*",
+        "file://*/*"
       ],
       "js": [
         "content/talentscout-content.js"
