@@ -1,4 +1,4 @@
-# 🚀 BỘ NỘI DUNG RẢI LINK KÉO KHÁCH TỰ ĐỘNG — CẬP NHẬT: 06/11/2026 03:31
+# 🚀 BỘ NỘI DUNG RẢI LINK KÉO KHÁCH TỰ ĐỘNG — CẬP NHẬT: 06/11/2026 07:34
 > Dùng để copy 1-click đăng lên các nhóm Facebook, Zalo, diễn đàn hoặc Telegram.
 
 ## 📌 GÓI 1: Chủ Shop Shopee / TikTok Shop (Nhóm Facebook & Zalo)
