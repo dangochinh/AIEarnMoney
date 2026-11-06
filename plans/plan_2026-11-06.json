@@ -186,8 +186,8 @@
           "Đồng bộ code và deploy phiên bản mới nhất lên Cloudflare Pages"
         ],
         "pepeQuote": "Sản phẩm tốt thì khách tự động giới thiệu nhau, không cần chèo kéo!",
-        "state": "current",
-        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-evening-traffic",
@@ -205,8 +205,8 @@
           "Khuyến khích khách ủng hộ ly cà phê / gói mì tôm 20.000đ nuôi chú ếch"
         ],
         "pepeQuote": "Tan sở là lúc mọi người cần giải trí nhẹ nhàng, game Lô Tô vào việc ngay!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "current",
+        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
       },
       {
         "id": "block-peak-conversion",
@@ -247,8 +247,8 @@
         "stateLabel": "⏳ Sắp Tới"
       }
     ],
-    "currentBlockId": "block-repo-upgrade",
-    "updatedAt": "06/11/2026 15:39"
+    "currentBlockId": "block-evening-traffic",
+    "updatedAt": "06/11/2026 19:42"
   },
   "tomorrow": {
     "date": "07/11/2026",
