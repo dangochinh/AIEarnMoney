@@ -35,7 +35,7 @@
         "targetTime": "09:00 - 12:00 & 20:00 - 23:00",
         "action": "Tự động bắt lead, hiển thị ưu đãi giảm 50% trong 15 phút, kích hoạt VietQR và gửi link tải .zip ngay lập tức.",
         "estRevenue": "98.000đ - 147.000đ (2-3 đơn)",
-        "status": "pending"
+        "status": "active"
       },
       {
         "id": "p2",
@@ -46,7 +46,7 @@
         "targetTime": "06:00 - 09:00",
         "action": "Dùng bot @mucmuc4bot tải video sạch, ghép kịch bản 60s viral, rải link ref ăn hoa hồng 20%-30% recurring hàng tháng.",
         "estRevenue": "50.000đ - 100.000đ hoa hồng",
-        "status": "active"
+        "status": "completed"
       },
       {
         "id": "p3",
@@ -129,8 +129,8 @@
           "Ghép kịch bản AIDA và chuẩn bị video reup gắn link affiliate bio"
         ],
         "pepeQuote": "Người ta thức dậy lướt TikTok, còn Pepe thức dậy để kéo họ về web!",
-        "state": "current",
-        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-shopee-leads",
@@ -148,8 +148,8 @@
           "Chăm sóc khách hỏi mua Extension SellerBrain Shopee và TalentScout AI"
         ],
         "pepeQuote": "Headhunter mở máy lúc 9h sáng, gặp ngay tool cào ứng viên không cần mua gói $800 là chốt liền tay!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "current",
+        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
       },
       {
         "id": "block-lunch-scout",
@@ -247,8 +247,8 @@
         "stateLabel": "⏳ Sắp Tới"
       }
     ],
-    "currentBlockId": "block-morning-viral",
-    "updatedAt": "07/11/2026 07:50"
+    "currentBlockId": "block-shopee-leads",
+    "updatedAt": "07/11/2026 11:53"
   },
   "tomorrow": {
     "date": "08/11/2026",
