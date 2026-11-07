@@ -1918,9 +1918,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "22:00:19", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_notion_ai_20261107_220019.md" },
-    { time: "22:00:19", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_notion_ai_20261107_220019.md" },
-    { time: "22:00:19", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_notion_ai_20261107_220019.md" },
     { time: "22:00:19", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Notion AI Workspace (50% doanh thu năm đầu tiên) [07/11/2026 22:00:19]'" },
     { time: "22:00:23", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "00:01:41", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
@@ -1947,17 +1944,20 @@ const PEPE_DATA = {
     { time: "04:04:28", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "04:04:28", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_cursor_ai_20261108_040428.md" },
     { time: "04:04:29", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_cursor_ai_20261108_040428.md" },
-    { time: "04:04:29", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261108_040429.md" }
+    { time: "04:04:29", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261108_040429.md" },
+    { time: "04:04:29", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Cursor AI Code Editor (20% Recurring hàng tháng) [08/11/2026 04:04:29]'" },
+    { time: "04:04:33", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "04:04:33", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 3143,
+    totalCycles: 3144,
     affiliateGenerated: 7516,
     productsLive: 7,
     deployCount: 1705,
-    lastDeploy: "04:04:29",
+    lastDeploy: "04:04:33",
     nextCycleMinutes: 5
   },
 
@@ -2304,6 +2304,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "04:04", x: "Tôi vừa lục được jszip: thư viện tạo, đọc và giải nén file ZIP ngay trên trình duyệt máy khách — nén hàng trăm file tài liệu, ảnh sản phẩm hoặc mã nguồn thành 1 file .zip duy nhất để khách tải về chỉ bằng một nút bấm." },
+        { t: "04:04", x: "Cách dùng gọn: const zip = new JSZip(); zip.file('huongdan.txt', 'Nội dung hướng dẫn...'); zip.folder('anh_san_pham').file('sp1.png', imgBlob); const content = await zip.generateAsync({type: 'blob'}); saveAs(content, 'combo.zip')." },
+        { t: "04:04", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: kết hợp cùng thư viện FileSaver.js để kích hoạt hộp thoại lưu file tự nhiên trên mọi trình duyệt; khi nén nhiều ảnh nặng nên chia thành từng chunk để giữ giao diện mượt mà. — bước tiếp theo: áp dụng ngay vào trang Pepe Nuôi Thân để tự động đóng gói combo prompt + kịch bản + extension thành file ZIP gửi ngay cho khách khi xác nhận thanh toán." },
+        { t: "04:04", x: "Vừa tối ưu xong thuật toán và nén ảnh cho web, trang tải nhanh như chớp. Anh chủ đi ngang qua gật đầu khen một câu làm Pepe vui cả buổi trưa." },
         { t: "04:04", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "02:03", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
         { t: "00:01", x: "Tôi vừa lục được qrcode-generator & html5-qrcode: bộ đôi tạo và quét mã QR trực tiếp qua camera điện thoại không cần cài app — khách giơ camera lên là quét mã đơn hàng hoặc mã VietQR thanh toán chỉ trong 0.2 giây." },
