@@ -1,4 +1,4 @@
-/* TalentScout AI — Popup Styles */
+/* TalentScout AI — Popup Styles (Auto-Pilot Harvester 10-100 CV) */
 
 * {
   box-sizing: border-box;
@@ -8,8 +8,8 @@
 
 body {
   width: 440px;
-  min-height: 520px;
-  max-height: 600px;
+  min-height: 580px;
+  max-height: 620px;
   background: #090d16;
   color: #f1f5f9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -20,7 +20,7 @@ body {
 .popup-wrap {
   display: flex;
   flex-direction: column;
-  height: 580px;
+  height: 600px;
   padding: 14px;
 }
 
@@ -28,7 +28,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -63,18 +63,104 @@ body {
   border-radius: 12px;
 }
 
+/* Daily Target Quota Card */
+.daily-quota-card {
+  margin-top: 10px;
+  background: #111a2e;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quota-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.quota-title {
+  color: #cbd5e1;
+  font-weight: 700;
+}
+
+.quota-top b {
+  color: #10b981;
+  font-size: 13px;
+}
+
+.progress-bar-wrap {
+  height: 8px;
+  background: #1e293b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.quota-quick-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.q-btn {
+  flex: 1;
+  padding: 5px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.q-btn:hover {
+  border-color: #10b981;
+  color: #f8fafc;
+}
+
+.q-btn.active {
+  background: #10b981;
+  color: #064e3b;
+  border-color: #34d399;
+}
+
+.auto-scan-actions {
+  display: flex;
+}
+
+.btn-accent {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+}
+
+.btn-accent:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+}
+
 .search-box {
-  margin: 12px 0 8px;
+  margin: 10px 0 6px;
 }
 
 .search-box input {
   width: 100%;
-  padding: 9px 12px;
+  padding: 8px 12px;
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 8px;
   color: #f8fafc;
-  font-size: 12.5px;
+  font-size: 12px;
   outline: none;
   transition: all 0.2s ease;
 }
@@ -87,14 +173,14 @@ body {
 .actions-row {
   display: flex;
   gap: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .btn {
   flex: 1;
-  padding: 8px 12px;
+  padding: 7px 10px;
   border-radius: 6px;
-  font-size: 12px;
+  font-size: 11.5px;
   font-weight: 700;
   cursor: pointer;
   border: none;
@@ -106,16 +192,16 @@ body {
 }
 
 .btn-primary {
-  background: #10b981;
-  color: #064e3b;
+  background: #0ea5e9;
+  color: #ffffff;
 }
 
 .btn-primary:hover {
-  background: #34d399;
+  background: #38bdf8;
 }
 
 .btn-danger {
-  flex: 0 0 85px;
+  flex: 0 0 80px;
   background: rgba(239, 68, 68, 0.15);
   color: #f87171;
   border: 1px solid rgba(239, 68, 68, 0.3);
@@ -129,8 +215,8 @@ body {
   display: flex;
   gap: 6px;
   overflow-x: auto;
-  padding-bottom: 8px;
-  margin-bottom: 8px;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .pill {
@@ -163,7 +249,7 @@ body {
   background: #1e293b;
   border: 1px solid #334155;
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 9px 11px;
   transition: all 0.2s ease;
 }
 
@@ -180,7 +266,7 @@ body {
 }
 
 .cand-name {
-  font-size: 13.5px;
+  font-size: 13px;
   font-weight: 800;
   color: #f8fafc;
 }
@@ -198,81 +284,85 @@ body {
 .cand-headline {
   font-size: 11.5px;
   color: #cbd5e1;
-  margin: 3px 0 6px;
-  line-height: 1.4;
+  margin: 3px 0 5px;
+  line-height: 1.35;
 }
 
 .cand-meta {
-  font-size: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  font-size: 10.5px;
   color: #94a3b8;
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  flex-wrap: wrap;
+  margin-bottom: 6px;
 }
 
-.cand-skills {
+.cand-tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
-  flex-wrap: wrap;
-  margin-top: 6px;
 }
 
-.skill-tag {
-  font-size: 10px;
+.tech-tag {
   background: #0f172a;
   color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
   padding: 1px 6px;
   border-radius: 4px;
+  font-size: 10px;
+  font-family: ui-monospace, SFMono-Regular, monospace;
 }
 
-.cand-actions {
+.cand-footer {
   display: flex;
-  gap: 6px;
-  margin-top: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
   padding-top: 6px;
   border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  font-size: 10.5px;
 }
 
-.cand-btn {
-  flex: 1;
-  padding: 4px 8px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #cbd5e1;
-  border-radius: 4px;
-  font-size: 11px;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: center;
-}
-
-.cand-btn:hover {
-  background: #10b981;
-  color: #064e3b;
+.cand-status {
+  color: #10b981;
   font-weight: 700;
+}
+
+.cand-status.opentowork {
+  color: #22c55e;
+}
+
+.cand-link {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.cand-link:hover {
+  text-decoration: underline;
 }
 
 .empty-state {
   text-align: center;
-  padding: 40px 20px;
+  padding: 30px 10px;
   color: #64748b;
-  font-size: 12.5px;
+  font-size: 12px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 11px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 10.5px;
   color: #64748b;
-  margin-top: 6px;
 }
 
 .footer a {
   color: #10b981;
   text-decoration: none;
-  font-weight: 700;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

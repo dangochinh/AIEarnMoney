@@ -175,7 +175,24 @@ class TelegramReporter:
         # Khối Hôm nay dựa trên dữ liệu thực tế
         has_talent_scout_test = any("talentscout" in f.lower() for f in t_summary["features_and_fixes"]) or Path(BASE_DIR / "products/talentscout-extension/data/talentscout_candidates_10.csv").exists()
         
-        if has_talent_scout_test:
+        # Thống kê ứng viên LinkedIn hôm nay từ TalentScout
+        cand_state_file = BASE_DIR / ".talentscout_scanner_state.json"
+        today_scanned_cvs = 0
+        total_master_cvs = 0
+        if cand_state_file.exists():
+            try:
+                with open(cand_state_file, "r", encoding="utf-8") as f:
+                    cst = json.load(f)
+                    if cst.get("last_scan_date") == today_iso:
+                        today_scanned_cvs = cst.get("today_scanned_count", 0)
+                    total_master_cvs = cst.get("total_lifetime_scanned", 0)
+            except Exception:
+                pass
+
+        if today_scanned_cvs > 0:
+            report_lines.append(f"• 🎯 <b>Auto-Scan LinkedIn (TalentScout AI):</b> Đã tự động cào <b>+{today_scanned_cvs} CV IT/AI mới hôm nay</b> (Lũy kế Database: <b>{total_master_cvs} hồ sơ CRM</b>, xuất CSV 1-click).")
+            report_lines.append("• 🛡️ <b>Nâng cấp Extension v1.2:</b> Bổ sung chế độ Auto-Pilot Harvester (10-100 CV/ngày), thanh tiến độ trực quan và cơ chế Anti-ban Jitter 3s-5s bảo vệ tài khoản.")
+        elif has_talent_scout_test:
             report_lines.append("• 🎯 <b>Kiểm thử thực tế TalentScout AI:</b> Thu thập thành công <b>10 hồ sơ ứng viên IT/AI thực tế</b> tại VN, xuất file CSV chuẩn UTF-8 & JSON tích hợp CRM.")
             report_lines.append("• 🛠️ <b>Vá lỗi Regex:</b> Khắc phục lỗi quantifier ký tự đặc biệt (<code>C++</code>, <code>C#</code>) trong content script, đóng gói lại bản ZIP hoàn chỉnh.")
             report_lines.append("• 🚀 <b>Môi trường Chrome Demo:</b> Khởi chạy Chrome với cờ <code>--load-extension</code> mở sẵn <code>demo.html</code> để test trực tiếp trên máy Mac.")
@@ -189,15 +206,17 @@ class TelegramReporter:
 
         report_lines.append(f"• 📊 <b>Hoạt động hôm nay:</b> <b>{t_summary['total_commits']} commits sạch</b> được push lên Cloudflare Pages.")
 
+        cand_label = f"{today_scanned_cvs} CV" if today_scanned_cvs > 0 else "hồ sơ mẫu"
+
         report_lines.extend([
             "",
             f"━━━━━━━━━━━━━━━━━━━━",
             "",
             f"🔮 <b>3. NGÀY MAI ({tomorrow_str} — Ngày {tomorrow_day_num}): KẾ HOẠCH & MỤC TIÊU</b>",
             f"• 🎯 <b>Mục tiêu doanh thu:</b> <b>350.000đ</b> (Kỳ vọng 5–7 đơn hàng).",
-            f"• 💡 <b>Chiến lược cốt lõi:</b> Tận dụng tệp 10 CV IT/AI vừa cào được để làm mồi câu chốt đơn Headhunter & mở rộng phễu Affiliate.",
+            f"• 💡 <b>Chiến lược cốt lõi:</b> Tận dụng tệp {cand_label} IT/AI vừa cào được để làm mồi câu chốt đơn Headhunter & mở rộng phễu Affiliate.",
             f"• 🚀 <b>3 Trọng tâm tác chiến cụ thể:</b>",
-            f"   1. <b>Chào bán tệp ứng viên mẫu & Tool:</b> Gửi tặng 10 hồ sơ Dev/AI đang #OpenToWork cho 5 group tuyển dụng IT/Headhunter, chào bán TalentScout AI 49k (STK ACB 12342467).",
+            f"   1. <b>Chào bán tệp ứng viên mẫu & Tool:</b> Gửi tặng tệp {cand_label} Dev/AI đang #OpenToWork cho 5 group tuyển dụng IT/Headhunter, chào bán TalentScout AI 49k (STK ACB 12342467).",
             f"   2. <b>Video Demo TikTok/Reels:</b> Dựng 1 clip ngắn 45s quay màn hình tiện ích cào ứng viên LinkedIn 1-click tự động để hút traffic không đồng.",
             f"   3. <b>Đẩy mạnh kèo Recurring:</b> Xuất bản bài review chuyên sâu Cursor AI (20% hoa hồng hàng tháng) & ElevenLabs (22% trọn đời) kéo dòng tiền thụ động.",
             "",

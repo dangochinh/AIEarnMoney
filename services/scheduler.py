@@ -20,6 +20,7 @@ from services.outreach_engine import OutreachEngine
 from services.seo_publisher import SEOPublisher
 from services.daily_planner import DailyPlanner
 from services.telegram_reporter import TelegramReporter
+from services.linkedin_scanner import LinkedInCandidateScanner
 
 # Configure logging
 logging.basicConfig(
@@ -41,7 +42,22 @@ class ContinuousPepeEngine:
         self.seo_publisher = SEOPublisher()
         self.daily_planner = DailyPlanner()
         self.telegram_reporter = TelegramReporter()
+        self.linkedin_scanner = LinkedInCandidateScanner(target_daily=50)
         self._stop_event = threading.Event()
+
+    def run_linkedin_scan_cycle(self) -> dict:
+        """Tự động cào 10 - 100 CV ứng viên LinkedIn mỗi ngày cho TalentScout AI."""
+        try:
+            today_iso = datetime.now().strftime("%Y-%m-%d")
+            # Nếu hôm nay chưa quét hoặc chưa đạt chỉ tiêu ngày (50 CV)
+            if self.linkedin_scanner.state.get("last_scan_date") != today_iso or self.linkedin_scanner.state.get("today_scanned_count", 0) < 50:
+                logging.info("🎯 [Worker: LinkedInScanner] Bắt đầu tự động cào 50 CV IT/AI LinkedIn cho TalentScout AI...")
+                res = self.linkedin_scanner.run_daily_scan(count=50)
+                logging.info(f"✅ [Worker: LinkedInScanner] Đã hoàn thành scan {res['scanned_count']} CVs mới hôm nay!")
+                return res
+        except Exception as e:
+            logging.warning(f"LinkedIn Scanner cycle error: {e}")
+        return {}
 
     def run_affiliate_content_cycle(self) -> dict:
         """Tự động sản xuất bộ content Affiliate (Video Script, SEO Review, Thread) và ghi nhật ký."""
@@ -128,6 +144,11 @@ class ContinuousPepeEngine:
             self.telegram_reporter.check_and_send_scheduled_reports()
         except Exception as e:
             logging.warning(f"Telegram reporting error: {e}")
+
+        try:
+            self.run_linkedin_scan_cycle()
+        except Exception as e:
+            logging.warning(f"LinkedIn scan error: {e}")
 
         return {
             "topic": topic["name"],

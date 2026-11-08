@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "TalentScout AI — LinkedIn Headhunter & Candidate Collector",
-  "version": "1.0.0",
-  "description": "Tự động cào dữ liệu ứng viên trên LinkedIn, xây dựng cơ sở dữ liệu nhân tài và xuất file Excel/CSV cho Headhunter & HR.",
+  "name": "TalentScout AI — Auto-Pilot LinkedIn Harvester & Candidate Collector",
+  "version": "1.2.0",
+  "description": "Tự động cào 10 - 100 CV ứng viên mỗi ngày trên LinkedIn, xây dựng database nhân tài IT/AI và xuất file Excel/CSV cho Headhunter & HR.",
   "author": "Pepe Nuôi Thân Tech Labs",
   "permissions": [
     "storage",

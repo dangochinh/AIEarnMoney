@@ -1,11 +1,12 @@
 /**
- * TalentScout AI — Popup Controller
+ * TalentScout AI — Popup Controller (Daily Auto-Pilot 10 - 100 CV)
  */
 
 document.addEventListener("DOMContentLoaded", () => {
   let allCandidates = [];
   let currentFilter = "all";
   let searchKeyword = "";
+  let dailyTarget = 50;
 
   const listContainer = document.getElementById("candidateList");
   const countBadge = document.getElementById("totalCandidatesCount");
@@ -13,57 +14,93 @@ document.addEventListener("DOMContentLoaded", () => {
   const exportBtn = document.getElementById("btnExportCsv");
   const clearBtn = document.getElementById("btnClearDb");
   const filterPills = document.querySelectorAll(".filter-pills .pill");
+  const quotaButtons = document.querySelectorAll(".q-btn");
+  const quotaText = document.getElementById("quotaProgressText");
+  const quotaFill = document.getElementById("quotaProgressFill");
+  const launchScanBtn = document.getElementById("btnLaunchLinkedInScan");
 
-  // Sample seed data so users can test immediately
-  const SAMPLE_DATA = [
-    {
-      id: "cand_demo_01",
-      name: "Nguyễn Văn Hùng",
-      headline: "Senior Python & AI Engineer | LLM Finetuning | Ex-VinAI",
-      company: "TechNova Corp",
-      location: "Hà Nội, Việt Nam",
-      level: "Senior",
-      skills: ["Python", "FastAPI", "AI", "LLM", "Docker"],
-      profileUrl: "https://www.linkedin.com/in/demo-hung-ai",
-      scoutedAt: "01/11/2026",
-      status: "Sẵn sàng phỏng vấn"
-    },
-    {
-      id: "cand_demo_02",
-      name: "Trần Thị Mai Anh",
-      headline: "Tech Lead Frontend (React / TypeScript / Next.js)",
-      company: "Shopee Vietnam",
-      location: "TP. Hồ Chí Minh",
-      level: "Tech Lead / Principal",
-      skills: ["React", "TypeScript", "Nodejs", "UI/UX"],
-      profileUrl: "https://www.linkedin.com/in/demo-maianh-lead",
-      scoutedAt: "31/10/2026",
-      status: "Cân nhắc cơ hội mới"
-    },
-    {
-      id: "cand_demo_03",
-      name: "Lê Quốc Bảo",
-      headline: "Fullstack Golang & React Developer (4+ YOE)",
-      company: "Fintech Growth Hub",
-      location: "Đà Nẵng / Remote",
-      level: "Senior",
-      skills: ["Golang", "React", "PostgreSQL", "Docker", "AWS"],
-      profileUrl: "https://www.linkedin.com/in/demo-bao-fullstack",
-      scoutedAt: "30/10/2026",
-      status: "Mới cào"
+  function getTodayIso() {
+    const d = new Date();
+    return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+  }
+
+  // Load Daily State
+  function loadDailyState() {
+    const today = getTodayIso();
+    const defaultState = { date: today, scanned: 0, quota: 50 };
+
+    function renderQuota(state) {
+      dailyTarget = state.quota || 50;
+      const scanned = state.scanned || 0;
+      const pct = Math.min(100, Math.round((scanned / dailyTarget) * 100));
+
+      if (quotaText) quotaText.textContent = `${scanned} / ${dailyTarget} CV (${pct}%)`;
+      if (quotaFill) quotaFill.style.width = `${pct}%`;
+
+      // Update active button
+      quotaButtons.forEach(btn => {
+        if (parseInt(btn.getAttribute("data-quota"), 10) === dailyTarget) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+      });
     }
-  ];
 
-  // Load from chrome.storage.local
+    if (chrome?.storage?.local) {
+      chrome.storage.local.get(["talentscout_daily_state"], res => {
+        const stored = res.talentscout_daily_state;
+        if (stored && stored.date === today) {
+          renderQuota(stored);
+        } else {
+          const reset = { ...defaultState, quota: stored?.quota || 50 };
+          chrome.storage.local.set({ talentscout_daily_state: reset }, () => renderQuota(reset));
+        }
+      });
+    } else {
+      try {
+        const stored = JSON.parse(localStorage.getItem("talentscout_daily_state") || "null");
+        if (stored && stored.date === today) {
+          renderQuota(stored);
+        } else {
+          localStorage.setItem("talentscout_daily_state", JSON.stringify(defaultState));
+          renderQuota(defaultState);
+        }
+      } catch (e) {
+        renderQuota(defaultState);
+      }
+    }
+  }
+
+  // Set Quota Target
+  function setDailyQuota(target) {
+    dailyTarget = target;
+    const today = getTodayIso();
+    function apply(state) {
+      state.quota = target;
+      if (chrome?.storage?.local) {
+        chrome.storage.local.set({ talentscout_daily_state: state }, () => loadDailyState());
+      } else {
+        localStorage.setItem("talentscout_daily_state", JSON.stringify(state));
+        loadDailyState();
+      }
+    }
+
+    if (chrome?.storage?.local) {
+      chrome.storage.local.get(["talentscout_daily_state"], res => {
+        const cur = res.talentscout_daily_state || { date: today, scanned: 0, quota: target };
+        apply(cur);
+      });
+    } else {
+      const cur = JSON.parse(localStorage.getItem("talentscout_daily_state") || `{"date":"${today}","scanned":0,"quota":${target}}`);
+      apply(cur);
+    }
+  }
+
+  // Load Candidates from storage
   function loadCandidates() {
     function handleResult(candidates) {
-      if (!candidates || candidates.length === 0) {
-        // Auto-seed with demo data so the tool is instantly usable
-        allCandidates = SAMPLE_DATA;
-        saveToStorage(SAMPLE_DATA);
-      } else {
-        allCandidates = candidates;
-      }
+      allCandidates = candidates || [];
       renderList();
     }
 
@@ -94,89 +131,90 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderList() {
     let filtered = allCandidates;
 
-    // Filter by Pill (Level or Skill)
     if (currentFilter !== "all") {
       filtered = filtered.filter(c => {
         const skillsStr = (c.skills || []).join(" ").toLowerCase();
         const levelStr = (c.level || "").toLowerCase();
-        const f = currentFilter.toLowerCase();
-        return skillsStr.includes(f) || levelStr.includes(f);
+        const headlineStr = (c.headline || "").toLowerCase();
+        const target = currentFilter.toLowerCase();
+        return skillsStr.includes(target) || levelStr.includes(target) || headlineStr.includes(target);
       });
     }
 
-    // Filter by Search Keyword
-    if (searchKeyword.trim() !== "") {
-      const q = searchKeyword.toLowerCase();
+    if (searchKeyword) {
+      const kw = searchKeyword.toLowerCase();
       filtered = filtered.filter(c => {
-        return (c.name || "").toLowerCase().includes(q) ||
-               (c.headline || "").toLowerCase().includes(q) ||
-               (c.company || "").toLowerCase().includes(q) ||
-               (c.location || "").toLowerCase().includes(q) ||
-               (c.skills || []).join(" ").toLowerCase().includes(q);
+        return (c.name || "").toLowerCase().includes(kw) ||
+               (c.headline || "").toLowerCase().includes(kw) ||
+               (c.company || "").toLowerCase().includes(kw) ||
+               (c.skills || []).some(s => s.toLowerCase().includes(kw));
       });
     }
 
-    countBadge.textContent = `${allCandidates.length} Ứng viên`;
+    if (countBadge) {
+      countBadge.textContent = `${allCandidates.length} DB`;
+    }
 
     if (filtered.length === 0) {
       listContainer.innerHTML = `
         <div class="empty-state">
-          Không tìm thấy ứng viên phù hợp với từ khóa "${searchKeyword}".
+          ${allCandidates.length === 0 
+            ? "Chưa có ứng viên nào trong Database.<br>Bấm nút <b>'🚀 Mở LinkedIn & Auto-Scan Ngay'</b> phía trên để bắt đầu quét!" 
+            : "Không tìm thấy ứng viên phù hợp với từ khóa tìm kiếm."}
         </div>
       `;
       return;
     }
 
-    listContainer.innerHTML = filtered.map(c => `
-      <div class="cand-card" data-id="${c.id}">
-        <div class="cand-top">
-          <div class="cand-name">${c.name}</div>
-          <span class="cand-level">${c.level}</span>
-        </div>
-        <div class="cand-headline">${c.headline}</div>
-        <div class="cand-meta">
-          <span>🏢 ${c.company}</span>
-          <span>📍 ${c.location}</span>
-          <span>📅 ${c.scoutedAt}</span>
-        </div>
-        <div class="cand-skills">
-          ${(c.skills || []).map(s => `<span class="skill-tag">${s}</span>`).join("")}
-        </div>
-        <div class="cand-actions">
-          <a href="${c.profileUrl}" target="_blank" class="cand-btn">
-            Mở LinkedIn ↗
-          </a>
-          <button class="cand-btn btn-outreach" data-name="${c.name}" data-title="${c.headline}">
-            ✉️ Mẫu Mời Phỏng Vấn AI
-          </button>
-        </div>
-      </div>
-    `).join("");
+    listContainer.innerHTML = filtered.map(c => {
+      const skillsHtml = (c.skills || []).slice(0, 5).map(s => `<span class="tech-tag">${s}</span>`).join("");
+      const isOpen = c.isOpenToWork || (c.openToWorkStatus && c.openToWorkStatus.includes("OPENTOWORK"));
+      const statusText = isOpen ? "🔥 Đang Tìm Việc (#OpenToWork)" : (c.status || "Mới cào");
 
-    // Attach Outreach listeners
-    listContainer.querySelectorAll(".btn-outreach").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const name = btn.getAttribute("data-name") || "Bạn";
-        const title = btn.getAttribute("data-title") || "Ứng viên";
-        const msg = `Chào ${name},\n\nMình thấy profile của bạn rất ấn tượng ở vị trí ${title}. Bên mình đang có dự án công nghệ mới với đãi ngộ rất tốt và đang tìm kiếm nhân sự chủ chốt.\n\nNếu bạn quan tâm tìm hiểu cơ hội mới, nhắn lại mình nhé. Mình sẽ gửi JD chi tiết để bạn tham khảo. Cảm ơn bạn!\n\n(Headhunter Lead from TalentScout AI)`;
-        navigator.clipboard.writeText(msg).then(() => {
-          btn.textContent = "✅ Đã Copy!";
-          setTimeout(() => { btn.textContent = "✉️ Mẫu Mời Phỏng Vấn AI"; }, 2000);
-        });
-      });
-    });
+      return `
+        <div class="cand-card">
+          <div class="cand-top">
+            <span class="cand-name">${escapeHtml(c.name)}</span>
+            <span class="cand-level">${escapeHtml(c.level || 'Mid')}</span>
+          </div>
+          <div class="cand-headline">${escapeHtml(c.headline)}</div>
+          <div class="cand-meta">
+            <span>🏢 ${escapeHtml(c.company || 'Tự do')}</span>
+            <span>📍 ${escapeHtml(c.location || 'Việt Nam')}</span>
+            ${c.email ? `<span>✉️ ${escapeHtml(c.email)}</span>` : ''}
+          </div>
+          <div class="cand-tags">
+            ${skillsHtml}
+          </div>
+          <div class="cand-footer">
+            <span class="cand-status ${isOpen ? 'opentowork' : ''}">${statusText}</span>
+            <a href="${c.profileUrl}" target="_blank" class="cand-link">Xem Profile ↗</a>
+          </div>
+        </div>
+      `;
+    }).join("");
   }
 
-  // Export to CSV
-  exportBtn.addEventListener("click", () => {
+  function escapeHtml(str) {
+    if (!str) return "";
+    return str.replace(/[&<>"']/g, m => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[m]));
+  }
+
+  // Export CSV
+  exportBtn?.addEventListener("click", () => {
     if (allCandidates.length === 0) {
-      alert("Chưa có ứng viên nào để xuất file!");
+      alert("Database đang trống! Hãy quét ứng viên trước khi xuất file.");
       return;
     }
-
     const headers = ["ID", "Họ Tên", "Chức Danh (Headline)", "Cấp Bậc (Level)", "OpenToWork (Tìm Việc)", "Email / Liên Hệ", "Công Ty", "Khu Vực", "Kỹ Năng", "Link Profile", "Ngày Cào", "Trạng Thái"];
     const rows = allCandidates.map(c => [
-      `"${c.id}"`,
+      `"${c.id || ''}"`,
       `"${(c.name || '').replace(/"/g, '""')}"`,
       `"${(c.headline || '').replace(/"/g, '""')}"`,
       `"${c.level || ''}"`,
@@ -195,15 +233,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const url = URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.setAttribute("href", url);
-    link.setAttribute("download", `talentscout_database_${new Date().toISOString().slice(0, 10)}.csv`);
+    link.setAttribute("download", `talentscout_candidates_${getTodayIso()}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   });
 
-  // Clear Database
-  clearBtn.addEventListener("click", () => {
-    if (confirm("Bạn có chắc chắn muốn xóa toàn bộ danh sách ứng viên đã lưu?")) {
+  // Clear DB
+  clearBtn?.addEventListener("click", () => {
+    if (confirm("Bạn có chắc chắn muốn xóa toàn bộ cơ sở dữ liệu ứng viên đã lưu?")) {
       allCandidates = [];
       saveToStorage([], () => {
         renderList();
@@ -211,22 +249,41 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Search input handler
-  searchInput.addEventListener("input", e => {
-    searchKeyword = e.target.value;
+  // Search input
+  searchInput?.addEventListener("input", e => {
+    searchKeyword = e.target.value.trim();
     renderList();
   });
 
-  // Filter pills handler
+  // Filter Pills
   filterPills.forEach(pill => {
     pill.addEventListener("click", () => {
       filterPills.forEach(p => p.classList.remove("active"));
       pill.classList.add("active");
-      currentFilter = pill.getAttribute("data-filter") || "all";
+      currentFilter = pill.getAttribute("data-filter");
       renderList();
     });
   });
 
-  // Start loading
+  // Quota Buttons
+  quotaButtons.forEach(btn => {
+    btn.addEventListener("click", e => {
+      const q = parseInt(e.target.getAttribute("data-quota"), 10);
+      setDailyQuota(q);
+    });
+  });
+
+  // Launch LinkedIn Search
+  launchScanBtn?.addEventListener("click", () => {
+    const searchUrl = "https://www.linkedin.com/search/results/people/?keywords=developer%20vietnam";
+    if (chrome?.tabs) {
+      chrome.tabs.create({ url: searchUrl });
+    } else {
+      window.open(searchUrl, "_blank");
+    }
+  });
+
+  // Init
+  loadDailyState();
   loadCandidates();
 });

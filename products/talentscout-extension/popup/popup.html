@@ -13,11 +13,33 @@
         <span class="icon">🐸</span>
         <div>
           <div class="title">TalentScout AI</div>
-          <div class="sub">LinkedIn Candidate DB Manager</div>
+          <div class="sub">Auto-Pilot LinkedIn Harvester</div>
         </div>
       </div>
-      <div class="count-pill" id="totalCandidatesCount">0 Ứng viên</div>
+      <div class="count-pill" id="totalCandidatesCount">0 DB</div>
     </header>
+
+    <!-- Daily Target Quota Card (10 - 100 CV) -->
+    <div class="daily-quota-card">
+      <div class="quota-top">
+        <span class="quota-title">🎯 Chỉ Tiêu Hôm Nay (10 - 100 CV):</span>
+        <b id="quotaProgressText">0 / 50 CV</b>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="quotaProgressFill" style="width: 0%"></div>
+      </div>
+      <div class="quota-quick-buttons">
+        <button class="q-btn" data-quota="10">10 CV</button>
+        <button class="q-btn" data-quota="25">25 CV</button>
+        <button class="q-btn active" data-quota="50">50 CV</button>
+        <button class="q-btn" data-quota="100">100 CV</button>
+      </div>
+      <div class="auto-scan-actions">
+        <button id="btnLaunchLinkedInScan" class="btn btn-accent">
+          🚀 Mở LinkedIn & Auto-Scan Ngay
+        </button>
+      </div>
+    </div>
 
     <!-- Search & Filter -->
     <div class="search-box">
@@ -27,7 +49,7 @@
     <!-- Quick Actions -->
     <div class="actions-row">
       <button id="btnExportCsv" class="btn btn-primary">
-        📥 Xuất File Excel (CSV)
+        📥 Xuất Excel (CSV)
       </button>
       <button id="btnClearDb" class="btn btn-danger">
         🗑️ Xóa DB
@@ -42,6 +64,7 @@
       <span class="pill" data-filter="AI">AI / ML</span>
       <span class="pill" data-filter="React">React</span>
       <span class="pill" data-filter="Python">Python</span>
+      <span class="pill" data-filter="Golang">Golang</span>
     </div>
 
     <!-- Candidate List Container -->
@@ -53,7 +76,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <span>TalentScout Pro v1.0.0</span>
+      <span>TalentScout Pro v1.2.0 · Anti-Ban Safe</span>
       <a href="https://ai-earn-money.pages.dev" target="_blank">Pepe Nuôi Thân ↗</a>
     </footer>
   </div>

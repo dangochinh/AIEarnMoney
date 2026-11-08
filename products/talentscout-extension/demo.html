@@ -2,7 +2,8 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>LinkedIn: Nguyễn Văn Hùng | Demo Test TalentScout AI</title>
+  <title>LinkedIn Simulator: Auto-Scan 10-100 CV Demo | TalentScout AI</title>
+  <link rel="stylesheet" href="content/talentscout-content.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -15,7 +16,7 @@
     .li-header {
       background: #ffffff;
       border-bottom: 1px solid rgba(0,0,0,0.08);
-      height: 52px;
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -23,6 +24,12 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .li-header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
     .li-logo {
       background: #0a66c2;
@@ -31,23 +38,35 @@
       font-size: 20px;
       padding: 2px 7px;
       border-radius: 4px;
-      margin-right: 12px;
     }
-    .li-search-box {
-      background: #edf3f8;
-      border-radius: 4px;
+    .view-switcher {
+      display: flex;
+      gap: 8px;
+    }
+    .view-btn {
       padding: 6px 14px;
-      font-size: 13px;
-      color: #475569;
-      width: 280px;
+      border-radius: 20px;
+      border: 1px solid #0a66c2;
+      background: #fff;
+      color: #0a66c2;
+      font-size: 12.5px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .view-btn.active {
+      background: #0a66c2;
+      color: #fff;
     }
     .main-wrap {
-      max-width: 860px;
+      max-width: 900px;
       margin: 24px auto;
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
+
+    /* Single Profile View */
     .profile-card {
       background: #ffffff;
       border-radius: 10px;
@@ -99,145 +118,364 @@
       color: #fff;
       font-size: 10px;
       font-weight: 800;
-      padding: 2px 10px;
+      padding: 2px 8px;
       border-radius: 10px;
       white-space: nowrap;
+      letter-spacing: 0.5px;
     }
     h1.text-heading-xlarge {
       font-size: 24px;
       font-weight: 700;
-      color: #191919;
+      margin-bottom: 4px;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
     }
-    .text-body-medium.break-words {
+    .text-body-medium {
       font-size: 15px;
-      color: #191919;
-      margin: 4px 0 10px;
+      color: rgba(0,0,0,0.9);
+      margin-bottom: 6px;
       line-height: 1.4;
     }
-    .meta-row {
+    .text-body-small {
       font-size: 13px;
-      color: #666;
+      color: rgba(0,0,0,0.6);
+      margin-bottom: 16px;
+    }
+
+    /* Search Results View */
+    .search-view-container {
+      display: none;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .search-view-container.active {
+      display: flex;
+    }
+    .search-meta-bar {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 8px;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .search-title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+    .search-count {
+      font-size: 13px;
+      color: #64748b;
+    }
+    .search-results-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+    }
+    .search-result-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 8px;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all 0.2s;
+    }
+    .search-result-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card-left {
       display: flex;
       gap: 16px;
-      margin-bottom: 16px;
+      align-items: center;
     }
-    .btn-row {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-    .btn-li {
-      padding: 7px 18px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    .btn-primary { background: #0a66c2; color: #fff; border: none; }
-    .btn-outline { background: transparent; color: #0a66c2; border: 1px solid #0a66c2; }
-    .btn-gray { background: transparent; color: #666; border: 1px solid #666; }
-    
-    .opentowork-box {
-      background: #d8f3dc;
-      border-left: 4px solid #057642;
-      padding: 12px 16px;
-      border-radius: 6px;
-      margin-top: 10px;
-    }
-    .about-card {
-      background: #ffffff;
-      border-radius: 10px;
-      border: 1px solid rgba(0,0,0,0.08);
-      padding: 24px;
-    }
-    .banner-guide {
-      background: #0f172a;
-      color: #10b981;
-      padding: 12px 20px;
-      border-radius: 8px;
-      font-size: 13.5px;
+    .cand-avatar {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #e2e8f0;
       display: flex;
       align-items: center;
+      justify-content: center;
+      font-size: 26px;
+      position: relative;
+    }
+    .badge-opentowork {
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #057642;
+      color: #fff;
+      font-size: 8px;
+      font-weight: 800;
+      padding: 1px 4px;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+    .cand-info {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .cand-link {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0a66c2;
+      text-decoration: none;
+    }
+    .cand-link:hover {
+      text-decoration: underline;
+    }
+    .cand-headline {
+      font-size: 13px;
+      color: rgba(0,0,0,0.85);
+    }
+    .cand-location {
+      font-size: 12px;
+      color: rgba(0,0,0,0.55);
+    }
+    .pagination-bar {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.08);
+      border-radius: 8px;
+      padding: 12px 20px;
+      display: flex;
       justify-content: space-between;
-      border: 1px solid rgba(16, 185, 129, 0.3);
+      align-items: center;
+      margin-top: 10px;
+    }
+    .page-indicator {
+      font-size: 13px;
+      font-weight: 700;
+      color: #475569;
+    }
+    .pagination-btns {
+      display: flex;
+      gap: 8px;
+    }
+    .demo-next-page, .demo-prev-page {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1.5px solid #0a66c2;
+      background: #0a66c2;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .demo-next-page:disabled, .demo-prev-page:disabled {
+      background: #e2e8f0;
+      border-color: #cbd5e1;
+      color: #94a3b8;
+      cursor: not-allowed;
     }
   </style>
 </head>
 <body>
   <header class="li-header">
-    <div style="display:flex;align-items:center">
+    <div class="li-header-left">
       <div class="li-logo">in</div>
-      <div class="li-search-box">🔍 Tìm kiếm ứng viên...</div>
+      <div class="view-switcher">
+        <button class="view-btn active" id="btnViewSearch">📑 Danh Sách Tìm Kiếm (Search Results)</button>
+        <button class="view-btn" id="btnViewProfile">👤 Hồ Sơ Cá Nhân (/in/...)</button>
+      </div>
     </div>
-    <div style="font-size:12px;color:#64748b">
-      TalentScout AI Extension Demo Environment
+    <div style="font-size:12px; color:#64748b; font-weight:600;">
+      TalentScout Pro Test Environment · 10 - 100 CV Scanner
     </div>
   </header>
 
   <main class="main-wrap">
-    <div class="banner-guide">
-      <span>🐸 <b>MÔI TRƯỜNG TEST EXTENSION TALENTSCOUT AI:</b> Widget màu xanh ngọc sẽ tự động nổi lên ở góc phải màn hình bên dưới!</span>
-      <span style="font-size:12px;color:#cbd5e1">Bấm nút "Scout Ứng Viên Này" để lưu hồ sơ ngay lập tức ↘</span>
+    <!-- View 1: Search Results Simulator (with 5 pages x 10 candidates = 50 CVs) -->
+    <div class="search-view-container active" id="searchView">
+      <div class="search-meta-bar">
+        <div>
+          <div class="search-title">Kết quả tìm kiếm: "Developer / AI Engineer Vietnam"</div>
+          <div class="search-count" id="searchCountDesc">Hiển thị 10 trong số 50 ứng viên IT tiềm năng</div>
+        </div>
+        <div style="font-size:12px; background:#ecfdf5; color:#065f46; padding:6px 12px; border-radius:8px; font-weight:700;">
+          🟢 Auto-Pilot Harvester Ready
+        </div>
+      </div>
+
+      <ul class="search-results-list" id="candidateListEl">
+        <!-- Rendered by JS -->
+      </ul>
+
+      <div class="pagination-bar">
+        <span class="page-indicator" id="pageIndicatorText">Trang 1 / 5 (10 ứng viên/trang)</span>
+        <div class="pagination-btns">
+          <button class="demo-prev-page" id="btnPrevPage" disabled>← Trang Trước</button>
+          <button class="demo-next-page" id="btnNextPage" aria-label="Next">Trang Kế Tiếp →</button>
+        </div>
+      </div>
     </div>
 
-    <section class="profile-card">
-      <div class="cover"></div>
-      <div class="content-area">
-        <div class="avatar-wrap pv-top-card-profile-picture">
-          <div class="avatar-img">
-            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=HungAI" alt="OPEN_TO_WORK" title="OPEN_TO_WORK" style="width:100%;height:100%;border-radius:50%">
+    <!-- View 2: Single Profile Simulator -->
+    <div class="profile-view-container" id="profileView" style="display:none;">
+      <div class="profile-card">
+        <div class="cover"></div>
+        <div class="content-area">
+          <div class="avatar-wrap">
+            <div class="avatar-img">👨‍💻</div>
+            <div class="opentowork-frame"></div>
+            <div class="opentowork-pill">#OPENTOWORK</div>
           </div>
-          <div class="opentowork-frame"></div>
-          <div class="opentowork-pill">#OPENTOWORK</div>
-        </div>
-
-        <h1 class="text-heading-xlarge">
-          Nguyễn Văn Hùng <span style="color:#0a66c2;font-size:16px">✓</span>
-        </h1>
-
-        <div class="text-body-medium break-words">
-          Senior Python & AI Engineer | LLM Finetuning & Multi-Agent Architecture | Ex-VinAI
-        </div>
-
-        <div class="meta-row">
-          <span class="text-body-small inline t-black--light break-words">📍 Hà Nội, Việt Nam</span>
-          <button aria-label="Current company: TechNova Solutions" style="background:none;border:none;color:#0a66c2;font-size:13px;font-weight:600;cursor:pointer">
-            🏢 TechNova Solutions
-          </button>
-          <span>🌐 500+ người kết nối</span>
-        </div>
-
-        <div class="btn-row">
-          <button class="btn-li btn-primary">Mời kết nối</button>
-          <button class="btn-li btn-outline">Gửi InMail</button>
-          <button class="btn-li btn-gray">Khác</button>
-        </div>
-
-        <div class="opentowork-box pv-open-to-work-card">
-          <div style="font-weight:700;color:#057642;font-size:13px">Đang tìm kiếm việc làm mới (#OpenToWork)</div>
-          <div style="font-size:12px;color:#1b4332;margin-top:2px">
-            Vị trí quan tâm: Senior AI Engineer, Lead Python, Tech Lead · Chế độ Hybrid / Remote · Toàn thời gian
+          <h1 class="text-heading-xlarge">
+            Nguyễn Văn Hùng
+            <span style="font-size: 14px; font-weight: normal; color: #0a66c2;">· 1st</span>
+          </h1>
+          <div class="text-body-medium">
+            Senior Python & AI Engineer | LLM Finetuning & Multi-Agent Architecture | Ex-VinAI
+          </div>
+          <div class="text-body-small">
+            Hà Nội, Việt Nam · <span style="color:#0a66c2; font-weight:600;">Liên hệ: hung.nguyen.ai@gmail.com</span>
+          </div>
+          <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px 16px; font-size:13px; line-height:1.5;">
+            <b>Giới thiệu tóm tắt:</b> 5+ năm kinh nghiệm phát triển hệ sinh thái AI doanh nghiệp, hệ thống RAG và Multi-Agent với Python, FastAPI, Docker, LangChain, PyTorch. Đang tìm kiếm cơ hội Senior AI / Tech Lead mới.
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="about-card" id="about">
-      <h2 style="font-size:18px;font-weight:700;margin-bottom:12px">Thông tin giới thiệu (About)</h2>
-      <div class="display-flex">
-        <div class="inline-show-more-text" style="font-size:14px;line-height:1.6;color:#333">
-          Hơn 5 năm kinh nghiệm chuyên sâu về lập trình Python, FastAPI, Docker và hệ thống Generative AI / Large Language Models (LLM). 
-          Đã từng làm việc tại VinAI và phát triển các giải pháp RAG, Fine-tuning mô hình mã nguồn mở (Llama, Qwen).
-          <br><br>
-          Tech stack thành thạo: <b>Python, FastAPI, PyTorch, Docker, Kubernetes, LangChain, PostgreSQL, Redis</b>.
-          <br><br>
-          Email liên hệ công việc: <b>hung.nguyen.ai@gmail.com</b>
-        </div>
-      </div>
-    </section>
+    </div>
   </main>
+
+  <!-- Load Extension Content Script Directly into Demo -->
+  <script src="content/talentscout-content.js"></script>
+
+  <script>
+    // 50 Test Candidates across 5 pages
+    const ALL_DEMO_CANDIDATES = [
+      // Page 1 (10 cands)
+      { name: "Nguyễn Văn Hùng", role: "Senior Python & AI Engineer | LLM Finetuning | Ex-VinAI", loc: "Hà Nội, Việt Nam", open: true, slug: "hung-nguyen-ai" },
+      { name: "Trần Thị Mai Anh", role: "Tech Lead Frontend (React / Next.js / TypeScript)", loc: "TP. Hồ Chí Minh", open: true, slug: "maianh-tran-frontend" },
+      { name: "Lê Quốc Bảo", role: "Senior Golang & Distributed Systems Engineer | High TPS", loc: "Đà Nẵng / Remote", open: false, slug: "bao-le-golang" },
+      { name: "Đỗ Hoàng Long", role: "Principal AI Architect | RAG Systems & Vector DB", loc: "Hà Nội, Việt Nam", open: true, slug: "long-do-ai" },
+      { name: "Vũ Minh Tuấn", role: "Senior DevOps & Cloud Platform Engineer (AWS, K8s, CI/CD)", loc: "TP. Hồ Chí Minh", open: true, slug: "tuan-vu-devops" },
+      { name: "Phạm Thu Hương", role: "Product Manager | Data-Driven Growth & B2B SaaS", loc: "Hà Nội, Việt Nam", open: true, slug: "huong-pham-pm" },
+      { name: "Bùi Anh Khoa", role: "Senior Fullstack Developer (Node.js / React Native / NestJS)", loc: "TP. Hồ Chí Minh", open: false, slug: "khoa-bui-fullstack" },
+      { name: "Hoàng Gia Huy", role: "Senior Java / Spring Boot Backend Engineer | Core Banking", loc: "Hà Nội, Việt Nam", open: true, slug: "huy-hoang-java" },
+      { name: "Ngô Mỹ Duyên", role: "Lead QA Automation Engineer | Cypress, Playwright, CI/CD", loc: "TP. Hồ Chí Minh", open: true, slug: "duyen-ngo-qa" },
+      { name: "Lý Thành Đạt", role: "Senior Data Engineer | Apache Spark, Kafka, Airflow, GCP", loc: "TP. Hồ Chí Minh", open: true, slug: "dat-ly-data" },
+
+      // Page 2 (10 cands)
+      { name: "Đặng Ngọc Sơn", role: "Senior Mobile Engineer | Flutter & Swift Clean Architecture", loc: "Hà Nội / Remote", open: true, slug: "son-dang-mobile" },
+      { name: "Hồ Minh Trang", role: "Staff Frontend Engineer | Design System & Next.js 15", loc: "TP. Hồ Chí Minh", open: true, slug: "trang-ho-fe" },
+      { name: "Phan Quốc Trung", role: "Lead Site Reliability Engineer (SRE) | Kubernetes & GCP", loc: "Đà Nẵng, Việt Nam", open: false, slug: "trung-phan-sre" },
+      { name: "Dương Khánh Linh", role: "Senior AI Researcher | GenAI & Multimodal Agents", loc: "Hà Nội, Việt Nam", open: true, slug: "linh-duong-genai" },
+      { name: "Võ Thanh Hà", role: "Backend Tech Lead | Golang, Event-Driven & Microservices", loc: "TP. Hồ Chí Minh", open: true, slug: "ha-vo-backend" },
+      { name: "Huỳnh Minh Trí", role: "DevSecOps Specialist | Automated Security Scanning & CI/CD", loc: "Hà Nội / Remote", open: false, slug: "tri-huynh-sec" },
+      { name: "Đinh Thu Thảo", role: "Lead UI/UX Designer & Product Strategist | Figma & SaaS", loc: "TP. Hồ Chí Minh", open: true, slug: "thao-dinh-uiux" },
+      { name: "Trịnh Gia Bảo", role: "Senior Solution Architect | Banking Modernization & Java", loc: "Hà Nội, Việt Nam", open: true, slug: "bao-trinh-architect" },
+      { name: "Mai Thanh Tùng", role: "Big Data Architect | Databricks, Lakehouse & Realtime Kafka", loc: "TP. Hồ Chí Minh", open: true, slug: "tung-mai-bigdata" },
+      { name: "Cao Thị Yến", role: "Senior SDET | Performance & Load Testing with k6, Gatling", loc: "Đà Nẵng, Việt Nam", open: true, slug: "yen-cao-sdet" },
+
+      // Page 3 (10 cands)
+      { name: "Nguyễn Đức Kiên", role: "Senior Python Backend Developer | FastAPI & Celery Microservices", loc: "Hà Nội, Việt Nam", open: true, slug: "kien-nguyen-py" },
+      { name: "Lê Minh Quân", role: "Senior React Native Engineer | High-Traffic Super App", loc: "TP. Hồ Chí Minh", open: true, slug: "quan-le-rn" },
+      { name: "Trần Bảo Nam", role: "Cloud Solutions Architect | AWS Multi-Account & Terraform", loc: "Hà Nội / Remote", open: false, slug: "nam-tran-aws" },
+      { name: "Phạm Hồng Ngọc", role: "Machine Learning Specialist | Computer Vision & PyTorch", loc: "TP. Hồ Chí Minh", open: true, slug: "ngoc-pham-cv" },
+      { name: "Đoàn Văn Thịnh", role: "Senior Golang Developer | High-Frequency Crypto Trading Engine", loc: "Đà Nẵng, Việt Nam", open: true, slug: "thinh-doan-trading" },
+      { name: "Nguyễn Thùy Chi", role: "Technical Product Manager | Payment Gateway & Open Banking", loc: "Hà Nội, Việt Nam", open: true, slug: "chi-nguyen-tpm" },
+      { name: "Lâm Quốc Cường", role: "Senior Fullstack Engineer | Next.js, Node.js, PostgreSQL", loc: "TP. Hồ Chí Minh", open: false, slug: "cuong-lam-fullstack" },
+      { name: "Hoàng Minh Trí", role: "Java Backend Engineer | Spring Boot 3 & Virtual Threads", loc: "Hà Nội, Việt Nam", open: true, slug: "tri-hoang-java" },
+      { name: "Vũ Hải Đăng", role: "Data Platform Engineer | Snowflake, Airflow & Python Pipelines", loc: "TP. Hồ Chí Minh", open: true, slug: "dang-vu-data" },
+      { name: "Tạ Phương Thảo", role: "Lead QA Automation | Mobile Test Automation with Appium", loc: "Hà Nội, Việt Nam", open: true, slug: "thao-ta-appium" },
+
+      // Page 4 (10 cands)
+      { name: "Bùi Hoàng Nam", role: "Staff AI Engineer | Fine-tuning Llama-3 & Enterprise RAG", loc: "Hà Nội / Remote", open: true, slug: "nam-bui-llama" },
+      { name: "Nguyễn Thị Kim Oanh", role: "Senior Frontend Developer | Vue 3, Nuxt & TypeScript", loc: "TP. Hồ Chí Minh", open: true, slug: "oanh-nguyen-vue" },
+      { name: "Đặng Quang Huy", role: "Platform Engineer | GitOps, ArgoCD & Kubernetes Clusters", loc: "Hà Nội, Việt Nam", open: false, slug: "huy-dang-argocd" },
+      { name: "Trần Tuấn Anh", role: "Senior iOS Developer | SwiftUI, Combine & Clean Architecture", loc: "Đà Nẵng / Remote", open: true, slug: "anh-tran-swiftui" },
+      { name: "Phan Thị Kim Ngân", role: "Agile Project Manager & Scrum Master | Large Scale Squads", loc: "TP. Hồ Chí Minh", open: true, slug: "ngan-phan-scrum" },
+      { name: "Võ Duy Mạnh", role: "Senior Golang Engineer | Distributed Cache & Redis Sharding", loc: "Hà Nội, Việt Nam", open: true, slug: "manh-vo-redis" },
+      { name: "Lê Quỳnh Như", role: "Senior Data Scientist | Customer Lifetime Value & Churn Prediction", loc: "TP. Hồ Chí Minh", open: true, slug: "nhu-le-churn" },
+      { name: "Trịnh Văn Hiếu", role: "Senior DevOps Engineer | Terraform Infrastructure as Code", loc: "Hà Nội, Việt Nam", open: false, slug: "hieu-trinh-iac" },
+      { name: "Dương Minh Châu", role: "QA Automation Engineer | Playwright, TypeScript & GitHub Actions", loc: "Đà Nẵng, Việt Nam", open: true, slug: "chau-duong-playwright" },
+      { name: "Nguyễn Hữu Đạt", role: "Senior Backend Engineer | NestJS, PostgreSQL & Prisma", loc: "TP. Hồ Chí Minh", open: true, slug: "dat-nguyen-nestjs" },
+
+      // Page 5 (10 cands)
+      { name: "Trần Văn Quyết", role: "Principal Systems Engineer | Distributed Storage & Ceph", loc: "Hà Nội, Việt Nam", open: true, slug: "quyet-tran-ceph" },
+      { name: "Nguyễn Diệu Linh", role: "Lead Frontend Engineer | Micro-Frontend & Web Performance", loc: "TP. Hồ Chí Minh", open: true, slug: "linh-nguyen-mfe" },
+      { name: "Phạm Quốc Toàn", role: "AI Multi-Agent Architect | CrewAI & AutoGen Specialist", loc: "Hà Nội / Remote", open: true, slug: "toan-pham-agent" },
+      { name: "Đỗ Minh Đức", role: "Senior Android Developer | Jetpack Compose & Kotlin Coroutines", loc: "TP. Hồ Chí Minh", open: false, slug: "duc-do-android" },
+      { name: "Lê Thị Thảo", role: "Lead Product Manager | Fintech Growth & User Onboarding", loc: "Đà Nẵng, Việt Nam", open: true, slug: "thao-le-fintech" },
+      { name: "Hoàng Quốc Việt", role: "Senior Java Engineer | Event-Driven Architecture with Kafka", loc: "Hà Nội, Việt Nam", open: true, slug: "viet-hoang-kafka" },
+      { name: "Vũ Thị Mai", role: "Senior Analytics Engineer | dbt, BigQuery & Looker", loc: "TP. Hồ Chí Minh", open: true, slug: "mai-vu-dbt" },
+      { name: "Trần Đình Khang", role: "Senior Cloud Platform Engineer | Azure AKS & Terraform", loc: "Hà Nội, Việt Nam", open: false, slug: "khang-tran-azure" },
+      { name: "Bùi Thị Hải Yến", role: "Senior QA Automation Engineer | Selenium Grid & Python", loc: "Đà Nẵng / Remote", open: true, slug: "yen-bui-selenium" },
+      { name: "Nguyễn Hải Phong", role: "Senior Golang & Microservices Engineer | gRPC & Protocol Buffers", loc: "TP. Hồ Chí Minh", open: true, slug: "phong-nguyen-grpc" }
+    ];
+
+    let currentPage = 1;
+    const PAGE_SIZE = 10;
+    const totalPages = Math.ceil(ALL_DEMO_CANDIDATES.length / PAGE_SIZE);
+
+    function renderPage(page) {
+      currentPage = page;
+      const start = (page - 1) * PAGE_SIZE;
+      const end = start + PAGE_SIZE;
+      const cands = ALL_DEMO_CANDIDATES.slice(start, end);
+
+      const listEl = document.getElementById("candidateListEl");
+      listEl.innerHTML = cands.map(c => `
+        <li class="search-result-card reusable-search__result-container">
+          <div class="card-left">
+            <div class="cand-avatar">
+              👤
+              ${c.open ? '<span class="badge-opentowork">#OPENTOWORK</span>' : ''}
+            </div>
+            <div class="cand-info">
+              <a href="https://www.linkedin.com/in/${c.slug}" target="_blank" class="cand-link app-aware-link">
+                ${c.name}
+              </a>
+              <div class="cand-headline entity-result__primary-subtitle">${c.role}</div>
+              <div class="cand-location entity-result__secondary-subtitle">📍 ${c.loc}</div>
+            </div>
+          </div>
+          <div style="text-align:right;">
+            <button class="ts-btn ts-btn-primary" style="padding:6px 12px; font-size:11px;" onclick="window.open('https://www.linkedin.com/in/${c.slug}', '_blank')">
+              Xem Profile
+            </button>
+          </div>
+        </li>
+      `).join("");
+
+      document.getElementById("pageIndicatorText").textContent = `Trang ${page} / ${totalPages} (${PAGE_SIZE} ứng viên/trang)`;
+      document.getElementById("btnPrevPage").disabled = (page === 1);
+      document.getElementById("btnNextPage").disabled = (page === totalPages);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.getElementById("btnNextPage").addEventListener("click", () => {
+      if (currentPage < totalPages) renderPage(currentPage + 1);
+    });
+
+    document.getElementById("btnPrevPage").addEventListener("click", () => {
+      if (currentPage > 1) renderPage(currentPage - 1);
+    });
+
+    // View switcher
+    document.getElementById("btnViewSearch").addEventListener("click", () => {
+      document.getElementById("btnViewSearch").classList.add("active");
+      document.getElementById("btnViewProfile").classList.remove("active");
+      document.getElementById("searchView").style.display = "flex";
+      document.getElementById("profileView").style.display = "none";
+    });
+
+    document.getElementById("btnViewProfile").addEventListener("click", () => {
+      document.getElementById("btnViewProfile").classList.add("active");
+      document.getElementById("btnViewSearch").classList.remove("active");
+      document.getElementById("searchView").style.display = "none";
+      document.getElementById("profileView").style.display = "block";
+    });
+
+    // Initial render
+    renderPage(1);
+  </script>
 </body>
 </html>

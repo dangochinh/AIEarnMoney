@@ -1,4 +1,4 @@
-/* TalentScout AI — Floating Injected Sidecar Widget */
+/* TalentScout AI — Floating Injected Sidecar Widget & Auto-Pilot Harvester Styles */
 
 #talentscout-widget {
   position: fixed;
@@ -70,13 +70,25 @@
   transition: all 0.18s ease;
 }
 
+.ts-btn-accent {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+  border: 1px solid rgba(52, 211, 153, 0.4);
+}
+
+.ts-btn-accent:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  transform: scale(1.02);
+}
+
 .ts-btn-primary {
-  background: #10b981;
-  color: #064e3b;
+  background: #0ea5e9;
+  color: #ffffff;
 }
 
 .ts-btn-primary:hover {
-  background: #34d399;
+  background: #38bdf8;
 }
 
 .ts-btn-secondary {
@@ -106,6 +118,15 @@
 .ts-btn-outline:hover {
   background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
+}
+
+.ts-btn-danger {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.ts-btn-danger:hover {
+  background: #f87171;
 }
 
 .ts-footer {
@@ -141,4 +162,200 @@
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
+}
+
+/* Auto-Pilot Modal Overlay */
+.ts-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000000;
+  animation: tsFadeIn 0.2s ease;
+}
+
+@keyframes tsFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.ts-modal-card {
+  width: 520px;
+  background: #0b1120;
+  border: 1.5px solid #10b981;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(16, 185, 129, 0.25);
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #f8fafc;
+}
+
+.ts-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: rgba(16, 185, 129, 0.12);
+  border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.ts-modal-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #10b981;
+}
+
+.ts-live-tag {
+  background: #f59e0b;
+  color: #0f172a;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.ts-modal-x {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #94a3b8;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.ts-modal-x:hover {
+  color: #ffffff;
+}
+
+.ts-modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.ts-target-picker label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+.ts-quota-row {
+  display: flex;
+  gap: 8px;
+}
+
+.ts-quota-btn {
+  flex: 1;
+  padding: 8px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.ts-quota-btn:hover {
+  border-color: #10b981;
+  color: #f8fafc;
+}
+
+.ts-quota-btn.active {
+  background: #10b981;
+  color: #064e3b;
+  border-color: #34d399;
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+.ts-stat-box {
+  background: #131d31;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.ts-stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #e2e8f0;
+}
+
+.ts-stat-row b {
+  color: #10b981;
+  font-size: 14px;
+}
+
+.ts-progress-bar {
+  height: 10px;
+  background: #1e293b;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.ts-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.ts-anti-ban-note {
+  font-size: 11.5px;
+  color: #94a3b8;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  padding: 8px 12px;
+  border-radius: 8px;
+  line-height: 1.5;
+}
+
+.ts-anti-ban-note b {
+  color: #f59e0b;
+}
+
+.ts-scan-logs {
+  background: #050811;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  height: 110px;
+  overflow-y: auto;
+  padding: 8px 12px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11.5px;
+  color: #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ts-log-line {
+  line-height: 1.4;
+}
+
+.ts-modal-footer {
+  padding: 14px 20px;
+  background: #080d19;
+  border-top: 1px solid #1e293b;
+  display: flex;
+  gap: 10px;
+}
+
+.ts-modal-footer .ts-btn {
+  flex: 1;
 }
