@@ -2223,7 +2223,7 @@ const PEPE_DATA = {
     }
   ],
   "currentBlockId": "block-peak-conversion",
-  "updatedAt": "08/11/2026 20:16"
+  "updatedAt": "08/11/2026 22:25"
 },
 
   // ============================================================
