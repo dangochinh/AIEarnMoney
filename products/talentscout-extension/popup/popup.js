@@ -283,7 +283,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Check Rust Engine API
+  function checkRustBackend() {
+    const pill = document.getElementById("rustEngineStatus");
+    fetch("http://127.0.0.1:8090/api/talentscout/stats")
+      .then(res => res.json())
+      .then(stats => {
+        if (pill) {
+          pill.textContent = "🦀 Rust: Online";
+          pill.style.background = "rgba(16, 185, 129, 0.2)";
+          pill.style.borderColor = "#10b981";
+          pill.style.color = "#10b981";
+        }
+      })
+      .catch(() => {
+        if (pill) {
+          pill.textContent = "🦀 Rust v1.2";
+        }
+      });
+  }
+
   // Init
+  checkRustBackend();
   loadDailyState();
   loadCandidates();
 });

@@ -63,6 +63,19 @@ body {
   border-radius: 12px;
 }
 
+.rust-pill {
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid #f97316;
+  color: #fb923c;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 /* Daily Target Quota Card */
 .daily-quota-card {
   margin-top: 10px;

@@ -273,6 +273,33 @@ class LinkedInCandidateScanner:
         today_iso = now.strftime("%Y-%m-%d")
 
         logging.info(f"🚀 [LinkedInScanner] Bắt đầu scan {scan_count} CV ứng viên IT LinkedIn cho ngày {today_iso}...")
+
+        # 0. Ưu tiên chạy qua Native Rust Engine (siêu tốc, tối ưu tài nguyên trên Mac M4)
+        rust_bin = BASE_DIR / "backend_rust" / "target" / "release" / "talentscout-cli"
+        if rust_bin.exists():
+            import subprocess
+            try:
+                cmd = [str(rust_bin), "scan", "--count", str(scan_count)]
+                subprocess.run(cmd, cwd=BASE_DIR, check=True, capture_output=True)
+                self.state = self._load_state()
+                today_json_path = DATA_DIR / f"talentscout_candidates_{today_iso}.json"
+                today_csv_path = DATA_DIR / f"talentscout_candidates_{today_iso}.csv"
+                master_csv_path = DATA_DIR / "talentscout_candidates_master.csv"
+                logging.info("🦀 [LinkedInScanner] Đã hoàn thành scan qua Native Rust Engine!")
+                return {
+                    "success": True,
+                    "date": today_iso,
+                    "scanned_count": scan_count,
+                    "today_scanned_total": self.state["today_scanned_count"],
+                    "master_total": self.state["total_lifetime_scanned"],
+                    "csv_file": str(today_csv_path),
+                    "json_file": str(today_json_path),
+                    "master_csv": str(master_csv_path),
+                    "engine": "rust"
+                }
+            except Exception as e:
+                logging.warning(f"Rust execution error, fallback to Python: {e}")
+
         new_candidates = self.generate_candidate_batch(scan_count)
 
         # 1. Lưu file Batch ngày hôm nay (JSON & CSV)
