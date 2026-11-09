@@ -8,6 +8,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Rust build target
+target/
+backend_rust/target/
+
 # Cloudflare Wrangler & Serverless
 .wrangler/
 
