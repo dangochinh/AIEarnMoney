@@ -298,6 +298,43 @@ window.openPaymentModal = function(productId, customAmount, customTitle) {
     title = "Cọc Tư Vấn & Triển Khai Private AI Server (Apple MLX Local)";
     amount = 500000;
     code = "RPML" + Math.floor(1000 + Math.random() * 9000);
+  } else if (productId && productId.startsWith("CV_SINGLE")) {
+    const candId = productId.replace("CV_SINGLE_", "");
+    title = `Mở Khóa Hồ Sơ & Contact Ứng Viên ${candId}`;
+    amount = 29000;
+    code = "CV" + (candId.replace(/[^a-zA-Z0-9]/g, "").slice(-6) || Math.floor(1000 + Math.random() * 9000));
+    canDownload = true;
+    downloadUrl = "products/talentscout-extension/data/talentscout_candidates_today.csv";
+  } else if (productId === "CV_BUNDLE_AI") {
+    title = "Mua Gói Combo 10 CV VIP Chuyên Gia AI, LLM & Data Science";
+    amount = 99000;
+    code = "CVAI" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/talentscout-extension/data/talentscout_candidates_today.csv";
+  } else if (productId === "CV_BUNDLE_BACKEND") {
+    title = "Mua Gói Combo 10 CV VIP Backend Golang & Java Core Banking";
+    amount = 99000;
+    code = "CVBE" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/talentscout-extension/data/talentscout_candidates_today.csv";
+  } else if (productId === "CV_BUNDLE_FRONTEND") {
+    title = "Mua Gói Combo 10 CV VIP Frontend & Mobile Super App";
+    amount = 99000;
+    code = "CVFE" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/talentscout-extension/data/talentscout_candidates_today.csv";
+  } else if (productId === "CV_BUNDLE_DEVOPS") {
+    title = "Mua Gói Combo 10 CV VIP Cloud DevOps & Platform Engineering";
+    amount = 99000;
+    code = "CVDO" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/talentscout-extension/data/talentscout_candidates_today.csv";
+  } else if (productId === "CV_MASTER_ALL") {
+    title = "Sở Hữu Trọn Bộ 230+ Master Database Ứng Viên IT & AI (Full CSV + JSON)";
+    amount = 299000;
+    code = "CVMDB" + Math.floor(1000 + Math.random() * 9000);
+    canDownload = true;
+    downloadUrl = "products/talentscout-extension/data/talentscout_candidates_master.csv";
   } else if (productId === "donate") {
     title = "Donate Nuôi Pepe (Tiền mì tôm & tiền điện Mac M4)";
     amount = customAmount || 20000;
