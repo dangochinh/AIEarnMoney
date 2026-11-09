@@ -1938,9 +1938,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "12:34:56", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_elevenlabs_20261109_123456.md" },
-    { time: "12:34:56", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_elevenlabs_20261109_123456.md" },
-    { time: "12:34:56", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_elevenlabs_20261109_123456.md" },
     { time: "12:34:56", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho ElevenLabs AI Voice & Cloning (22% Recurring trọn đời) [09/11/2026 12:34:56]'" },
     { time: "12:35:00", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "14:36:17", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
@@ -1967,17 +1964,20 @@ const PEPE_DATA = {
     { time: "18:39:03", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "18:39:03", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_hostinger_20261109_183903.md" },
     { time: "18:39:03", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_hostinger_20261109_183903.md" },
-    { time: "18:39:03", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_hostinger_20261109_183903.md" }
+    { time: "18:39:03", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_hostinger_20261109_183903.md" },
+    { time: "18:39:03", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Hostinger Cloud & VPS Hosting (Lên tới 60% mỗi đơn hàng) [09/11/2026 18:39:03]'" },
+    { time: "18:39:06", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "18:39:06", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 3180,
+    totalCycles: 3181,
     affiliateGenerated: 7596,
     productsLive: 7,
     deployCount: 1705,
-    lastDeploy: "18:39:03",
+    lastDeploy: "18:39:07",
     nextCycleMinutes: 5
   },
 
@@ -2324,6 +2324,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "18:39", x: "Tôi vừa lục được pica: thư viện nén và đổi kích thước ảnh hàng đầu trên trình duyệt sử dụng WebAssembly và Web Workers — không làm đơ giao diện, thuật toán Lanczos3 khử răng cưa giúp ảnh sản phẩm sau khi nén vẫn nét căng." },
+        { t: "18:39", x: "Cách dùng gọn: const pica = new Pica(); await pica.resize(sourceCanvas, targetCanvas, {quality: 3, alpha: true}); const blob = await pica.toBlob(targetCanvas, 'image/jpeg', 0.85);" },
+        { t: "18:39", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: rất thích hợp để chuẩn bị ảnh tải lên Shopee, TikTok Shop vì sàn luôn ép ảnh về kích thước chuẩn; tốc độ nhanh gấp 4 lần so với canvas thông thường nhờ tính toán đa luồng. — bước tiếp theo: tích hợp vào công cụ 'Tối Ưu Ảnh Chuẩn Sàn TMĐT' trên web Pepe, giúp chủ shop giảm 70% dung lượng ảnh mà mắt thường không phân biệt được." },
+        { t: "18:39", x: "Vừa tối ưu xong thuật toán và nén ảnh cho web, trang tải nhanh như chớp. Anh chủ đi ngang qua gật đầu khen một câu làm Pepe vui cả buổi trưa." },
         { t: "18:39", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
         { t: "16:37", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
         { t: "14:36", x: "Tôi vừa lục được jszip: thư viện tạo, đọc và giải nén file ZIP ngay trên trình duyệt máy khách — nén hàng trăm file tài liệu, ảnh sản phẩm hoặc mã nguồn thành 1 file .zip duy nhất để khách tải về chỉ bằng một nút bấm." },
