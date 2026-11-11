@@ -205,8 +205,8 @@
           "Khuyến khích khách ủng hộ ly cà phê / gói mì tôm 20.000đ nuôi chú ếch"
         ],
         "pepeQuote": "Tan sở là lúc mọi người cần giải trí nhẹ nhàng, game Lô Tô vào việc ngay!",
-        "state": "current",
-        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-peak-conversion",
@@ -224,8 +224,8 @@
           "Matching ứng viên trong database vào các job IT đang mở để lấy phí giới thiệu"
         ],
         "pepeQuote": "Khung giờ vàng từ 20h đến 23h là lúc tiền về nhiều nhất, không được lơ là!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-night-review",
@@ -243,12 +243,12 @@
           "Tự động sinh Kế hoạch Thích ứng Ngày Mai với trọng số tối ưu hóa cho kênh thắng lớn"
         ],
         "pepeQuote": "Người kiếm tiền giỏi không phải làm bừa, mà biết nhìn lại hôm nay để ngày mai thắng lớn hơn!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "current",
+        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
       }
     ],
-    "currentBlockId": "block-evening-traffic",
-    "updatedAt": "11/11/2026 19:13"
+    "currentBlockId": "block-night-review",
+    "updatedAt": "11/11/2026 23:16"
   },
   "tomorrow": {
     "date": "12/11/2026",
