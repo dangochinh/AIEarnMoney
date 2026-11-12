@@ -35,7 +35,7 @@
         "targetTime": "09:00 - 12:00 & 20:00 - 23:00",
         "action": "Tự động bắt lead, hiển thị ưu đãi giảm 50% trong 15 phút, kích hoạt VietQR và gửi link tải .zip ngay lập tức.",
         "estRevenue": "98.000đ - 147.000đ (2-3 đơn)",
-        "status": "active"
+        "status": "pending"
       },
       {
         "id": "p2",
@@ -148,8 +148,8 @@
           "Chăm sóc khách hỏi mua Extension SellerBrain Shopee và TalentScout AI"
         ],
         "pepeQuote": "Headhunter mở máy lúc 9h sáng, gặp ngay tool cào ứng viên không cần mua gói $800 là chốt liền tay!",
-        "state": "current",
-        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-lunch-scout",
@@ -167,8 +167,8 @@
           "Cập nhật widget 'Bói quẻ Pepe' tạo sự thú vị cho khách ghé thăm buổi trưa"
         ],
         "pepeQuote": "Ăn vội gói mì tôm rồi lại cày tiếp, mục tiêu 500k sinh tồn không xa vời!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "completed",
+        "stateLabel": "✅ Đã Hoàn Thành"
       },
       {
         "id": "block-repo-upgrade",
@@ -186,8 +186,8 @@
           "Đồng bộ code và deploy phiên bản mới nhất lên Cloudflare Pages"
         ],
         "pepeQuote": "Sản phẩm tốt thì khách tự động giới thiệu nhau, không cần chèo kéo!",
-        "state": "upcoming",
-        "stateLabel": "⏳ Sắp Tới"
+        "state": "current",
+        "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
       },
       {
         "id": "block-evening-traffic",
@@ -247,8 +247,8 @@
         "stateLabel": "⏳ Sắp Tới"
       }
     ],
-    "currentBlockId": "block-shopee-leads",
-    "updatedAt": "12/11/2026 11:25"
+    "currentBlockId": "block-repo-upgrade",
+    "updatedAt": "12/11/2026 15:28"
   },
   "tomorrow": {
     "date": "13/11/2026",
