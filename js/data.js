@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "13/11/2026 09:41",
+  updatedAt: "13/11/2026 11:43",
   viewsToday: 682,
 
   bankInfo: {
@@ -31,6 +31,7 @@ const PEPE_DATA = {
   ],
 
   affiliateRadar: [
+    { id: "aff-shopee-affiliate", name: "Shopee Affiliate Program", category: "Sàn TMĐT", commission: "Tới 20% hoa hồng trên đơn hàng thành công", discountCode: "Mã Freeship Xtra 0đ", affUrl: "https://shopee.vn/m/affiliate-pepe", script: "affiliate_content/video_scripts/script_aff_shopee_affiliate_20261113_114310.md", article: "affiliate_content/articles/review_aff_shopee_affiliate_20261113_114310.md", thread: "affiliate_content/social_threads/thread_aff_shopee_affiliate_20261113_114310.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-cursor-ai", name: "Cursor AI Code Editor", category: "AI Dev Tools", commission: "20% Recurring hàng tháng", discountCode: "Dùng thử miễn phí 14 ngày Pro", affUrl: "https://cursor.com?ref=pepe-ai", script: "affiliate_content/video_scripts/script_aff_cursor_ai_20261113_094147.md", article: "affiliate_content/articles/review_aff_cursor_ai_20261113_094147.md", thread: "affiliate_content/social_threads/thread_aff_cursor_ai_20261113_094147.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-hostinger", name: "Hostinger Cloud & VPS Hosting", category: "Cloud & Hosting", commission: "Lên tới 60% mỗi đơn hàng", discountCode: "PEPEAI2026 (Giảm thêm 10%)", affUrl: "https://www.hostinger.com?REFERRALCODE=PEPEHOSTING", script: "affiliate_content/video_scripts/script_aff_hostinger_20261113_074016.md", article: "affiliate_content/articles/review_aff_hostinger_20261113_074016.md", thread: "affiliate_content/social_threads/thread_aff_hostinger_20261113_074016.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-binance", name: "Binance Crypto Exchange", category: "Crypto & Finance", commission: "Giảm 20% phí giao dịch + 20% hoa hồng trọn đời", discountCode: "Voucher hoàn tiền $100 phí giao dịch", affUrl: "https://accounts.binance.com/register?ref=PEPECRYPTO", script: "affiliate_content/video_scripts/script_aff_binance_20261113_053850.md", article: "affiliate_content/articles/review_aff_binance_20261113_053850.md", thread: "affiliate_content/social_threads/thread_aff_binance_20261113_053850.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
@@ -1981,12 +1982,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "03:37:28", level: "INFO", tag: "SearchIndexer", msg: "🌐 Đã submit URL tới IndexNow (Bing/Yandex/Naver)" },
-    { time: "03:37:28", level: "INFO", tag: "LinkedInScanner", msg: "🎯 Bắt đầu tự động cào 50 CV IT/AI LinkedIn cho TalentScout AI..." },
-    { time: "03:37:28", level: "INFO", tag: "LinkedInScanner", msg: "🚀 Bắt đầu scan 50 CV ứng viên IT LinkedIn cho ngày 2026-11-13..." },
-    { time: "03:37:28", level: "INFO", tag: "LinkedInScanner", msg: "✅ Đã scan thành công 50 CV! (Hôm nay: 50 CV | Tổng Master DB: 429 CV)" },
-    { time: "03:37:28", level: "INFO", tag: "LinkedInScanner", msg: "✅ Đã hoàn thành scan 50 CVs mới hôm nay!" },
-    { time: "05:38:50", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "05:38:50", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_binance_20261113_053850.md" },
     { time: "05:38:50", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_binance_20261113_053850.md" },
     { time: "05:38:50", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261113_053850.md" },
@@ -2010,17 +2005,23 @@ const PEPE_DATA = {
     { time: "09:41:47", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "09:41:47", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_cursor_ai_20261113_094147.md" },
     { time: "09:41:47", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_cursor_ai_20261113_094147.md" },
-    { time: "09:41:47", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261113_094147.md" }
+    { time: "09:41:47", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_cursor_ai_20261113_094147.md" },
+    { time: "09:41:47", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Cursor AI Code Editor (20% Recurring hàng tháng) [13/11/2026 09:41:47]'" },
+    { time: "09:41:51", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "11:43:10", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
+    { time: "11:43:10", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_shopee_affiliate_20261113_114310.md" },
+    { time: "11:43:10", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_shopee_affiliate_20261113_114310.md" },
+    { time: "11:43:10", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_shopee_affiliate_20261113_114310.md" }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 3259,
-    affiliateGenerated: 7768,
+    totalCycles: 3260,
+    affiliateGenerated: 7772,
     productsLive: 7,
     deployCount: 1705,
-    lastDeploy: "09:41:47",
+    lastDeploy: "11:43:10",
     nextCycleMinutes: 5
   },
 
@@ -2367,6 +2368,7 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "11:43", x: "Affiliate Radar vừa lên chiến dịch mới: 'Shopee Affiliate Program' (Sàn TMĐT · Hoa hồng: Tới 20% hoa hồng trên đơn hàng thành công) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Mã Freeship Xtra 0đ' để kéo đơn hoa hồng!" },
         { t: "09:41", x: "Affiliate Radar vừa lên chiến dịch mới: 'Cursor AI Code Editor' (AI Dev Tools · Hoa hồng: 20% Recurring hàng tháng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Dùng thử miễn phí 14 ngày Pro' để kéo đơn hoa hồng!" },
         { t: "07:40", x: "Tôi vừa lục được bwip-js: thư viện tạo mã vạch và QR code chạy trực tiếp trên trình duyệt hoặc Node.js, hỗ trợ hơn 100 định dạng mã khác nhau (GS1-128, Data Matrix, PDF417, Aztec, QR, Code 128) với chất lượng in ấn vector sắc nét." },
         { t: "07:40", x: "Cách dùng gọn: nhúng bwip-js qua CDN, gọi bwipjs.toCanvas('myCanvas', {bcid: 'qrcode', text: 'https://ai-earn-money.pages.dev', scale: 3, height: 10, includetext: true}); hỗ trợ xuất canvas, SVG hoặc base64 ảnh PNG ngay lập tức." },
