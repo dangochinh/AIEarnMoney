@@ -17,6 +17,9 @@ case "$1" in
   stop)
     $PYTHON -m services.daemon stop
     ;;
+  restart)
+    $PYTHON -m services.daemon restart
+    ;;
   status)
     $PYTHON -m services.daemon status
     ;;
@@ -34,7 +37,7 @@ case "$1" in
     ;;
   *)
     echo "🐸 Pepe Nuôi Thân CLI"
-    echo "Sử dụng: ./pepe.sh [start|stop|status|run-once|logs|install-service|uninstall-service]"
+    echo "Sử dụng: ./pepe.sh [start|stop|restart|status|run-once|logs|install-service|uninstall-service]"
     exit 1
     ;;
 esac

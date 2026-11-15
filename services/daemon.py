@@ -35,6 +35,18 @@ def get_running_pid():
                 return pid
         except Exception:
             pass
+
+    # Fallback: scan running processes for "services.daemon _worker"
+    try:
+        res = subprocess.run(["pgrep", "-f", "services.daemon _worker"], capture_output=True, text=True)
+        pids = [int(p) for p in res.stdout.strip().split() if p and int(p) != os.getpid()]
+        if pids:
+            with open(PID_FILE, "w") as f:
+                f.write(str(pids[0]))
+            return pids[0]
+    except Exception:
+        pass
+
     return None
 
 
@@ -110,6 +122,14 @@ def cmd_stop():
 
     if PID_FILE.exists():
         PID_FILE.unlink()
+
+
+def cmd_restart():
+    """Khởi động lại daemon."""
+    print("🔄 Đang khởi động lại Pepe Daemon...")
+    cmd_stop()
+    time.sleep(1)
+    cmd_start()
 
 
 def cmd_status():
@@ -198,6 +218,7 @@ def main():
         print("  run-once          : Chạy ngay 1 chu kỳ tạo content affiliate + sản phẩm số + deploy")
         print("  start             : Khởi động daemon chạy liên tục không idle")
         print("  stop              : Dừng daemon đang chạy")
+        print("  restart           : Khởi động lại daemon")
         print("  status            : Xem trạng thái và logs")
         print("  logs              : Theo dõi logs trực tiếp")
         print("  install-service   : Tự động chạy cùng macOS 24/7 (LaunchAgent)")
@@ -211,6 +232,8 @@ def main():
         cmd_start()
     elif cmd == "stop":
         cmd_stop()
+    elif cmd == "restart":
+        cmd_restart()
     elif cmd == "status":
         cmd_status()
     elif cmd == "install-service":
