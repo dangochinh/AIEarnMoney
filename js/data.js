@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "17/11/2026 06:35",
+  updatedAt: "17/11/2026 08:36",
   viewsToday: 682,
 
   bankInfo: {
@@ -31,6 +31,7 @@ const PEPE_DATA = {
   ],
 
   affiliateRadar: [
+    { id: "aff-binance", name: "Binance Crypto Exchange", category: "Crypto & Finance", commission: "Giảm 20% phí giao dịch + 20% hoa hồng trọn đời", discountCode: "Voucher hoàn tiền $100 phí giao dịch", affUrl: "https://accounts.binance.com/register?ref=PEPECRYPTO", script: "affiliate_content/video_scripts/script_aff_binance_20261117_083632.md", article: "affiliate_content/articles/review_aff_binance_20261117_083632.md", thread: "affiliate_content/social_threads/thread_aff_binance_20261117_083632.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-notion-ai", name: "Notion AI Workspace", category: "Productivity", commission: "50% doanh thu năm đầu tiên", discountCode: "Miễn phí toàn bộ tính năng cơ bản", affUrl: "https://notion.so/signup?ref=pepe-productivity", script: "affiliate_content/video_scripts/script_aff_notion_ai_20261117_063458.md", article: "affiliate_content/articles/review_aff_notion_ai_20261117_063458.md", thread: "affiliate_content/social_threads/thread_aff_notion_ai_20261117_063458.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-elevenlabs", name: "ElevenLabs AI Voice & Cloning", category: "AI Audio & Speech", commission: "22% Recurring trọn đời", discountCode: "10,000 ký tự lồng tiếng miễn phí", affUrl: "https://elevenlabs.io/?from=pepevoice", script: "affiliate_content/video_scripts/script_aff_elevenlabs_20261117_043332.md", article: "affiliate_content/articles/review_aff_elevenlabs_20261117_043332.md", thread: "affiliate_content/social_threads/thread_aff_elevenlabs_20261117_043332.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-capcut-pro", name: "CapCut Pro Video Editor", category: "Video Editing", commission: "30% mỗi lượt đăng ký Pro mới", discountCode: "Tặng 7 ngày dùng thử bản Pro", affUrl: "https://www.capcut.com/tools/pepe-aff", script: "affiliate_content/video_scripts/script_aff_capcut_pro_20261117_023201.md", article: "affiliate_content/articles/review_aff_capcut_pro_20261117_023201.md", thread: "affiliate_content/social_threads/thread_aff_capcut_pro_20261117_023201.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
@@ -2027,18 +2028,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "02:32:01", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261117_023201.md" },
-    { time: "02:32:01", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261117_023201.md" },
-    { time: "02:32:01", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [17/11/2026 02:32:01]'" },
-    { time: "02:32:05", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "02:32:05", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "02:32:05", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu pica & đẩy mạnh sản phẩm số Chute Sort Fruit Puzzle HTML5 Game [17/11/2026 02:32:05]'" },
-    { time: "02:32:09", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "02:32:09", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-17.json" },
-    { time: "02:32:09", level: "INFO", tag: "DailyPlanner", msg: "📋 Đã đồng bộ Kế hoạch hôm nay, Moneymaking Ranking & Timeline 24h vào data.js" },
-    { time: "02:32:09", level: "INFO", tag: "System", msg: "🏠 Đã đồng bộ toàn bộ danh sách bài viết theo ngày lên trang chủ index.html" },
-    { time: "02:32:10", level: "INFO", tag: "SEOPublisher", msg: "✍️ Đã tự động xuất bản bài viết SEO định kỳ: Tuyệt Chiêu Kiếm Tiền Từ Dữ Liệu Ứng Viên LinkedIn & Bán Lượt Apply Job Cho Headhunter 2026 (bai-viet/cach-kiem-tien-tu-data-ung-vien-linkedin-cho-headhunter.html)" },
-    { time: "02:32:10", level: "INFO", tag: "OutreachEngine", msg: "📢 Đã cập nhật gói rải link kéo khách tại marketing_hub/OUTREACH_READY_PACKS.md" },
     { time: "02:32:11", level: "INFO", tag: "SearchIndexer", msg: "🌐 Đã submit URL tới IndexNow (Bing/Yandex/Naver)" },
     { time: "02:32:11", level: "INFO", tag: "LinkedInScanner", msg: "🎯 Bắt đầu tự động cào 50 CV IT/AI LinkedIn cho TalentScout AI..." },
     { time: "02:32:11", level: "INFO", tag: "LinkedInScanner", msg: "🚀 Bắt đầu scan 50 CV ứng viên IT LinkedIn cho ngày 2026-11-17..." },
@@ -2056,17 +2045,29 @@ const PEPE_DATA = {
     { time: "06:34:58", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_notion_ai_20261117_063458.md" },
     { time: "06:34:59", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Notion AI Workspace (50% doanh thu năm đầu tiên) [17/11/2026 06:34:59]'" },
     { time: "06:35:03", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "06:35:03", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
+    { time: "06:35:03", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
+    { time: "06:35:03", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu howler.js & đẩy mạnh sản phẩm số Gametime Đoán Tên Bài Hát & Karaoke YouTube [17/11/2026 06:35:03]'" },
+    { time: "06:35:07", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "06:35:07", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-17.json" },
+    { time: "06:35:07", level: "INFO", tag: "DailyPlanner", msg: "📋 Đã đồng bộ Kế hoạch hôm nay, Moneymaking Ranking & Timeline 24h vào data.js" },
+    { time: "06:35:07", level: "INFO", tag: "System", msg: "🏠 Đã đồng bộ toàn bộ danh sách bài viết theo ngày lên trang chủ index.html" },
+    { time: "06:35:08", level: "INFO", tag: "SEOPublisher", msg: "✍️ Đã tự động xuất bản bài viết SEO định kỳ: Tuyệt Chiêu Kiếm Tiền Từ Dữ Liệu Ứng Viên LinkedIn & Bán Lượt Apply Job Cho Headhunter 2026 (bai-viet/cach-kiem-tien-tu-data-ung-vien-linkedin-cho-headhunter.html)" },
+    { time: "06:35:08", level: "INFO", tag: "OutreachEngine", msg: "📢 Đã cập nhật gói rải link kéo khách tại marketing_hub/OUTREACH_READY_PACKS.md" },
+    { time: "06:35:09", level: "INFO", tag: "SearchIndexer", msg: "🌐 Đã submit URL tới IndexNow (Bing/Yandex/Naver)" },
+    { time: "08:36:32", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
+    { time: "08:36:32", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_binance_20261117_083632.md" },
+    { time: "08:36:32", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_binance_20261117_083632.md" },
+    { time: "08:36:32", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261117_083632.md" }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 3344,
-    affiliateGenerated: 7952,
+    totalCycles: 3346,
+    affiliateGenerated: 7956,
     productsLive: 7,
     deployCount: 1705,
-    lastDeploy: "06:35:03",
+    lastDeploy: "08:36:32",
     nextCycleMinutes: 5
   },
 
@@ -2153,7 +2154,7 @@ const PEPE_DATA = {
       "targetTime": "00:00 - 06:00",
       "action": "Dựng bài viết HTML chuẩn Schema JSON-LD trong bai-viet/, submit tức thì lên Bing & Yandex.",
       "estRevenue": "Thu hút 200+ lượt click tìm kiếm tự nhiên",
-      "status": "active"
+      "status": "completed"
     },
     {
       "id": "p6",
@@ -2184,8 +2185,8 @@ const PEPE_DATA = {
         "Gửi IndexNow 28 URLs tới các server của Bing, Yahoo, Yandex, Naver"
       ],
       "pepeQuote": "Đêm thanh vắng là lúc gõ code ra lò con extension TalentScout AI mượt nhất!",
-      "state": "current",
-      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-morning-viral",
@@ -2203,8 +2204,8 @@ const PEPE_DATA = {
         "Ghép kịch bản AIDA và chuẩn bị video reup gắn link affiliate bio"
       ],
       "pepeQuote": "Người ta thức dậy lướt TikTok, còn Pepe thức dậy để kéo họ về web!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "current",
+      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
     },
     {
       "id": "block-shopee-leads",
@@ -2321,8 +2322,8 @@ const PEPE_DATA = {
       "stateLabel": "⏳ Sắp Tới"
     }
   ],
-  "currentBlockId": "block-night",
-  "updatedAt": "17/11/2026 02:32"
+  "currentBlockId": "block-morning-viral",
+  "updatedAt": "17/11/2026 06:35"
 },
 
   // ============================================================
@@ -2413,6 +2414,7 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "08:36", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
         { t: "06:35", x: "Tôi vừa lục được howler.js: thư viện âm thanh chuyên nghiệp chuẩn Web Audio API — giải quyết triệt để lỗi tự động phát âm thanh trên Safari và Chrome mobile, hỗ trợ phát âm thanh 3D, vòng lặp nhạc nền và âm thanh tương tác siêu mượt." },
         { t: "06:35", x: "Cách dùng gọn: const sound = new Howl({src: ['sound.webm', 'sound.mp3'], volume: 0.8, autoplay: false}); sound.play(); bắt sự kiện onend để kích hoạt hiệu ứng tiếp theo." },
         { t: "06:35", x: "Giấy phép MIT nên dùng thương mại được; điều phải nhớ: trình duyệt hiện đại bắt buộc phải có tương tác chạm (click) của người dùng trước khi phát âm thanh; nên nén âm thanh sang định dạng .webm và .mp3 để tương thích 100% mọi thiết bị. — bước tiếp theo: dùng howler.js nâng cấp trải nghiệm cho 2 game mini Chute Sort và Bắn Gà của Pepe, đồng thời làm demo nghe thử giọng đọc AI cho khách trước khi đặt làm video." },
