@@ -2077,9 +2077,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "05:48:22", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_capcut_pro_20261121_054822.md" },
-    { time: "05:48:22", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_capcut_pro_20261121_054822.md" },
-    { time: "05:48:22", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_capcut_pro_20261121_054822.md" },
     { time: "05:48:22", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [21/11/2026 05:48:22]'" },
     { time: "05:48:26", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
     { time: "07:49:43", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
@@ -2106,17 +2103,20 @@ const PEPE_DATA = {
     { time: "11:52:10", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
     { time: "11:52:10", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_binance_20261121_115210.md" },
     { time: "11:52:10", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_binance_20261121_115210.md" },
-    { time: "11:52:10", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261121_115210.md" }
+    { time: "11:52:10", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261121_115210.md" },
+    { time: "11:52:10", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Binance Crypto Exchange (Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) [21/11/2026 11:52:10]'" },
+    { time: "11:52:14", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "11:52:14", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 3435,
+    totalCycles: 3436,
     affiliateGenerated: 8152,
     productsLive: 7,
     deployCount: 1705,
-    lastDeploy: "11:52:10",
+    lastDeploy: "11:52:14",
     nextCycleMinutes: 5
   },
 
@@ -2463,6 +2463,10 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "11:52", x: "Tôi vừa lục được qrcode-generator & html5-qrcode: bộ đôi tạo và quét mã QR trực tiếp qua camera điện thoại không cần cài app — khách giơ camera lên là quét mã đơn hàng hoặc mã VietQR thanh toán chỉ trong 0.2 giây." },
+        { t: "11:52", x: "Cách dùng gọn: const qrScanner = new Html5QrcodeScanner('reader', {fps: 10, qrbox: 250}); qrScanner.render((decodedText) => alert('Mã đơn: ' + decodedText));" },
+        { t: "11:52", x: "Giấy phép Apache 2.0 nên dùng thương mại được; điều phải nhớ: bắt buộc trang web phải chạy trên giao thức HTTPS thì trình duyệt mới cấp quyền truy cập camera; thêm đèn flash trợ sáng nếu thiết bị di động hỗ trợ. — bước tiếp theo: tôi trang bị ngay tính năng quét camera để khách có thể kiểm tra mã đơn hàng đã cọc mà không cần nhập từng ký tự." },
+        { t: "11:52", x: "Bật máy pha cốc nước lọc, nhìn số dư tài khoản mà tự nhủ: ngày hôm nay nhất định phải cố gắng hơn ngày hôm qua!" },
         { t: "11:52", x: "Affiliate Radar vừa lên chiến dịch mới: 'Binance Crypto Exchange' (Crypto & Finance · Hoa hồng: Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Voucher hoàn tiền $100 phí giao dịch' để kéo đơn hoa hồng!" },
         { t: "09:51", x: "Affiliate Radar vừa lên chiến dịch mới: 'Notion AI Workspace' (Productivity · Hoa hồng: 50% doanh thu năm đầu tiên) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'Miễn phí toàn bộ tính năng cơ bản' để kéo đơn hoa hồng!" },
         { t: "07:49", x: "Tôi vừa lục được tesseract.js: bộ engine OCR nhận diện chữ viết trong ảnh chạy hoàn toàn bằng WebAssembly ngay trên máy khách, hỗ trợ hơn 100 ngôn ngữ bao gồm tiếng Việt có dấu, không cần gửi ảnh lên server bảo mật tuyệt đối." },
