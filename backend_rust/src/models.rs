@@ -22,6 +22,55 @@ pub struct Candidate {
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
+pub struct IncomingCandidate {
+    #[serde(default)]
+    pub id: Option<String>,
+    pub name: String,
+    #[serde(default)]
+    pub headline: Option<String>,
+    #[serde(default)]
+    pub company: Option<String>,
+    #[serde(default)]
+    pub location: Option<String>,
+    #[serde(default)]
+    pub level: Option<String>,
+    #[serde(default)]
+    pub is_open_to_work: Option<bool>,
+    #[serde(default)]
+    pub open_to_work_status: Option<String>,
+    #[serde(default)]
+    pub email: Option<String>,
+    #[serde(default)]
+    pub skills: Option<Vec<String>>,
+    #[serde(default)]
+    pub skills_formatted: Option<String>,
+    pub profile_url: String,
+    #[serde(default)]
+    pub scouted_at: Option<String>,
+    #[serde(default)]
+    pub status: Option<String>,
+    #[serde(default)]
+    pub ai_outreach_message: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct SyncRequest {
+    pub candidates: Vec<IncomingCandidate>,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
+pub struct SyncResponse {
+    pub success: bool,
+    pub added: usize,
+    pub duplicates: usize,
+    pub total: usize,
+    pub message: String,
+}
+
+#[derive(Debug, Clone, Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]
 pub struct ScanResult {
     pub success: bool,
     pub date: String,

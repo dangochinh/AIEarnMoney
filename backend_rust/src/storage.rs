@@ -1,7 +1,8 @@
 use std::fs::{self, File};
 use std::io::{Read, Write};
 use std::path::{Path, PathBuf};
-use crate::models::{Candidate, DailyState};
+use std::collections::HashSet;
+use crate::models::{Candidate, DailyState, IncomingCandidate};
 
 pub struct StorageManager {
     pub base_dir: PathBuf,
@@ -107,6 +108,121 @@ impl StorageManager {
         content.push_str("\r\n");
         fs::write(file_path, content)?;
         Ok(())
+    }
+
+    pub fn append_candidates(&self, incoming: Vec<IncomingCandidate>) -> (usize, usize, usize) {
+        let mut master = self.load_master_candidates();
+        let mut seen_urls: HashSet<String> = master
+            .iter()
+            .map(|c| c.profile_url.trim_end_matches('/').to_lowercase())
+            .collect();
+
+        let mut added = 0;
+        let mut duplicates = 0;
+        let today = chrono::Local::now().format("%d/%m/%Y").to_string();
+
+        for (idx, inc) in incoming.into_iter().enumerate() {
+            let clean_url = inc.profile_url.trim_end_matches('/').to_lowercase();
+            if seen_urls.contains(&clean_url) {
+                duplicates += 1;
+                continue;
+            }
+
+            seen_urls.insert(clean_url);
+            added += 1;
+
+            let is_open = inc.is_open_to_work.unwrap_or(false);
+            let open_status = inc.open_to_work_status.unwrap_or_else(|| {
+                if is_open {
+                    "🔥 CÓ (#OPENTOWORK)".to_string()
+                } else {
+                    "Chưa bật".to_string()
+                }
+            });
+
+            let skills = inc.skills.unwrap_or_else(|| vec!["Chung".to_string()]);
+            let skills_formatted = inc.skills_formatted.unwrap_or_else(|| skills.join(", "));
+            let id = inc.id.unwrap_or_else(|| {
+                let now_code = chrono::Local::now().format("%y%m%d").to_string();
+                format!("TS_REAL_{}_{:03}", now_code, idx + 1)
+            });
+
+            let email = inc.email.unwrap_or_else(|| {
+                if is_open {
+                    "Liên hệ qua InMail LinkedIn".to_string()
+                } else {
+                    "Chưa công khai".to_string()
+                }
+            });
+
+            let outreach = inc.ai_outreach_message.unwrap_or_else(|| {
+                let company = inc.company.as_deref().unwrap_or("doanh nghiệp");
+                let headline = inc.headline.as_deref().unwrap_or("Kỹ sư công nghệ");
+                format!(
+                    "Chào {},\n\nMình ấn tượng với hồ sơ của bạn ở vị trí {} tại {}.\n\n(Gửi qua TalentScout AI)",
+                    inc.name, headline, company
+                )
+            });
+
+            let candidate = Candidate {
+                id,
+                name: inc.name,
+                headline: inc.headline.unwrap_or_else(|| "Kỹ sư phần mềm".to_string()),
+                company: inc.company.unwrap_or_else(|| "Chưa cập nhật".to_string()),
+                location: inc.location.unwrap_or_else(|| "Việt Nam".to_string()),
+                level: inc.level.unwrap_or_else(|| "Mid-Level".to_string()),
+                is_open_to_work: is_open,
+                open_to_work_status: open_status,
+                email,
+                skills,
+                skills_formatted,
+                profile_url: inc.profile_url,
+                scouted_at: inc.scouted_at.unwrap_or_else(|| today.clone()),
+                status: inc.status.unwrap_or_else(|| {
+                    if is_open {
+                        "Sẵn sàng phỏng vấn".to_string()
+                    } else {
+                        "Mới cào từ LinkedIn thật".to_string()
+                    }
+                }),
+                ai_outreach_message: outreach,
+            };
+
+            // Prepend new candidate so it appears on top
+            master.insert(0, candidate);
+        }
+
+        if added > 0 {
+            let master_json = self.data_dir.join("talentscout_candidates_master.json");
+            let master_csv = self.data_dir.join("talentscout_candidates_master.csv");
+            let public_csv = self.base_dir.join("products/talentscout_candidates_master.csv");
+
+            let _ = self.save_candidates_json(&master_json, &master);
+            let _ = self.export_to_csv_bom(&master_csv, &master);
+            let _ = self.export_to_csv_bom(&public_csv, &master);
+
+            // Update daily state
+            let mut state = self.load_state();
+            let today_iso = chrono::Local::now().format("%Y-%m-%d").to_string();
+            if state.last_scan_date == today_iso {
+                state.today_scanned_count += added;
+            } else {
+                state.last_scan_date = today_iso;
+                state.today_scanned_count = added;
+            }
+            state.total_lifetime_scanned += added;
+            let _ = self.save_state(&state);
+
+            // Trigger cv_exporter.py to refresh JS and JSON marketplace data
+            let exporter_script = self.base_dir.join("services/cv_exporter.py");
+            if exporter_script.exists() {
+                let _ = std::process::Command::new("python3")
+                    .arg(&exporter_script)
+                    .output();
+            }
+        }
+
+        (added, duplicates, master.len())
     }
 }
 

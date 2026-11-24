@@ -12,7 +12,7 @@ use tower_http::cors::{Any, CorsLayer};
 use tower_http::services::ServeDir;
 use tracing::info;
 
-use crate::models::{HealthResponse, ScanRequest, SetQuotaRequest, StatsResponse};
+use crate::models::{HealthResponse, ScanRequest, SetQuotaRequest, StatsResponse, SyncRequest, SyncResponse};
 use crate::scanner::CandidateScanner;
 
 #[derive(Clone)]
@@ -45,6 +45,7 @@ pub fn create_router(scanner: Arc<CandidateScanner>) -> Router {
         .route("/api/talentscout/stats", get(handle_ts_stats))
         .route("/api/talentscout/candidates", get(handle_get_candidates))
         .route("/api/talentscout/scan", post(handle_trigger_scan))
+        .route("/api/talentscout/sync", post(handle_sync_candidates))
         .route("/api/talentscout/export", get(handle_export_csv))
         .route("/api/talentscout/quota", post(handle_set_quota))
         // General / Pepe Server compatibility endpoints
@@ -208,4 +209,28 @@ async fn handle_custom_order(
         "received": body,
         "message": "Đã tiếp nhận yêu cầu từ Pepe Rust Server"
     }))
+}
+
+async fn handle_sync_candidates(
+    State(state): State<AppState>,
+    Json(payload): Json<SyncRequest>,
+) -> Json<SyncResponse> {
+    info!("Nhận yêu cầu đồng bộ {} ứng viên từ Extension", payload.candidates.len());
+    let (added, duplicates, total) = state
+        .scanner
+        .get_storage()
+        .append_candidates(payload.candidates);
+
+    let message = format!(
+        "Đồng bộ thành công {} ứng viên thật vào Chợ CV! ({} hồ sơ trùng lặp, tổng DB: {} hồ sơ)",
+        added, duplicates, total
+    );
+
+    Json(SyncResponse {
+        success: true,
+        added,
+        duplicates,
+        total,
+        message,
+    })
 }
