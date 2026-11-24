@@ -24,12 +24,13 @@ const PEPE_CV_DATABASE = [
     "isOpenToWork": true,
     "openToWorkStatus": "🔥 CÓ (#OPENTOWORK)",
     "scoutedAt": "08/11/2026",
-    "experienceYears": "3 năm kinh nghiệm",
-    "salaryExpectation": "$1,100 - $1,700 USD",
+    "experienceYears": "2 năm kinh nghiệm",
+    "salaryExpectation": "28 - 42 triệu VNĐ",
     "education": "ĐH Khoa Học Tự Nhiên (VNU-HCM) - CNTT",
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***223",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-nguyễn-341",
+    "profileUrl": "https://www.linkedin.com/in/trang-nguyễn-341",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -63,6 +64,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***240",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đỗ-716",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đỗ-716",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -95,6 +97,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***257",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-trần-241",
+    "profileUrl": "https://www.linkedin.com/in/khoa-trần-241",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -130,6 +133,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "097***274",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-959",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-959",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -165,6 +169,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@outlook.com",
     "maskedPhone": "093***291",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-phạm-350",
+    "profileUrl": "https://www.linkedin.com/in/khoa-phạm-350",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -200,6 +205,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***308",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đỗ-911",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đỗ-911",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -232,6 +238,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***325",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-bùi-599",
+    "profileUrl": "https://www.linkedin.com/in/linh-bùi-599",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -265,6 +272,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***342",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-ngô-163",
+    "profileUrl": "https://www.linkedin.com/in/anh-ngô-163",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -297,6 +305,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***359",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lê-187",
+    "profileUrl": "https://www.linkedin.com/in/trang-lê-187",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -331,6 +340,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***376",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-vũ-368",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-vũ-368",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -363,6 +373,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***393",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phạm-322",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phạm-322",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -396,6 +407,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "093***410",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-huỳnh-828",
+    "profileUrl": "https://www.linkedin.com/in/kiên-huỳnh-828",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -431,6 +443,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***427",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đặng-915",
+    "profileUrl": "https://www.linkedin.com/in/hương-đặng-915",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -465,6 +478,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***444",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-nguyễn-254",
+    "profileUrl": "https://www.linkedin.com/in/thảo-nguyễn-254",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -499,6 +513,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@gmail.com",
     "maskedPhone": "090***461",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-ngô-313",
+    "profileUrl": "https://www.linkedin.com/in/bảo-ngô-313",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -531,6 +546,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***478",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lê-350",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lê-350",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -565,6 +581,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***495",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đỗ-817",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đỗ-817",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -597,6 +614,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "097***512",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-ngô-593",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-ngô-593",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -632,6 +650,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***529",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-ngô-369",
+    "profileUrl": "https://www.linkedin.com/in/hùng-ngô-369",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -665,6 +684,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***546",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hồ-817",
+    "profileUrl": "https://www.linkedin.com/in/hà-hồ-817",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -698,6 +718,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@gmail.com",
     "maskedPhone": "088***563",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-lê-890",
+    "profileUrl": "https://www.linkedin.com/in/đạt-lê-890",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -732,6 +753,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***580",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-hồ-368",
+    "profileUrl": "https://www.linkedin.com/in/sơn-hồ-368",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -764,6 +786,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***597",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đặng-799",
+    "profileUrl": "https://www.linkedin.com/in/linh-đặng-799",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -799,6 +822,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***614",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-ngô-639",
+    "profileUrl": "https://www.linkedin.com/in/yến-ngô-639",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -832,6 +856,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "097***631",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-võ-189",
+    "profileUrl": "https://www.linkedin.com/in/thảo-võ-189",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -866,6 +891,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***648",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-ngô-251",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-ngô-251",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -898,6 +924,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***665",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-phạm-992",
+    "profileUrl": "https://www.linkedin.com/in/hà-phạm-992",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -933,6 +960,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***682",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-phạm-198",
+    "profileUrl": "https://www.linkedin.com/in/linh-phạm-198",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -967,6 +995,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***699",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-vũ-753",
+    "profileUrl": "https://www.linkedin.com/in/bảo-vũ-753",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -1000,6 +1029,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "091***716",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lý-529",
+    "profileUrl": "https://www.linkedin.com/in/trang-lý-529",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -1034,6 +1064,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***733",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-561",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-561",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -1068,6 +1099,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***750",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-nguyễn-994",
+    "profileUrl": "https://www.linkedin.com/in/thảo-nguyễn-994",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -1100,6 +1132,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***767",
     "rawProfileUrl": "https://www.linkedin.com/in/long-lý-563",
+    "profileUrl": "https://www.linkedin.com/in/long-lý-563",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -1135,6 +1168,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***784",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-vũ-153",
+    "profileUrl": "https://www.linkedin.com/in/sơn-vũ-153",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -1169,6 +1203,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***801",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-huỳnh-501",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-huỳnh-501",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -1202,6 +1237,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***818",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-vũ-619",
+    "profileUrl": "https://www.linkedin.com/in/bảo-vũ-619",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -1235,6 +1271,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@gmail.com",
     "maskedPhone": "091***835",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-769",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-769",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -1267,6 +1304,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***852",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đặng-121",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đặng-121",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -1299,6 +1337,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***869",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phan-538",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phan-538",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -1333,6 +1372,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***886",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lý-678",
+    "profileUrl": "https://www.linkedin.com/in/yến-lý-678",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -1366,6 +1406,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "086***903",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phạm-891",
+    "profileUrl": "https://www.linkedin.com/in/long-phạm-891",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -1399,6 +1440,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "088***920",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-phạm-656",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-phạm-656",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -1432,6 +1474,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "090***937",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đặng-988",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đặng-988",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -1466,6 +1509,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "091***954",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-trần-696",
+    "profileUrl": "https://www.linkedin.com/in/đạt-trần-696",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -1500,6 +1544,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "098***971",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-huỳnh-468",
+    "profileUrl": "https://www.linkedin.com/in/đạt-huỳnh-468",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -1535,6 +1580,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "097***988",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-nguyễn-809",
+    "profileUrl": "https://www.linkedin.com/in/hà-nguyễn-809",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -1569,6 +1615,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***105",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-huỳnh-679",
+    "profileUrl": "https://www.linkedin.com/in/hà-huỳnh-679",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -1603,6 +1650,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "086***122",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-phạm-299",
+    "profileUrl": "https://www.linkedin.com/in/anh-phạm-299",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -1636,6 +1684,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@outlook.com",
     "maskedPhone": "088***139",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đặng-259",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đặng-259",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -1669,6 +1718,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***156",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lê-449",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lê-449",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -1703,6 +1753,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***173",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-vũ-723",
+    "profileUrl": "https://www.linkedin.com/in/trang-vũ-723",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -1735,6 +1786,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***190",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lê-316",
+    "profileUrl": "https://www.linkedin.com/in/hương-lê-316",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -1767,6 +1819,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***207",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-vũ-242",
+    "profileUrl": "https://www.linkedin.com/in/kiên-vũ-242",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -1800,6 +1853,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@outlook.com",
     "maskedPhone": "093***224",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-trần-403",
+    "profileUrl": "https://www.linkedin.com/in/huy-trần-403",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -1832,6 +1886,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***241",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-phan-561",
+    "profileUrl": "https://www.linkedin.com/in/trung-phan-561",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -1865,6 +1920,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***258",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-vũ-972",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-vũ-972",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -1897,6 +1953,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***275",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-võ-245",
+    "profileUrl": "https://www.linkedin.com/in/anh-võ-245",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -1930,6 +1987,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***292",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-đặng-997",
+    "profileUrl": "https://www.linkedin.com/in/huy-đặng-997",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -1963,6 +2021,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "098***309",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-võ-146",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-võ-146",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -1996,6 +2055,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***326",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phạm-415",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phạm-415",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -2030,6 +2090,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***343",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-nguyễn-391",
+    "profileUrl": "https://www.linkedin.com/in/huy-nguyễn-391",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -2064,6 +2125,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "086***360",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-vũ-899",
+    "profileUrl": "https://www.linkedin.com/in/hùng-vũ-899",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -2097,6 +2159,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***377",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phạm-749",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phạm-749",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -2130,6 +2193,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "090***394",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-hoàng-460",
+    "profileUrl": "https://www.linkedin.com/in/sơn-hoàng-460",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -2164,6 +2228,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "091***411",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-phan-521",
+    "profileUrl": "https://www.linkedin.com/in/huy-phan-521",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -2198,6 +2263,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***428",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lý-661",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lý-661",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -2231,6 +2297,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***445",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-387",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-387",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -2265,6 +2332,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***462",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-288",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-288",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -2297,6 +2365,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***479",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-trần-182",
+    "profileUrl": "https://www.linkedin.com/in/duyên-trần-182",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -2331,6 +2400,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***496",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-huỳnh-825",
+    "profileUrl": "https://www.linkedin.com/in/linh-huỳnh-825",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -2363,6 +2433,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***513",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-bùi-758",
+    "profileUrl": "https://www.linkedin.com/in/anh-bùi-758",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -2396,6 +2467,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***530",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-huỳnh-837",
+    "profileUrl": "https://www.linkedin.com/in/thảo-huỳnh-837",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -2431,6 +2503,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "098***547",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-dương-646",
+    "profileUrl": "https://www.linkedin.com/in/kiên-dương-646",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -2466,6 +2539,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "097***564",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-phạm-227",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-phạm-227",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -2501,6 +2575,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***581",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-huỳnh-788",
+    "profileUrl": "https://www.linkedin.com/in/mai-huỳnh-788",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -2533,6 +2608,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "086***598",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đặng-564",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đặng-564",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -2568,6 +2644,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***615",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phạm-769",
+    "profileUrl": "https://www.linkedin.com/in/mai-phạm-769",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -2601,6 +2678,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "090***632",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đặng-895",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đặng-895",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -2634,6 +2712,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***649",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-643",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-643",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -2668,6 +2747,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***666",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-734",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-734",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -2703,6 +2783,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***683",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phạm-524",
+    "profileUrl": "https://www.linkedin.com/in/long-phạm-524",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -2738,6 +2819,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***700",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-dương-905",
+    "profileUrl": "https://www.linkedin.com/in/duyên-dương-905",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -2770,6 +2852,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***717",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-võ-749",
+    "profileUrl": "https://www.linkedin.com/in/mai-võ-749",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -2804,6 +2887,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***734",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-phạm-901",
+    "profileUrl": "https://www.linkedin.com/in/duyên-phạm-901",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -2837,6 +2921,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@gmail.com",
     "maskedPhone": "090***751",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lê-932",
+    "profileUrl": "https://www.linkedin.com/in/huy-lê-932",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -2872,6 +2957,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@gmail.com",
     "maskedPhone": "091***768",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-dương-643",
+    "profileUrl": "https://www.linkedin.com/in/sơn-dương-643",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -2906,6 +2992,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "098***785",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-hoàng-595",
+    "profileUrl": "https://www.linkedin.com/in/linh-hoàng-595",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -2940,6 +3027,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@outlook.com",
     "maskedPhone": "097***802",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hồ-655",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hồ-655",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -2972,6 +3060,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***819",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-trần-424",
+    "profileUrl": "https://www.linkedin.com/in/hùng-trần-424",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -3006,6 +3095,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "086***836",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-dương-841",
+    "profileUrl": "https://www.linkedin.com/in/hùng-dương-841",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -3038,6 +3128,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "088***853",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-huỳnh-165",
+    "profileUrl": "https://www.linkedin.com/in/linh-huỳnh-165",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -3070,6 +3161,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "090***870",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phan-590",
+    "profileUrl": "https://www.linkedin.com/in/mai-phan-590",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -3105,6 +3197,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "091***887",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lý-922",
+    "profileUrl": "https://www.linkedin.com/in/mai-lý-922",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -3140,6 +3233,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "098***904",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lê-117",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lê-117",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -3174,6 +3268,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***921",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lê-126",
+    "profileUrl": "https://www.linkedin.com/in/yến-lê-126",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -3207,6 +3302,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "093***938",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-bùi-578",
+    "profileUrl": "https://www.linkedin.com/in/sơn-bùi-578",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -3239,6 +3335,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***955",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-lý-130",
+    "profileUrl": "https://www.linkedin.com/in/đạt-lý-130",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -3274,6 +3371,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***972",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đặng-566",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đặng-566",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -3309,6 +3407,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "090***989",
     "rawProfileUrl": "https://www.linkedin.com/in/long-hoàng-435",
+    "profileUrl": "https://www.linkedin.com/in/long-hoàng-435",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -3342,6 +3441,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***106",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đặng-245",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đặng-245",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -3377,6 +3477,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "098***123",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-vũ-641",
+    "profileUrl": "https://www.linkedin.com/in/kiên-vũ-641",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -3411,6 +3512,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "097***140",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-hồ-514",
+    "profileUrl": "https://www.linkedin.com/in/yến-hồ-514",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -3444,6 +3546,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "093***157",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-võ-167",
+    "profileUrl": "https://www.linkedin.com/in/anh-võ-167",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -3479,6 +3582,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***174",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-770",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-770",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -3512,6 +3616,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "088***191",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lý-398",
+    "profileUrl": "https://www.linkedin.com/in/trang-lý-398",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -3545,6 +3650,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***208",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-nguyễn-852",
+    "profileUrl": "https://www.linkedin.com/in/kiên-nguyễn-852",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -3579,6 +3685,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "091***225",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-nguyễn-833",
+    "profileUrl": "https://www.linkedin.com/in/hương-nguyễn-833",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -3613,6 +3720,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***242",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-229",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-229",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -3645,6 +3753,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***259",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-dương-481",
+    "profileUrl": "https://www.linkedin.com/in/hùng-dương-481",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -3677,6 +3786,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@gmail.com",
     "maskedPhone": "093***276",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-lý-697",
+    "profileUrl": "https://www.linkedin.com/in/hà-lý-697",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -3712,6 +3822,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "086***293",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-ngô-178",
+    "profileUrl": "https://www.linkedin.com/in/đạt-ngô-178",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -3744,6 +3855,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***310",
     "rawProfileUrl": "https://www.linkedin.com/in/long-dương-470",
+    "profileUrl": "https://www.linkedin.com/in/long-dương-470",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -3778,6 +3890,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***327",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đỗ-875",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đỗ-875",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -3810,6 +3923,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***344",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-ngô-918",
+    "profileUrl": "https://www.linkedin.com/in/đạt-ngô-918",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -3845,6 +3959,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***361",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đặng-757",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đặng-757",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -3879,6 +3994,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***378",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-vũ-645",
+    "profileUrl": "https://www.linkedin.com/in/kiên-vũ-645",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -3914,6 +4030,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***395",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-bùi-272",
+    "profileUrl": "https://www.linkedin.com/in/trang-bùi-272",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -3946,6 +4063,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***412",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-võ-781",
+    "profileUrl": "https://www.linkedin.com/in/đạt-võ-781",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -3981,6 +4099,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***429",
     "rawProfileUrl": "https://www.linkedin.com/in/long-hoàng-261",
+    "profileUrl": "https://www.linkedin.com/in/long-hoàng-261",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -4015,6 +4134,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***446",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-lý-938",
+    "profileUrl": "https://www.linkedin.com/in/anh-lý-938",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -4050,6 +4170,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@techdev.vn",
     "maskedPhone": "091***463",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-520",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-520",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4086,6 +4207,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***480",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lý-509",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lý-509",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -4121,6 +4243,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@gmail.com",
     "maskedPhone": "097***497",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-bùi-571",
+    "profileUrl": "https://www.linkedin.com/in/hương-bùi-571",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -4157,6 +4280,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@outlook.com",
     "maskedPhone": "093***514",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-bùi-827",
+    "profileUrl": "https://www.linkedin.com/in/khoa-bùi-827",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -4190,6 +4314,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "086***531",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-250",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-250",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -4224,6 +4349,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***548",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-207",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-207",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -4256,6 +4382,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "090***565",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-854",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-854",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -4290,6 +4417,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***582",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đặng-218",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đặng-218",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4326,6 +4454,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***599",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-vũ-635",
+    "profileUrl": "https://www.linkedin.com/in/huy-vũ-635",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -4358,6 +4487,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@outlook.com",
     "maskedPhone": "097***616",
     "rawProfileUrl": "https://www.linkedin.com/in/long-lý-722",
+    "profileUrl": "https://www.linkedin.com/in/long-lý-722",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -4394,6 +4524,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "093***633",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-hồ-781",
+    "profileUrl": "https://www.linkedin.com/in/huy-hồ-781",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4429,6 +4560,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***650",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-dương-703",
+    "profileUrl": "https://www.linkedin.com/in/trang-dương-703",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -4462,6 +4594,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***667",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hoàng-161",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hoàng-161",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -4495,6 +4628,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***684",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-huỳnh-779",
+    "profileUrl": "https://www.linkedin.com/in/duyên-huỳnh-779",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -4527,6 +4661,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***701",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-817",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-817",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -4559,6 +4694,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "098***718",
     "rawProfileUrl": "https://www.linkedin.com/in/long-huỳnh-118",
+    "profileUrl": "https://www.linkedin.com/in/long-huỳnh-118",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -4594,6 +4730,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***735",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-bùi-161",
+    "profileUrl": "https://www.linkedin.com/in/mai-bùi-161",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -4630,6 +4767,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@gmail.com",
     "maskedPhone": "093***752",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-phạm-646",
+    "profileUrl": "https://www.linkedin.com/in/bảo-phạm-646",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4666,6 +4804,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "086***769",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-phan-771",
+    "profileUrl": "https://www.linkedin.com/in/linh-phan-771",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -4700,6 +4839,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***786",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-ngô-490",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-ngô-490",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4735,6 +4875,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@outlook.com",
     "maskedPhone": "090***803",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-phạm-543",
+    "profileUrl": "https://www.linkedin.com/in/duyên-phạm-543",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4770,6 +4911,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@gmail.com",
     "maskedPhone": "091***820",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-phạm-926",
+    "profileUrl": "https://www.linkedin.com/in/duyên-phạm-926",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -4805,6 +4947,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***837",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đặng-725",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đặng-725",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -4837,6 +4980,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "097***854",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phan-368",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phan-368",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -4869,6 +5013,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***871",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-bùi-891",
+    "profileUrl": "https://www.linkedin.com/in/yến-bùi-891",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -4905,6 +5050,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***888",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-bùi-303",
+    "profileUrl": "https://www.linkedin.com/in/anh-bùi-303",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -4939,6 +5085,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***905",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-võ-618",
+    "profileUrl": "https://www.linkedin.com/in/trang-võ-618",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -4971,6 +5118,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***922",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-933",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-933",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -5005,6 +5153,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "091***939",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-trần-351",
+    "profileUrl": "https://www.linkedin.com/in/hùng-trần-351",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -5037,6 +5186,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "098***956",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-lý-550",
+    "profileUrl": "https://www.linkedin.com/in/linh-lý-550",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -5072,6 +5222,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@gmail.com",
     "maskedPhone": "097***973",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hoàng-871",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hoàng-871",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -5107,6 +5258,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***990",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phan-263",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phan-263",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -5141,6 +5293,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@gmail.com",
     "maskedPhone": "086***107",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-trần-533",
+    "profileUrl": "https://www.linkedin.com/in/hà-trần-533",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -5173,6 +5326,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***124",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-trần-708",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-trần-708",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -5206,6 +5360,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***141",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-ngô-248",
+    "profileUrl": "https://www.linkedin.com/in/hà-ngô-248",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -5242,6 +5397,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@gmail.com",
     "maskedPhone": "091***158",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-dương-978",
+    "profileUrl": "https://www.linkedin.com/in/hà-dương-978",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -5275,6 +5431,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***175",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lý-688",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lý-688",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -5307,6 +5464,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***192",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-lý-393",
+    "profileUrl": "https://www.linkedin.com/in/anh-lý-393",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -5343,6 +5501,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***209",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lý-496",
+    "profileUrl": "https://www.linkedin.com/in/huy-lý-496",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -5375,6 +5534,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "086***226",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-đỗ-855",
+    "profileUrl": "https://www.linkedin.com/in/trung-đỗ-855",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -5410,6 +5570,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "088***243",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-dương-336",
+    "profileUrl": "https://www.linkedin.com/in/mai-dương-336",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -5442,6 +5603,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "090***260",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-dương-476",
+    "profileUrl": "https://www.linkedin.com/in/anh-dương-476",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -5477,6 +5639,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "091***277",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-đặng-378",
+    "profileUrl": "https://www.linkedin.com/in/đạt-đặng-378",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -5513,6 +5676,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "098***294",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-866",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-866",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -5545,6 +5709,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***311",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-bùi-844",
+    "profileUrl": "https://www.linkedin.com/in/huy-bùi-844",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -5579,6 +5744,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***328",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-ngô-125",
+    "profileUrl": "https://www.linkedin.com/in/khoa-ngô-125",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -5614,6 +5780,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@gmail.com",
     "maskedPhone": "086***345",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-trần-487",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-trần-487",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -5649,6 +5816,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "088***362",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lý-494",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lý-494",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -5683,6 +5851,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***379",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đặng-591",
+    "profileUrl": "https://www.linkedin.com/in/linh-đặng-591",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -5715,6 +5884,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***396",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-trần-360",
+    "profileUrl": "https://www.linkedin.com/in/khoa-trần-360",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn"
@@ -5749,6 +5919,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***413",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hồ-922",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hồ-922",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -5785,6 +5956,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "097***430",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-phạm-616",
+    "profileUrl": "https://www.linkedin.com/in/khoa-phạm-616",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -5820,6 +5992,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***447",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-ngô-595",
+    "profileUrl": "https://www.linkedin.com/in/anh-ngô-595",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -5856,6 +6029,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "086***464",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-vũ-738",
+    "profileUrl": "https://www.linkedin.com/in/sơn-vũ-738",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -5889,6 +6063,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***481",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lý-503",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lý-503",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -5924,6 +6099,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "090***498",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-lý-252",
+    "profileUrl": "https://www.linkedin.com/in/kiên-lý-252",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -5957,6 +6133,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "091***515",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lê-180",
+    "profileUrl": "https://www.linkedin.com/in/hương-lê-180",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -5989,6 +6166,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "098***532",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-phạm-474",
+    "profileUrl": "https://www.linkedin.com/in/khoa-phạm-474",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -6025,6 +6203,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***549",
     "rawProfileUrl": "https://www.linkedin.com/in/long-võ-759",
+    "profileUrl": "https://www.linkedin.com/in/long-võ-759",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -6059,6 +6238,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***566",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phan-289",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phan-289",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -6094,6 +6274,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "086***583",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-vũ-120",
+    "profileUrl": "https://www.linkedin.com/in/trung-vũ-120",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -6128,6 +6309,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***600",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-266",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-266",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -6163,6 +6345,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***617",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đặng-664",
+    "profileUrl": "https://www.linkedin.com/in/hương-đặng-664",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -6197,6 +6380,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@gmail.com",
     "maskedPhone": "091***634",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-hồ-291",
+    "profileUrl": "https://www.linkedin.com/in/duyên-hồ-291",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -6231,6 +6415,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@outlook.com",
     "maskedPhone": "098***651",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-trần-387",
+    "profileUrl": "https://www.linkedin.com/in/huy-trần-387",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -6265,6 +6450,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "097***668",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-nguyễn-996",
+    "profileUrl": "https://www.linkedin.com/in/kiên-nguyễn-996",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -6300,6 +6486,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@techdev.vn",
     "maskedPhone": "093***685",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-ngô-602",
+    "profileUrl": "https://www.linkedin.com/in/bảo-ngô-602",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -6335,6 +6522,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "086***702",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-hồ-214",
+    "profileUrl": "https://www.linkedin.com/in/bảo-hồ-214",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -6371,6 +6559,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@techdev.vn",
     "maskedPhone": "088***719",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-phạm-958",
+    "profileUrl": "https://www.linkedin.com/in/anh-phạm-958",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -6403,6 +6592,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***736",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-nguyễn-655",
+    "profileUrl": "https://www.linkedin.com/in/huy-nguyễn-655",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -6439,6 +6629,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***753",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-707",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-707",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -6473,6 +6664,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***770",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lý-385",
+    "profileUrl": "https://www.linkedin.com/in/yến-lý-385",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -6507,6 +6699,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "097***787",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-phạm-292",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-phạm-292",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -6543,6 +6736,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "093***804",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hoàng-474",
+    "profileUrl": "https://www.linkedin.com/in/hà-hoàng-474",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -6578,6 +6772,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***821",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hồ-796",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hồ-796",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -6613,6 +6808,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***838",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hồ-738",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hồ-738",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -6647,6 +6843,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***855",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-472",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-472",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -6680,6 +6877,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***872",
     "rawProfileUrl": "https://www.linkedin.com/in/long-bùi-773",
+    "profileUrl": "https://www.linkedin.com/in/long-bùi-773",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -6714,6 +6912,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***889",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-dương-108",
+    "profileUrl": "https://www.linkedin.com/in/anh-dương-108",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -6747,6 +6946,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "097***906",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-huỳnh-246",
+    "profileUrl": "https://www.linkedin.com/in/linh-huỳnh-246",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -6782,6 +6982,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@techdev.vn",
     "maskedPhone": "093***923",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-bùi-103",
+    "profileUrl": "https://www.linkedin.com/in/anh-bùi-103",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -6816,6 +7017,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***940",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hồ-437",
+    "profileUrl": "https://www.linkedin.com/in/hà-hồ-437",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -6849,6 +7051,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***957",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-bùi-957",
+    "profileUrl": "https://www.linkedin.com/in/khoa-bùi-957",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -6882,6 +7085,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***974",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-trần-601",
+    "profileUrl": "https://www.linkedin.com/in/hương-trần-601",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -6915,6 +7119,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***991",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-bùi-886",
+    "profileUrl": "https://www.linkedin.com/in/duyên-bùi-886",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -6949,6 +7154,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "098***108",
     "rawProfileUrl": "https://www.linkedin.com/in/long-vũ-793",
+    "profileUrl": "https://www.linkedin.com/in/long-vũ-793",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -6982,6 +7188,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***125",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-ngô-195",
+    "profileUrl": "https://www.linkedin.com/in/hương-ngô-195",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -7018,6 +7225,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "093***142",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-hoàng-305",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-hoàng-305",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -7051,6 +7259,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@techdev.vn",
     "maskedPhone": "086***159",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-phạm-392",
+    "profileUrl": "https://www.linkedin.com/in/anh-phạm-392",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -7084,6 +7293,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***176",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-huỳnh-364",
+    "profileUrl": "https://www.linkedin.com/in/linh-huỳnh-364",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -7118,6 +7328,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***193",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-vũ-965",
+    "profileUrl": "https://www.linkedin.com/in/trung-vũ-965",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -7152,6 +7363,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "091***210",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-phạm-160",
+    "profileUrl": "https://www.linkedin.com/in/trung-phạm-160",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -7184,6 +7396,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@outlook.com",
     "maskedPhone": "098***227",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hồ-454",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hồ-454",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -7220,6 +7433,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@gmail.com",
     "maskedPhone": "097***244",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-huỳnh-781",
+    "profileUrl": "https://www.linkedin.com/in/hương-huỳnh-781",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -7252,6 +7466,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***261",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-đỗ-670",
+    "profileUrl": "https://www.linkedin.com/in/mai-đỗ-670",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -7287,6 +7502,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***278",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-nguyễn-585",
+    "profileUrl": "https://www.linkedin.com/in/mai-nguyễn-585",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -7323,6 +7539,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***295",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-ngô-813",
+    "profileUrl": "https://www.linkedin.com/in/trung-ngô-813",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -7359,6 +7576,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "090***312",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-phạm-142",
+    "profileUrl": "https://www.linkedin.com/in/hà-phạm-142",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -7392,6 +7610,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***329",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phạm-628",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phạm-628",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -7425,6 +7644,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***346",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-331",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-331",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -7458,6 +7678,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***363",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lý-236",
+    "profileUrl": "https://www.linkedin.com/in/huy-lý-236",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -7490,6 +7711,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "093***380",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-ngô-570",
+    "profileUrl": "https://www.linkedin.com/in/anh-ngô-570",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -7525,6 +7747,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***397",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-võ-830",
+    "profileUrl": "https://www.linkedin.com/in/hùng-võ-830",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -7560,6 +7783,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "088***414",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-phan-884",
+    "profileUrl": "https://www.linkedin.com/in/linh-phan-884",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -7595,6 +7819,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***431",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-dương-262",
+    "profileUrl": "https://www.linkedin.com/in/trang-dương-262",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -7630,6 +7855,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***448",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-phan-149",
+    "profileUrl": "https://www.linkedin.com/in/yến-phan-149",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -7664,6 +7890,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***465",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-554",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-554",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -7697,6 +7924,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@outlook.com",
     "maskedPhone": "097***482",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-nguyễn-508",
+    "profileUrl": "https://www.linkedin.com/in/huy-nguyễn-508",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -7729,6 +7957,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***499",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-ngô-808",
+    "profileUrl": "https://www.linkedin.com/in/duyên-ngô-808",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -7761,6 +7990,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "086***516",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đỗ-397",
+    "profileUrl": "https://www.linkedin.com/in/yến-đỗ-397",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -7793,6 +8023,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "088***533",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-trần-723",
+    "profileUrl": "https://www.linkedin.com/in/hương-trần-723",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -7825,6 +8056,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "090***550",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-đặng-740",
+    "profileUrl": "https://www.linkedin.com/in/trung-đặng-740",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -7860,6 +8092,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@outlook.com",
     "maskedPhone": "091***567",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-đặng-572",
+    "profileUrl": "https://www.linkedin.com/in/huy-đặng-572",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -7893,6 +8126,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***584",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-trần-191",
+    "profileUrl": "https://www.linkedin.com/in/sơn-trần-191",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -7926,6 +8160,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***601",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-phạm-885",
+    "profileUrl": "https://www.linkedin.com/in/bảo-phạm-885",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -7959,6 +8194,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***618",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-trần-686",
+    "profileUrl": "https://www.linkedin.com/in/đạt-trần-686",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -7993,6 +8229,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***635",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-lý-584",
+    "profileUrl": "https://www.linkedin.com/in/linh-lý-584",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -8028,6 +8265,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***652",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-398",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-398",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -8060,6 +8298,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***669",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-lê-318",
+    "profileUrl": "https://www.linkedin.com/in/hà-lê-318",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -8092,6 +8331,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "091***686",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-vũ-499",
+    "profileUrl": "https://www.linkedin.com/in/linh-vũ-499",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -8126,6 +8366,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***703",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-võ-692",
+    "profileUrl": "https://www.linkedin.com/in/trung-võ-692",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -8159,6 +8400,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "097***720",
     "rawProfileUrl": "https://www.linkedin.com/in/long-huỳnh-767",
+    "profileUrl": "https://www.linkedin.com/in/long-huỳnh-767",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -8191,6 +8433,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***737",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-hồ-769",
+    "profileUrl": "https://www.linkedin.com/in/bảo-hồ-769",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -8223,6 +8466,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@techdev.vn",
     "maskedPhone": "086***754",
     "rawProfileUrl": "https://www.linkedin.com/in/long-trần-740",
+    "profileUrl": "https://www.linkedin.com/in/long-trần-740",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -8258,6 +8502,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***771",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-nguyễn-623",
+    "profileUrl": "https://www.linkedin.com/in/sơn-nguyễn-623",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -8293,6 +8538,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***788",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-hoàng-956",
+    "profileUrl": "https://www.linkedin.com/in/hùng-hoàng-956",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -8327,6 +8573,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@gmail.com",
     "maskedPhone": "091***805",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đặng-190",
+    "profileUrl": "https://www.linkedin.com/in/hương-đặng-190",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -8361,6 +8608,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***822",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-vũ-367",
+    "profileUrl": "https://www.linkedin.com/in/mai-vũ-367",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -8394,6 +8642,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "097***839",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-trần-826",
+    "profileUrl": "https://www.linkedin.com/in/bảo-trần-826",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn"
@@ -8427,6 +8676,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "093***856",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-huỳnh-801",
+    "profileUrl": "https://www.linkedin.com/in/thảo-huỳnh-801",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -8459,6 +8709,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "086***873",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lý-511",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lý-511",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -8494,6 +8745,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "088***890",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-hồ-506",
+    "profileUrl": "https://www.linkedin.com/in/hùng-hồ-506",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -8528,6 +8780,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***907",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lê-992",
+    "profileUrl": "https://www.linkedin.com/in/mai-lê-992",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -8560,6 +8813,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***924",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-võ-140",
+    "profileUrl": "https://www.linkedin.com/in/huy-võ-140",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -8593,6 +8847,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "098***941",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-dương-711",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-dương-711",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -8627,6 +8882,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***958",
     "rawProfileUrl": "https://www.linkedin.com/in/long-lê-743",
+    "profileUrl": "https://www.linkedin.com/in/long-lê-743",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -8661,6 +8917,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "093***975",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đỗ-258",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đỗ-258",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -8694,6 +8951,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***992",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đặng-698",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đặng-698",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -8726,6 +8984,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***109",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-trần-143",
+    "profileUrl": "https://www.linkedin.com/in/sơn-trần-143",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -8761,6 +9020,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***126",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-dương-185",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-dương-185",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -8793,6 +9053,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***143",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-trần-116",
+    "profileUrl": "https://www.linkedin.com/in/duyên-trần-116",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -8825,6 +9086,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***160",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lê-269",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lê-269",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -8858,6 +9120,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "097***177",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phan-370",
+    "profileUrl": "https://www.linkedin.com/in/mai-phan-370",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -8892,6 +9155,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***194",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-dương-600",
+    "profileUrl": "https://www.linkedin.com/in/linh-dương-600",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -8925,6 +9189,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "086***211",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-771",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-771",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -8958,6 +9223,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "088***228",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-phạm-887",
+    "profileUrl": "https://www.linkedin.com/in/bảo-phạm-887",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -8992,6 +9258,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***245",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-314",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-314",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -9025,6 +9292,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***262",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đặng-536",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đặng-536",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -9058,6 +9326,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***279",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-ngô-213",
+    "profileUrl": "https://www.linkedin.com/in/bảo-ngô-213",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -9093,6 +9362,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "097***296",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-dương-698",
+    "profileUrl": "https://www.linkedin.com/in/trang-dương-698",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -9128,6 +9398,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@techdev.vn",
     "maskedPhone": "093***313",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-đặng-592",
+    "profileUrl": "https://www.linkedin.com/in/hà-đặng-592",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -9161,6 +9432,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***330",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đỗ-721",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đỗ-721",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -9196,6 +9468,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***347",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-873",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-873",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -9228,6 +9501,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***364",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-ngô-217",
+    "profileUrl": "https://www.linkedin.com/in/huy-ngô-217",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -9262,6 +9536,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***381",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đỗ-476",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đỗ-476",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -9296,6 +9571,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "098***398",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-lê-563",
+    "profileUrl": "https://www.linkedin.com/in/đạt-lê-563",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -9329,6 +9605,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***415",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lê-441",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lê-441",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -9364,6 +9641,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "093***432",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hoàng-671",
+    "profileUrl": "https://www.linkedin.com/in/hương-hoàng-671",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -9397,6 +9675,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***449",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-trần-889",
+    "profileUrl": "https://www.linkedin.com/in/anh-trần-889",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -9432,6 +9711,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "088***466",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-dương-477",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-dương-477",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -9464,6 +9744,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***483",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đặng-783",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đặng-783",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -9497,6 +9778,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***500",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-133",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-133",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -9531,6 +9813,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***517",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-vũ-608",
+    "profileUrl": "https://www.linkedin.com/in/duyên-vũ-608",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -9565,6 +9848,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***534",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phan-212",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phan-212",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -9597,6 +9881,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***551",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-võ-505",
+    "profileUrl": "https://www.linkedin.com/in/thảo-võ-505",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -9631,6 +9916,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***568",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-hồ-157",
+    "profileUrl": "https://www.linkedin.com/in/sơn-hồ-157",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -9665,6 +9951,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "088***585",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-trần-598",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-trần-598",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -9698,6 +9985,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***602",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-trần-385",
+    "profileUrl": "https://www.linkedin.com/in/duyên-trần-385",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -9732,6 +10020,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@outlook.com",
     "maskedPhone": "091***619",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-341",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-341",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -9766,6 +10055,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "098***636",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-bùi-148",
+    "profileUrl": "https://www.linkedin.com/in/kiên-bùi-148",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -9799,6 +10089,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***653",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hồ-349",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hồ-349",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -9831,6 +10122,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@techdev.vn",
     "maskedPhone": "093***670",
     "rawProfileUrl": "https://www.linkedin.com/in/long-dương-331",
+    "profileUrl": "https://www.linkedin.com/in/long-dương-331",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -9865,6 +10157,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "086***687",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-võ-550",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-võ-550",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -9899,6 +10192,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***704",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-trần-538",
+    "profileUrl": "https://www.linkedin.com/in/hà-trần-538",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -9932,6 +10226,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***721",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lý-564",
+    "profileUrl": "https://www.linkedin.com/in/huy-lý-564",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -9967,6 +10262,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@techdev.vn",
     "maskedPhone": "091***738",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-phan-373",
+    "profileUrl": "https://www.linkedin.com/in/duyên-phan-373",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -10002,6 +10298,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "098***755",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lê-574",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lê-574",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -10034,6 +10331,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "097***772",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-lê-193",
+    "profileUrl": "https://www.linkedin.com/in/kiên-lê-193",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -10068,6 +10366,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "093***789",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-ngô-643",
+    "profileUrl": "https://www.linkedin.com/in/mai-ngô-643",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -10103,6 +10402,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "086***806",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-hoàng-625",
+    "profileUrl": "https://www.linkedin.com/in/huy-hoàng-625",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -10138,6 +10438,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "088***823",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lý-514",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lý-514",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -10171,6 +10472,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@techdev.vn",
     "maskedPhone": "090***840",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-đặng-483",
+    "profileUrl": "https://www.linkedin.com/in/hà-đặng-483",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -10205,6 +10507,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***857",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-lý-907",
+    "profileUrl": "https://www.linkedin.com/in/đạt-lý-907",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -10238,6 +10541,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "098***874",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lê-904",
+    "profileUrl": "https://www.linkedin.com/in/hương-lê-904",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -10270,6 +10574,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***891",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lý-692",
+    "profileUrl": "https://www.linkedin.com/in/huy-lý-692",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -10305,6 +10610,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***908",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đặng-322",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đặng-322",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -10337,6 +10643,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***925",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-526",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-526",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -10369,6 +10676,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "088***942",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đặng-348",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đặng-348",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -10403,6 +10711,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***959",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đỗ-812",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đỗ-812",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -10438,6 +10747,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "091***976",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-nguyễn-128",
+    "profileUrl": "https://www.linkedin.com/in/kiên-nguyễn-128",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -10470,6 +10780,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "098***993",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-vũ-194",
+    "profileUrl": "https://www.linkedin.com/in/huy-vũ-194",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -10502,6 +10813,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "097***110",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-vũ-898",
+    "profileUrl": "https://www.linkedin.com/in/sơn-vũ-898",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -10535,6 +10847,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***127",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-võ-937",
+    "profileUrl": "https://www.linkedin.com/in/kiên-võ-937",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -10569,6 +10882,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "086***144",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-hồ-904",
+    "profileUrl": "https://www.linkedin.com/in/đạt-hồ-904",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -10602,6 +10916,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***161",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-bùi-280",
+    "profileUrl": "https://www.linkedin.com/in/anh-bùi-280",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -10635,6 +10950,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "090***178",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lê-829",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lê-829",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -10669,6 +10985,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***195",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-hồ-974",
+    "profileUrl": "https://www.linkedin.com/in/duyên-hồ-974",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -10703,6 +11020,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***212",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-đặng-796",
+    "profileUrl": "https://www.linkedin.com/in/huy-đặng-796",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -10736,6 +11054,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***229",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-289",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-289",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -10769,6 +11088,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***246",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đặng-284",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đặng-284",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -10804,6 +11124,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "086***263",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-nguyễn-289",
+    "profileUrl": "https://www.linkedin.com/in/trang-nguyễn-289",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -10838,6 +11159,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***280",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-đặng-484",
+    "profileUrl": "https://www.linkedin.com/in/đạt-đặng-484",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -10872,6 +11194,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***297",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-ngô-777",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-ngô-777",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -10905,6 +11228,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***314",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-vũ-453",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-vũ-453",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -10940,6 +11264,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***331",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-230",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-230",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -10973,6 +11298,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "097***348",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-vũ-446",
+    "profileUrl": "https://www.linkedin.com/in/hùng-vũ-446",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -11008,6 +11334,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***365",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đặng-960",
+    "profileUrl": "https://www.linkedin.com/in/linh-đặng-960",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -11041,6 +11368,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@outlook.com",
     "maskedPhone": "086***382",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đỗ-467",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đỗ-467",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -11074,6 +11402,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***399",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-860",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-860",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -11109,6 +11438,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***416",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-bùi-569",
+    "profileUrl": "https://www.linkedin.com/in/khoa-bùi-569",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -11144,6 +11474,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***433",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-619",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-619",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -11179,6 +11510,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***450",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phạm-552",
+    "profileUrl": "https://www.linkedin.com/in/mai-phạm-552",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -11211,6 +11543,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***467",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đỗ-828",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đỗ-828",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -11245,6 +11578,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***484",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-lý-480",
+    "profileUrl": "https://www.linkedin.com/in/hà-lý-480",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -11277,6 +11611,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***501",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-bùi-293",
+    "profileUrl": "https://www.linkedin.com/in/hùng-bùi-293",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -11312,6 +11647,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@outlook.com",
     "maskedPhone": "088***518",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lê-130",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lê-130",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -11345,6 +11681,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***535",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-phan-123",
+    "profileUrl": "https://www.linkedin.com/in/sơn-phan-123",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -11377,6 +11714,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "091***552",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-nguyễn-574",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-nguyễn-574",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -11409,6 +11747,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***569",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-dương-910",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-dương-910",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -11443,6 +11782,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@outlook.com",
     "maskedPhone": "097***586",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-dương-946",
+    "profileUrl": "https://www.linkedin.com/in/sơn-dương-946",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -11476,6 +11816,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***603",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-bùi-190",
+    "profileUrl": "https://www.linkedin.com/in/duyên-bùi-190",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -11511,6 +11852,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@gmail.com",
     "maskedPhone": "086***620",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-dương-789",
+    "profileUrl": "https://www.linkedin.com/in/hà-dương-789",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -11546,6 +11888,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***637",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-huỳnh-223",
+    "profileUrl": "https://www.linkedin.com/in/kiên-huỳnh-223",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -11579,6 +11922,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***654",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-vũ-901",
+    "profileUrl": "https://www.linkedin.com/in/thảo-vũ-901",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -11611,6 +11955,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***671",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hoàng-826",
+    "profileUrl": "https://www.linkedin.com/in/hương-hoàng-826",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -11646,6 +11991,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***688",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-đỗ-434",
+    "profileUrl": "https://www.linkedin.com/in/đạt-đỗ-434",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -11681,6 +12027,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***705",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-496",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-496",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -11715,6 +12062,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "093***722",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-phan-572",
+    "profileUrl": "https://www.linkedin.com/in/linh-phan-572",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -11749,6 +12097,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@outlook.com",
     "maskedPhone": "086***739",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phan-831",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phan-831",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -11784,6 +12133,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***756",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-huỳnh-584",
+    "profileUrl": "https://www.linkedin.com/in/sơn-huỳnh-584",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -11818,6 +12168,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***773",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-trần-320",
+    "profileUrl": "https://www.linkedin.com/in/hương-trần-320",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -11850,6 +12201,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@outlook.com",
     "maskedPhone": "091***790",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-ngô-930",
+    "profileUrl": "https://www.linkedin.com/in/huy-ngô-930",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -11883,6 +12235,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***807",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đặng-872",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đặng-872",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -11917,6 +12270,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***824",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-huỳnh-266",
+    "profileUrl": "https://www.linkedin.com/in/anh-huỳnh-266",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -11949,6 +12303,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***841",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đặng-101",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đặng-101",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -11981,6 +12336,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***858",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-võ-192",
+    "profileUrl": "https://www.linkedin.com/in/trang-võ-192",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -12014,6 +12370,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***875",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-phạm-768",
+    "profileUrl": "https://www.linkedin.com/in/yến-phạm-768",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -12047,6 +12404,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***892",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-đặng-770",
+    "profileUrl": "https://www.linkedin.com/in/huy-đặng-770",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -12079,6 +12437,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "091***909",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-đỗ-555",
+    "profileUrl": "https://www.linkedin.com/in/anh-đỗ-555",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -12111,6 +12470,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***926",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-980",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-980",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -12146,6 +12506,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***943",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-dương-145",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-dương-145",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -12180,6 +12541,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***960",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-dương-122",
+    "profileUrl": "https://www.linkedin.com/in/sơn-dương-122",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -12212,6 +12574,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@techdev.vn",
     "maskedPhone": "086***977",
     "rawProfileUrl": "https://www.linkedin.com/in/long-trần-960",
+    "profileUrl": "https://www.linkedin.com/in/long-trần-960",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -12245,6 +12608,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***994",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-bùi-201",
+    "profileUrl": "https://www.linkedin.com/in/trang-bùi-201",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -12279,6 +12643,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "090***111",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-bùi-786",
+    "profileUrl": "https://www.linkedin.com/in/khoa-bùi-786",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -12312,6 +12677,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***128",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-võ-484",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-võ-484",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -12347,6 +12713,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***145",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hoàng-667",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hoàng-667",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -12381,6 +12748,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "097***162",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-đặng-669",
+    "profileUrl": "https://www.linkedin.com/in/trung-đặng-669",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -12414,6 +12782,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "093***179",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hoàng-657",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hoàng-657",
     "projects": [
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -12446,6 +12815,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***196",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-608",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-608",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -12478,6 +12848,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***213",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lý-576",
+    "profileUrl": "https://www.linkedin.com/in/mai-lý-576",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -12510,6 +12881,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "090***230",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-nguyễn-112",
+    "profileUrl": "https://www.linkedin.com/in/mai-nguyễn-112",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -12543,6 +12915,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "091***247",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phan-344",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phan-344",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -12576,6 +12949,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***264",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-phạm-665",
+    "profileUrl": "https://www.linkedin.com/in/hương-phạm-665",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -12610,6 +12984,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***281",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-dương-637",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-dương-637",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -12644,6 +13019,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***298",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-đặng-857",
+    "profileUrl": "https://www.linkedin.com/in/bảo-đặng-857",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -12679,6 +13055,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***315",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-phan-854",
+    "profileUrl": "https://www.linkedin.com/in/huy-phan-854",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -12711,6 +13088,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***332",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hoàng-877",
+    "profileUrl": "https://www.linkedin.com/in/hà-hoàng-877",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -12743,6 +13121,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***349",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lý-762",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lý-762",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -12775,6 +13154,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***366",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-trần-461",
+    "profileUrl": "https://www.linkedin.com/in/trung-trần-461",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -12810,6 +13190,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***383",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-hồ-255",
+    "profileUrl": "https://www.linkedin.com/in/sơn-hồ-255",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -12844,6 +13225,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "097***400",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-dương-262",
+    "profileUrl": "https://www.linkedin.com/in/bảo-dương-262",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -12879,6 +13261,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "093***417",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-867",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-867",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -12911,6 +13294,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***434",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-vũ-892",
+    "profileUrl": "https://www.linkedin.com/in/đạt-vũ-892",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -12945,6 +13329,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***451",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-hồ-792",
+    "profileUrl": "https://www.linkedin.com/in/trung-hồ-792",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -12978,6 +13363,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***468",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-ngô-936",
+    "profileUrl": "https://www.linkedin.com/in/trang-ngô-936",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -13011,6 +13397,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "091***485",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-616",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-616",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -13046,6 +13433,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "098***502",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-384",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-384",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -13078,6 +13466,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***519",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-võ-465",
+    "profileUrl": "https://www.linkedin.com/in/hương-võ-465",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -13110,6 +13499,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@gmail.com",
     "maskedPhone": "093***536",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-võ-260",
+    "profileUrl": "https://www.linkedin.com/in/huy-võ-260",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -13142,6 +13532,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***553",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-huỳnh-149",
+    "profileUrl": "https://www.linkedin.com/in/kiên-huỳnh-149",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -13176,6 +13567,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "088***570",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đặng-748",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đặng-748",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -13210,6 +13602,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***587",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-huỳnh-358",
+    "profileUrl": "https://www.linkedin.com/in/linh-huỳnh-358",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -13243,6 +13636,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***604",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-vũ-408",
+    "profileUrl": "https://www.linkedin.com/in/kiên-vũ-408",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -13277,6 +13671,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***621",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lê-438",
+    "profileUrl": "https://www.linkedin.com/in/huy-lê-438",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -13312,6 +13707,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***638",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-537",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-537",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -13346,6 +13742,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***655",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phan-505",
+    "profileUrl": "https://www.linkedin.com/in/mai-phan-505",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -13378,6 +13775,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***672",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-huỳnh-276",
+    "profileUrl": "https://www.linkedin.com/in/anh-huỳnh-276",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -13410,6 +13808,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***689",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lê-413",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lê-413",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -13444,6 +13843,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "090***706",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-ngô-669",
+    "profileUrl": "https://www.linkedin.com/in/kiên-ngô-669",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -13477,6 +13877,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***723",
     "rawProfileUrl": "https://www.linkedin.com/in/long-trần-922",
+    "profileUrl": "https://www.linkedin.com/in/long-trần-922",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -13510,6 +13911,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***740",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-trần-585",
+    "profileUrl": "https://www.linkedin.com/in/kiên-trần-585",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -13544,6 +13946,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@techdev.vn",
     "maskedPhone": "097***757",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-260",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-260",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -13578,6 +13981,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***774",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-lý-689",
+    "profileUrl": "https://www.linkedin.com/in/hà-lý-689",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -13611,6 +14015,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***791",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lý-429",
+    "profileUrl": "https://www.linkedin.com/in/yến-lý-429",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -13644,6 +14049,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@gmail.com",
     "maskedPhone": "088***808",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lê-518",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lê-518",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -13678,6 +14084,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "090***825",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-nguyễn-973",
+    "profileUrl": "https://www.linkedin.com/in/khoa-nguyễn-973",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -13711,6 +14118,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "091***842",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đỗ-301",
+    "profileUrl": "https://www.linkedin.com/in/linh-đỗ-301",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -13745,6 +14153,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***859",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đặng-992",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đặng-992",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -13780,6 +14189,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***876",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-vũ-169",
+    "profileUrl": "https://www.linkedin.com/in/mai-vũ-169",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -13813,6 +14223,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "093***893",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-phạm-178",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-phạm-178",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -13845,6 +14256,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@gmail.com",
     "maskedPhone": "086***910",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-trần-318",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-trần-318",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -13877,6 +14289,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "088***927",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-dương-666",
+    "profileUrl": "https://www.linkedin.com/in/mai-dương-666",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -13910,6 +14323,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***944",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-lý-915",
+    "profileUrl": "https://www.linkedin.com/in/thảo-lý-915",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -13944,6 +14358,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@outlook.com",
     "maskedPhone": "091***961",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-trần-806",
+    "profileUrl": "https://www.linkedin.com/in/khoa-trần-806",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -13979,6 +14394,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***978",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-dương-466",
+    "profileUrl": "https://www.linkedin.com/in/kiên-dương-466",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -14013,6 +14429,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "097***995",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-dương-183",
+    "profileUrl": "https://www.linkedin.com/in/trung-dương-183",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -14047,6 +14464,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***112",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hoàng-628",
+    "profileUrl": "https://www.linkedin.com/in/hà-hoàng-628",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -14079,6 +14497,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "086***129",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lê-667",
+    "profileUrl": "https://www.linkedin.com/in/mai-lê-667",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -14113,6 +14532,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***146",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-dương-519",
+    "profileUrl": "https://www.linkedin.com/in/sơn-dương-519",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -14148,6 +14568,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***163",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-773",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-773",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -14180,6 +14601,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "091***180",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-đỗ-267",
+    "profileUrl": "https://www.linkedin.com/in/hà-đỗ-267",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -14215,6 +14637,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "098***197",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-nguyễn-811",
+    "profileUrl": "https://www.linkedin.com/in/hùng-nguyễn-811",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -14247,6 +14670,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "097***214",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-nguyễn-305",
+    "profileUrl": "https://www.linkedin.com/in/hùng-nguyễn-305",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -14280,6 +14704,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "093***231",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hoàng-127",
+    "profileUrl": "https://www.linkedin.com/in/hà-hoàng-127",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -14314,6 +14739,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "086***248",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-phạm-469",
+    "profileUrl": "https://www.linkedin.com/in/trung-phạm-469",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -14347,6 +14773,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@outlook.com",
     "maskedPhone": "088***265",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đặng-874",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đặng-874",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -14380,6 +14807,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***282",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đỗ-532",
+    "profileUrl": "https://www.linkedin.com/in/linh-đỗ-532",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -14414,6 +14842,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "091***299",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-hoàng-160",
+    "profileUrl": "https://www.linkedin.com/in/linh-hoàng-160",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -14447,6 +14876,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "098***316",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-vũ-751",
+    "profileUrl": "https://www.linkedin.com/in/kiên-vũ-751",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -14482,6 +14912,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "097***333",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-nguyễn-911",
+    "profileUrl": "https://www.linkedin.com/in/mai-nguyễn-911",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -14517,6 +14948,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "093***350",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-ngô-895",
+    "profileUrl": "https://www.linkedin.com/in/trang-ngô-895",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -14551,6 +14983,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***367",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-vũ-196",
+    "profileUrl": "https://www.linkedin.com/in/trang-vũ-196",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -14585,6 +15018,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "088***384",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-võ-903",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-võ-903",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -14620,6 +15054,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "090***401",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phạm-214",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phạm-214",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -14652,6 +15087,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "091***418",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đặng-647",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đặng-647",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -14687,6 +15123,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***435",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-727",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-727",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -14722,6 +15159,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***452",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-trần-408",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-trần-408",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -14754,6 +15192,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***469",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-võ-339",
+    "profileUrl": "https://www.linkedin.com/in/hà-võ-339",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -14787,6 +15226,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***486",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-bùi-290",
+    "profileUrl": "https://www.linkedin.com/in/mai-bùi-290",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -14822,6 +15262,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***503",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-578",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-578",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -14854,6 +15295,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***520",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-huỳnh-650",
+    "profileUrl": "https://www.linkedin.com/in/bảo-huỳnh-650",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -14888,6 +15330,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***537",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-đỗ-416",
+    "profileUrl": "https://www.linkedin.com/in/đạt-đỗ-416",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -14922,6 +15365,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***554",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-huỳnh-682",
+    "profileUrl": "https://www.linkedin.com/in/duyên-huỳnh-682",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -14956,6 +15400,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***571",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-huỳnh-888",
+    "profileUrl": "https://www.linkedin.com/in/mai-huỳnh-888",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -14988,6 +15433,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@outlook.com",
     "maskedPhone": "093***588",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-trần-256",
+    "profileUrl": "https://www.linkedin.com/in/thảo-trần-256",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -15023,6 +15469,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***605",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-vũ-585",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-vũ-585",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -15056,6 +15503,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***622",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-ngô-471",
+    "profileUrl": "https://www.linkedin.com/in/hùng-ngô-471",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -15088,6 +15536,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***639",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-hồ-246",
+    "profileUrl": "https://www.linkedin.com/in/trang-hồ-246",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -15123,6 +15572,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@gmail.com",
     "maskedPhone": "091***656",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-ngô-365",
+    "profileUrl": "https://www.linkedin.com/in/sơn-ngô-365",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -15156,6 +15606,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***673",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-584",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-584",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -15189,6 +15640,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "097***690",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đặng-676",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đặng-676",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -15223,6 +15675,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "093***707",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-ngô-189",
+    "profileUrl": "https://www.linkedin.com/in/hùng-ngô-189",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -15258,6 +15711,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***724",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-ngô-292",
+    "profileUrl": "https://www.linkedin.com/in/khoa-ngô-292",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -15292,6 +15746,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***741",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-hoàng-180",
+    "profileUrl": "https://www.linkedin.com/in/anh-hoàng-180",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -15325,6 +15780,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@outlook.com",
     "maskedPhone": "090***758",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-dương-643",
+    "profileUrl": "https://www.linkedin.com/in/duyên-dương-643",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -15357,6 +15813,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@gmail.com",
     "maskedPhone": "091***775",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-bùi-470",
+    "profileUrl": "https://www.linkedin.com/in/đạt-bùi-470",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -15390,6 +15847,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***792",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-hồ-969",
+    "profileUrl": "https://www.linkedin.com/in/linh-hồ-969",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -15424,6 +15882,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***809",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-lê-627",
+    "profileUrl": "https://www.linkedin.com/in/trung-lê-627",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -15456,6 +15915,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "093***826",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-trần-234",
+    "profileUrl": "https://www.linkedin.com/in/hùng-trần-234",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -15489,6 +15949,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***843",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-trần-616",
+    "profileUrl": "https://www.linkedin.com/in/hà-trần-616",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -15523,6 +15984,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***860",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-vũ-849",
+    "profileUrl": "https://www.linkedin.com/in/đạt-vũ-849",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -15556,6 +16018,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "090***877",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lý-293",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lý-293",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -15590,6 +16053,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***894",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-ngô-338",
+    "profileUrl": "https://www.linkedin.com/in/sơn-ngô-338",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -15622,6 +16086,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "098***911",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-trần-486",
+    "profileUrl": "https://www.linkedin.com/in/hùng-trần-486",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -15654,6 +16119,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@outlook.com",
     "maskedPhone": "097***928",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-vũ-165",
+    "profileUrl": "https://www.linkedin.com/in/khoa-vũ-165",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -15689,6 +16155,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "093***945",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-phạm-724",
+    "profileUrl": "https://www.linkedin.com/in/trung-phạm-724",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -15722,6 +16189,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "086***962",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-trần-375",
+    "profileUrl": "https://www.linkedin.com/in/hà-trần-375",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -15756,6 +16224,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***979",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-trần-895",
+    "profileUrl": "https://www.linkedin.com/in/trung-trần-895",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -15788,6 +16257,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "090***996",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-556",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-556",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -15821,6 +16291,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***113",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-ngô-899",
+    "profileUrl": "https://www.linkedin.com/in/đạt-ngô-899",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -15856,6 +16327,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@gmail.com",
     "maskedPhone": "098***130",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-phạm-302",
+    "profileUrl": "https://www.linkedin.com/in/hà-phạm-302",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -15889,6 +16361,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***147",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-trần-401",
+    "profileUrl": "https://www.linkedin.com/in/khoa-trần-401",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -15924,6 +16397,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***164",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-vũ-879",
+    "profileUrl": "https://www.linkedin.com/in/bảo-vũ-879",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -15958,6 +16432,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "086***181",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-vũ-227",
+    "profileUrl": "https://www.linkedin.com/in/trang-vũ-227",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -15993,6 +16468,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***198",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-dương-542",
+    "profileUrl": "https://www.linkedin.com/in/thảo-dương-542",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -16025,6 +16501,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "090***215",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-ngô-343",
+    "profileUrl": "https://www.linkedin.com/in/anh-ngô-343",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -16057,6 +16534,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@techdev.vn",
     "maskedPhone": "091***232",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-bùi-269",
+    "profileUrl": "https://www.linkedin.com/in/hà-bùi-269",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -16091,6 +16569,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***249",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-hoàng-346",
+    "profileUrl": "https://www.linkedin.com/in/mai-hoàng-346",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -16125,6 +16604,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***266",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-ngô-980",
+    "profileUrl": "https://www.linkedin.com/in/trang-ngô-980",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -16159,6 +16639,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***283",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-đỗ-711",
+    "profileUrl": "https://www.linkedin.com/in/trung-đỗ-711",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -16194,6 +16675,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***300",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-vũ-940",
+    "profileUrl": "https://www.linkedin.com/in/linh-vũ-940",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -16229,6 +16711,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***317",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-dương-781",
+    "profileUrl": "https://www.linkedin.com/in/huy-dương-781",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -16261,6 +16744,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***334",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-hoàng-718",
+    "profileUrl": "https://www.linkedin.com/in/huy-hoàng-718",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -16296,6 +16780,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@gmail.com",
     "maskedPhone": "091***351",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-đỗ-209",
+    "profileUrl": "https://www.linkedin.com/in/huy-đỗ-209",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -16328,6 +16813,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***368",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-đỗ-221",
+    "profileUrl": "https://www.linkedin.com/in/hà-đỗ-221",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -16363,6 +16849,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@gmail.com",
     "maskedPhone": "097***385",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hồ-210",
+    "profileUrl": "https://www.linkedin.com/in/hương-hồ-210",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -16398,6 +16885,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***402",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đặng-640",
+    "profileUrl": "https://www.linkedin.com/in/linh-đặng-640",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -16432,6 +16920,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***419",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-võ-653",
+    "profileUrl": "https://www.linkedin.com/in/yến-võ-653",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -16467,6 +16956,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***436",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-võ-568",
+    "profileUrl": "https://www.linkedin.com/in/mai-võ-568",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -16502,6 +16992,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "090***453",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lý-975",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lý-975",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -16537,6 +17028,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "091***470",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-bùi-758",
+    "profileUrl": "https://www.linkedin.com/in/hương-bùi-758",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -16570,6 +17062,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***487",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-286",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-286",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -16602,6 +17095,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***504",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lý-641",
+    "profileUrl": "https://www.linkedin.com/in/yến-lý-641",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -16635,6 +17129,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***521",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hoàng-668",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hoàng-668",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -16668,6 +17163,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "086***538",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-hoàng-128",
+    "profileUrl": "https://www.linkedin.com/in/mai-hoàng-128",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -16703,6 +17199,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@techdev.vn",
     "maskedPhone": "088***555",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-bùi-866",
+    "profileUrl": "https://www.linkedin.com/in/duyên-bùi-866",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -16735,6 +17232,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "090***572",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-dương-393",
+    "profileUrl": "https://www.linkedin.com/in/kiên-dương-393",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -16769,6 +17267,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@gmail.com",
     "maskedPhone": "091***589",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-120",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-120",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -16801,6 +17300,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@outlook.com",
     "maskedPhone": "098***606",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-vũ-458",
+    "profileUrl": "https://www.linkedin.com/in/sơn-vũ-458",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -16834,6 +17334,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***623",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lý-948",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lý-948",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -16869,6 +17370,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***640",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-võ-449",
+    "profileUrl": "https://www.linkedin.com/in/anh-võ-449",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -16904,6 +17406,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***657",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-ngô-554",
+    "profileUrl": "https://www.linkedin.com/in/yến-ngô-554",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -16936,6 +17439,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "088***674",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-hồ-600",
+    "profileUrl": "https://www.linkedin.com/in/mai-hồ-600",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -16970,6 +17474,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***691",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-dương-528",
+    "profileUrl": "https://www.linkedin.com/in/hùng-dương-528",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -17002,6 +17507,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "091***708",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-phạm-665",
+    "profileUrl": "https://www.linkedin.com/in/khoa-phạm-665",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -17037,6 +17543,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***725",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-trần-434",
+    "profileUrl": "https://www.linkedin.com/in/thảo-trần-434",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -17070,6 +17577,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***742",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-võ-732",
+    "profileUrl": "https://www.linkedin.com/in/anh-võ-732",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -17102,6 +17610,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***759",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-931",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-931",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -17137,6 +17646,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "086***776",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-vũ-577",
+    "profileUrl": "https://www.linkedin.com/in/sơn-vũ-577",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -17170,6 +17680,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***793",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-huỳnh-897",
+    "profileUrl": "https://www.linkedin.com/in/khoa-huỳnh-897",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -17205,6 +17716,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***810",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-bùi-276",
+    "profileUrl": "https://www.linkedin.com/in/huy-bùi-276",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -17238,6 +17750,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***827",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-hồ-256",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-hồ-256",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -17272,6 +17785,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "098***844",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-hồ-667",
+    "profileUrl": "https://www.linkedin.com/in/trang-hồ-667",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -17307,6 +17821,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@gmail.com",
     "maskedPhone": "097***861",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-hồ-967",
+    "profileUrl": "https://www.linkedin.com/in/sơn-hồ-967",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -17340,6 +17855,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***878",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-phạm-631",
+    "profileUrl": "https://www.linkedin.com/in/huy-phạm-631",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -17375,6 +17891,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "086***895",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-716",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-716",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -17408,6 +17925,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "088***912",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phan-235",
+    "profileUrl": "https://www.linkedin.com/in/mai-phan-235",
     "projects": [
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -17442,6 +17960,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@gmail.com",
     "maskedPhone": "090***929",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-dương-339",
+    "profileUrl": "https://www.linkedin.com/in/đạt-dương-339",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -17475,6 +17994,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***946",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-bùi-496",
+    "profileUrl": "https://www.linkedin.com/in/trung-bùi-496",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -17510,6 +18030,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***963",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-phạm-667",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-phạm-667",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -17542,6 +18063,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "097***980",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-dương-521",
+    "profileUrl": "https://www.linkedin.com/in/kiên-dương-521",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -17576,6 +18098,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***997",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lý-753",
+    "profileUrl": "https://www.linkedin.com/in/mai-lý-753",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -17611,6 +18134,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***114",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-149",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đỗ-149",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -17644,6 +18168,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "088***131",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lê-641",
+    "profileUrl": "https://www.linkedin.com/in/trang-lê-641",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -17677,6 +18202,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***148",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phan-193",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phan-193",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -17712,6 +18238,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "091***165",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-bùi-978",
+    "profileUrl": "https://www.linkedin.com/in/yến-bùi-978",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -17746,6 +18273,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***182",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-dương-792",
+    "profileUrl": "https://www.linkedin.com/in/anh-dương-792",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -17782,6 +18310,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "097***199",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-phan-396",
+    "profileUrl": "https://www.linkedin.com/in/anh-phan-396",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -17816,6 +18345,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***216",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-huỳnh-650",
+    "profileUrl": "https://www.linkedin.com/in/huy-huỳnh-650",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -17850,6 +18380,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***233",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phạm-991",
+    "profileUrl": "https://www.linkedin.com/in/mai-phạm-991",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -17883,6 +18414,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***250",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-trần-867",
+    "profileUrl": "https://www.linkedin.com/in/anh-trần-867",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -17918,6 +18450,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***267",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hồ-225",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hồ-225",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -17952,6 +18485,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***284",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-huỳnh-761",
+    "profileUrl": "https://www.linkedin.com/in/thảo-huỳnh-761",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -17986,6 +18520,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***301",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-dương-558",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-dương-558",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -18020,6 +18555,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "097***318",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-đỗ-475",
+    "profileUrl": "https://www.linkedin.com/in/mai-đỗ-475",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -18056,6 +18592,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "093***335",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-bùi-275",
+    "profileUrl": "https://www.linkedin.com/in/sơn-bùi-275",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -18088,6 +18625,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "086***352",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-võ-237",
+    "profileUrl": "https://www.linkedin.com/in/mai-võ-237",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -18120,6 +18658,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***369",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-704",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-704",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -18156,6 +18695,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@outlook.com",
     "maskedPhone": "090***386",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-vũ-526",
+    "profileUrl": "https://www.linkedin.com/in/duyên-vũ-526",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -18190,6 +18730,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@outlook.com",
     "maskedPhone": "091***403",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-trần-198",
+    "profileUrl": "https://www.linkedin.com/in/duyên-trần-198",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -18226,6 +18767,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***420",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hoàng-676",
+    "profileUrl": "https://www.linkedin.com/in/hương-hoàng-676",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -18258,6 +18800,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***437",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-bùi-767",
+    "profileUrl": "https://www.linkedin.com/in/duyên-bùi-767",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -18293,6 +18836,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "093***454",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-huỳnh-474",
+    "profileUrl": "https://www.linkedin.com/in/hùng-huỳnh-474",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -18329,6 +18873,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "086***471",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-hoàng-822",
+    "profileUrl": "https://www.linkedin.com/in/mai-hoàng-822",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -18365,6 +18910,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***488",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-đặng-989",
+    "profileUrl": "https://www.linkedin.com/in/huy-đặng-989",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -18400,6 +18946,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "090***505",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-ngô-297",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-ngô-297",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -18432,6 +18979,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "091***522",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-dương-387",
+    "profileUrl": "https://www.linkedin.com/in/mai-dương-387",
     "projects": [
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -18464,6 +19012,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***539",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-nguyễn-173",
+    "profileUrl": "https://www.linkedin.com/in/anh-nguyễn-173",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -18496,6 +19045,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "097***556",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-bùi-984",
+    "profileUrl": "https://www.linkedin.com/in/khoa-bùi-984",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -18530,6 +19080,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@outlook.com",
     "maskedPhone": "093***573",
     "rawProfileUrl": "https://www.linkedin.com/in/long-vũ-346",
+    "profileUrl": "https://www.linkedin.com/in/long-vũ-346",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -18565,6 +19116,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "086***590",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-748",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-748",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -18600,6 +19152,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***607",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-nguyễn-527",
+    "profileUrl": "https://www.linkedin.com/in/linh-nguyễn-527",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -18636,6 +19189,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***624",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-phan-128",
+    "profileUrl": "https://www.linkedin.com/in/trang-phan-128",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -18670,6 +19224,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@gmail.com",
     "maskedPhone": "091***641",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đỗ-797",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đỗ-797",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -18706,6 +19261,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***658",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-dương-454",
+    "profileUrl": "https://www.linkedin.com/in/khoa-dương-454",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -18742,6 +19298,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "097***675",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lê-675",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lê-675",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -18775,6 +19332,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***692",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-huỳnh-920",
+    "profileUrl": "https://www.linkedin.com/in/sơn-huỳnh-920",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -18811,6 +19369,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***709",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-489",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-489",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -18843,6 +19402,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***726",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-687",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-687",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -18876,6 +19436,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***743",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-vũ-359",
+    "profileUrl": "https://www.linkedin.com/in/huy-vũ-359",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -18912,6 +19473,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***760",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-dương-288",
+    "profileUrl": "https://www.linkedin.com/in/linh-dương-288",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -18944,6 +19506,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***777",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-phan-869",
+    "profileUrl": "https://www.linkedin.com/in/bảo-phan-869",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -18980,6 +19543,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***794",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-ngô-238",
+    "profileUrl": "https://www.linkedin.com/in/trang-ngô-238",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -19016,6 +19580,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***811",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-phạm-590",
+    "profileUrl": "https://www.linkedin.com/in/hương-phạm-590",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -19050,6 +19615,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***828",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-đỗ-340",
+    "profileUrl": "https://www.linkedin.com/in/trang-đỗ-340",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -19086,6 +19652,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***845",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-huỳnh-445",
+    "profileUrl": "https://www.linkedin.com/in/trang-huỳnh-445",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -19119,6 +19686,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***862",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-trần-575",
+    "profileUrl": "https://www.linkedin.com/in/bảo-trần-575",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -19152,6 +19720,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "091***879",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-dương-365",
+    "profileUrl": "https://www.linkedin.com/in/yến-dương-365",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -19185,6 +19754,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@gmail.com",
     "maskedPhone": "098***896",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-dương-425",
+    "profileUrl": "https://www.linkedin.com/in/bảo-dương-425",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -19220,6 +19790,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "097***913",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-bùi-386",
+    "profileUrl": "https://www.linkedin.com/in/hương-bùi-386",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -19254,6 +19825,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@gmail.com",
     "maskedPhone": "093***930",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-trần-117",
+    "profileUrl": "https://www.linkedin.com/in/yến-trần-117",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -19286,6 +19858,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "086***947",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-trần-617",
+    "profileUrl": "https://www.linkedin.com/in/trung-trần-617",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -19321,6 +19894,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***964",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lý-587",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lý-587",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -19357,6 +19931,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***981",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lê-534",
+    "profileUrl": "https://www.linkedin.com/in/trang-lê-534",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -19393,6 +19968,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "091***998",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-249",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-249",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -19425,6 +20001,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***115",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-dương-139",
+    "profileUrl": "https://www.linkedin.com/in/khoa-dương-139",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -19458,6 +20035,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***132",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-vũ-811",
+    "profileUrl": "https://www.linkedin.com/in/sơn-vũ-811",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -19493,6 +20071,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***149",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-bùi-264",
+    "profileUrl": "https://www.linkedin.com/in/đạt-bùi-264",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -19527,6 +20106,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "086***166",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-hồ-956",
+    "profileUrl": "https://www.linkedin.com/in/anh-hồ-956",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -19562,6 +20142,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@gmail.com",
     "maskedPhone": "088***183",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-hồ-563",
+    "profileUrl": "https://www.linkedin.com/in/yến-hồ-563",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -19595,6 +20176,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***200",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-hồ-165",
+    "profileUrl": "https://www.linkedin.com/in/trung-hồ-165",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -19627,6 +20209,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "091***217",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phan-668",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phan-668",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -19661,6 +20244,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@outlook.com",
     "maskedPhone": "098***234",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-bùi-946",
+    "profileUrl": "https://www.linkedin.com/in/sơn-bùi-946",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -19696,6 +20280,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***251",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-nguyễn-356",
+    "profileUrl": "https://www.linkedin.com/in/hương-nguyễn-356",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -19731,6 +20316,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "093***268",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-huỳnh-619",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-huỳnh-619",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -19764,6 +20350,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***285",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-hoàng-600",
+    "profileUrl": "https://www.linkedin.com/in/huy-hoàng-600",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -19797,6 +20384,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***302",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hoàng-847",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hoàng-847",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -19830,6 +20418,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***319",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-dương-826",
+    "profileUrl": "https://www.linkedin.com/in/linh-dương-826",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -19862,6 +20451,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***336",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-bùi-400",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-bùi-400",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -19896,6 +20486,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@gmail.com",
     "maskedPhone": "098***353",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-trần-563",
+    "profileUrl": "https://www.linkedin.com/in/đạt-trần-563",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -19930,6 +20521,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "097***370",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-919",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-919",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -19962,6 +20554,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***387",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-162",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-162",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -19998,6 +20591,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***404",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-võ-898",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-võ-898",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -20033,6 +20627,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***421",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-ngô-108",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-ngô-108",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -20067,6 +20662,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***438",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lê-784",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lê-784",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -20100,6 +20696,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "091***455",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lê-586",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lê-586",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -20134,6 +20731,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "098***472",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-võ-765",
+    "profileUrl": "https://www.linkedin.com/in/trung-võ-765",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -20166,6 +20764,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***489",
     "rawProfileUrl": "https://www.linkedin.com/in/long-dương-513",
+    "profileUrl": "https://www.linkedin.com/in/long-dương-513",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -20200,6 +20799,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@gmail.com",
     "maskedPhone": "093***506",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-843",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-843",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -20233,6 +20833,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@gmail.com",
     "maskedPhone": "086***523",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-bùi-943",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-bùi-943",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -20266,6 +20867,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***540",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-hoàng-651",
+    "profileUrl": "https://www.linkedin.com/in/trung-hoàng-651",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -20299,6 +20901,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***557",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-đỗ-126",
+    "profileUrl": "https://www.linkedin.com/in/trung-đỗ-126",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -20335,6 +20938,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***574",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đặng-270",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đặng-270",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -20371,6 +20975,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "098***591",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lê-563",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lê-563",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -20405,6 +21010,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "097***608",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lê-328",
+    "profileUrl": "https://www.linkedin.com/in/yến-lê-328",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -20441,6 +21047,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***625",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-dương-214",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-dương-214",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -20473,6 +21080,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "086***642",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-huỳnh-319",
+    "profileUrl": "https://www.linkedin.com/in/anh-huỳnh-319",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -20506,6 +21114,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***659",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đặng-726",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đặng-726",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -20538,6 +21147,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "090***676",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-nguyễn-930",
+    "profileUrl": "https://www.linkedin.com/in/trung-nguyễn-930",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -20570,6 +21180,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***693",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-ngô-660",
+    "profileUrl": "https://www.linkedin.com/in/huy-ngô-660",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -20603,6 +21214,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***710",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lê-418",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lê-418",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -20638,6 +21250,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@techdev.vn",
     "maskedPhone": "097***727",
     "rawProfileUrl": "https://www.linkedin.com/in/long-lý-480",
+    "profileUrl": "https://www.linkedin.com/in/long-lý-480",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -20674,6 +21287,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***744",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-787",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-787",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -20706,6 +21320,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***761",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-219",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-219",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -20739,6 +21354,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***778",
     "rawProfileUrl": "https://www.linkedin.com/in/long-trần-636",
+    "profileUrl": "https://www.linkedin.com/in/long-trần-636",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -20775,6 +21391,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***795",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-huỳnh-411",
+    "profileUrl": "https://www.linkedin.com/in/anh-huỳnh-411",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -20808,6 +21425,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "091***812",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phan-890",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phan-890",
     "projects": [
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -20841,6 +21459,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***829",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phan-776",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phan-776",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -20874,6 +21493,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***846",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đỗ-700",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đỗ-700",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -20906,6 +21526,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***863",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-đỗ-607",
+    "profileUrl": "https://www.linkedin.com/in/anh-đỗ-607",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -20940,6 +21561,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***880",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-199",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-199",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -20974,6 +21596,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@gmail.com",
     "maskedPhone": "088***897",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-bùi-440",
+    "profileUrl": "https://www.linkedin.com/in/huy-bùi-440",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -21010,6 +21633,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "090***914",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-dương-401",
+    "profileUrl": "https://www.linkedin.com/in/linh-dương-401",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -21043,6 +21667,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***931",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-lê-862",
+    "profileUrl": "https://www.linkedin.com/in/duyên-lê-862",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -21078,6 +21703,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "098***948",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-bùi-798",
+    "profileUrl": "https://www.linkedin.com/in/hùng-bùi-798",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -21114,6 +21740,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "097***965",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-366",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-366",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -21147,6 +21774,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***982",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-nguyễn-975",
+    "profileUrl": "https://www.linkedin.com/in/hà-nguyễn-975",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -21183,6 +21811,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***999",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-bùi-326",
+    "profileUrl": "https://www.linkedin.com/in/bảo-bùi-326",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -21216,6 +21845,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***116",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-dương-428",
+    "profileUrl": "https://www.linkedin.com/in/hà-dương-428",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -21248,6 +21878,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "090***133",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-454",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-454",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -21282,6 +21913,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "091***150",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-võ-582",
+    "profileUrl": "https://www.linkedin.com/in/huy-võ-582",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -21315,6 +21947,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***167",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-phạm-404",
+    "profileUrl": "https://www.linkedin.com/in/yến-phạm-404",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -21350,6 +21983,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***184",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-823",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-823",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -21384,6 +22018,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***201",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-nguyễn-169",
+    "profileUrl": "https://www.linkedin.com/in/trung-nguyễn-169",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -21416,6 +22051,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***218",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lê-267",
+    "profileUrl": "https://www.linkedin.com/in/huy-lê-267",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -21450,6 +22086,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***235",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-võ-926",
+    "profileUrl": "https://www.linkedin.com/in/hùng-võ-926",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -21484,6 +22121,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***252",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-hoàng-241",
+    "profileUrl": "https://www.linkedin.com/in/duyên-hoàng-241",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -21518,6 +22156,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***269",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-bùi-128",
+    "profileUrl": "https://www.linkedin.com/in/sơn-bùi-128",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -21553,6 +22192,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***286",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-958",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-958",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -21588,6 +22228,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***303",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-841",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-841",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -21620,6 +22261,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "093***320",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đặng-906",
+    "profileUrl": "https://www.linkedin.com/in/yến-đặng-906",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -21652,6 +22294,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "086***337",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hồ-461",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hồ-461",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -21687,6 +22330,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@outlook.com",
     "maskedPhone": "088***354",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hoàng-953",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hoàng-953",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -21721,6 +22365,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***371",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-140",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-140",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -21755,6 +22400,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***388",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-vũ-989",
+    "profileUrl": "https://www.linkedin.com/in/hà-vũ-989",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -21789,6 +22435,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "098***405",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lê-916",
+    "profileUrl": "https://www.linkedin.com/in/hương-lê-916",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -21821,6 +22468,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***422",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-phan-601",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-phan-601",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn"
@@ -21854,6 +22502,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "093***439",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-ngô-306",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-ngô-306",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -21889,6 +22538,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***456",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-707",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-707",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -21921,6 +22571,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***473",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phan-974",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phan-974",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -21953,6 +22604,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***490",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-899",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-899",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -21985,6 +22637,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***507",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-trần-967",
+    "profileUrl": "https://www.linkedin.com/in/trang-trần-967",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -22020,6 +22673,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***524",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-huỳnh-972",
+    "profileUrl": "https://www.linkedin.com/in/hà-huỳnh-972",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -22055,6 +22709,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "097***541",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lý-221",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lý-221",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -22091,6 +22746,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***558",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-hoàng-388",
+    "profileUrl": "https://www.linkedin.com/in/hà-hoàng-388",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -22125,6 +22781,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***575",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-vũ-719",
+    "profileUrl": "https://www.linkedin.com/in/kiên-vũ-719",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -22157,6 +22814,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "088***592",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-dương-246",
+    "profileUrl": "https://www.linkedin.com/in/kiên-dương-246",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -22192,6 +22850,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***609",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-lê-107",
+    "profileUrl": "https://www.linkedin.com/in/trung-lê-107",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -22227,6 +22886,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***626",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-ngô-732",
+    "profileUrl": "https://www.linkedin.com/in/anh-ngô-732",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -22261,6 +22921,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***643",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-võ-125",
+    "profileUrl": "https://www.linkedin.com/in/sơn-võ-125",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -22296,6 +22957,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "097***660",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-võ-806",
+    "profileUrl": "https://www.linkedin.com/in/hương-võ-806",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -22331,6 +22993,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@techdev.vn",
     "maskedPhone": "093***677",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đặng-288",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đặng-288",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -22364,6 +23027,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***694",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-võ-769",
+    "profileUrl": "https://www.linkedin.com/in/linh-võ-769",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -22398,6 +23062,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@gmail.com",
     "maskedPhone": "088***711",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lý-730",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lý-730",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -22431,6 +23096,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***728",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-ngô-751",
+    "profileUrl": "https://www.linkedin.com/in/hà-ngô-751",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -22464,6 +23130,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***745",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-huỳnh-894",
+    "profileUrl": "https://www.linkedin.com/in/khoa-huỳnh-894",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -22498,6 +23165,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "098***762",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-huỳnh-459",
+    "profileUrl": "https://www.linkedin.com/in/kiên-huỳnh-459",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -22531,6 +23199,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***779",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đặng-932",
+    "profileUrl": "https://www.linkedin.com/in/hương-đặng-932",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -22565,6 +23234,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***796",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-lý-913",
+    "profileUrl": "https://www.linkedin.com/in/anh-lý-913",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -22600,6 +23270,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@techdev.vn",
     "maskedPhone": "086***813",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-nguyễn-848",
+    "profileUrl": "https://www.linkedin.com/in/đạt-nguyễn-848",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -22636,6 +23307,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***830",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-nguyễn-106",
+    "profileUrl": "https://www.linkedin.com/in/sơn-nguyễn-106",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -22668,6 +23340,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "090***847",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-huỳnh-922",
+    "profileUrl": "https://www.linkedin.com/in/trung-huỳnh-922",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -22700,6 +23373,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "091***864",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-lý-847",
+    "profileUrl": "https://www.linkedin.com/in/hùng-lý-847",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -22733,6 +23407,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***881",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-phan-841",
+    "profileUrl": "https://www.linkedin.com/in/hùng-phan-841",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -22767,6 +23442,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***898",
     "rawProfileUrl": "https://www.linkedin.com/in/long-hồ-319",
+    "profileUrl": "https://www.linkedin.com/in/long-hồ-319",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -22800,6 +23476,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***915",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-vũ-843",
+    "profileUrl": "https://www.linkedin.com/in/trang-vũ-843",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust"
@@ -22834,6 +23511,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***932",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-hồ-893",
+    "profileUrl": "https://www.linkedin.com/in/trang-hồ-893",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -22870,6 +23548,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@gmail.com",
     "maskedPhone": "088***949",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-bùi-431",
+    "profileUrl": "https://www.linkedin.com/in/kiên-bùi-431",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -22904,6 +23583,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***966",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-trần-281",
+    "profileUrl": "https://www.linkedin.com/in/trung-trần-281",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -22938,6 +23618,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***983",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lý-419",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lý-419",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -22972,6 +23653,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***100",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-huỳnh-360",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-huỳnh-360",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -23006,6 +23688,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "097***117",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-phan-749",
+    "profileUrl": "https://www.linkedin.com/in/trung-phan-749",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -23041,6 +23724,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@gmail.com",
     "maskedPhone": "093***134",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-dương-358",
+    "profileUrl": "https://www.linkedin.com/in/mai-dương-358",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -23073,6 +23757,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@techdev.vn",
     "maskedPhone": "086***151",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-lý-875",
+    "profileUrl": "https://www.linkedin.com/in/đạt-lý-875",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -23109,6 +23794,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***168",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-trần-544",
+    "profileUrl": "https://www.linkedin.com/in/duyên-trần-544",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -23144,6 +23830,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***185",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-huỳnh-428",
+    "profileUrl": "https://www.linkedin.com/in/huy-huỳnh-428",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -23178,6 +23865,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "091***202",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-võ-575",
+    "profileUrl": "https://www.linkedin.com/in/trung-võ-575",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -23212,6 +23900,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "098***219",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-huỳnh-473",
+    "profileUrl": "https://www.linkedin.com/in/hùng-huỳnh-473",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -23247,6 +23936,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***236",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-hoàng-299",
+    "profileUrl": "https://www.linkedin.com/in/bảo-hoàng-299",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -23281,6 +23971,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "093***253",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-võ-159",
+    "profileUrl": "https://www.linkedin.com/in/trang-võ-159",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -23314,6 +24005,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***270",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-phan-902",
+    "profileUrl": "https://www.linkedin.com/in/hương-phan-902",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -23346,6 +24038,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@outlook.com",
     "maskedPhone": "088***287",
     "rawProfileUrl": "https://www.linkedin.com/in/long-ngô-243",
+    "profileUrl": "https://www.linkedin.com/in/long-ngô-243",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -23382,6 +24075,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@gmail.com",
     "maskedPhone": "090***304",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-ngô-745",
+    "profileUrl": "https://www.linkedin.com/in/đạt-ngô-745",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -23417,6 +24111,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***321",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-phan-849",
+    "profileUrl": "https://www.linkedin.com/in/sơn-phan-849",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -23452,6 +24147,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "098***338",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lê-888",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lê-888",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -23487,6 +24183,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@outlook.com",
     "maskedPhone": "097***355",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-863",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-863",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -23521,6 +24218,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "093***372",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-đặng-574",
+    "profileUrl": "https://www.linkedin.com/in/kiên-đặng-574",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -23553,6 +24251,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "086***389",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-ngô-418",
+    "profileUrl": "https://www.linkedin.com/in/trung-ngô-418",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -23586,6 +24285,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***406",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-589",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-589",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -23621,6 +24321,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***423",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-đỗ-671",
+    "profileUrl": "https://www.linkedin.com/in/hà-đỗ-671",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -23655,6 +24356,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "091***440",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-đỗ-350",
+    "profileUrl": "https://www.linkedin.com/in/trang-đỗ-350",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -23687,6 +24389,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***457",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-933",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-933",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -23723,6 +24426,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***474",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phan-758",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phan-758",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -23758,6 +24462,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "093***491",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-bùi-804",
+    "profileUrl": "https://www.linkedin.com/in/yến-bùi-804",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -23791,6 +24496,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***508",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lê-375",
+    "profileUrl": "https://www.linkedin.com/in/trang-lê-375",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -23825,6 +24531,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "088***525",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-678",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-678",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -23859,6 +24566,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@outlook.com",
     "maskedPhone": "090***542",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-ngô-916",
+    "profileUrl": "https://www.linkedin.com/in/đạt-ngô-916",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -23893,6 +24601,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "091***559",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-huỳnh-659",
+    "profileUrl": "https://www.linkedin.com/in/trung-huỳnh-659",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -23927,6 +24636,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "098***576",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-phan-188",
+    "profileUrl": "https://www.linkedin.com/in/hùng-phan-188",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -23960,6 +24670,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***593",
     "rawProfileUrl": "https://www.linkedin.com/in/long-hoàng-351",
+    "profileUrl": "https://www.linkedin.com/in/long-hoàng-351",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -23996,6 +24707,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***610",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-lý-481",
+    "profileUrl": "https://www.linkedin.com/in/hà-lý-481",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -24031,6 +24743,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "086***627",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đỗ-719",
+    "profileUrl": "https://www.linkedin.com/in/linh-đỗ-719",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -24063,6 +24776,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "088***644",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lý-846",
+    "profileUrl": "https://www.linkedin.com/in/mai-lý-846",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -24098,6 +24812,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***661",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-dương-209",
+    "profileUrl": "https://www.linkedin.com/in/mai-dương-209",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -24134,6 +24849,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***678",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đỗ-323",
+    "profileUrl": "https://www.linkedin.com/in/yến-đỗ-323",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -24169,6 +24885,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***695",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-hồ-375",
+    "profileUrl": "https://www.linkedin.com/in/trung-hồ-375",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -24203,6 +24920,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***712",
     "rawProfileUrl": "https://www.linkedin.com/in/long-lý-376",
+    "profileUrl": "https://www.linkedin.com/in/long-lý-376",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -24238,6 +24956,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***729",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phạm-783",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phạm-783",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -24271,6 +24990,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "086***746",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-bùi-651",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-bùi-651",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -24305,6 +25025,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "088***763",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-hoàng-105",
+    "profileUrl": "https://www.linkedin.com/in/trang-hoàng-105",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -24339,6 +25060,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "090***780",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hồ-383",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hồ-383",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -24374,6 +25096,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***797",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-nguyễn-487",
+    "profileUrl": "https://www.linkedin.com/in/mai-nguyễn-487",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -24406,6 +25129,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@techdev.vn",
     "maskedPhone": "098***814",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lý-815",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lý-815",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -24440,6 +25164,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***831",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đỗ-327",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đỗ-327",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -24474,6 +25199,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***848",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-127",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-127",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -24509,6 +25235,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "086***865",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-ngô-112",
+    "profileUrl": "https://www.linkedin.com/in/hà-ngô-112",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -24541,6 +25268,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***882",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-hoàng-317",
+    "profileUrl": "https://www.linkedin.com/in/yến-hoàng-317",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn"
@@ -24576,6 +25304,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***899",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đỗ-622",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đỗ-622",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -24611,6 +25340,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***916",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-nguyễn-629",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-nguyễn-629",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -24643,6 +25373,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***933",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-nguyễn-226",
+    "profileUrl": "https://www.linkedin.com/in/huy-nguyễn-226",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -24676,6 +25407,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***950",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-311",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-311",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -24710,6 +25442,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***967",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lê-387",
+    "profileUrl": "https://www.linkedin.com/in/hương-lê-387",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -24744,6 +25477,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***984",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-hồ-882",
+    "profileUrl": "https://www.linkedin.com/in/hùng-hồ-882",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -24776,6 +25510,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***101",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-nguyễn-486",
+    "profileUrl": "https://www.linkedin.com/in/đạt-nguyễn-486",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -24809,6 +25544,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@gmail.com",
     "maskedPhone": "090***118",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-nguyễn-976",
+    "profileUrl": "https://www.linkedin.com/in/kiên-nguyễn-976",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -24844,6 +25580,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***135",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hoàng-524",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hoàng-524",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -24877,6 +25614,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***152",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đỗ-478",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đỗ-478",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -24912,6 +25650,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***169",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-hồ-924",
+    "profileUrl": "https://www.linkedin.com/in/trung-hồ-924",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -24945,6 +25684,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "093***186",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-đặng-657",
+    "profileUrl": "https://www.linkedin.com/in/trang-đặng-657",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -24979,6 +25719,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@techdev.vn",
     "maskedPhone": "086***203",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-ngô-603",
+    "profileUrl": "https://www.linkedin.com/in/hà-ngô-603",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -25015,6 +25756,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "088***220",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-đặng-929",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-đặng-929",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -25048,6 +25790,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@techdev.vn",
     "maskedPhone": "090***237",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-lê-476",
+    "profileUrl": "https://www.linkedin.com/in/anh-lê-476",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -25082,6 +25825,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "091***254",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-võ-842",
+    "profileUrl": "https://www.linkedin.com/in/mai-võ-842",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -25114,6 +25858,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***271",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-bùi-238",
+    "profileUrl": "https://www.linkedin.com/in/hùng-bùi-238",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -25149,6 +25894,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "097***288",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-dương-641",
+    "profileUrl": "https://www.linkedin.com/in/trung-dương-641",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -25184,6 +25930,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "093***305",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-huỳnh-619",
+    "profileUrl": "https://www.linkedin.com/in/hương-huỳnh-619",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -25217,6 +25964,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***322",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đặng-331",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đặng-331",
     "projects": [
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP",
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần"
@@ -25250,6 +25998,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@outlook.com",
     "maskedPhone": "088***339",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-võ-660",
+    "profileUrl": "https://www.linkedin.com/in/huy-võ-660",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -25283,6 +26032,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***356",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hồ-240",
+    "profileUrl": "https://www.linkedin.com/in/hương-hồ-240",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -25318,6 +26068,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***373",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-bùi-548",
+    "profileUrl": "https://www.linkedin.com/in/duyên-bùi-548",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -25353,6 +26104,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***390",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-huỳnh-179",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-huỳnh-179",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -25387,6 +26139,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***407",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-phan-143",
+    "profileUrl": "https://www.linkedin.com/in/trung-phan-143",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -25419,6 +26172,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***424",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-đỗ-287",
+    "profileUrl": "https://www.linkedin.com/in/mai-đỗ-287",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -25455,6 +26209,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@techdev.vn",
     "maskedPhone": "086***441",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-bùi-301",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-bùi-301",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -25489,6 +26244,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@gmail.com",
     "maskedPhone": "088***458",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-võ-774",
+    "profileUrl": "https://www.linkedin.com/in/duyên-võ-774",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -25522,6 +26278,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "090***475",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-lê-334",
+    "profileUrl": "https://www.linkedin.com/in/anh-lê-334",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -25556,6 +26313,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***492",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-vũ-459",
+    "profileUrl": "https://www.linkedin.com/in/yến-vũ-459",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -25588,6 +26346,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***509",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-hồ-342",
+    "profileUrl": "https://www.linkedin.com/in/đạt-hồ-342",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -25622,6 +26381,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***526",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hồ-819",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hồ-819",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -25656,6 +26416,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***543",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-đặng-758",
+    "profileUrl": "https://www.linkedin.com/in/mai-đặng-758",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -25690,6 +26451,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "086***560",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đặng-316",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đặng-316",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -25723,6 +26485,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "088***577",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-dương-224",
+    "profileUrl": "https://www.linkedin.com/in/huy-dương-224",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -25756,6 +26519,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "090***594",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-bùi-715",
+    "profileUrl": "https://www.linkedin.com/in/hùng-bùi-715",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -25790,6 +26554,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***611",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-đỗ-337",
+    "profileUrl": "https://www.linkedin.com/in/hà-đỗ-337",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -25825,6 +26590,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "098***628",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-dương-261",
+    "profileUrl": "https://www.linkedin.com/in/trung-dương-261",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -25859,6 +26625,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "097***645",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-ngô-955",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-ngô-955",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -25891,6 +26658,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***662",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-ngô-367",
+    "profileUrl": "https://www.linkedin.com/in/kiên-ngô-367",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -25924,6 +26692,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "086***679",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-442",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-442",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -25958,6 +26727,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***696",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hoàng-459",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hoàng-459",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -25991,6 +26761,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@techdev.vn",
     "maskedPhone": "090***713",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-dương-759",
+    "profileUrl": "https://www.linkedin.com/in/anh-dương-759",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -26026,6 +26797,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "091***730",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-trần-533",
+    "profileUrl": "https://www.linkedin.com/in/mai-trần-533",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -26059,6 +26831,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***747",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-trần-318",
+    "profileUrl": "https://www.linkedin.com/in/bảo-trần-318",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -26093,6 +26866,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "097***764",
     "rawProfileUrl": "https://www.linkedin.com/in/long-phan-283",
+    "profileUrl": "https://www.linkedin.com/in/long-phan-283",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -26126,6 +26900,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***781",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đặng-794",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đặng-794",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -26160,6 +26935,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***798",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-lý-242",
+    "profileUrl": "https://www.linkedin.com/in/huy-lý-242",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -26196,6 +26972,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "088***815",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-đặng-351",
+    "profileUrl": "https://www.linkedin.com/in/trang-đặng-351",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -26229,6 +27006,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "090***832",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-dương-895",
+    "profileUrl": "https://www.linkedin.com/in/trang-dương-895",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -26265,6 +27043,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***849",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lê-373",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lê-373",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -26297,6 +27076,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***866",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-ngô-814",
+    "profileUrl": "https://www.linkedin.com/in/hà-ngô-814",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -26331,6 +27111,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "097***883",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-huỳnh-154",
+    "profileUrl": "https://www.linkedin.com/in/hương-huỳnh-154",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -26363,6 +27144,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***900",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-dương-608",
+    "profileUrl": "https://www.linkedin.com/in/kiên-dương-608",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -26396,6 +27178,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@outlook.com",
     "maskedPhone": "086***917",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đỗ-916",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đỗ-916",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -26431,6 +27214,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "088***934",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-dương-777",
+    "profileUrl": "https://www.linkedin.com/in/yến-dương-777",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -26466,6 +27250,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "090***951",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hồ-498",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hồ-498",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -26498,6 +27283,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "091***968",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phan-198",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phan-198",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -26532,6 +27318,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "098***985",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lý-659",
+    "profileUrl": "https://www.linkedin.com/in/hương-lý-659",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -26566,6 +27353,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***102",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-nguyễn-750",
+    "profileUrl": "https://www.linkedin.com/in/hương-nguyễn-750",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -26602,6 +27390,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***119",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-võ-494",
+    "profileUrl": "https://www.linkedin.com/in/huy-võ-494",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -26634,6 +27423,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***136",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-hoàng-789",
+    "profileUrl": "https://www.linkedin.com/in/trang-hoàng-789",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -26669,6 +27459,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "088***153",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lý-771",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lý-771",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -26702,6 +27493,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***170",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lê-115",
+    "profileUrl": "https://www.linkedin.com/in/trang-lê-115",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -26737,6 +27529,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "091***187",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phan-703",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phan-703",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -26773,6 +27566,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***204",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-võ-257",
+    "profileUrl": "https://www.linkedin.com/in/trung-võ-257",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -26807,6 +27601,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***221",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-252",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-252",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -26843,6 +27638,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***238",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-đỗ-751",
+    "profileUrl": "https://www.linkedin.com/in/hùng-đỗ-751",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -26876,6 +27672,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@outlook.com",
     "maskedPhone": "086***255",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lý-960",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lý-960",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -26908,6 +27705,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***272",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-nguyễn-927",
+    "profileUrl": "https://www.linkedin.com/in/mai-nguyễn-927",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -26943,6 +27741,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "090***289",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đỗ-319",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đỗ-319",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -26976,6 +27775,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "091***306",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lý-297",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lý-297",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -27009,6 +27809,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "098***323",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-nguyễn-175",
+    "profileUrl": "https://www.linkedin.com/in/sơn-nguyễn-175",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -27044,6 +27845,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***340",
     "rawProfileUrl": "https://www.linkedin.com/in/long-trần-325",
+    "profileUrl": "https://www.linkedin.com/in/long-trần-325",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -27079,6 +27881,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@gmail.com",
     "maskedPhone": "093***357",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-huỳnh-646",
+    "profileUrl": "https://www.linkedin.com/in/yến-huỳnh-646",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -27113,6 +27916,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***374",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-dương-297",
+    "profileUrl": "https://www.linkedin.com/in/hương-dương-297",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -27145,6 +27949,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@outlook.com",
     "maskedPhone": "088***391",
     "rawProfileUrl": "https://www.linkedin.com/in/long-huỳnh-166",
+    "profileUrl": "https://www.linkedin.com/in/long-huỳnh-166",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -27179,6 +27984,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "090***408",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-trần-642",
+    "profileUrl": "https://www.linkedin.com/in/yến-trần-642",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -27213,6 +28019,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "091***425",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-bùi-319",
+    "profileUrl": "https://www.linkedin.com/in/linh-bùi-319",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -27246,6 +28053,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***442",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hồ-285",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hồ-285",
     "projects": [
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần",
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn"
@@ -27281,6 +28089,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***459",
     "rawProfileUrl": "https://www.linkedin.com/in/long-trần-181",
+    "profileUrl": "https://www.linkedin.com/in/long-trần-181",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -27313,6 +28122,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@outlook.com",
     "maskedPhone": "093***476",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hoàng-226",
+    "profileUrl": "https://www.linkedin.com/in/hương-hoàng-226",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -27345,6 +28155,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "086***493",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-đặng-648",
+    "profileUrl": "https://www.linkedin.com/in/trang-đặng-648",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -27378,6 +28189,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "088***510",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-ngô-562",
+    "profileUrl": "https://www.linkedin.com/in/thảo-ngô-562",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -27413,6 +28225,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "090***527",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-lý-850",
+    "profileUrl": "https://www.linkedin.com/in/anh-lý-850",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -27448,6 +28261,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***544",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-võ-825",
+    "profileUrl": "https://www.linkedin.com/in/sơn-võ-825",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -27482,6 +28296,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@gmail.com",
     "maskedPhone": "098***561",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-hoàng-360",
+    "profileUrl": "https://www.linkedin.com/in/anh-hoàng-360",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -27516,6 +28331,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***578",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-phạm-874",
+    "profileUrl": "https://www.linkedin.com/in/yến-phạm-874",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -27548,6 +28364,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "093***595",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đặng-442",
+    "profileUrl": "https://www.linkedin.com/in/hương-đặng-442",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -27581,6 +28398,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***612",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-trần-639",
+    "profileUrl": "https://www.linkedin.com/in/trung-trần-639",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -27617,6 +28435,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@outlook.com",
     "maskedPhone": "088***629",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-bùi-371",
+    "profileUrl": "https://www.linkedin.com/in/khoa-bùi-371",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -27649,6 +28468,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***646",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-nguyễn-572",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-nguyễn-572",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -27683,6 +28503,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***663",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-873",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-873",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -27715,6 +28536,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***680",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-vũ-760",
+    "profileUrl": "https://www.linkedin.com/in/anh-vũ-760",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -27747,6 +28569,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "097***697",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-lê-752",
+    "profileUrl": "https://www.linkedin.com/in/trung-lê-752",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -27780,6 +28603,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***714",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-hồ-429",
+    "profileUrl": "https://www.linkedin.com/in/huy-hồ-429",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -27815,6 +28639,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@gmail.com",
     "maskedPhone": "086***731",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-dương-614",
+    "profileUrl": "https://www.linkedin.com/in/bảo-dương-614",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -27851,6 +28676,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "088***748",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-ngô-888",
+    "profileUrl": "https://www.linkedin.com/in/linh-ngô-888",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -27887,6 +28713,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***765",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-lý-381",
+    "profileUrl": "https://www.linkedin.com/in/hương-lý-381",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -27919,6 +28746,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***782",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-lý-801",
+    "profileUrl": "https://www.linkedin.com/in/thảo-lý-801",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -27953,6 +28781,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@techdev.vn",
     "maskedPhone": "098***799",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-võ-863",
+    "profileUrl": "https://www.linkedin.com/in/bảo-võ-863",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -27987,6 +28816,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***816",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-hồ-610",
+    "profileUrl": "https://www.linkedin.com/in/đạt-hồ-610",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -28020,6 +28850,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "093***833",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-đỗ-723",
+    "profileUrl": "https://www.linkedin.com/in/trung-đỗ-723",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -28053,6 +28884,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "086***850",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-phạm-955",
+    "profileUrl": "https://www.linkedin.com/in/hùng-phạm-955",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -28086,6 +28918,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***867",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-phan-178",
+    "profileUrl": "https://www.linkedin.com/in/trang-phan-178",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -28122,6 +28955,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@gmail.com",
     "maskedPhone": "090***884",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-phạm-328",
+    "profileUrl": "https://www.linkedin.com/in/hà-phạm-328",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -28156,6 +28990,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@outlook.com",
     "maskedPhone": "091***901",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-lê-189",
+    "profileUrl": "https://www.linkedin.com/in/hà-lê-189",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -28188,6 +29023,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***918",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-hoàng-967",
+    "profileUrl": "https://www.linkedin.com/in/đạt-hoàng-967",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -28224,6 +29060,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***935",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đỗ-235",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đỗ-235",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -28258,6 +29095,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "lo***v@gmail.com",
     "maskedPhone": "093***952",
     "rawProfileUrl": "https://www.linkedin.com/in/long-hồ-254",
+    "profileUrl": "https://www.linkedin.com/in/long-hồ-254",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -28294,6 +29132,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@techdev.vn",
     "maskedPhone": "086***969",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-võ-408",
+    "profileUrl": "https://www.linkedin.com/in/sơn-võ-408",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -28328,6 +29167,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "088***986",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-dương-755",
+    "profileUrl": "https://www.linkedin.com/in/khoa-dương-755",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -28361,6 +29201,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "090***103",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-bùi-510",
+    "profileUrl": "https://www.linkedin.com/in/kiên-bùi-510",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -28397,6 +29238,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***120",
     "rawProfileUrl": "https://www.linkedin.com/in/long-ngô-762",
+    "profileUrl": "https://www.linkedin.com/in/long-ngô-762",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -28429,6 +29271,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***137",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phan-762",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phan-762",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -28463,6 +29306,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@gmail.com",
     "maskedPhone": "097***154",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lý-366",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lý-366",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -28497,6 +29341,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***171",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-võ-727",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-võ-727",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -28531,6 +29376,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "086***188",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-huỳnh-269",
+    "profileUrl": "https://www.linkedin.com/in/yến-huỳnh-269",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -28566,6 +29412,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***205",
     "rawProfileUrl": "https://www.linkedin.com/in/long-hồ-102",
+    "profileUrl": "https://www.linkedin.com/in/long-hồ-102",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -28598,6 +29445,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "090***222",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-đặng-722",
+    "profileUrl": "https://www.linkedin.com/in/trang-đặng-722",
     "projects": [
       "Phối hợp cùng 3 engineering squads triển khai kiến trúc Open API kết nối 15+ đối tác ngân hàng lớn",
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)"
@@ -28634,6 +29482,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "091***239",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-phan-717",
+    "profileUrl": "https://www.linkedin.com/in/thảo-phan-717",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -28669,6 +29518,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***256",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-390",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-390",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -28703,6 +29553,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***273",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-hoàng-606",
+    "profileUrl": "https://www.linkedin.com/in/sơn-hoàng-606",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -28736,6 +29587,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***290",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-bùi-150",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-bùi-150",
     "projects": [
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -28771,6 +29623,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***307",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-huỳnh-618",
+    "profileUrl": "https://www.linkedin.com/in/thảo-huỳnh-618",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -28806,6 +29659,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "088***324",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đỗ-426",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đỗ-426",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -28838,6 +29692,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@outlook.com",
     "maskedPhone": "090***341",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-dương-608",
+    "profileUrl": "https://www.linkedin.com/in/trung-dương-608",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -28872,6 +29727,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***358",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-phan-761",
+    "profileUrl": "https://www.linkedin.com/in/đạt-phan-761",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -28904,6 +29760,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***375",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-phan-837",
+    "profileUrl": "https://www.linkedin.com/in/mai-phan-837",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -28938,6 +29795,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***392",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-ngô-707",
+    "profileUrl": "https://www.linkedin.com/in/khoa-ngô-707",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -28972,6 +29830,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***409",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-vũ-125",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-vũ-125",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -29006,6 +29865,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "086***426",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-đỗ-417",
+    "profileUrl": "https://www.linkedin.com/in/mai-đỗ-417",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -29041,6 +29901,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "sơ***v@gmail.com",
     "maskedPhone": "088***443",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-lý-510",
+    "profileUrl": "https://www.linkedin.com/in/sơn-lý-510",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -29077,6 +29938,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***460",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-nguyễn-295",
+    "profileUrl": "https://www.linkedin.com/in/thảo-nguyễn-295",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -29109,6 +29971,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***477",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-nguyễn-822",
+    "profileUrl": "https://www.linkedin.com/in/hà-nguyễn-822",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -29141,6 +30004,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "098***494",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-trần-508",
+    "profileUrl": "https://www.linkedin.com/in/hùng-trần-508",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -29176,6 +30040,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***511",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-trần-548",
+    "profileUrl": "https://www.linkedin.com/in/anh-trần-548",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -29211,6 +30076,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***528",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-huỳnh-970",
+    "profileUrl": "https://www.linkedin.com/in/khoa-huỳnh-970",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -29246,6 +30112,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***545",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-lê-153",
+    "profileUrl": "https://www.linkedin.com/in/duyên-lê-153",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -29278,6 +30145,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***562",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-đỗ-937",
+    "profileUrl": "https://www.linkedin.com/in/thảo-đỗ-937",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID"
@@ -29312,6 +30180,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***579",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-dương-700",
+    "profileUrl": "https://www.linkedin.com/in/mai-dương-700",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -29346,6 +30215,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***596",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-bùi-165",
+    "profileUrl": "https://www.linkedin.com/in/hương-bùi-165",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -29379,6 +30249,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***613",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-bùi-634",
+    "profileUrl": "https://www.linkedin.com/in/duyên-bùi-634",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -29413,6 +30284,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@gmail.com",
     "maskedPhone": "097***630",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-ngô-785",
+    "profileUrl": "https://www.linkedin.com/in/trang-ngô-785",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -29446,6 +30318,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@gmail.com",
     "maskedPhone": "093***647",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-559",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-hoàng-559",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -29482,6 +30355,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "086***664",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-nguyễn-771",
+    "profileUrl": "https://www.linkedin.com/in/trang-nguyễn-771",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -29516,6 +30390,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "đạ***v@techdev.vn",
     "maskedPhone": "088***681",
     "rawProfileUrl": "https://www.linkedin.com/in/đạt-vũ-980",
+    "profileUrl": "https://www.linkedin.com/in/đạt-vũ-980",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -29551,6 +30426,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***698",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-trần-125",
+    "profileUrl": "https://www.linkedin.com/in/thảo-trần-125",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -29586,6 +30462,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***715",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-huỳnh-307",
+    "profileUrl": "https://www.linkedin.com/in/yến-huỳnh-307",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA"
@@ -29619,6 +30496,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***732",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-hoàng-453",
+    "profileUrl": "https://www.linkedin.com/in/bảo-hoàng-453",
     "projects": [
       "Áp dụng quy trình Scrum & Continuous Discovery, rút ngắn chu kỳ phát hành tính năng mới từ 6 tuần xuống 2 tuần",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"
@@ -29654,6 +30532,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***749",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-vũ-661",
+    "profileUrl": "https://www.linkedin.com/in/duyên-vũ-661",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -29688,6 +30567,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "093***766",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-trần-696",
+    "profileUrl": "https://www.linkedin.com/in/khoa-trần-696",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -29721,6 +30601,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "086***783",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-hồ-454",
+    "profileUrl": "https://www.linkedin.com/in/thảo-hồ-454",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -29754,6 +30635,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***800",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lê-531",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lê-531",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -29787,6 +30669,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***817",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lê-611",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lê-611",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate"
@@ -29820,6 +30703,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***834",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-trần-604",
+    "profileUrl": "https://www.linkedin.com/in/huy-trần-604",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -29855,6 +30739,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***851",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-ngô-354",
+    "profileUrl": "https://www.linkedin.com/in/trung-ngô-354",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -29887,6 +30772,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***868",
     "rawProfileUrl": "https://www.linkedin.com/in/long-vũ-407",
+    "profileUrl": "https://www.linkedin.com/in/long-vũ-407",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -29920,6 +30806,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***885",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đặng-617",
+    "profileUrl": "https://www.linkedin.com/in/linh-đặng-617",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -29952,6 +30839,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "086***902",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đỗ-833",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đỗ-833",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -29984,6 +30872,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@techdev.vn",
     "maskedPhone": "088***919",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-hồ-971",
+    "profileUrl": "https://www.linkedin.com/in/kiên-hồ-971",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -30017,6 +30906,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***936",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đặng-185",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đặng-185",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -30051,6 +30941,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@gmail.com",
     "maskedPhone": "091***953",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-huỳnh-498",
+    "profileUrl": "https://www.linkedin.com/in/duyên-huỳnh-498",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -30083,6 +30974,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***970",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-dương-228",
+    "profileUrl": "https://www.linkedin.com/in/thảo-dương-228",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -30115,6 +31007,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***987",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-vũ-696",
+    "profileUrl": "https://www.linkedin.com/in/bảo-vũ-696",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -30150,6 +31043,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "093***104",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đặng-372",
+    "profileUrl": "https://www.linkedin.com/in/hương-đặng-372",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -30186,6 +31080,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "086***121",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-lý-845",
+    "profileUrl": "https://www.linkedin.com/in/khoa-lý-845",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -30221,6 +31116,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@techdev.vn",
     "maskedPhone": "088***138",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lý-101",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lý-101",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -30255,6 +31151,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@techdev.vn",
     "maskedPhone": "090***155",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-bùi-594",
+    "profileUrl": "https://www.linkedin.com/in/thảo-bùi-594",
     "projects": [
       "Kiểm thử tải (Load Testing) hệ thống chịu tải đỉnh 50.000 users đồng thời bằng k6 và Locust",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -30289,6 +31186,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***172",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-bùi-705",
+    "profileUrl": "https://www.linkedin.com/in/huy-bùi-705",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -30322,6 +31220,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***189",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-ngô-547",
+    "profileUrl": "https://www.linkedin.com/in/duyên-ngô-547",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -30357,6 +31256,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "097***206",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-huỳnh-244",
+    "profileUrl": "https://www.linkedin.com/in/kiên-huỳnh-244",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -30391,6 +31291,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***223",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đặng-106",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đặng-106",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -30425,6 +31326,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@techdev.vn",
     "maskedPhone": "086***240",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-huỳnh-240",
+    "profileUrl": "https://www.linkedin.com/in/yến-huỳnh-240",
     "projects": [
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -30458,6 +31360,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***257",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-hoàng-403",
+    "profileUrl": "https://www.linkedin.com/in/bảo-hoàng-403",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -30490,6 +31393,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***274",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-100",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-nguyễn-100",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -30522,6 +31426,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***291",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-lý-592",
+    "profileUrl": "https://www.linkedin.com/in/mai-lý-592",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -30558,6 +31463,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***308",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-bùi-971",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-bùi-971",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -30592,6 +31498,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***325",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-huỳnh-431",
+    "profileUrl": "https://www.linkedin.com/in/trang-huỳnh-431",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -30624,6 +31531,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***342",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hồ-654",
+    "profileUrl": "https://www.linkedin.com/in/hương-hồ-654",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -30660,6 +31568,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***359",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-phạm-606",
+    "profileUrl": "https://www.linkedin.com/in/kiên-phạm-606",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -30696,6 +31605,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@gmail.com",
     "maskedPhone": "088***376",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-phan-715",
+    "profileUrl": "https://www.linkedin.com/in/yến-phan-715",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -30728,6 +31638,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@outlook.com",
     "maskedPhone": "090***393",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-phạm-724",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-phạm-724",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -30763,6 +31674,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***410",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-lý-984",
+    "profileUrl": "https://www.linkedin.com/in/trang-lý-984",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -30797,6 +31709,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***427",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-lý-777",
+    "profileUrl": "https://www.linkedin.com/in/duyên-lý-777",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -30831,6 +31744,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***444",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-lê-864",
+    "profileUrl": "https://www.linkedin.com/in/duyên-lê-864",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -30867,6 +31781,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "an***v@outlook.com",
     "maskedPhone": "093***461",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-bùi-524",
+    "profileUrl": "https://www.linkedin.com/in/anh-bùi-524",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -30901,6 +31816,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@gmail.com",
     "maskedPhone": "086***478",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-bùi-321",
+    "profileUrl": "https://www.linkedin.com/in/thảo-bùi-321",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -30934,6 +31850,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tr***v@techdev.vn",
     "maskedPhone": "088***495",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-phạm-522",
+    "profileUrl": "https://www.linkedin.com/in/trang-phạm-522",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán"
@@ -30968,6 +31885,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "090***512",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-huỳnh-384",
+    "profileUrl": "https://www.linkedin.com/in/hùng-huỳnh-384",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -31004,6 +31922,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***529",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-ngô-721",
+    "profileUrl": "https://www.linkedin.com/in/yến-ngô-721",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -31039,6 +31958,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***546",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-phan-536",
+    "profileUrl": "https://www.linkedin.com/in/hà-phan-536",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -31071,6 +31991,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "097***563",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-võ-987",
+    "profileUrl": "https://www.linkedin.com/in/mai-võ-987",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -31106,6 +32027,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***580",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-trần-171",
+    "profileUrl": "https://www.linkedin.com/in/bảo-trần-171",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -31138,6 +32060,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "086***597",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-đỗ-295",
+    "profileUrl": "https://www.linkedin.com/in/hương-đỗ-295",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -31173,6 +32096,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@gmail.com",
     "maskedPhone": "088***614",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-trần-554",
+    "profileUrl": "https://www.linkedin.com/in/kiên-trần-554",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -31206,6 +32130,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***631",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-võ-993",
+    "profileUrl": "https://www.linkedin.com/in/hùng-võ-993",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -31241,6 +32166,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***648",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-dương-698",
+    "profileUrl": "https://www.linkedin.com/in/yến-dương-698",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -31276,6 +32202,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***665",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-nguyễn-612",
+    "profileUrl": "https://www.linkedin.com/in/thảo-nguyễn-612",
     "projects": [
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod",
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng"
@@ -31310,6 +32237,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***682",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-lý-984",
+    "profileUrl": "https://www.linkedin.com/in/kiên-lý-984",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -31344,6 +32272,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***699",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-đỗ-190",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-đỗ-190",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -31377,6 +32306,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***716",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-đặng-681",
+    "profileUrl": "https://www.linkedin.com/in/duyên-đặng-681",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -31411,6 +32341,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***733",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-bùi-568",
+    "profileUrl": "https://www.linkedin.com/in/bảo-bùi-568",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -31443,6 +32374,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "090***750",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-đặng-302",
+    "profileUrl": "https://www.linkedin.com/in/linh-đặng-302",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -31477,6 +32409,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***767",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-ngô-569",
+    "profileUrl": "https://www.linkedin.com/in/hà-ngô-569",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -31513,6 +32446,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***784",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-hoàng-698",
+    "profileUrl": "https://www.linkedin.com/in/khoa-hoàng-698",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -31545,6 +32479,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "097***801",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lê-856",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lê-856",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -31579,6 +32514,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "093***818",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-nguyễn-631",
+    "profileUrl": "https://www.linkedin.com/in/hà-nguyễn-631",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -31612,6 +32548,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***835",
     "rawProfileUrl": "https://www.linkedin.com/in/anh-nguyễn-400",
+    "profileUrl": "https://www.linkedin.com/in/anh-nguyễn-400",
     "projects": [
       "Xây dựng framework kiểm thử tự động E2E với Playwright và TypeScript cho 400+ test cases luồng thanh toán",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -31645,6 +32582,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hu***v@techdev.vn",
     "maskedPhone": "088***852",
     "rawProfileUrl": "https://www.linkedin.com/in/huy-bùi-127",
+    "profileUrl": "https://www.linkedin.com/in/huy-bùi-127",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -31678,6 +32616,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***869",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-vũ-972",
+    "profileUrl": "https://www.linkedin.com/in/trang-vũ-972",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -31712,6 +32651,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***886",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-võ-738",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-võ-738",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -31745,6 +32685,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@gmail.com",
     "maskedPhone": "098***903",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-võ-600",
+    "profileUrl": "https://www.linkedin.com/in/linh-võ-600",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -31780,6 +32721,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@techdev.vn",
     "maskedPhone": "097***920",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lý-520",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lý-520",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực"
@@ -31812,6 +32754,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hà***v@techdev.vn",
     "maskedPhone": "093***937",
     "rawProfileUrl": "https://www.linkedin.com/in/hà-võ-750",
+    "profileUrl": "https://www.linkedin.com/in/hà-võ-750",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -31844,6 +32787,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@techdev.vn",
     "maskedPhone": "086***954",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-nguyễn-169",
+    "profileUrl": "https://www.linkedin.com/in/thảo-nguyễn-169",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -31877,6 +32821,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***971",
     "rawProfileUrl": "https://www.linkedin.com/in/long-võ-217",
+    "profileUrl": "https://www.linkedin.com/in/long-võ-217",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -31911,6 +32856,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@outlook.com",
     "maskedPhone": "090***988",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-võ-692",
+    "profileUrl": "https://www.linkedin.com/in/mai-võ-692",
     "projects": [
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -31947,6 +32893,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@outlook.com",
     "maskedPhone": "091***105",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-dương-858",
+    "profileUrl": "https://www.linkedin.com/in/duyên-dương-858",
     "projects": [
       "Tái cấu trúc ứng dụng Mobile Super-App bằng Flutter / Swift Clean Architecture, giảm 35% crash rate",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -31981,6 +32928,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***122",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-phan-694",
+    "profileUrl": "https://www.linkedin.com/in/sơn-phan-694",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -32014,6 +32962,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "qu***v@outlook.com",
     "maskedPhone": "097***139",
     "rawProfileUrl": "https://www.linkedin.com/in/quỳnh-lý-559",
+    "profileUrl": "https://www.linkedin.com/in/quỳnh-lý-559",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -32046,6 +32995,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "tu***v@gmail.com",
     "maskedPhone": "093***156",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-vũ-783",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-vũ-783",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -32079,6 +33029,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@techdev.vn",
     "maskedPhone": "086***173",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-trần-629",
+    "profileUrl": "https://www.linkedin.com/in/hùng-trần-629",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -32114,6 +33065,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***190",
     "rawProfileUrl": "https://www.linkedin.com/in/long-võ-201",
+    "profileUrl": "https://www.linkedin.com/in/long-võ-201",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -32147,6 +33099,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***207",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-phạm-814",
+    "profileUrl": "https://www.linkedin.com/in/yến-phạm-814",
     "projects": [
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm",
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS"
@@ -32179,6 +33132,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@gmail.com",
     "maskedPhone": "091***224",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-đặng-123",
+    "profileUrl": "https://www.linkedin.com/in/khoa-đặng-123",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -32215,6 +33169,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hù***v@gmail.com",
     "maskedPhone": "098***241",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-ngô-312",
+    "profileUrl": "https://www.linkedin.com/in/hùng-ngô-312",
     "projects": [
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết",
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms"
@@ -32248,6 +33203,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "li***v@techdev.vn",
     "maskedPhone": "097***258",
     "rawProfileUrl": "https://www.linkedin.com/in/linh-võ-932",
+    "profileUrl": "https://www.linkedin.com/in/linh-võ-932",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -32280,6 +33236,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@gmail.com",
     "maskedPhone": "093***275",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-lê-292",
+    "profileUrl": "https://www.linkedin.com/in/bảo-lê-292",
     "projects": [
       "Thiết lập kiểm thử bảo mật tự động DAST / SAST và kiểm thử giao diện API đa nền tảng",
       "Tích hợp Automation Test vào quy trình CI/CD, ngăn chặn 95% lỗi hồi quy (regression) trước khi lên Prod"
@@ -32313,6 +33270,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "kh***v@techdev.vn",
     "maskedPhone": "086***292",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-dương-896",
+    "profileUrl": "https://www.linkedin.com/in/khoa-dương-896",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -32347,6 +33305,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***309",
     "rawProfileUrl": "https://www.linkedin.com/in/tuấn-lý-575",
+    "profileUrl": "https://www.linkedin.com/in/tuấn-lý-575",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -32380,6 +33339,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***326",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-lý-851",
+    "profileUrl": "https://www.linkedin.com/in/yến-lý-851",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -32412,6 +33372,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***343",
     "rawProfileUrl": "https://www.linkedin.com/in/trung-hoàng-485",
+    "profileUrl": "https://www.linkedin.com/in/trung-hoàng-485",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -32447,6 +33408,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***360",
     "rawProfileUrl": "https://www.linkedin.com/in/khoa-phan-217",
+    "profileUrl": "https://www.linkedin.com/in/khoa-phan-217",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API"
@@ -32480,6 +33442,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***377",
     "rawProfileUrl": "https://www.linkedin.com/in/hùng-ngô-887",
+    "profileUrl": "https://www.linkedin.com/in/hùng-ngô-887",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -32514,6 +33477,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ki***v@outlook.com",
     "maskedPhone": "093***394",
     "rawProfileUrl": "https://www.linkedin.com/in/kiên-lê-513",
+    "profileUrl": "https://www.linkedin.com/in/kiên-lê-513",
     "projects": [
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -32547,6 +33511,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***411",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-võ-741",
+    "profileUrl": "https://www.linkedin.com/in/thảo-võ-741",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -32579,6 +33544,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "bả***v@techdev.vn",
     "maskedPhone": "088***428",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-dương-575",
+    "profileUrl": "https://www.linkedin.com/in/bảo-dương-575",
     "projects": [
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -32615,6 +33581,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "yế***v@outlook.com",
     "maskedPhone": "090***445",
     "rawProfileUrl": "https://www.linkedin.com/in/yến-đỗ-900",
+    "profileUrl": "https://www.linkedin.com/in/yến-đỗ-900",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -32647,6 +33614,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "091***462",
     "rawProfileUrl": "https://www.linkedin.com/in/trang-phạm-776",
+    "profileUrl": "https://www.linkedin.com/in/trang-phạm-776",
     "projects": [
       "Phát triển module thanh toán 1-chạm (One-Click Checkout) tích hợp sinh trắc học FaceID / TouchID",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -32680,6 +33648,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "098***479",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-lý-500",
+    "profileUrl": "https://www.linkedin.com/in/duyên-lý-500",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Xây dựng hệ thống RAG & Semantic Search phục vụ 500.000+ truy vấn/ngày với Qdrant và LangChain"
@@ -32715,6 +33684,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "097***496",
     "rawProfileUrl": "https://www.linkedin.com/in/bảo-phan-180",
+    "profileUrl": "https://www.linkedin.com/in/bảo-phan-180",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Xây dựng cổng thanh toán QR động tích hợp 35+ ngân hàng và ví điện tử, đối soát tự động 24/7"
@@ -32750,6 +33720,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@techdev.vn",
     "maskedPhone": "093***513",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-dương-633",
+    "profileUrl": "https://www.linkedin.com/in/hương-dương-633",
     "projects": [
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR",
       "Pipeline xử lý hình ảnh Computer Vision tự động kiểm tra lỗi sản phẩm với độ chính xác 98.7%"
@@ -32785,6 +33756,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "086***530",
     "rawProfileUrl": "https://www.linkedin.com/in/long-nguyễn-495",
+    "profileUrl": "https://www.linkedin.com/in/long-nguyễn-495",
     "projects": [
       "Thiết lập hệ thống giám sát toàn diện Prometheus, Grafana, OpenTelemetry và alert theo thời gian thực",
       "Di chuyển toàn bộ hạ tầng 120+ microservices lên Kubernetes (EKS) với Terraform và GitOps (ArgoCD)"
@@ -32820,6 +33792,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "088***547",
     "rawProfileUrl": "https://www.linkedin.com/in/sơn-đặng-465",
+    "profileUrl": "https://www.linkedin.com/in/sơn-đặng-465",
     "projects": [
       "Xây dựng Design System dùng chung cho 12 squads với React, Next.js và Tailwind CSS",
       "Tối ưu Core Web Vitals cho sàn thương mại điện tử, nâng điểm Lighthouse từ 54 lên 96 điểm"
@@ -32853,6 +33826,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "c***@pepe.dev",
     "maskedPhone": "090***564",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-huỳnh-868",
+    "profileUrl": "https://www.linkedin.com/in/duyên-huỳnh-868",
     "projects": [
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang",
       "Thiết kế kiến trúc Core Banking Microservices chịu tải 25.000 TPS trong các đợt Flash Sale / Tết"
@@ -32886,6 +33860,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "ma***v@techdev.vn",
     "maskedPhone": "091***581",
     "rawProfileUrl": "https://www.linkedin.com/in/mai-hồ-271",
+    "profileUrl": "https://www.linkedin.com/in/mai-hồ-271",
     "projects": [
       "Tối ưu hóa cơ sở dữ liệu PostgreSQL & Redis caching, giảm thời gian phản hồi P99 từ 1.2s xuống 45ms",
       "Chuyển đổi hệ thống nguyên khối (Monolith) sang Event-Driven Architecture với Kafka và Golang"
@@ -32919,6 +33894,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "du***v@techdev.vn",
     "maskedPhone": "098***598",
     "rawProfileUrl": "https://www.linkedin.com/in/duyên-vũ-968",
+    "profileUrl": "https://www.linkedin.com/in/duyên-vũ-968",
     "projects": [
       "Fine-tuning mô hình Llama 3 & Mistral chuyên biệt cho tài chính - kế toán, giảm 40% chi phí API",
       "Hệ thống gợi ý sản phẩm cá nhân hóa theo thời gian thực (Real-time Recommendation) tăng 18% CTR"
@@ -32952,6 +33928,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "hư***v@gmail.com",
     "maskedPhone": "097***615",
     "rawProfileUrl": "https://www.linkedin.com/in/hương-hồ-482",
+    "profileUrl": "https://www.linkedin.com/in/hương-hồ-482",
     "projects": [
       "Tối ưu hóa chi phí hạ tầng AWS Multi-Region, tiết kiệm $45,000/năm mà vẫn đảm bảo 99.99% SLA",
       "Tự động hóa 100% quy trình CI/CD với GitHub Actions và Docker, rút ngắn thời gian release còn 5 phút"
@@ -32984,6 +33961,7 @@ const PEPE_CV_DATABASE = [
     "maskedEmail": "th***v@techdev.vn",
     "maskedPhone": "093***632",
     "rawProfileUrl": "https://www.linkedin.com/in/thảo-trần-516",
+    "profileUrl": "https://www.linkedin.com/in/thảo-trần-516",
     "projects": [
       "Dẫn dắt phát triển tính năng Loyalty & Gamification, tăng 28% tỷ lệ giữ chân người dùng (Retention D30)",
       "Định hướng sản phẩm dựa trên dữ liệu (Data-driven), tăng 32% doanh thu chuyển đổi gói thành viên VIP"

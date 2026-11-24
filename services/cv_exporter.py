@@ -163,6 +163,7 @@ def classify_candidate(cand: dict, index: int):
         "maskedEmail": mask_email(cand.get("email", "")),
         "maskedPhone": mask_phone(index),
         "rawProfileUrl": cand.get("profileUrl", ""),
+        "profileUrl": cand.get("profileUrl", ""),
         "projects": projects,
         "aiOutreachMessage": cand.get("aiOutreachMessage", ""),
         "price": 29000,

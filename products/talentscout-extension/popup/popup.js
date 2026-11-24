@@ -283,6 +283,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // Sync to Pepe CV Marketplace Local Backend
+  const syncBtn = document.getElementById("btnSyncPepePopup");
+  syncBtn?.addEventListener("click", () => {
+    getStoredCandidates(async candidates => {
+      if (!candidates || candidates.length === 0) {
+        alert("⚠️ Chưa có ứng viên nào trong Database để đồng bộ! Hãy mở LinkedIn cào trước nhé.");
+        return;
+      }
+
+      syncBtn.disabled = true;
+      syncBtn.textContent = `⏳ Đang gửi ${candidates.length} ứng viên về Chợ CV...`;
+
+      try {
+        const res = await fetch("http://127.0.0.1:8090/api/talentscout/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ candidates })
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          alert(`🎉 ${data.message || 'Đồng bộ thành công!'}`);
+          syncBtn.textContent = "✅ Đã Đồng Bộ Xong!";
+          setTimeout(() => {
+            syncBtn.disabled = false;
+            syncBtn.textContent = "🔄 Đồng Bộ Về Chợ CV Pepe (Local DB)";
+          }, 3000);
+        } else {
+          throw new Error("HTTP " + res.status);
+        }
+      } catch (err) {
+        alert("⚠️ Không kết nối được Rust Backend (127.0.0.1:8090). Tự động tải file sync JSON để import vào máy!");
+        const blob = new Blob([JSON.stringify({ candidates }, null, 2)], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `pepe_candidates_real_sync_${getTodayIso()}.json`;
+        a.click();
+        syncBtn.disabled = false;
+        syncBtn.textContent = "🔄 Đồng Bộ Về Chợ CV Pepe (Local DB)";
+      }
+    });
+  });
+
   // Check Rust Engine API
   function checkRustBackend() {
     const pill = document.getElementById("rustEngineStatus");

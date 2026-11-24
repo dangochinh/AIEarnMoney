@@ -713,6 +713,10 @@
 
         const skillsShort = (c.skills || []).slice(0, 4).join(", ");
         const liveSearchUrl = `https://www.linkedin.com/search/results/people/?keywords=${encodeURIComponent(c.name + ' ' + c.company)}`;
+        const isRealSynced = (c.id && c.id.startsWith("TS_REAL_")) || (c.status && c.status.includes("LinkedIn thật"));
+        const linkBtn = isRealSynced
+          ? `<a href="${c.rawProfileUrl || c.profileUrl}" target="_blank" style="text-decoration:none;display:inline-block;padding:4px 8px;background:var(--pepe);color:#052e16;border-radius:4px;font-size:11.5px;font-weight:800" title="Mở trang cá nhân LinkedIn thật">🔗 Profile Thật</a>`
+          : `<a href="${liveSearchUrl}" target="_blank" style="text-decoration:none;display:inline-block;padding:4px 8px;background:rgba(10, 102, 194, 0.15);color:#0a66c2;border-radius:4px;font-size:11.5px;font-weight:700;border:1px solid rgba(10, 102, 194, 0.3)" title="Tìm người thật tương ứng tại ${c.company} trên LinkedIn">🔍 Tìm Người Thật</a>`;
 
         html += `
           <tr>
@@ -728,9 +732,7 @@
             <td style="font-size:12px;color:var(--muted)">${c.location || 'Việt Nam'}</td>
             <td>${statusTag}</td>
             <td style="text-align:center;white-space:nowrap">
-              <a href="${liveSearchUrl}" target="_blank" style="text-decoration:none;display:inline-block;padding:4px 8px;background:rgba(10, 102, 194, 0.15);color:#0a66c2;border-radius:4px;font-size:11.5px;font-weight:700;border:1px solid rgba(10, 102, 194, 0.3)" title="Tìm người thật tương ứng tại ${c.company} trên LinkedIn">
-                🔍 Tìm Người Thật
-              </a>
+              ${linkBtn}
             </td>
           </tr>
         `;

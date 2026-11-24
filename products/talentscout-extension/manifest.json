@@ -11,6 +11,7 @@
   "host_permissions": [
     "https://*.linkedin.com/*",
     "http://localhost:*/*",
+    "http://127.0.0.1:*/*",
     "file://*/*"
   ],
   "action": {

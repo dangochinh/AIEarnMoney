@@ -190,17 +190,20 @@
 
     cards.forEach(card => {
       try {
-        const linkEl = card.querySelector("a.app-aware-link[href*='/in/'], a[href*='/in/'], .cand-link");
+        const linkEl = card.querySelector("a.app-aware-link[href*='/in/'], a[href*='/in/'], a[data-test-app-aware-link][href*='/in/'], .cand-link");
         if (!linkEl) return;
 
-        let profileUrl = linkEl.href.split("?")[0];
+        let profileUrl = linkEl.href.split("?")[0].replace(/\/+$/, "");
         const nameEl = card.querySelector(".entity-result__title-text a span[aria-hidden='true']") ||
                        card.querySelector(".entity-result__title-text a") ||
+                       card.querySelector("a[href*='/in/'] span[aria-hidden='true']") ||
                        card.querySelector(".cand-name") ||
                        linkEl;
-        const name = nameEl ? nameEl.innerText.trim() : "";
+        let name = nameEl ? nameEl.innerText.trim() : "";
+        name = name.split("\n")[0].trim();
 
         const headlineEl = card.querySelector(".entity-result__primary-subtitle") ||
+                           card.querySelector("div.linked-area .entity-result__primary-subtitle") ||
                            card.querySelector(".cand-headline");
         const headline = headlineEl ? headlineEl.innerText.trim() : "";
 
@@ -211,8 +214,15 @@
         const isOpenToWork = !!card.querySelector("img[alt*='Open to work'], img[title*='OPEN_TO_WORK'], .opentowork-pill, .badge-opentowork");
 
         let company = "Chưa cập nhật";
-        if (headline.includes(" at ")) company = headline.split(" at ")[1]?.split("|")[0]?.trim() || "";
-        else if (headline.includes(" @ ")) company = headline.split(" @ ")[1]?.split("|")[0]?.trim() || "";
+        const currentExpEl = card.querySelector(".entity-result__summary") || card.querySelector(".entity-result__simple-insight-text");
+        if (currentExpEl && currentExpEl.innerText.toLowerCase().includes("current:")) {
+          company = currentExpEl.innerText.split(/current:\s*/i)[1]?.split(/•|\||\n/)[0]?.trim() || "";
+        }
+        if (!company || company === "Chưa cập nhật") {
+          if (headline.includes(" at ")) company = headline.split(" at ")[1]?.split(/•|\|/)[0]?.trim() || "";
+          else if (headline.includes(" @ ")) company = headline.split(" @ ")[1]?.split(/•|\|/)[0]?.trim() || "";
+          else if (headline.includes(" - ")) company = headline.split(" - ")[1]?.split(/•|\|/)[0]?.trim() || "";
+        }
 
         let level = "Mid-Level";
         const lower = headline.toLowerCase();
@@ -222,7 +232,7 @@
         else if (lower.includes("senior") || lower.includes("sr.")) level = "Senior";
         else if (lower.includes("manager")) level = "Management / Lead";
 
-        const skills = extractTechTags(headline);
+        const skills = extractTechTags(`${headline} ${location} ${card.innerText}`);
 
         if (name && profileUrl) {
           results.push({
@@ -565,10 +575,69 @@
     if (startBtn) startBtn.style.display = "block";
     if (stopBtn) stopBtn.style.display = "none";
     logModal(`🏁 Quá trình quét kết thúc. Cào được tổng cộng ${totalCollectedThisSession} ứng viên trong phiên.`);
+
+    if (totalCollectedThisSession > 0) {
+      logModal(`🔄 <b>Đang tự động đồng bộ ${totalCollectedThisSession} ứng viên thật về Chợ CV Pepe...</b>`);
+      syncCandidatesToPepe();
+    }
   }
 
   function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  // Sync to Pepe CV Marketplace Local Backend (127.0.0.1:8090)
+  async function syncCandidatesToPepe() {
+    return new Promise((resolve) => {
+      function getStored(cb) {
+        if (chrome?.storage?.local) {
+          chrome.storage.local.get(["talentscout_candidates"], res => {
+            cb(res.talentscout_candidates || []);
+          });
+        } else {
+          try {
+            const list = JSON.parse(localStorage.getItem("talentscout_candidates") || "[]");
+            cb(list);
+          } catch(e) { cb([]); }
+        }
+      }
+
+      getStored(async (candidates) => {
+        if (!candidates || candidates.length === 0) {
+          showToast("⚠️ Chưa có ứng viên nào trong Database để đồng bộ! Hãy cào trước nhé.");
+          resolve(false);
+          return;
+        }
+
+        showToast(`⏳ Đang đồng bộ ${candidates.length} ứng viên thật về Chợ CV Pepe (127.0.0.1:8090)...`);
+
+        try {
+          const res = await fetch("http://127.0.0.1:8090/api/talentscout/sync", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ candidates })
+          });
+
+          if (res.ok) {
+            const data = await res.json();
+            showToast(`🎉 ${data.message || 'Đồng bộ thành công về Chợ CV!'}`);
+            resolve(true);
+          } else {
+            throw new Error("HTTP " + res.status);
+          }
+        } catch (err) {
+          console.warn("[TalentScout AI] Sync endpoint error, fallback to JSON download:", err);
+          showToast("⚠️ Backend chưa mở, tự động tải file sync JSON để import vào máy!");
+          const blob = new Blob([JSON.stringify({ candidates }, null, 2)], { type: "application/json" });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.href = url;
+          a.download = `pepe_candidates_real_sync_${getTodayIso()}.json`;
+          a.click();
+          resolve(false);
+        }
+      });
+    });
   }
 
   // Injected Floating Widget UI
@@ -588,6 +657,9 @@
         </button>
         <button id="ts-btn-scout" class="ts-btn ts-btn-primary">
           ⚡ Scout Ứng Viên Này
+        </button>
+        <button id="ts-btn-sync-pepe" class="ts-btn" style="background:linear-gradient(135deg, #10b981 0%, #059669 100%);color:#052e16;font-weight:800;border:1px solid #10b981">
+          🔄 Đồng Bộ Về Chợ CV Pepe
         </button>
         <button id="ts-btn-batch" class="ts-btn ts-btn-secondary" style="display:none">
           📑 Cào Cả Trang Hiện Tại
@@ -669,6 +741,7 @@
       });
     });
 
+    document.getElementById("ts-btn-sync-pepe")?.addEventListener("click", syncCandidatesToPepe);
     document.getElementById("ts-btn-export")?.addEventListener("click", exportToCsv);
 
     document.getElementById("ts-btn-outreach")?.addEventListener("click", () => {
