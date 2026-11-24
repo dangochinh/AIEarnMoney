@@ -2199,7 +2199,7 @@ const PEPE_DATA = {
       "targetTime": "09:00 - 12:00 & 20:00 - 23:00",
       "action": "Tự động bắt lead, hiển thị ưu đãi giảm 50% trong 15 phút, kích hoạt VietQR và gửi link tải .zip ngay lập tức.",
       "estRevenue": "98.000đ - 147.000đ (2-3 đơn)",
-      "status": "pending"
+      "status": "active"
     },
     {
       "id": "p2",
@@ -2350,8 +2350,8 @@ const PEPE_DATA = {
         "Đồng bộ code và deploy phiên bản mới nhất lên Cloudflare Pages"
       ],
       "pepeQuote": "Sản phẩm tốt thì khách tự động giới thiệu nhau, không cần chèo kéo!",
-      "state": "current",
-      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-evening-traffic",
@@ -2369,8 +2369,8 @@ const PEPE_DATA = {
         "Khuyến khích khách ủng hộ ly cà phê / gói mì tôm 20.000đ nuôi chú ếch"
       ],
       "pepeQuote": "Tan sở là lúc mọi người cần giải trí nhẹ nhàng, game Lô Tô vào việc ngay!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-peak-conversion",
@@ -2388,8 +2388,8 @@ const PEPE_DATA = {
         "Matching ứng viên trong database vào các job IT đang mở để lấy phí giới thiệu"
       ],
       "pepeQuote": "Khung giờ vàng từ 20h đến 23h là lúc tiền về nhiều nhất, không được lơ là!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "current",
+      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
     },
     {
       "id": "block-night-review",
@@ -2411,8 +2411,8 @@ const PEPE_DATA = {
       "stateLabel": "⏳ Sắp Tới"
     }
   ],
-  "currentBlockId": "block-repo-upgrade",
-  "updatedAt": "24/11/2026 16:48"
+  "currentBlockId": "block-peak-conversion",
+  "updatedAt": "24/11/2026 20:51"
 },
 
   // ============================================================
