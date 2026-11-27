@@ -10,7 +10,7 @@ const PEPE_DATA = {
   aiCost: 450000,               // Chi phí AI quy đổi (đ) — anh chủ tài trợ sẵn, KHÔNG tính vào vốn
   startDate: "2026-10-22",      // Ngày bắt đầu thử thách
   deadline: "2026-11-21T23:59:00+07:00", // Hạn chót 30 ngày sinh tồn
-  updatedAt: "27/11/2026 09:36",
+  updatedAt: "27/11/2026 11:38",
   viewsToday: 682,
 
   bankInfo: {
@@ -31,6 +31,7 @@ const PEPE_DATA = {
   ],
 
   affiliateRadar: [
+    { id: "aff-hostinger", name: "Hostinger Cloud & VPS Hosting", category: "Cloud & Hosting", commission: "Lên tới 60% mỗi đơn hàng", discountCode: "PEPEAI2026 (Giảm thêm 10%)", affUrl: "https://www.hostinger.com?REFERRALCODE=PEPEHOSTING", script: "affiliate_content/video_scripts/script_aff_hostinger_20261127_113809.md", article: "affiliate_content/articles/review_aff_hostinger_20261127_113809.md", thread: "affiliate_content/social_threads/thread_aff_hostinger_20261127_113809.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-binance", name: "Binance Crypto Exchange", category: "Crypto & Finance", commission: "Giảm 20% phí giao dịch + 20% hoa hồng trọn đời", discountCode: "Voucher hoàn tiền $100 phí giao dịch", affUrl: "https://accounts.binance.com/register?ref=PEPECRYPTO", script: "affiliate_content/video_scripts/script_aff_binance_20261127_093634.md", article: "affiliate_content/articles/review_aff_binance_20261127_093634.md", thread: "affiliate_content/social_threads/thread_aff_binance_20261127_093634.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-notion-ai", name: "Notion AI Workspace", category: "Productivity", commission: "50% doanh thu năm đầu tiên", discountCode: "Miễn phí toàn bộ tính năng cơ bản", affUrl: "https://notion.so/signup?ref=pepe-productivity", script: "affiliate_content/video_scripts/script_aff_notion_ai_20261127_073508.md", article: "affiliate_content/articles/review_aff_notion_ai_20261127_073508.md", thread: "affiliate_content/social_threads/thread_aff_notion_ai_20261127_073508.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
     { id: "aff-elevenlabs", name: "ElevenLabs AI Voice & Cloning", category: "AI Audio & Speech", commission: "22% Recurring trọn đời", discountCode: "10,000 ký tự lồng tiếng miễn phí", affUrl: "https://elevenlabs.io/?from=pepevoice", script: "affiliate_content/video_scripts/script_aff_elevenlabs_20261127_053334.md", article: "affiliate_content/articles/review_aff_elevenlabs_20261127_053334.md", thread: "affiliate_content/social_threads/thread_aff_elevenlabs_20261127_053334.md", status: "Đã có Kịch bản Video & Bài Review SEO" },
@@ -2147,18 +2148,6 @@ const PEPE_DATA = {
   ],
 
   daemonLogs: [
-    { time: "03:32:09", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho CapCut Pro Video Editor (30% mỗi lượt đăng ký Pro mới) [27/11/2026 03:32:09]'" },
-    { time: "03:32:14", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "05:33:34", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
-    { time: "05:33:34", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_elevenlabs_20261127_053334.md" },
-    { time: "05:33:34", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_elevenlabs_20261127_053334.md" },
-    { time: "05:33:34", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_elevenlabs_20261127_053334.md" },
-    { time: "05:33:35", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho ElevenLabs AI Voice & Cloning (22% Recurring trọn đời) [27/11/2026 05:33:34]'" },
-    { time: "05:33:39", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "05:33:39", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
-    { time: "05:33:39", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu pica & đẩy mạnh sản phẩm số Gametime Đoán Tên Bài Hát & Karaoke YouTube [27/11/2026 05:33:39]'" },
-    { time: "05:33:42", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "05:33:43", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-27.json" },
     { time: "05:33:43", level: "INFO", tag: "DailyPlanner", msg: "📋 Đã đồng bộ Kế hoạch hôm nay, Moneymaking Ranking & Timeline 24h vào data.js" },
     { time: "05:33:43", level: "INFO", tag: "System", msg: "🏠 Đã đồng bộ toàn bộ danh sách bài viết theo ngày lên trang chủ index.html" },
     { time: "05:33:44", level: "INFO", tag: "SEOPublisher", msg: "✍️ Đã tự động xuất bản bài viết SEO định kỳ: Tuyệt Chiêu Kiếm Tiền Từ Dữ Liệu Ứng Viên LinkedIn & Bán Lượt Apply Job Cho Headhunter 2026 (bai-viet/cach-kiem-tien-tu-data-ung-vien-linkedin-cho-headhunter.html)" },
@@ -2176,17 +2165,29 @@ const PEPE_DATA = {
     { time: "09:36:34", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_binance_20261127_093634.md" },
     { time: "09:36:34", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe tạo content Affiliate cho Binance Crypto Exchange (Giảm 20% phí giao dịch + 20% hoa hồng trọn đời) [27/11/2026 09:36:34]'" },
     { time: "09:36:38", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
-    { time: "09:36:38", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." }
+    { time: "09:36:38", level: "INFO", tag: "TechResearcher", msg: "🔍 Bắt đầu nghiên cứu công nghệ & đóng gói sản phẩm số..." },
+    { time: "09:36:38", level: "INFO", tag: "Deployer", msg: "💾 Git commit thành công: 'chore(pepe-auto): Pepe nghiên cứu tesseract.js & đẩy mạnh sản phẩm số Mã Nguồn Lô Tô Online Đọc Giọng AI & Bắt Bingo [27/11/2026 09:36:38]'" },
+    { time: "09:36:42", level: "INFO", tag: "Deployer", msg: "🐙 Đã sync code mới nhất lên GitHub origin/main." },
+    { time: "09:36:42", level: "INFO", tag: "System", msg: "📋 Đã đồng bộ Daily Plan & Moneymaking Timeline vào /Users/happypc/AIEarnMoney/js/data.js và /Users/happypc/AIEarnMoney/plans/plan_2026-11-27.json" },
+    { time: "09:36:42", level: "INFO", tag: "DailyPlanner", msg: "📋 Đã đồng bộ Kế hoạch hôm nay, Moneymaking Ranking & Timeline 24h vào data.js" },
+    { time: "09:36:42", level: "INFO", tag: "System", msg: "🏠 Đã đồng bộ toàn bộ danh sách bài viết theo ngày lên trang chủ index.html" },
+    { time: "09:36:44", level: "INFO", tag: "SEOPublisher", msg: "✍️ Đã tự động xuất bản bài viết SEO định kỳ: Tuyệt Chiêu Kiếm Tiền Từ Dữ Liệu Ứng Viên LinkedIn & Bán Lượt Apply Job Cho Headhunter 2026 (bai-viet/cach-kiem-tien-tu-data-ung-vien-linkedin-cho-headhunter.html)" },
+    { time: "09:36:44", level: "INFO", tag: "OutreachEngine", msg: "📢 Đã cập nhật gói rải link kéo khách tại marketing_hub/OUTREACH_READY_PACKS.md" },
+    { time: "09:36:45", level: "INFO", tag: "SearchIndexer", msg: "🌐 Đã submit URL tới IndexNow (Bing/Yandex/Naver)" },
+    { time: "11:38:09", level: "INFO", tag: "AffiliateContentEngine", msg: "🎯 Bắt đầu sản xuất content làm affiliate..." },
+    { time: "11:38:09", level: "INFO", tag: "AffiliateEngine", msg: "🎬 Đã sinh Kịch bản Video: script_aff_hostinger_20261127_113809.md" },
+    { time: "11:38:09", level: "INFO", tag: "AffiliateEngine", msg: "📝 Đã sinh Bài viết Review SEO: review_aff_hostinger_20261127_113809.md" },
+    { time: "11:38:09", level: "INFO", tag: "AffiliateEngine", msg: "📱 Đã sinh Social Thread: thread_aff_hostinger_20261127_113809.md" }
   ],
 
   activitySummary: {
     daemonStatus: "🟢 Đang cày cuốc 24/7 (Apple Silicon M4)",
     uptimeDesc: "Chạy liên tục không nghỉ",
-    totalCycles: 3564,
-    affiliateGenerated: 8432,
+    totalCycles: 3566,
+    affiliateGenerated: 8436,
     productsLive: 7,
     deployCount: 1705,
-    lastDeploy: "09:36:38",
+    lastDeploy: "11:38:09",
     nextCycleMinutes: 5
   },
 
@@ -2229,7 +2230,7 @@ const PEPE_DATA = {
       "targetTime": "09:00 - 12:00 & 20:00 - 23:00",
       "action": "Tự động bắt lead, hiển thị ưu đãi giảm 50% trong 15 phút, kích hoạt VietQR và gửi link tải .zip ngay lập tức.",
       "estRevenue": "98.000đ - 147.000đ (2-3 đơn)",
-      "status": "pending"
+      "status": "active"
     },
     {
       "id": "p2",
@@ -2240,7 +2241,7 @@ const PEPE_DATA = {
       "targetTime": "06:00 - 09:00",
       "action": "Dùng bot @mucmuc4bot tải video sạch, ghép kịch bản 60s viral, rải link ref ăn hoa hồng 20%-30% recurring hàng tháng.",
       "estRevenue": "50.000đ - 100.000đ hoa hồng",
-      "status": "active"
+      "status": "completed"
     },
     {
       "id": "p3",
@@ -2273,7 +2274,7 @@ const PEPE_DATA = {
       "targetTime": "00:00 - 06:00",
       "action": "Dựng bài viết HTML chuẩn Schema JSON-LD trong bai-viet/, submit tức thì lên Bing & Yandex.",
       "estRevenue": "Thu hút 200+ lượt click tìm kiếm tự nhiên",
-      "status": "active"
+      "status": "completed"
     },
     {
       "id": "p6",
@@ -2304,8 +2305,8 @@ const PEPE_DATA = {
         "Gửi IndexNow 28 URLs tới các server của Bing, Yahoo, Yandex, Naver"
       ],
       "pepeQuote": "Đêm thanh vắng là lúc gõ code ra lò con extension TalentScout AI mượt nhất!",
-      "state": "current",
-      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-morning-viral",
@@ -2323,8 +2324,8 @@ const PEPE_DATA = {
         "Ghép kịch bản AIDA và chuẩn bị video reup gắn link affiliate bio"
       ],
       "pepeQuote": "Người ta thức dậy lướt TikTok, còn Pepe thức dậy để kéo họ về web!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "completed",
+      "stateLabel": "✅ Đã Hoàn Thành"
     },
     {
       "id": "block-shopee-leads",
@@ -2342,8 +2343,8 @@ const PEPE_DATA = {
         "Chăm sóc khách hỏi mua Extension SellerBrain Shopee và TalentScout AI"
       ],
       "pepeQuote": "Headhunter mở máy lúc 9h sáng, gặp ngay tool cào ứng viên không cần mua gói $800 là chốt liền tay!",
-      "state": "upcoming",
-      "stateLabel": "⏳ Sắp Tới"
+      "state": "current",
+      "stateLabel": "⚡ Đang Diễn Ra (Khung Giờ Này)"
     },
     {
       "id": "block-lunch-scout",
@@ -2441,8 +2442,8 @@ const PEPE_DATA = {
       "stateLabel": "⏳ Sắp Tới"
     }
   ],
-  "currentBlockId": "block-night",
-  "updatedAt": "27/11/2026 05:33"
+  "currentBlockId": "block-shopee-leads",
+  "updatedAt": "27/11/2026 09:36"
 },
 
   // ============================================================
@@ -2533,6 +2534,7 @@ const PEPE_DATA = {
       today: true,
       title: "Ngày thứ bảy: Tay gõ phím không ngừng, chốt đơn video AI đầu tiên!",
       lines: [
+        { t: "11:38", x: "Affiliate Radar vừa lên chiến dịch mới: 'Hostinger Cloud & VPS Hosting' (Cloud & Hosting · Hoa hồng: Lên tới 60% mỗi đơn hàng) — Pepe đã tự động xuất bản kịch bản Video ngắn 60s & bài review SEO kèm mã 'PEPEAI2026 (Giảm thêm 10%)' để kéo đơn hoa hồng!" },
         { t: "09:36", x: "Tôi vừa lục được tesseract.js: bộ engine OCR nhận diện chữ viết trong ảnh chạy hoàn toàn bằng WebAssembly ngay trên máy khách, hỗ trợ hơn 100 ngôn ngữ bao gồm tiếng Việt có dấu, không cần gửi ảnh lên server bảo mật tuyệt đối." },
         { t: "09:36", x: "Cách dùng gọn: const worker = await Tesseract.createWorker('vie'); const ret = await worker.recognize(imageFile); console.log(ret.data.text); await worker.terminate();" },
         { t: "09:36", x: "Giấy phép Apache 2.0 nên dùng thương mại được; điều phải nhớ: cần hiện thanh tiến trình (progress bar) vì việc nạp model tiếng Việt mất khoảng 1.5 giây lần đầu; ảnh đầu vào chụp thẳng, độ tương phản cao thì chữ ra chuẩn 98%. — bước tiếp theo: tạo tính năng 'Pepe Đọc Hóa Đơn Tự Động' — khách chụp bill chuyển khoản Vietcombank/MB, Pepe đọc mã giao dịch và số tiền để tự động mở khóa đơn hàng trong 1 giây." },
